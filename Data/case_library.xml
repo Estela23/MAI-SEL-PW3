@@ -8,9 +8,9 @@
       <ingredient id="ingr2" alc_type="Vodka" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">Vodka</ingredient>
     </ingredients>
     <preparation>
-      <step>1. Fill a rocks glass with ice </step>
-      <step>2. Add white creme de cacao and vodka </step>
-      <step>3. Stir</step>
+      <step>Fill a rocks glass with ice</step>
+      <step>Add white creme de cacao and vodka</step>
+      <step>Stir</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -825,16 +825,12 @@
       <ingredient id="ingr3" alc_type="Creamy Liqueur" basic_taste="" measure="" quantity="" unit="">Bailey'S Irish Cream</ingredient>
     </ingredients>
     <preparation>
-      <step>1</step>
       <step>Pour kahlua into shot glass to about 1/2 full</step>
-      <step>2</step>
       <step>Using a spoon(inverted), slowly pour in the peppermint schnapps until glass is about 3/4 full</step>
       <step>Done correctly, the schnapps will flow under the kahlua for a clear layer</step>
-      <step>3</step>
       <step>Again using a spoon, but this time right side up, slowly top off the glass with a layer of bailey's</step>
       <step>Be careful to place the spoon right at the top of the kahlua layer and to raise it as the glass fills up</step>
       <step>Done correctly, this will provide a layer of bailey's floating over the kahlua</step>
-      <step>4</step>
       <step>Toss it down all at once for something like a peppermint pattie, with a bang!!! note: best if all ingredients are chilled</step>
     </preparation>
   </cocktail>
@@ -1822,13 +1818,13 @@
       <ingredient id="ingr4" alc_type="Vodka" basic_taste="" measure="3 oz" quantity="90.0" unit="ml">Vodka</ingredient>
     </ingredients>
     <preparation>
-      <step>Add ice cubes to shaker.&#13;
-add vodka.&#13;
-add peach schnapps.&#13;
-add peach nectar.&#13;
-shake.&#13;
-strain into glass.&#13;
-add lemon twist peel.</step>
+      <step>Add ice cubes to shaker</step>
+      <step>Add vodka</step>
+      <step>Add peach schnapps</step>
+      <step>Add peach nectar</step>
+      <step>Shake</step>
+      <step>Strain into glass</step>
+      <step>Add lemon twist peel.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -2943,10 +2939,10 @@ add lemon twist peel.</step>
       <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="2 tsp" quantity="8.0" unit="gr">Demerara Sugar</ingredient>
     </ingredients>
     <preparation>
-      <step>Muddle the sugar into the lime wedges in an old-fashioned glass.&#13;
-fill the glass with ice cubes.&#13;
-pour the cachaca into the glass.&#13;
-stir well.</step>
+      <step>Muddle the sugar into the lime wedges in an old-fashioned glass</step>
+      <step>Fill the glass with ice cubes</step>
+      <step>Pour the cachaca into the glass</step>
+      <step>Stir well.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3022,10 +3018,10 @@ stir well.</step>
       <ingredient id="ingr5" alc_type="Vodka" basic_taste="" measure="70ml/2fl oz" quantity="70.0" unit="ml">Vodka</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well.&#13;
-rub the rim of a martini glass with the wedge of lemon.&#13;
-strain the contents of the cocktail shaker into the glass and add the olive.&#13;
-a dirty martini contains a splash of olive brine or olive juice and is typically garnished with an olive.</step>
+      <step>Pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well</step>
+      <step>Rub the rim of a martini glass with the wedge of lemon</step>
+      <step>Strain the contents of the cocktail shaker into the glass and add the olive</step>
+      <step>A dirty martini contains a splash of olive brine or olive juice and is typically garnished with an olive.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3118,9 +3114,9 @@ a dirty martini contains a splash of olive brine or olive juice and is typically
       <ingredient id="ingr7" alc_type="" basic_taste="sweet" measure="1.5 cl" quantity="15.0" unit="ml">St. Germain</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake all ingredients.&#13;
-double strain in a chilled double old fashioned glass with abig ice cube.&#13;
-garnish with a couple of lavender sprigs</step>
+      <step>Shake all ingredients</step>
+      <step>Double strain in a chilled double old fashioned glass with abig ice cube</step>
+      <step>Garnish with a couple of lavender sprigs</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -5197,10 +5193,9 @@ garnish with a couple of lavender sprigs</step>
     </ingredients>
     <preparation>
       <step>Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water</step>
-      <step>Muddle until dissolved.&#13;
-fill the glass with ice cubes and add whiskey.&#13;
-&#13;
-garnish with orange twist, and a cocktail cherry.</step>
+      <step>Muddle until dissolved</step>
+      <step>Fill the glass with ice cubes and add whiskey</step>
+      <step>Garnish with orange twist, and a cocktail cherry.</step>
     </preparation>
   </cocktail>
   <cocktail>
