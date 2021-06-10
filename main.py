@@ -7,7 +7,9 @@ print("running with lxml.etree")
 dataset = pd.read_csv("data_cocktails.csv", encoding='utf_8')
 dataset = dataset.drop(dataset.columns[0], axis=1)
 dataset = dataset.drop(dataset.columns[-2:], axis=1)
-#print(dataset.columns)
+# print(dataset.columns)
+print(dataset.heead(10))
+
 
 # Method to insert ingredient
 def insert_ingredient(id, instance, ingredients):
@@ -39,7 +41,7 @@ def insert_ingredient(id, instance, ingredients):
 
 # Start creating XML tree
 cocktails = etree.Element("cocktails")
-#print(len(dataset["strInstructions"].unique()))
+# print(len(dataset["strInstructions"].unique()))
 previous_cocktail = ""
 
 # Loop over all instances of the dataset
@@ -104,12 +106,10 @@ for idx, instance in enumerate(dataset.values):
             step = etree.SubElement(prep, "step")
             step.text = str(instance[6]).capitalize()
 
-
     previous_cocktail = instance[0]
 
-
 # Write in file
-#print(etree.tostring(cocktails, pretty_print=True).decode())
+# print(etree.tostring(cocktails, pretty_print=True).decode())
 et = etree.ElementTree(cocktails)
 et.write('case_library.xml', pretty_print=True, encoding="UTF-8")
 

@@ -1,6 +1,6 @@
 ,strDrink,strCategory,strGlass,strIngredients,Alc_type,Basic_taste,strInstructions,strMeasures,Value_ml,Value_gr,Garnish_amount,Garnish_type
-0,'57 Chevy with a White License Plate,Cocktail,Highball glass,Creme De Cacao White,Creamy Liqueur,,1. Fill a rocks glass with ice 2.add white creme de cacao and vodka 3.stir,1 oz white,30.0,,,
-1,'57 Chevy with a White License Plate,Cocktail,Highball glass,Vodka,Vodka,,1. Fill a rocks glass with ice 2.add white creme de cacao and vodka 3.stir,1 oz,30.0,,,
+0,'57 Chevy with a White License Plate,Cocktail,Highball glass,Creme De Cacao White,Creamy Liqueur,,Fill a rocks glass with ice. Add white creme de cacao and vodka. Stir,1 oz white,30.0,,,
+1,'57 Chevy with a White License Plate,Cocktail,Highball glass,Vodka,Vodka,,Fill a rocks glass with ice. Add white creme de cacao and vodka. Stir,1 oz,30.0,,,
 2,1-900-FUK-MEUP,Shot,Old-fashioned glass,Grand Marnier,Triple Sec,,Shake ingredients in a mixing tin filled with ice cubes. Strain into a rocks glass.,1/4 oz,7.5,,,
 3,1-900-FUK-MEUP,Shot,Old-fashioned glass,Midori Melon Liqueur,Sweet Liqueur,,Shake ingredients in a mixing tin filled with ice cubes. Strain into a rocks glass.,1/4 oz,7.5,,,
 4,1-900-FUK-MEUP,Shot,Old-fashioned glass,Malibu Rum,Rum,,Shake ingredients in a mixing tin filled with ice cubes. Strain into a rocks glass.,1/4 oz,7.5,,,
@@ -210,9 +210,9 @@
 208,After Dinner Cocktail,Ordinary Drink,Cocktail glass,Triple Sec,Triple Sec,,Shake all ingredients (except lime wedge) with ice and strain into a cocktail glass. Add the wedge of lime and serve.,1 oz,30.0,,,
 209,After Dinner Cocktail,Ordinary Drink,Cocktail glass,Lime,,sour,Shake all ingredients (except lime wedge) with ice and strain into a cocktail glass. Add the wedge of lime and serve.,1,30.0,,,
 210,After Dinner Cocktail,Ordinary Drink,Cocktail glass,Lime,,sour,Shake all ingredients (except lime wedge) with ice and strain into a cocktail glass. Add the wedge of lime and serve.,juice of 1,30.0,,,
-211,After Five,Shot,Shot glass,Kahlua,Creamy Liqueur,,"1. Pour Kahlua into shot glass to about 1/2 full. 2. Using a spoon(inverted), slowly pour in the Peppermint Schnapps until glass is about 3/4 full. Done correctly, the Schnapps will flow under the Kahlua for a clear layer. 3. Again using a spoon, but this time right side up, slowly top off the glass with a layer of Bailey's. Be careful to place the spoon right at the top of the Kahlua layer and to raise it as the glass fills up. Done correctly, this will provide a layer of Bailey's floating over the Kahlua. 4. Toss it down all at once for something like a Peppermint Pattie, WITH A BANG!!! NOTE: Best if all ingredients are chilled",,,,,
-212,After Five,Shot,Shot glass,Peppermint Schnapps,Schnapps,,"1. Pour Kahlua into shot glass to about 1/2 full. 2. Using a spoon(inverted), slowly pour in the Peppermint Schnapps until glass is about 3/4 full. Done correctly, the Schnapps will flow under the Kahlua for a clear layer. 3. Again using a spoon, but this time right side up, slowly top off the glass with a layer of Bailey's. Be careful to place the spoon right at the top of the Kahlua layer and to raise it as the glass fills up. Done correctly, this will provide a layer of Bailey's floating over the Kahlua. 4. Toss it down all at once for something like a Peppermint Pattie, WITH A BANG!!! NOTE: Best if all ingredients are chilled",,,,,
-213,After Five,Shot,Shot glass,Bailey'S Irish Cream,Creamy Liqueur,,"1. Pour Kahlua into shot glass to about 1/2 full. 2. Using a spoon(inverted), slowly pour in the Peppermint Schnapps until glass is about 3/4 full. Done correctly, the Schnapps will flow under the Kahlua for a clear layer. 3. Again using a spoon, but this time right side up, slowly top off the glass with a layer of Bailey's. Be careful to place the spoon right at the top of the Kahlua layer and to raise it as the glass fills up. Done correctly, this will provide a layer of Bailey's floating over the Kahlua. 4. Toss it down all at once for something like a Peppermint Pattie, WITH A BANG!!! NOTE: Best if all ingredients are chilled",,,,,
+211,After Five,Shot,Shot glass,Kahlua,Creamy Liqueur,,"Pour Kahlua into shot glass to about 1/2 full. Using a spoon(inverted), slowly pour in the Peppermint Schnapps until glass is about 3/4 full. Done correctly, the Schnapps will flow under the Kahlua for a clear layer. Again using a spoon, but this time right side up, slowly top off the glass with a layer of Bailey's. Be careful to place the spoon right at the top of the Kahlua layer and to raise it as the glass fills up. Done correctly, this will provide a layer of Bailey's floating over the Kahlua. Toss it down all at once for something like a Peppermint Pattie, WITH A BANG!!! NOTE: Best if all ingredients are chilled",,,,,
+212,After Five,Shot,Shot glass,Peppermint Schnapps,Schnapps,,"Pour Kahlua into shot glass to about 1/2 full. Using a spoon(inverted), slowly pour in the Peppermint Schnapps until glass is about 3/4 full. Done correctly, the Schnapps will flow under the Kahlua for a clear layer. Again using a spoon, but this time right side up, slowly top off the glass with a layer of Bailey's. Be careful to place the spoon right at the top of the Kahlua layer and to raise it as the glass fills up. Done correctly, this will provide a layer of Bailey's floating over the Kahlua. Toss it down all at once for something like a Peppermint Pattie, WITH A BANG!!! NOTE: Best if all ingredients are chilled",,,,,
+213,After Five,Shot,Shot glass,Bailey'S Irish Cream,Creamy Liqueur,,"Pour Kahlua into shot glass to about 1/2 full. Using a spoon(inverted), slowly pour in the Peppermint Schnapps until glass is about 3/4 full. Done correctly, the Schnapps will flow under the Kahlua for a clear layer. Again using a spoon, but this time right side up, slowly top off the glass with a layer of Bailey's. Be careful to place the spoon right at the top of the Kahlua layer and to raise it as the glass fills up. Done correctly, this will provide a layer of Bailey's floating over the Kahlua. Toss it down all at once for something like a Peppermint Pattie, WITH A BANG!!! NOTE: Best if all ingredients are chilled",,,,,
 214,After Supper Cocktail,Ordinary Drink,Cocktail glass,Triple Sec,Triple Sec,,"Shake all ingredients with ice, strain into a cocktail glass, and serve.",1 oz,30.0,,,
 215,After Supper Cocktail,Ordinary Drink,Cocktail glass,Lemon Juice,,sour,"Shake all ingredients with ice, strain into a cocktail glass, and serve.",1/2 tsp,,2.0,,
 216,After Supper Cocktail,Ordinary Drink,Cocktail glass,Apricot Brandy,Brandy,,"Shake all ingredients with ice, strain into a cocktail glass, and serve.",1 oz,30.0,,,
@@ -447,34 +447,10 @@
 445,Belgian Blue,Soft Drink / Soda,Highball glass,Blue Curacao,Triple Sec,,Just pour all ingredients in the glass and stir...,1 cl,10.0,,,
 446,Bellini,Ordinary Drink,Champagne Flute,Peach Schnapps,Schnapps,,"Pour peach purée into chilled flute, add sparkling wine. Stir gently.",1 oz,30.0,,,
 447,Bellini,Ordinary Drink,Champagne Flute,Champagne,Champagne,,"Pour peach purée into chilled flute, add sparkling wine. Stir gently.",6 oz,180.0,,,
-448,Bellini Martini,Ordinary Drink,Cocktail glass,Lemon Peel,,sour,"Add ice cubes to shaker.
-Add vodka.
-Add peach schnapps.
-Add peach nectar.
-Shake.
-Strain into glass.
-Add lemon twist peel.",1,30.0,,,
-449,Bellini Martini,Ordinary Drink,Cocktail glass,Peach Schnapps,Schnapps,,"Add ice cubes to shaker.
-Add vodka.
-Add peach schnapps.
-Add peach nectar.
-Shake.
-Strain into glass.
-Add lemon twist peel.",1.5 oz,45.0,,,
-450,Bellini Martini,Ordinary Drink,Cocktail glass,Peach Nectar,,sweet,"Add ice cubes to shaker.
-Add vodka.
-Add peach schnapps.
-Add peach nectar.
-Shake.
-Strain into glass.
-Add lemon twist peel.",1.5 oz,45.0,,,
-451,Bellini Martini,Ordinary Drink,Cocktail glass,Vodka,Vodka,,"Add ice cubes to shaker.
-Add vodka.
-Add peach schnapps.
-Add peach nectar.
-Shake.
-Strain into glass.
-Add lemon twist peel.",3 oz,90.0,,,
+448,Bellini Martini,Ordinary Drink,Cocktail glass,Lemon Peel,,sour,"Add ice cubes to shaker. Add vodka. Add peach schnapps. Add peach nectar. Shake. Strain into glass. Add lemon twist peel.",1,30.0,,,
+449,Bellini Martini,Ordinary Drink,Cocktail glass,Peach Schnapps,Schnapps,,"Add ice cubes to shaker. Add vodka. Add peach schnapps. Add peach nectar. Shake. Strain into glass. Add lemon twist peel.",1.5 oz,45.0,,,
+450,Bellini Martini,Ordinary Drink,Cocktail glass,Peach Nectar,,sweet,"Add ice cubes to shaker. Add vodka. Add peach schnapps. Add peach nectar. Shake. Strain into glass. Add lemon twist peel.",1.5 oz,45.0,,,
+451,Bellini Martini,Ordinary Drink,Cocktail glass,Vodka,Vodka,,"Add ice cubes to shaker. Add vodka. Add peach schnapps. Add peach nectar. Shake. Strain into glass. Add lemon twist peel.",3 oz,90.0,,,
 452,Bermuda Highball,Ordinary Drink,Highball glass,Dry Vermouth,Vermouth,,"Pour brandy, gin, and dry vermouth into a highball glass over ice cubes. Fill with carbonated water and stir. Add the twist of lemon and serve. (Ginger ale may be substituted for carbonated water, if preferred.)",3/4 oz,22.5,,,
 453,Bermuda Highball,Ordinary Drink,Highball glass,Brandy,Brandy,,"Pour brandy, gin, and dry vermouth into a highball glass over ice cubes. Fill with carbonated water and stir. Add the twist of lemon and serve. (Ginger ale may be substituted for carbonated water, if preferred.)",3/4 oz,22.5,,,
 454,Bermuda Highball,Ordinary Drink,Highball glass,Lemon Peel,,sour,"Pour brandy, gin, and dry vermouth into a highball glass over ice cubes. Fill with carbonated water and stir. Add the twist of lemon and serve. (Ginger ale may be substituted for carbonated water, if preferred.)",,,,,
@@ -759,18 +735,9 @@ Add lemon twist peel.",3 oz,90.0,,,
 733,Damned if you do,Shot,Shot glass,Whiskey,Whisky,,Pour into shot glass. Put in mouth. Repeat as deemed necessary.,0.75 oz,22.5,,,
 734,Danbooka,Coffee / Tea,Coffee Mug,Everclear,Vodka,,pour it in and mix it.,1 part,30.0,,,
 735,Danbooka,Coffee / Tea,Coffee Mug,Coffee,,bitter,pour it in and mix it.,3 parts,90.0,,,
-736,Dark Caipirinha,Cocktail,Highball glass,Cachaca,Cachaca,,"Muddle the sugar into the lime wedges in an old-fashioned glass.
-Fill the glass with ice cubes.
-Pour the cachaca into the glass.
-Stir well.",2 1/2 oz,75.0,,,
-737,Dark Caipirinha,Cocktail,Highball glass,Lime,,sour,"Muddle the sugar into the lime wedges in an old-fashioned glass.
-Fill the glass with ice cubes.
-Pour the cachaca into the glass.
-Stir well.",1,30.0,,,
-738,Dark Caipirinha,Cocktail,Highball glass,Demerara Sugar,,sweet,"Muddle the sugar into the lime wedges in an old-fashioned glass.
-Fill the glass with ice cubes.
-Pour the cachaca into the glass.
-Stir well.",2 tsp,,8.0,,
+736,Dark Caipirinha,Cocktail,Highball glass,Cachaca,Cachaca,,"Muddle the sugar into the lime wedges in an old-fashioned glass. Fill the glass with ice cubes. Pour the cachaca into the glass. Stir well.",2 1/2 oz,75.0,,,
+737,Dark Caipirinha,Cocktail,Highball glass,Lime,,sour,"Muddle the sugar into the lime wedges in an old-fashioned glass. Fill the glass with ice cubes. Pour the cachaca into the glass. Stir well.",1,30.0,,,
+738,Dark Caipirinha,Cocktail,Highball glass,Demerara Sugar,,sweet,"Muddle the sugar into the lime wedges in an old-fashioned glass. Fill the glass with ice cubes. Pour the cachaca into the glass. Stir well.",2 tsp,,8.0,,
 739,Dark and Stormy,Ordinary Drink,Highball glass,Dark Rum,Rum,,In a highball glass filled with ice add 6cl dark rum and top with ginger beer. Garnish with lime wedge.,5 cl,50.0,,,
 740,Dark and Stormy,Ordinary Drink,Highball glass,Ginger Beer,,sweet,In a highball glass filled with ice add 6cl dark rum and top with ginger beer. Garnish with lime wedge.,10 cl,100.0,,,
 741,Darkwood Sling,Soft Drink / Soda,Cocktail glass,Orange Juice,,sweet,"There are many good cherry liqueurs you can use, but I prefere Heering. Add one share of the liqueur. Then you add one share of Soda. For a sour sling use Tonic (most people prefer the drink without Tonic). Afterwards you fill the glass with Orange Juice and ice cubes.",1 part,30.0,,,
@@ -782,26 +749,11 @@ Stir well.",2 tsp,,8.0,,
 747,Diesel,Beer,Pint glass,Lager,Beer,,Pour the lager first then add the blackcurrant cordial. Top up with the cider. The colour sholud be very dark approaching the colour of Guiness.,1/2 pint,236.5,,,
 748,Diesel,Beer,Pint glass,Cider,Cider,,Pour the lager first then add the blackcurrant cordial. Top up with the cider. The colour sholud be very dark approaching the colour of Guiness.,1/2 pint,236.5,,,
 749,Diesel,Beer,Pint glass,Blackcurrant Cordial,,sweet,Pour the lager first then add the blackcurrant cordial. Top up with the cider. The colour sholud be very dark approaching the colour of Guiness.,1 dash,1.0,,,
-750,Dirty Martini,Cocktail,Cocktail glass,Lemon,,sour,"Pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well.
-Rub the rim of a martini glass with the wedge of lemon.
-Strain the contents of the cocktail shaker into the glass and add the olive.
-A dirty Martini contains a splash of olive brine or olive juice and is typically garnished with an olive.",1 wedge,,,1,wedge
-751,Dirty Martini,Cocktail,Cocktail glass,Dry Vermouth,Vermouth,,"Pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well.
-Rub the rim of a martini glass with the wedge of lemon.
-Strain the contents of the cocktail shaker into the glass and add the olive.
-A dirty Martini contains a splash of olive brine or olive juice and is typically garnished with an olive.",1 tbsp,15.0,,,
-752,Dirty Martini,Cocktail,Cocktail glass,Olive,,salty,"Pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well.
-Rub the rim of a martini glass with the wedge of lemon.
-Strain the contents of the cocktail shaker into the glass and add the olive.
-A dirty Martini contains a splash of olive brine or olive juice and is typically garnished with an olive.",1,30.0,,,
-753,Dirty Martini,Cocktail,Cocktail glass,Olive Brine,,salty,"Pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well.
-Rub the rim of a martini glass with the wedge of lemon.
-Strain the contents of the cocktail shaker into the glass and add the olive.
-A dirty Martini contains a splash of olive brine or olive juice and is typically garnished with an olive.",2 tbsp,30.0,,,
-754,Dirty Martini,Cocktail,Cocktail glass,Vodka,Vodka,,"Pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well.
-Rub the rim of a martini glass with the wedge of lemon.
-Strain the contents of the cocktail shaker into the glass and add the olive.
-A dirty Martini contains a splash of olive brine or olive juice and is typically garnished with an olive.",70ml/2fl oz,70.0,,,
+750,Dirty Martini,Cocktail,Cocktail glass,Lemon,,sour,"Pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well. Rub the rim of a martini glass with the wedge of lemon. Strain the contents of the cocktail shaker into the glass and add the olive. A dirty Martini contains a splash of olive brine or olive juice and is typically garnished with an olive.",1 wedge,,,1,wedge
+751,Dirty Martini,Cocktail,Cocktail glass,Dry Vermouth,Vermouth,,"Pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well. Rub the rim of a martini glass with the wedge of lemon. Strain the contents of the cocktail shaker into the glass and add the olive. A dirty Martini contains a splash of olive brine or olive juice and is typically garnished with an olive.",1 tbsp,15.0,,,
+752,Dirty Martini,Cocktail,Cocktail glass,Olive,,salty,"Pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well. Rub the rim of a martini glass with the wedge of lemon. Strain the contents of the cocktail shaker into the glass and add the olive. A dirty Martini contains a splash of olive brine or olive juice and is typically garnished with an olive.",1,30.0,,,
+753,Dirty Martini,Cocktail,Cocktail glass,Olive Brine,,salty,"Pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well. Rub the rim of a martini glass with the wedge of lemon. Strain the contents of the cocktail shaker into the glass and add the olive. A dirty Martini contains a splash of olive brine or olive juice and is typically garnished with an olive.",2 tbsp,30.0,,,
+754,Dirty Martini,Cocktail,Cocktail glass,Vodka,Vodka,,"Pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well. Rub the rim of a martini glass with the wedge of lemon. Strain the contents of the cocktail shaker into the glass and add the olive. A dirty Martini contains a splash of olive brine or olive juice and is typically garnished with an olive.",70ml/2fl oz,70.0,,,
 755,Dirty Nipple,Shot,Shot glass,Sambuca,Sambuca,,This is a layered shot - the Bailey's must be on top,,,,,
 756,Dirty Nipple,Shot,Shot glass,Kahlua,Creamy Liqueur,,This is a layered shot - the Bailey's must be on top,,,,,
 757,Dirty Nipple,Shot,Shot glass,Bailey'S Irish Cream,Creamy Liqueur,,This is a layered shot - the Bailey's must be on top,,,,,
@@ -819,27 +771,13 @@ A dirty Martini contains a splash of olive brine or olive juice and is typically
 769,Dubonnet Cocktail,Ordinary Drink,Cocktail glass,Gin,Gin,,Stir all ingredients (except lemon peel) with ice and strain into a cocktail glass. Add the twist of lemon peel and serve.,3/4 oz,22.5,,,
 770,Dubonnet Cocktail,Ordinary Drink,Cocktail glass,Bitters,Bitters,,Stir all ingredients (except lemon peel) with ice and strain into a cocktail glass. Add the twist of lemon peel and serve.,1 dash,1.0,,,
 771,Dubonnet Cocktail,Ordinary Drink,Cocktail glass,Lemon Peel,,sour,Stir all ingredients (except lemon peel) with ice and strain into a cocktail glass. Add the twist of lemon peel and serve.,1 twist of,,,1,twist
-772,Duchamp's Punch,Cocktail,Old-fashioned glass,Pisco,Pisco,,"Shake all ingredients.
-Double strain in a chilled double old fashioned glass with abig ice cube.
-Garnish with a couple of lavender sprigs",5 cl,50.0,,,
-773,Duchamp's Punch,Cocktail,Old-fashioned glass,Lime Juice,,sour,"Shake all ingredients.
-Double strain in a chilled double old fashioned glass with abig ice cube.
-Garnish with a couple of lavender sprigs",2.5 cl,25.0,,,
-774,Duchamp's Punch,Cocktail,Old-fashioned glass,Lavender,,spicy,"Shake all ingredients.
-Double strain in a chilled double old fashioned glass with abig ice cube.
-Garnish with a couple of lavender sprigs",2 sprigs,,,2,sprigs
-775,Duchamp's Punch,Cocktail,Old-fashioned glass,Pepper,,spicy,"Shake all ingredients.
-Double strain in a chilled double old fashioned glass with abig ice cube.
-Garnish with a couple of lavender sprigs",pinch,,,0.5,pinch
-776,Duchamp's Punch,Cocktail,Old-fashioned glass,Pineapple Syrup,,sweet,"Shake all ingredients.
-Double strain in a chilled double old fashioned glass with abig ice cube.
-Garnish with a couple of lavender sprigs",2.5 cl,25.0,,,
-777,Duchamp's Punch,Cocktail,Old-fashioned glass,Angostura Bitters,Bitters,,"Shake all ingredients.
-Double strain in a chilled double old fashioned glass with abig ice cube.
-Garnish with a couple of lavender sprigs",2 dashes,2.0,,,
-778,Duchamp's Punch,Cocktail,Old-fashioned glass,St. Germain,,sweet,"Shake all ingredients.
-Double strain in a chilled double old fashioned glass with abig ice cube.
-Garnish with a couple of lavender sprigs",1.5 cl,15.0,,,
+772,Duchamp's Punch,Cocktail,Old-fashioned glass,Pisco,Pisco,,"Shake all ingredients. Double strain in a chilled double old fashioned glass with abig ice cube. Garnish with a couple of lavender sprigs",5 cl,50.0,,,
+773,Duchamp's Punch,Cocktail,Old-fashioned glass,Lime Juice,,sour,"Shake all ingredients. Double strain in a chilled double old fashioned glass with abig ice cube. Garnish with a couple of lavender sprigs",2.5 cl,25.0,,,
+774,Duchamp's Punch,Cocktail,Old-fashioned glass,Lavender,,spicy,"Shake all ingredients. Double strain in a chilled double old fashioned glass with abig ice cube. Garnish with a couple of lavender sprigs",2 sprigs,,,2,sprigs
+775,Duchamp's Punch,Cocktail,Old-fashioned glass,Pepper,,spicy,"Shake all ingredients. Double strain in a chilled double old fashioned glass with abig ice cube. Garnish with a couple of lavender sprigs",pinch,,,0.5,pinch
+776,Duchamp's Punch,Cocktail,Old-fashioned glass,Pineapple Syrup,,sweet,"Shake all ingredients. Double strain in a chilled double old fashioned glass with abig ice cube. Garnish with a couple of lavender sprigs",2.5 cl,25.0,,,
+777,Duchamp's Punch,Cocktail,Old-fashioned glass,Angostura Bitters,Bitters,,"Shake all ingredients. Double strain in a chilled double old fashioned glass with abig ice cube. Garnish with a couple of lavender sprigs",2 dashes,2.0,,,
+778,Duchamp's Punch,Cocktail,Old-fashioned glass,St. Germain,,sweet,"Shake all ingredients. Double strain in a chilled double old fashioned glass with abig ice cube. Garnish with a couple of lavender sprigs",1.5 cl,15.0,,,
 779,Egg Nog #4,Punch / Party Drink,Punch bowl,Light Rum,Rum,,"In a small mixer bowl beat egg yolks till blended. Gradually add 1/4 cup sugar, beating at high speed till thick and lemon colored. Stir in milk, stir in rum, bourbon, vanilla, and salt. Chill thoroughly. Whip cream. Wash beaters well. In a large mixer bowl beat egg whites till soft peaks form. Gradually add remaining 1/4 cup sugar, beating to stiff peaks. Fold yolk mixture and whipped cream into egg whites. Serve immediately. Sprinkle nutmeg over each serving. Serve in a punch bowl or another big bowl. NOTE: For a nonalcoholic eggnog, prepare Eggnog as above, except omit the bourbon and rum and increase the milk to 3 cups.",1/2 cup,,64.0,,
 780,Egg Nog #4,Punch / Party Drink,Punch bowl,Bourbon,Whisky,,"In a small mixer bowl beat egg yolks till blended. Gradually add 1/4 cup sugar, beating at high speed till thick and lemon colored. Stir in milk, stir in rum, bourbon, vanilla, and salt. Chill thoroughly. Whip cream. Wash beaters well. In a large mixer bowl beat egg whites till soft peaks form. Gradually add remaining 1/4 cup sugar, beating to stiff peaks. Fold yolk mixture and whipped cream into egg whites. Serve immediately. Sprinkle nutmeg over each serving. Serve in a punch bowl or another big bowl. NOTE: For a nonalcoholic eggnog, prepare Eggnog as above, except omit the bourbon and rum and increase the milk to 3 cups.",1/2 cup,,64.0,,
 781,Egg Nog #4,Punch / Party Drink,Punch bowl,Vanilla Extract,,sweet,"In a small mixer bowl beat egg yolks till blended. Gradually add 1/4 cup sugar, beating at high speed till thick and lemon colored. Stir in milk, stir in rum, bourbon, vanilla, and salt. Chill thoroughly. Whip cream. Wash beaters well. In a large mixer bowl beat egg whites till soft peaks form. Gradually add remaining 1/4 cup sugar, beating to stiff peaks. Fold yolk mixture and whipped cream into egg whites. Serve immediately. Sprinkle nutmeg over each serving. Serve in a punch bowl or another big bowl. NOTE: For a nonalcoholic eggnog, prepare Eggnog as above, except omit the bourbon and rum and increase the milk to 3 cups.",1 tsp,,4.0,,
@@ -1357,22 +1295,10 @@ Garnish with a couple of lavender sprigs",1.5 cl,15.0,,,
 1293,Nutty Irishman,Milk / Float / Shake,Highball Glass,Milk,,cream,Serve over ice,1 part,30.0,,,
 1294,Nutty Irishman,Milk / Float / Shake,Highball Glass,Frangelico,Sweet Liqueur,,Serve over ice,1 part,30.0,,,
 1295,Nutty Irishman,Milk / Float / Shake,Highball Glass,Bailey'S Irish Cream,Creamy Liqueur,,Serve over ice,1 part,30.0,,,
-1296,Old Fashioned,Cocktail,Old-fashioned glass,Angostura Bitters,Bitters,,"Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved.
-Fill the glass with ice cubes and add whiskey.
-
-Garnish with orange twist, and a cocktail cherry.",2 dashes,2.0,,,
-1297,Old Fashioned,Cocktail,Old-fashioned glass,Water,,water,"Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved.
-Fill the glass with ice cubes and add whiskey.
-
-Garnish with orange twist, and a cocktail cherry.",dash,,,,
-1298,Old Fashioned,Cocktail,Old-fashioned glass,Bourbon,Whisky,,"Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved.
-Fill the glass with ice cubes and add whiskey.
-
-Garnish with orange twist, and a cocktail cherry.",4.5 cl,45.0,,,
-1299,Old Fashioned,Cocktail,Old-fashioned glass,Sugar,,sweet,"Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved.
-Fill the glass with ice cubes and add whiskey.
-
-Garnish with orange twist, and a cocktail cherry.",1 cube,,4.0,,
+1296,Old Fashioned,Cocktail,Old-fashioned glass,Angostura Bitters,Bitters,,"Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved. Fill the glass with ice cubes and add whiskey. Garnish with orange twist, and a cocktail cherry.",2 dashes,2.0,,,
+1297,Old Fashioned,Cocktail,Old-fashioned glass,Water,,water,"Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved. Fill the glass with ice cubes and add whiskey. Garnish with orange twist, and a cocktail cherry.",dash,,,,
+1298,Old Fashioned,Cocktail,Old-fashioned glass,Bourbon,Whisky,,"Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved. Fill the glass with ice cubes and add whiskey. Garnish with orange twist, and a cocktail cherry.",4.5 cl,45.0,,,
+1299,Old Fashioned,Cocktail,Old-fashioned glass,Sugar,,sweet,"Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water. Muddle until dissolved. Fill the glass with ice cubes and add whiskey. Garnish with orange twist, and a cocktail cherry.",1 cube,,4.0,,
 1300,Orange Crush,Shot,Shot glass,Triple Sec,Triple Sec,,Add all ingredients to tumbler-Pour as shot,1 oz,30.0,,,
 1301,Orange Crush,Shot,Shot glass,Orange Juice,,sweet,Add all ingredients to tumbler-Pour as shot,1 oz,30.0,,,
 1302,Orange Crush,Shot,Shot glass,Vodka,Vodka,,Add all ingredients to tumbler-Pour as shot,1 oz,30.0,,,
