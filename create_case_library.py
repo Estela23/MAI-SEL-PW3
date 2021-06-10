@@ -1,16 +1,17 @@
 import pandas as pd
 import numpy as np
 import os
+import re
 from lxml import etree
 
 DATA_PATH = 'Data'
 
 # Method to insert ingredient
-def insert_ingredient(id, instance, ingredients):
+def insert_ingredient(ingr_id, instance, ingredients):
     """ Insert an ingredient to the ingredients parent element.
 
     Args:
-        id (int): ingredient identifier
+        ingr_id (int): ingredient identifier
         instance (list): row of data from the dataset
         ingredients (Element): parent element
     """
@@ -33,7 +34,7 @@ def insert_ingredient(id, instance, ingredients):
         quantity = instance[-1]
         unit = "gr"
 
-    ingr = etree.SubElement(ingredients, "ingredient", id=str("ingr" + str(id + 1)),
+    ingr = etree.SubElement(ingredients, "ingredient", id=f"ingr{ingr_id+1}",
                             alc_type=str(alc_type), basic_taste=basic_taste, measure=str(measure),
                             quantity=str(quantity), unit=str(unit))
 
@@ -51,7 +52,13 @@ def add_preparation(preparation, cocktail_el, ingredients):
     
     # Divide preparation steps and add them individually
     steps = str(preparation).split(". ")
+    
     for s in steps:
+        # Replace ingredient in steps
+        for ingr_id, ingredient in enumerate(ingredients):
+            ingr_pattern = r"\b({})\b".format(ingredient)
+            s = re.sub(ingr_pattern, f"ingr{ingr_id+1}", s, flags=re.IGNORECASE)
+            
         step = etree.SubElement(prep, "step")
         step.text = s.capitalize()
 

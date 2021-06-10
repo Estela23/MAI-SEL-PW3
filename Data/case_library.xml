@@ -9,7 +9,7 @@
     </ingredients>
     <preparation>
       <step>Fill a rocks glass with ice</step>
-      <step>Add white creme de cacao and vodka</step>
+      <step>Add white creme de cacao and ingr2</step>
       <step>Stir</step>
     </preparation>
   </cocktail>
@@ -139,7 +139,7 @@
     <preparation>
       <step>Fill 14oz glass with ice and alcohol</step>
       <step>Fill 2/3 glass with cola and remainder with sweet &amp; sour</step>
-      <step>Top with dash of bitters and lemon wedge.</step>
+      <step>Top with dash of ingr6 and ingr7 wedge.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -198,9 +198,9 @@
       <step>Pour 2 oz</step>
       <step>Gin</step>
       <step>Add 4 oz</step>
-      <step>7-up</step>
-      <step>Add lemon juice for flavor</step>
-      <step>If you are weak, top up glass with more 7-up.</step>
+      <step>Ingr1</step>
+      <step>Add ingr3 for flavor</step>
+      <step>If you are weak, top up glass with more ingr1.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -213,7 +213,7 @@
       <ingredient id="ingr3" alc_type="Sweet Liqueur" basic_taste="" measure="1/3 part" quantity="10.0" unit="ml">Frangelico</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour kaluha, then baileys, then frangelico not chilled and not layered -- serve!!!</step>
+      <step>Pour kaluha, then baileys, then ingr3 not chilled and not layered -- serve!!!</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -243,9 +243,9 @@
       <ingredient id="ingr4" alc_type="Rum" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">Coconut Rum</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake rum, amaretto, and orange juice in a shaker filled with ice</step>
+      <step>Shake rum, ingr2, and ingr3 in a shaker filled with ice</step>
       <step>Strain over ice into a highball glass</step>
-      <step>Add grenadine and garnish with a pineapple wedge and a strawberry.</step>
+      <step>Add ingr1 and garnish with a pineapple wedge and a strawberry.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -258,7 +258,7 @@
       <ingredient id="ingr3" alc_type="Rum" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">Light Rum</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour the rum and ginger beer into a highball glass almost filled with ice cubes</step>
+      <step>Pour the rum and ingr1 into a highball glass almost filled with ice cubes</step>
       <step>Stir well</step>
       <step>Garnish with the lemon twist.</step>
     </preparation>
@@ -290,10 +290,10 @@
       <ingredient id="ingr6" alc_type="" basic_taste="sweet" measure="1 oz" quantity="30.0" unit="ml">Orange Juice</ingredient>
     </ingredients>
     <preparation>
-      <step>In a shaker half-filled with ice cubes, combine the light rum, añejo rum, orange juice, and lemon juice</step>
+      <step>In a shaker half-filled with ice cubes, combine the ingr5, ingr4, ingr6, and ingr3</step>
       <step>Shake well</step>
       <step>Strain into a highball glass almost filled with ice cubes</step>
-      <step>Top with the ginger ale</step>
+      <step>Top with the ingr1</step>
       <step>Garnish with the lemon twist.</step>
     </preparation>
   </cocktail>
@@ -309,7 +309,7 @@
     <preparation>
       <step>Put ice in glass</step>
       <step>Pour in shots</step>
-      <step>Fill with sour mix.</step>
+      <step>Fill with ingr1.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -323,7 +323,7 @@
       <ingredient id="ingr4" alc_type="" basic_taste="sour" measure="2 oz" quantity="60.0" unit="ml">Cranberry Juice</ingredient>
     </ingredients>
     <preparation>
-      <step>Drop shot glass with banana &amp; melon liquers into a 9 oz hi- ball glass containing soda water and cranberry juice</step>
+      <step>Drop shot glass with banana &amp; melon liquers into a 9 oz hi- ball glass containing ingr3 and ingr4</step>
       <step>Drink in one shot.</step>
     </preparation>
   </cocktail>
@@ -337,8 +337,8 @@
       <ingredient id="ingr3" alc_type="Sweet Liqueur" basic_taste="" measure="1 jigger" quantity="44.0" unit="ml">Amaretto</ingredient>
     </ingredients>
     <preparation>
-      <step>Rub the rim of an old fashioned glass with lemon, and dip repeatedly into granulated sugar until it has a good "frosted" rim</step>
-      <step>Shake a jigger of amaretto with the juice of 1/2 a lemon</step>
+      <step>Rub the rim of an old fashioned glass with ingr1, and dip repeatedly into granulated sugar until it has a good "frosted" rim</step>
+      <step>Shake a jigger of ingr3 with the juice of 1/2 a ingr1</step>
       <step>Strain into glass and add ice</step>
       <step>Garnish with a marachino cherry.</step>
     </preparation>
@@ -355,7 +355,7 @@
       <ingredient id="ingr5" alc_type="Vodka" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">Vodka</ingredient>
     </ingredients>
     <preparation>
-      <step>Mix the strawberrys in a blender pour it together with the vodka,kirch and strawberry liquer over ice in a shaker</step>
+      <step>Mix the strawberrys in a blender pour it together with the ingr5,kirch and strawberry liquer over ice in a shaker</step>
       <step>Shake well and pour in a highballglass</step>
       <step>Fill up with the russchian water</step>
     </preparation>
@@ -435,7 +435,7 @@
       <ingredient id="ingr3" alc_type="Vodka" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">Absolut Vodka</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour vodka and gin over ice, add tonic and stir</step>
+      <step>Pour vodka and ingr2 over ice, add tonic and stir</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -449,8 +449,8 @@
       <ingredient id="ingr4" alc_type="Gin" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml">Gin</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake all ingredients (except for the cherry) with ice and strain into a cocktail glass</step>
-      <step>Top with the cherry and serve.</step>
+      <step>Shake all ingredients (except for the ingr3) with ice and strain into a cocktail glass</step>
+      <step>Top with the ingr3 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -491,7 +491,7 @@
       <ingredient id="ingr3" alc_type="Vodka" basic_taste="" measure="2/3 part" quantity="20.0" unit="ml">Absolut Citron</ingredient>
     </ingredients>
     <preparation>
-      <step>Mix, pour over ice and top up with bitter lemon.</step>
+      <step>Mix, pour over ice and top up with ingr2.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -505,7 +505,7 @@
       <ingredient id="ingr4" alc_type="Vodka" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">Absolut Kurant</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake absolut kurant, midori, and cranberry juice in shaker with ice: strain into rocks glass: splash of seven on top.absolut sex.</step>
+      <step>Shake ingr4, midori, and ingr3 in shaker with ice: strain into rocks glass: splash of seven on top.absolut sex.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -537,10 +537,10 @@
       <ingredient id="ingr5" alc_type="" basic_taste="sweet" measure="3 oz" quantity="90.0" unit="ml">Soda Water</ingredient>
     </ingredients>
     <preparation>
-      <step>Add all ingredients except lemon to shaker filled with ice</step>
+      <step>Add all ingredients except ingr3 to shaker filled with ice</step>
       <step>Cover and shake vigorously</step>
       <step>Strain contents into ice filled collins glass</step>
-      <step>Garnish with lemon.</step>
+      <step>Garnish with ingr3.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -554,7 +554,7 @@
     </ingredients>
     <preparation>
       <step>Fill absolut into a glass</step>
-      <step>Add lime juice</step>
+      <step>Add ingr1</step>
       <step>Add ice and lime wedges.</step>
     </preparation>
   </cocktail>
@@ -582,8 +582,8 @@
       <ingredient id="ingr3" alc_type="Vodka" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">Vodka</ingredient>
     </ingredients>
     <preparation>
-      <step>Mix the vodka and cranberry juice together in a shaker and strain into a glass</step>
-      <step>Top up with champagne.</step>
+      <step>Mix the ingr3 and ingr2 together in a shaker and strain into a glass</step>
+      <step>Top up with ingr1.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -614,8 +614,8 @@
       <ingredient id="ingr6" alc_type="" basic_taste="sweet" measure="1 tsp" quantity="4.0" unit="gr">Sugar</ingredient>
     </ingredients>
     <preparation>
-      <step>Combine and shake all ingredients (except mint) with ice and strain into an old-fashioned glass over ice cubes</step>
-      <step>Add the sprig of mint and serve.</step>
+      <step>Combine and shake all ingredients (except ingr1) with ice and strain into an old-fashioned glass over ice cubes</step>
+      <step>Add the sprig of ingr1 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -675,8 +675,8 @@
       <ingredient id="ingr6" alc_type="Rum" basic_taste="" measure="1 part" quantity="30.0" unit="ml">Rum</ingredient>
     </ingredients>
     <preparation>
-      <step>Add ice to blender (or to glass if prefer on the rocks) then fruit, and fruite juice depending on personal prefference then add the rum, vodka, tequila, and triple sec</step>
-      <step>Blend till smooth, rim glass with sugar or salt and pour mixture in</step>
+      <step>Add ice to blender (or to glass if prefer on the rocks) then fruit, and fruite juice depending on personal prefference then add the ingr6, ingr4, ingr5, and ingr1</step>
+      <step>Blend till smooth, rim glass with sugar or ingr2 and pour mixture in</step>
       <step>Garnish with lemon or lime slice.</step>
     </preparation>
   </cocktail>
@@ -692,8 +692,8 @@
     </ingredients>
     <preparation>
       <step>Fill blender up with ice</step>
-      <step>Fill half with bartons vodka</step>
-      <step>Put 10 tsp of sugar, add 1/2 can lemonade concentrate, fill to top with water</step>
+      <step>Fill half with bartons ingr4</step>
+      <step>Put 10 tsp of ingr2, add 1/2 can ingr3 concentrate, fill to top with ingr1</step>
       <step>Blend for 60 seconds.</step>
     </preparation>
   </cocktail>
@@ -708,7 +708,7 @@
     </ingredients>
     <preparation>
       <step>Mix both the vermouth's in a shaker and strain into a cold glass</step>
-      <step>Top up with a squirt of soda water</step>
+      <step>Top up with a squirt of ingr2</step>
       <step></step>
     </preparation>
   </cocktail>
@@ -780,8 +780,8 @@
       <ingredient id="ingr4" alc_type="Schnapps" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">Strawberry Schnapps</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour schnapps, orange juice, and cranberry juice over ice in a highball glass</step>
-      <step>Top with club soda and serve.</step>
+      <step>Pour schnapps, ingr1, and ingr2 over ice in a highball glass</step>
+      <step>Top with ingr3 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -811,8 +811,8 @@
       <ingredient id="ingr4" alc_type="" basic_taste="sour" measure="juice of 1" quantity="30.0" unit="ml">Lime</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake all ingredients (except lime wedge) with ice and strain into a cocktail glass</step>
-      <step>Add the wedge of lime and serve.</step>
+      <step>Shake all ingredients (except ingr3 wedge) with ice and strain into a cocktail glass</step>
+      <step>Add the wedge of ingr3 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -825,12 +825,12 @@
       <ingredient id="ingr3" alc_type="Creamy Liqueur" basic_taste="" measure="" quantity="" unit="">Bailey'S Irish Cream</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour kahlua into shot glass to about 1/2 full</step>
-      <step>Using a spoon(inverted), slowly pour in the peppermint schnapps until glass is about 3/4 full</step>
-      <step>Done correctly, the schnapps will flow under the kahlua for a clear layer</step>
+      <step>Pour ingr1 into shot glass to about 1/2 full</step>
+      <step>Using a spoon(inverted), slowly pour in the ingr2 until glass is about 3/4 full</step>
+      <step>Done correctly, the schnapps will flow under the ingr1 for a clear layer</step>
       <step>Again using a spoon, but this time right side up, slowly top off the glass with a layer of bailey's</step>
-      <step>Be careful to place the spoon right at the top of the kahlua layer and to raise it as the glass fills up</step>
-      <step>Done correctly, this will provide a layer of bailey's floating over the kahlua</step>
+      <step>Be careful to place the spoon right at the top of the ingr1 layer and to raise it as the glass fills up</step>
+      <step>Done correctly, this will provide a layer of bailey's floating over the ingr1</step>
       <step>Toss it down all at once for something like a peppermint pattie, with a bang!!! note: best if all ingredients are chilled</step>
     </preparation>
   </cocktail>
@@ -857,7 +857,7 @@
       <ingredient id="ingr3" alc_type="Sweet Liqueur" basic_taste="" measure="1 cl" quantity="10.0" unit="ml">Creme De Banane</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour the vodka and creme over some ice cubes in a tall glass and fill up with juice</step>
+      <step>Pour the ingr2 and creme over some ice cubes in a tall glass and fill up with juice</step>
       <step>To make it beuty full make the top of the glass with a grenadine and sugar</step>
     </preparation>
   </cocktail>
@@ -874,7 +874,7 @@
     </ingredients>
     <preparation>
       <step>Build into a suiting glass, with no ice</step>
-      <step>Cream on top if wanted</step>
+      <step>Ingr2 on top if wanted</step>
       <step>Served directly.</step>
     </preparation>
   </cocktail>
@@ -889,8 +889,8 @@
       <ingredient id="ingr4" alc_type="Sweet Liqueur" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">Amaretto</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour all ingredients (except for lemon juice) over ice in a highball glass</step>
-      <step>Stir, add a dash of lemon juice, and serve.</step>
+      <step>Pour all ingredients (except for ingr3) over ice in a highball glass</step>
+      <step>Stir, add a dash of ingr3, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -920,7 +920,7 @@
     </ingredients>
     <preparation>
       <step>Shake all ingredients with ice and strain contents into a cocktail glass</step>
-      <step>Sprinkle nutmeg on top and serve.</step>
+      <step>Sprinkle ingr3 on top and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -974,8 +974,8 @@
       <ingredient id="ingr5" alc_type="Vermouth" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">Dry Vermouth</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake all ingredients (except lemon peel) with ice and strain into a cocktail glass</step>
-      <step>Top with the twist of lemon peel and serve.</step>
+      <step>Shake all ingredients (except ingr1) with ice and strain into a cocktail glass</step>
+      <step>Top with the twist of ingr1 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -1016,7 +1016,7 @@
       <ingredient id="ingr3" alc_type="Sweet Liqueur" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">Amaretto</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour in order into coffee cup</step>
+      <step>Pour in order into ingr2 cup</step>
       <step>Top with whipped creme and chocolate shcvings.</step>
     </preparation>
   </cocktail>
@@ -1054,9 +1054,9 @@
       <ingredient id="ingr2" alc_type="" basic_taste="sour" measure="1" quantity="30.0" unit="ml">Lime</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour amaretto in an old-fashioned glass over crushed ice</step>
-      <step>Add the wedge of lime and serve</step>
-      <step>(a wedge of lemon may be substituted for lime, if preferred.)</step>
+      <step>Pour ingr1 in an old-fashioned glass over crushed ice</step>
+      <step>Add the wedge of ingr2 and serve</step>
+      <step>(a wedge of lemon may be substituted for ingr2, if preferred.)</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -1069,8 +1069,8 @@
       <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="" quantity="" unit="">Club Soda</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour amaretto and lime juice over ice in a collins glass</step>
-      <step>Fill with club soda and serve.</step>
+      <step>Pour ingr1 and ingr2 over ice in a collins glass</step>
+      <step>Fill with ingr3 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -1136,7 +1136,7 @@
       <ingredient id="ingr4" alc_type="" basic_taste="sour" measure="2 oz" quantity="60.0" unit="ml">Sour Mix</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake sour mix, tequila and amaretto with ice</step>
+      <step>Shake ingr4, ingr3 and ingr1 with ice</step>
       <step>Strain into highball glass</step>
       <step>Add a splash of oj</step>
       <step>Garnish with orange slice and a cherry.</step>
@@ -1152,8 +1152,8 @@
       <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="4 oz" quantity="120.0" unit="ml">Orange Juice</ingredient>
     </ingredients>
     <preparation>
-      <step>Mix together the amaretto and orange juice</step>
-      <step>Pour into glass and then add the grenadine untill you see the sunrise.</step>
+      <step>Mix together the ingr2 and ingr3</step>
+      <step>Pour into glass and then add the ingr1 untill you see the sunrise.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -1183,7 +1183,7 @@
     <preparation>
       <step>Fill the blender with 3/4 ice</step>
       <step>Add sweet &amp; sour mix to the top of the ice</step>
-      <step>Add about 1" of pineapple juice, 1/2" of melon liqeur, and 1/2 to 1/4" of amaretto</step>
+      <step>Add about 1" of ingr1, 1/2" of melon liqeur, and 1/2 to 1/4" of ingr2</step>
       <step>Then blend the mix until it is of margaritta consistency or thinner.</step>
     </preparation>
   </cocktail>
@@ -1198,8 +1198,8 @@
     </ingredients>
     <preparation>
       <step>Pour hot tea into a pousse-cafe glass, using a spoon in glass to prevent cracking</step>
-      <step>Add amaretto, but do not stir</step>
-      <step>Top with chilled whipped cream and serve.</step>
+      <step>Add ingr2, but do not stir</step>
+      <step>Top with chilled ingr1 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -1213,7 +1213,7 @@
       <ingredient id="ingr4" alc_type="Vermouth" basic_taste="" measure="1 oz red" quantity="30.0" unit="ml">Sweet Vermouth Red</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour the campari and vermouth over ice into glass, add a splash of soda water and garnish with half orange slice.</step>
+      <step>Pour the ingr2 and vermouth over ice into glass, add a splash of soda water and garnish with half orange slice.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -1244,7 +1244,7 @@
       <ingredient id="ingr8" alc_type="" basic_taste="sweet" measure="1 cup" quantity="128.0" unit="gr">Brown Sugar</ingredient>
     </ingredients>
     <preparation>
-      <step>If you use the whole all spice and cloves, tie them in cheesecloth</step>
+      <step>If you use the whole all spice and ingr6, tie them in cheesecloth</step>
       <step>Heat the mixture</step>
       <step>Stir occasionally</step>
       <step>If you want an alcoholic drink, rum would be nice.</step>
@@ -1272,7 +1272,7 @@
       <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="3 parts" quantity="90.0" unit="ml">Apple Juice</ingredient>
     </ingredients>
     <preparation>
-      <step>Just mix the two liquids and sprinkle in the cinnamon</step>
+      <step>Just mix the two liquids and sprinkle in the ingr2</step>
       <step>Serve either cold or heated.</step>
     </preparation>
   </cocktail>
@@ -1327,10 +1327,10 @@
       <ingredient id="ingr6" alc_type="" basic_taste="egg" measure="1" quantity="45.0" unit="ml">Egg White</ingredient>
     </ingredients>
     <preparation>
-      <step>In a shaker half-filled with ice cubes, combine the rum, apricot brandy, triple sec, lemon juice, and egg white</step>
+      <step>In a shaker half-filled with ice cubes, combine the rum, ingr4, ingr1, ingr5, and ingr6</step>
       <step>Shake well</step>
       <step>Strain into an old-fashioned glass almost filled with ice cubes</step>
-      <step>Garnish with the orange slice.</step>
+      <step>Garnish with the ingr2 slice.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -1375,7 +1375,7 @@
       <ingredient id="ingr4" alc_type="Vodka" basic_taste="" measure="1/3 part" quantity="10.0" unit="ml">Vodka</ingredient>
     </ingredients>
     <preparation>
-      <step>Fill glass with ice and fish, add vodka, grape soda and orange juice</step>
+      <step>Fill glass with ice and fish, add ingr4, ingr3 and ingr1</step>
       <step>Do not stir!!!!! serve well chilled.</step>
     </preparation>
   </cocktail>
@@ -1402,8 +1402,8 @@
       <ingredient id="ingr2" alc_type="Sweet Liqueur" basic_taste="" measure="1 tsp" quantity="4.0" unit="gr">Green Creme De Menthe</ingredient>
     </ingredients>
     <preparation>
-      <step>Put creme de menthe into a champagne flute</step>
-      <step>Fill with chilled champagne and serve.</step>
+      <step>Put creme de menthe into a ingr1 flute</step>
+      <step>Fill with chilled ingr1 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -1449,11 +1449,11 @@
       <ingredient id="ingr8" alc_type="Tequila" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">Gold Tequila</ingredient>
     </ingredients>
     <preparation>
-      <step>Just mix in the shots of rum, vodka, and tequila</step>
-      <step>Add splashes of the three juices, heavy on the pineapple</step>
-      <step>Top off with grenadine</step>
+      <step>Just mix in the shots of rum, ingr7, and tequila</step>
+      <step>Add splashes of the three juices, heavy on the ingr1</step>
+      <step>Top off with ingr4</step>
       <step>Crushed ice should already be in glass</step>
-      <step>Top off the glass with a pineapple wedge.</step>
+      <step>Top off the glass with a ingr1 wedge.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -1466,7 +1466,7 @@
       <ingredient id="ingr3" alc_type="Gin" basic_taste="" measure="30 ml" quantity="30.0" unit="ml">Gin</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour vodka, gin and lime cordial into glass, and top up with crushed ice</step>
+      <step>Pour ingr1, ingr3 and lime cordial into glass, and top up with crushed ice</step>
       <step>Wait for ice to melt slightly and sip without a straw.</step>
     </preparation>
   </cocktail>
@@ -1481,7 +1481,7 @@
       <ingredient id="ingr4" alc_type="" basic_taste="sour" measure="1 twist of" quantity="" unit="">Lemon Peel</ingredient>
     </ingredients>
     <preparation>
-      <step>In a shaker half-filled with ice cubes, combine the gin, grand marnier, and lemon juice</step>
+      <step>In a shaker half-filled with ice cubes, combine the ingr1, ingr2, and ingr3</step>
       <step>Shake well</step>
       <step>Strain into a sour glass and garnish with the lemon twist.</step>
     </preparation>
@@ -1547,9 +1547,9 @@
       <ingredient id="ingr5" alc_type="" basic_taste="sweet" measure="" quantity="" unit="">Sugar</ingredient>
     </ingredients>
     <preparation>
-      <step>In a shaker, place lemonade, vodka, blue curacao, and triple sec together</step>
+      <step>In a shaker, place ingr4, ingr2, ingr1, and ingr3 together</step>
       <step>Shake with ice and strain into glass</step>
-      <step>Add sugar to taste</step>
+      <step>Add ingr5 to taste</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -1577,7 +1577,7 @@
       <ingredient id="ingr3" alc_type="Vodka" basic_taste="" measure="4 cl" quantity="40.0" unit="ml">Vodka</ingredient>
     </ingredients>
     <preparation>
-      <step>Mix and fill up with soda water</step>
+      <step>Mix and fill up with ingr2</step>
       <step>Drunk by finns on a sunny day any time of the year and day.</step>
     </preparation>
   </cocktail>
@@ -1607,10 +1607,10 @@
     </ingredients>
     <preparation>
       <step>Fill a tall glass with ice</step>
-      <step>Layer the finlandia vodka, lemon and apple juices, pisang ambon, and top up with lemonade</step>
+      <step>Layer the finlandia ingr2, lemon and apple juices, ingr4, and top up with ingr5</step>
       <step>Stir slightly and garnish with a spiralled cucumber skin and a red cherry</step>
       <step>The cucumber provides zest and looks attractive</step>
-      <step>This drink, created by timo haimi, took first prize in the 1991 finlandia vodka long drink competition.</step>
+      <step>This drink, created by timo haimi, took first prize in the 1991 finlandia ingr2 long drink competition.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -1667,7 +1667,7 @@
       <ingredient id="ingr3" alc_type="Sambuca" basic_taste="" measure="1/3 shot" quantity="8.333333333333332" unit="ml">Sambuca</ingredient>
     </ingredients>
     <preparation>
-      <step>Layer the kahlua, sambucca and grand marnier into a shot glas in that order</step>
+      <step>Layer the ingr2, sambucca and ingr1 into a shot glas in that order</step>
       <step>Better than b-52</step>
     </preparation>
   </cocktail>
@@ -1696,7 +1696,7 @@
       <ingredient id="ingr2" alc_type="Creamy Liqueur" basic_taste="" measure="2 1/2 oz" quantity="75.0" unit="ml">Kahlua</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour kahlua, almost filling shot glass</step>
+      <step>Pour ingr2, almost filling shot glass</step>
       <step>Then, carefully pour baileys, using wall of shot glass</step>
       <step>This will give the "guinness" its "head".</step>
     </preparation>
@@ -1819,9 +1819,9 @@
     </ingredients>
     <preparation>
       <step>Add ice cubes to shaker</step>
-      <step>Add vodka</step>
-      <step>Add peach schnapps</step>
-      <step>Add peach nectar</step>
+      <step>Add ingr4</step>
+      <step>Add ingr2</step>
+      <step>Add ingr3</step>
       <step>Shake</step>
       <step>Strain into glass</step>
       <step>Add lemon twist peel.</step>
@@ -1839,10 +1839,10 @@
       <ingredient id="ingr5" alc_type="Gin" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">Gin</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour brandy, gin, and dry vermouth into a highball glass over ice cubes</step>
-      <step>Fill with carbonated water and stir</step>
+      <step>Pour ingr2, ingr5, and ingr1 into a highball glass over ice cubes</step>
+      <step>Fill with ingr4 and stir</step>
       <step>Add the twist of lemon and serve</step>
-      <step>(ginger ale may be substituted for carbonated water, if preferred.)</step>
+      <step>(ginger ale may be substituted for ingr4, if preferred.)</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -1926,7 +1926,7 @@
       <ingredient id="ingr4" alc_type="" basic_taste="sweet" measure="" quantity="" unit="">Chocolate Syrup</ingredient>
     </ingredients>
     <preparation>
-      <step>In a blender put ice cubes, chocolate syrup, cherry brandy, vodka, and milk</step>
+      <step>In a blender put ice cubes, ingr4, ingr2, ingr3, and ingr1</step>
       <step>Blend very well.</step>
     </preparation>
   </cocktail>
@@ -1965,8 +1965,8 @@
       <ingredient id="ingr3" alc_type="Vermouth" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">Sweet Vermouth</ingredient>
     </ingredients>
     <preparation>
-      <step>Stir sloe gin and vermouth with ice and strain into a cocktail glass</step>
-      <step>Add the twist of lemon peel and serve.</step>
+      <step>Stir ingr2 and vermouth with ice and strain into a cocktail glass</step>
+      <step>Add the twist of ingr1 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -1980,10 +1980,10 @@
       <ingredient id="ingr4" alc_type="" basic_taste="sour" measure="1/2 glass" quantity="175.0" unit="ml">Cranberry Juice</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour shot of rum over slice of orange</step>
-      <step>Fill the remaining space in glass half way full of surge or similar drink</step>
-      <step>Finish off glass with cranberry juice</step>
-      <step>Be carefull, warm surge may foam over the glass.</step>
+      <step>Pour shot of rum over slice of ingr2</step>
+      <step>Fill the remaining space in glass half way full of ingr3 or similar drink</step>
+      <step>Finish off glass with ingr4</step>
+      <step>Be carefull, warm ingr3 may foam over the glass.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -2000,7 +2000,7 @@
     <preparation>
       <step>Fill glass with ice</step>
       <step>Add all liquers</step>
-      <step>Add milk</step>
+      <step>Add ingr2</step>
       <step>Shake.</step>
     </preparation>
   </cocktail>
@@ -2017,8 +2017,8 @@
       <ingredient id="ingr6" alc_type="" basic_taste="sour" measure="1 slice" quantity="" unit="">Lemon</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake all ingredients (except lemon slice) with cracked ice and strain into an old-fashioned glass over ice cubes</step>
-      <step>Add the slice of lemon and serve.</step>
+      <step>Shake all ingredients (except ingr6 slice) with cracked ice and strain into an old-fashioned glass over ice cubes</step>
+      <step>Add the slice of ingr6 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -2049,8 +2049,8 @@
       <ingredient id="ingr4" alc_type="" basic_taste="sweet" measure="" quantity="" unit="">Cherry</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour vodka and curacao over ice in a highball glass</step>
-      <step>Fill with lemonade, top with the cherry, and serve.</step>
+      <step>Pour ingr3 and curacao over ice in a highball glass</step>
+      <step>Fill with ingr1, top with the ingr4, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -2064,9 +2064,9 @@
       <ingredient id="ingr4" alc_type="Tequila" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml">Tequila</ingredient>
     </ingredients>
     <preparation>
-      <step>Rub rim of cocktail glass with lime juice</step>
-      <step>Dip rim in coarse salt</step>
-      <step>Shake tequila, blue curacao, and lime juice with ice, strain into the salt-rimmed glass, and serve.</step>
+      <step>Rub rim of cocktail glass with ingr1</step>
+      <step>Dip rim in coarse ingr2</step>
+      <step>Shake ingr4, ingr3, and ingr1 with ice, strain into the ingr2-rimmed glass, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -2099,7 +2099,7 @@
       <ingredient id="ingr6" alc_type="" basic_taste="sour" measure="1 twist of" quantity="" unit="">Lemon Peel</ingredient>
     </ingredients>
     <preparation>
-      <step>In a mixing glass half-filled with crushed ice, combine the gin, triple sec, curacao, and bitters</step>
+      <step>In a mixing glass half-filled with crushed ice, combine the ingr3, ingr2, curacao, and ingr5</step>
       <step>Stir well</step>
       <step>Strain into a cocktail glass and garnish with the lemon twist and the cherry.</step>
     </preparation>
@@ -2128,8 +2128,8 @@
       <ingredient id="ingr4" alc_type="Sweet Liqueur" basic_taste="" measure="1 1/4 tsp" quantity="5.0" unit="gr">Benedictine</ingredient>
     </ingredients>
     <preparation>
-      <step>Stir all ingredients (except lemon peel) with ice and strain into a cocktail glass</step>
-      <step>Add the twist of lemon peel and serve.</step>
+      <step>Stir all ingredients (except ingr3) with ice and strain into a cocktail glass</step>
+      <step>Add the twist of ingr3 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -2144,7 +2144,7 @@
       <ingredient id="ingr5" alc_type="Sweet Liqueur" basic_taste="" measure="1/2 tsp" quantity="2.0" unit="gr">Maraschino Liqueur</ingredient>
     </ingredients>
     <preparation>
-      <step>In a mixing glass half-filled with ice cubes, combine the gin, vermouth, bitters, and maraschino liqueur</step>
+      <step>In a mixing glass half-filled with ice cubes, combine the ingr2, vermouth, ingr3, and ingr5</step>
       <step>Stir well</step>
       <step>Strain into a cocktail glass and garnish with the cherry.</step>
     </preparation>
@@ -2164,7 +2164,7 @@
     </ingredients>
     <preparation>
       <step>Place the snickers bars in a plastic bag and roll over them with a rolling pin until crushed</step>
-      <step>Add crushed snickers pieces, ice cream, milk, caramel sauce, chocolate sauce, and chocolate liquor to a blender</step>
+      <step>Add crushed snickers pieces, ice cream, ingr5, ingr1, ingr6, and chocolate liquor to a blender</step>
       <step>Blend until shake is thick and frothy</step>
       <step>Pour into glasses and top with chocolate liquor and whip cream.</step>
     </preparation>
@@ -2196,8 +2196,8 @@
       <ingredient id="ingr6" alc_type="Whisky" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">Blended Whiskey</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake juice of lemon, powdered sugar, blended whiskey, and egg white with cracked ice and strain into a whiskey sour glass</step>
-      <step>Add the slice of lemon, top with the cherry, and serve.</step>
+      <step>Shake juice of ingr3, ingr2, ingr6, and ingr1 with cracked ice and strain into a whiskey sour glass</step>
+      <step>Add the slice of ingr3, top with the ingr5, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -2212,7 +2212,7 @@
       <ingredient id="ingr5" alc_type="" basic_taste="sour" measure="1 twist of" quantity="" unit="">Lemon Peel</ingredient>
     </ingredients>
     <preparation>
-      <step>In a shaker half-filled with ice cubes, combine the sugar, water, lemon juice, and bourbon</step>
+      <step>In a shaker half-filled with ice cubes, combine the sugar, ingr2, ingr1, and ingr3</step>
       <step>Shake well</step>
       <step>Strain well</step>
       <step>Strain into a highball glass</step>
@@ -2231,9 +2231,9 @@
       <ingredient id="ingr5" alc_type="" basic_taste="sweet" measure="1" quantity="" unit="">Orange</ingredient>
     </ingredients>
     <preparation>
-      <step>In a shaker half-filled with ice cubes, combine the bourbon, lemon juice, and sugar</step>
+      <step>In a shaker half-filled with ice cubes, combine the ingr2, ingr4, and sugar</step>
       <step>Shake well</step>
-      <step>Strain into a whiskey sour glass, garnish with the orange slice and cherry.</step>
+      <step>Strain into a whiskey sour glass, garnish with the ingr5 slice and cherry.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -2297,7 +2297,7 @@
     </ingredients>
     <preparation>
       <step>Fill glass with crushed ice</step>
-      <step>Build gin, lemon juice and simple syrup over</step>
+      <step>Build ingr4, ingr2 and simple syrup over</step>
       <step>Stir, and then pour blackberry liqueur over in a circular fashion to create marbling effect</step>
       <step>Garnish with two blackberries and lemon slice.</step>
     </preparation>
@@ -2312,7 +2312,7 @@
       <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1 can" quantity="330.0" unit="ml">Coca-Cola</ingredient>
     </ingredients>
     <preparation>
-      <step>Scoop two large scoops of vanilla ice-cream into frosted beer mug</step>
+      <step>Scoop two large scoops of ingr1 into frosted beer mug</step>
       <step>Next, add 2 ounces maker's mark</step>
       <step>Then, pour in coke</step>
       <step>Gently stir and enjoy.</step>
@@ -2329,8 +2329,8 @@
       <ingredient id="ingr4" alc_type="Brandy" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">Brandy</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake all ingredients (except nutmeg) with ice and strain contents into a cocktail glass</step>
-      <step>Sprinkle nutmeg on top and serve.</step>
+      <step>Shake all ingredients (except ingr2) with ice and strain contents into a cocktail glass</step>
+      <step>Sprinkle ingr2 on top and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -2346,11 +2346,11 @@
       <ingredient id="ingr6" alc_type="" basic_taste="sweet" measure="1" quantity="" unit="">Maraschino Cherry</ingredient>
     </ingredients>
     <preparation>
-      <step>In an old-fashioned glass, dissolve the sugar in the club soda</step>
+      <step>In an old-fashioned glass, dissolve the sugar in the ingr2</step>
       <step>Add crushed ice until the glass is almost full</step>
-      <step>Add the brandy</step>
+      <step>Add the ingr3</step>
       <step>Stir well</step>
-      <step>Garnish with the cherry and the orange and lemon slices.</step>
+      <step>Garnish with the cherry and the ingr5 and ingr4 slices.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -2365,7 +2365,7 @@
       <ingredient id="ingr5" alc_type="Brandy" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">Brandy</ingredient>
     </ingredients>
     <preparation>
-      <step>In a shaker half-filled with ice cubes, combine the brandy, egg, sugar, and cream</step>
+      <step>In a shaker half-filled with ice cubes, combine the ingr5, ingr1, sugar, and cream</step>
       <step>Shake well</step>
       <step>Strain into a sour glass and garnish with the nutmeg.</step>
     </preparation>
@@ -2382,8 +2382,8 @@
       <ingredient id="ingr5" alc_type="Brandy" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">Brandy</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake brandy, juice of lemon, and powdered sugar with ice and strain into a whiskey sour glass</step>
-      <step>Decorate with the lemon slice, top with the cherry, and serve.</step>
+      <step>Shake ingr5, juice of ingr1, and ingr2 with ice and strain into a whiskey sour glass</step>
+      <step>Decorate with the ingr1 slice, top with the ingr3, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -2395,7 +2395,7 @@
       <ingredient id="ingr2" alc_type="Tequila" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">Tequila</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour tabasco into bottom of shot glass and fill with tequila.</step>
+      <step>Pour tabasco into bottom of shot glass and fill with ingr2.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -2408,7 +2408,7 @@
       <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="" quantity="" unit="">Grenadine</ingredient>
     </ingredients>
     <preparation>
-      <step>In a regular-sized shot glass, layer, with a spoon or cherry, the grenadine , the kahlua , then the bailey's irish cream in equal portions</step>
+      <step>In a regular-sized shot glass, layer, with a spoon or cherry, the ingr3 , the ingr1 , then the ingr2 in equal portions</step>
       <step>It goes down really smooth ,and you don't even need a chaser</step>
       <step>It tastes just like chocolate milk.(really!)</step>
     </preparation>
@@ -2450,7 +2450,7 @@
       <ingredient id="ingr2" alc_type="Rum" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">Bacardi Limon</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour the corona into an 18oz beer glass pour the bacardi limon into the beer stir very gently</step>
+      <step>Pour the ingr1 into an 18oz beer glass pour the ingr2 into the beer stir very gently</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -2466,8 +2466,8 @@
       <step>This is a layered shot</step>
       <step>First pour the bailey's into the shot glass</step>
       <step>Then take an upside down spoon and touch it to the inside wall of the glass</step>
-      <step>Carefully add the kahlua</step>
-      <step>Repeat this process for the sambuca</step>
+      <step>Carefully add the ingr2</step>
+      <step>Repeat this process for the ingr3</step>
       <step>If done properly, the alcohol will stay separated and resemble a bumble bee</step>
       <step>Enjoy!!!</step>
     </preparation>
@@ -2498,7 +2498,7 @@
       <ingredient id="ingr4" alc_type="Brandy" basic_taste="" measure="" quantity="" unit="">Brandy</ingredient>
     </ingredients>
     <preparation>
-      <step>Fill mug almost to top with coffee.add milk, triple sec and brandy</step>
+      <step>Fill mug almost to top with ingr2.add ingr3, ingr1 and ingr4</step>
       <step>Stir.</step>
     </preparation>
   </cocktail>
@@ -2512,7 +2512,7 @@
       <ingredient id="ingr3" alc_type="" basic_taste="sour" measure="1" quantity="30.0" unit="ml">Lime</ingredient>
     </ingredients>
     <preparation>
-      <step>Place lime and sugar into old fashioned glass and muddle (mash the two ingredients together using a muddler or a wooden spoon)</step>
+      <step>Place ingr3 and ingr2 into old fashioned glass and muddle (mash the two ingredients together using a muddler or a wooden spoon)</step>
       <step>Fill the glass with ice and add the cachaça.</step>
     </preparation>
   </cocktail>
@@ -2526,7 +2526,7 @@
       <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="2 tblsp" quantity="28.0" unit="gr">Sugar</ingredient>
     </ingredients>
     <preparation>
-      <step>Same as caipirinha but instead of cachaca you add white rum</step>
+      <step>Same as caipirinha but instead of cachaca you add ingr1</step>
       <step>It's great!!!!!!!!</step>
     </preparation>
   </cocktail>
@@ -2543,9 +2543,9 @@
       <ingredient id="ingr6" alc_type="" basic_taste="sour" measure="juice of 1" quantity="30.0" unit="ml">Lime</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake all ingredients (except carbonated water) with ice and strain into a collins glass over shaved ice</step>
-      <step>Fill with carbonated water and stir</step>
-      <step>Decorate with slices of orange and lemon</step>
+      <step>Shake all ingredients (except ingr3) with ice and strain into a collins glass over shaved ice</step>
+      <step>Fill with ingr3 and stir</step>
+      <step>Decorate with slices of orange and ingr5</step>
       <step>Add the cherry and serve with a straw.</step>
     </preparation>
   </cocktail>
@@ -2559,7 +2559,7 @@
       <ingredient id="ingr3" alc_type="Creamy Liqueur" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">Kahlua</ingredient>
     </ingredients>
     <preparation>
-      <step>Put kahlua and galliano in highball glass fill with soda</step>
+      <step>Put ingr3 and ingr2 in highball glass fill with soda</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -2572,7 +2572,7 @@
     </ingredients>
     <preparation>
       <step>Use a 15 oz glass</step>
-      <step>Add campari first</step>
+      <step>Add ingr1 first</step>
       <step>Fill with beer.</step>
     </preparation>
   </cocktail>
@@ -2585,7 +2585,7 @@
       <ingredient id="ingr2" alc_type="Beer" basic_taste="" measure="1 bottle" quantity="330.0" unit="ml">Corona</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour the corona into an 18oz beer glass pour the rum into the beer.</step>
+      <step>Pour the ingr2 into an 18oz beer glass pour the rum into the beer.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -2603,7 +2603,7 @@
       <step>Pour all ingredients into shaker with ice cubes</step>
       <step>Shake well</step>
       <step>Strain into chilled cocktail glass</step>
-      <step>Garnish with a lemon twist and a maraschino cherry</step>
+      <step>Garnish with a lemon twist and a maraschino ingr2</step>
       <step>Serve without a straw.</step>
     </preparation>
   </cocktail>
@@ -2636,8 +2636,8 @@
       <ingredient id="ingr5" alc_type="Champagne" basic_taste="" measure="chilled" quantity="" unit="">Champagne</ingredient>
     </ingredients>
     <preparation>
-      <step>Add dash of angostura bitter onto sugar cube and drop it into champagne flute</step>
-      <step>Add cognac followed by gently pouring chilled champagne</step>
+      <step>Add dash of angostura bitter onto ingr3 cube and drop it into ingr5 flute</step>
+      <step>Add ingr1 followed by gently pouring chilled ingr5</step>
       <step>Garnish with orange slice and maraschino cherry.</step>
     </preparation>
   </cocktail>
@@ -2686,8 +2686,8 @@
       <ingredient id="ingr6" alc_type="" basic_taste="sweet" measure="1 tsp" quantity="4.0" unit="gr">Powdered Sugar</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake all ingredients (except carbonated water) with ice and strain into a highball glass over two ice cubes</step>
-      <step>Fill with carbonated water, stir, and serve.</step>
+      <step>Shake all ingredients (except ingr4) with ice and strain into a highball glass over two ice cubes</step>
+      <step>Fill with ingr4, stir, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -2714,7 +2714,7 @@
       <ingredient id="ingr3" alc_type="Creamy Liqueur" basic_taste="" measure="1/2 shot" quantity="12.5" unit="ml">Chocolate Liqueur</ingredient>
     </ingredients>
     <preparation>
-      <step>Put the milk in the bottom, pour the liquer on top and add the dash of amaretto</step>
+      <step>Put the ingr1 in the bottom, pour the liquer on top and add the dash of ingr2</step>
       <step>Do not mix</step>
       <step>Slam it!</step>
     </preparation>
@@ -2735,7 +2735,7 @@
     </ingredients>
     <preparation>
       <step>Blend liqeuors with ice-cream, milk and syrup</step>
-      <step>Pour into parfait glass, top with whipped cream and garnish with banana and cherry.</step>
+      <step>Pour into parfait glass, top with ingr6 and garnish with ingr3 and ingr7.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -2780,9 +2780,9 @@
       <ingredient id="ingr6" alc_type="Whisky" basic_taste="" measure="3 oz" quantity="90.0" unit="ml">Bourbon</ingredient>
     </ingredients>
     <preparation>
-      <step>In an old-fashioned glass, muddle the bitters and water into the sugar cube, using the back of a teaspoon</step>
-      <step>Almost fill the glass with ice cubes and add the bourbon</step>
-      <step>Garnish with the orange slice and the cherry</step>
+      <step>In an old-fashioned glass, muddle the ingr4 and ingr1 into the ingr2 cube, using the back of a teaspoon</step>
+      <step>Almost fill the glass with ice cubes and add the ingr6</step>
+      <step>Garnish with the ingr3 slice and the cherry</step>
       <step>Serve with a swizzle stick.</step>
     </preparation>
   </cocktail>
@@ -2852,8 +2852,8 @@
       <ingredient id="ingr2" alc_type="Rum" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">Spiced Rum</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour 1oz of spiced rum into a highball glass with ice</step>
-      <step>Fill with ginger ale.</step>
+      <step>Pour 1oz of ingr2 into a highball glass with ice</step>
+      <step>Fill with ingr1.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -2868,9 +2868,9 @@
     <preparation>
       <step>Fill tall glass with ice cubes</step>
       <step>Add rum</step>
-      <step>Rub cut edge of lime on rim of glass then squeeze juice into glass</step>
-      <step>Fill with coca-cola</step>
-      <step>Garnish with lime slice</step>
+      <step>Rub cut edge of ingr2 on rim of glass then squeeze juice into glass</step>
+      <step>Fill with ingr3</step>
+      <step>Garnish with ingr2 slice</step>
       <step>Enjoy!</step>
     </preparation>
   </cocktail>
@@ -2885,7 +2885,7 @@
     </ingredients>
     <preparation>
       <step>Build all ingredients in a collins glass filled with ice</step>
-      <step>Garnish with lime wedge.</step>
+      <step>Garnish with ingr2 wedge.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -2939,9 +2939,9 @@
       <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="2 tsp" quantity="8.0" unit="gr">Demerara Sugar</ingredient>
     </ingredients>
     <preparation>
-      <step>Muddle the sugar into the lime wedges in an old-fashioned glass</step>
+      <step>Muddle the sugar into the ingr2 wedges in an old-fashioned glass</step>
       <step>Fill the glass with ice cubes</step>
-      <step>Pour the cachaca into the glass</step>
+      <step>Pour the ingr1 into the glass</step>
       <step>Stir well.</step>
     </preparation>
   </cocktail>
@@ -2954,7 +2954,7 @@
       <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="10 cl" quantity="100.0" unit="ml">Ginger Beer</ingredient>
     </ingredients>
     <preparation>
-      <step>In a highball glass filled with ice add 6cl dark rum and top with ginger beer</step>
+      <step>In a highball glass filled with ice add 6cl ingr1 and top with ingr2</step>
       <step>Garnish with lime wedge.</step>
     </preparation>
   </cocktail>
@@ -2972,7 +2972,7 @@
       <step>Add one share of the liqueur</step>
       <step>Then you add one share of soda</step>
       <step>For a sour sling use tonic (most people prefer the drink without tonic)</step>
-      <step>Afterwards you fill the glass with orange juice and ice cubes.</step>
+      <step>Afterwards you fill the glass with ingr1 and ice cubes.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -2988,7 +2988,7 @@
       <step>Pour all ingredients into a mixing glass with ice</step>
       <step>Stir</step>
       <step>Strain into a cocktail glass</step>
-      <step>Garnish with a sprig of fresh mint in the drink.</step>
+      <step>Garnish with a sprig of fresh ingr1 in the drink.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3001,8 +3001,8 @@
       <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1 dash" quantity="1.0" unit="ml">Blackcurrant Cordial</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour the lager first then add the blackcurrant cordial</step>
-      <step>Top up with the cider</step>
+      <step>Pour the ingr1 first then add the ingr3</step>
+      <step>Top up with the ingr2</step>
       <step>The colour sholud be very dark approaching the colour of guiness.</step>
     </preparation>
   </cocktail>
@@ -3018,10 +3018,10 @@
       <ingredient id="ingr5" alc_type="Vodka" basic_taste="" measure="70ml/2fl oz" quantity="70.0" unit="ml">Vodka</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour the vodka, dry vermouth and olive brine into a cocktail shaker with a handful of ice and shake well</step>
-      <step>Rub the rim of a martini glass with the wedge of lemon</step>
-      <step>Strain the contents of the cocktail shaker into the glass and add the olive</step>
-      <step>A dirty martini contains a splash of olive brine or olive juice and is typically garnished with an olive.</step>
+      <step>Pour the ingr5, ingr2 and ingr3 brine into a cocktail shaker with a handful of ice and shake well</step>
+      <step>Rub the rim of a martini glass with the wedge of ingr1</step>
+      <step>Strain the contents of the cocktail shaker into the glass and add the ingr3</step>
+      <step>A dirty martini contains a splash of ingr3 brine or ingr3 juice and is typically garnished with an ingr3.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3048,9 +3048,9 @@
       <ingredient id="ingr4" alc_type="" basic_taste="sweet" measure="2 part" quantity="60.0" unit="ml">Fruit Punch</ingredient>
     </ingredients>
     <preparation>
-      <step>Start with the sprite</step>
-      <step>Next comes the tequila</step>
-      <step>After that, add the minute maid fruit punch, then float the 151</step>
+      <step>Start with the ingr2</step>
+      <step>Next comes the ingr1</step>
+      <step>After that, add the minute maid ingr4, then float the 151</step>
       <step>Rocks optional.</step>
     </preparation>
   </cocktail>
@@ -3064,9 +3064,9 @@
       <ingredient id="ingr3" alc_type="" basic_taste="sour" measure="1" quantity="30.0" unit="ml">Lime</ingredient>
     </ingredients>
     <preparation>
-      <step>In a highball glass almost filled with ice cubes, combine the gin and ginger ale</step>
+      <step>In a highball glass almost filled with ice cubes, combine the ingr2 and ingr1</step>
       <step>Stir well</step>
-      <step>Garnish with the lime wedge.</step>
+      <step>Garnish with the ingr3 wedge.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3079,7 +3079,7 @@
       <ingredient id="ingr3" alc_type="Whisky" basic_taste="" measure="2 1/2 oz" quantity="75.0" unit="ml">Scotch</ingredient>
     </ingredients>
     <preparation>
-      <step>In a mixing glass half-filled with ice cubes, combine the scotch and vermouth</step>
+      <step>In a mixing glass half-filled with ice cubes, combine the ingr3 and vermouth</step>
       <step>Stir well</step>
       <step>Strain into a cocktail glass</step>
       <step>Garnish with the lemon twist.</step>
@@ -3096,8 +3096,8 @@
       <ingredient id="ingr4" alc_type="" basic_taste="sour" measure="1 twist of" quantity="" unit="">Lemon Peel</ingredient>
     </ingredients>
     <preparation>
-      <step>Stir all ingredients (except lemon peel) with ice and strain into a cocktail glass</step>
-      <step>Add the twist of lemon peel and serve.</step>
+      <step>Stir all ingredients (except ingr4) with ice and strain into a cocktail glass</step>
+      <step>Add the twist of ingr4 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3116,7 +3116,7 @@
     <preparation>
       <step>Shake all ingredients</step>
       <step>Double strain in a chilled double old fashioned glass with abig ice cube</step>
-      <step>Garnish with a couple of lavender sprigs</step>
+      <step>Garnish with a couple of ingr3 sprigs</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3138,18 +3138,18 @@
     </ingredients>
     <preparation>
       <step>In a small mixer bowl beat egg yolks till blended</step>
-      <step>Gradually add 1/4 cup sugar, beating at high speed till thick and lemon colored</step>
-      <step>Stir in milk, stir in rum, bourbon, vanilla, and salt</step>
+      <step>Gradually add 1/4 cup ingr8, beating at high speed till thick and lemon colored</step>
+      <step>Stir in ingr7, stir in rum, ingr2, vanilla, and ingr4</step>
       <step>Chill thoroughly</step>
       <step>Whip cream</step>
       <step>Wash beaters well</step>
       <step>In a large mixer bowl beat egg whites till soft peaks form</step>
-      <step>Gradually add remaining 1/4 cup sugar, beating to stiff peaks</step>
+      <step>Gradually add remaining 1/4 cup ingr8, beating to stiff peaks</step>
       <step>Fold yolk mixture and whipped cream into egg whites</step>
       <step>Serve immediately</step>
-      <step>Sprinkle nutmeg over each serving</step>
+      <step>Sprinkle ingr9 over each serving</step>
       <step>Serve in a punch bowl or another big bowl</step>
-      <step>Note: for a nonalcoholic eggnog, prepare eggnog as above, except omit the bourbon and rum and increase the milk to 3 cups.</step>
+      <step>Note: for a nonalcoholic eggnog, prepare eggnog as above, except omit the ingr2 and rum and increase the ingr7 to 3 cups.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3166,10 +3166,10 @@
       <ingredient id="ingr7" alc_type="" basic_taste="cream" measure="3/4 cup skimmed" quantity="177.75" unit="ml">Milk Skimmed</ingredient>
     </ingredients>
     <preparation>
-      <step>Whip egg substitute and sugar together, combine with the two kinds of milk, vanilla, and rum</step>
+      <step>Whip ingr4 substitute and ingr3 together, combine with the two kinds of milk, vanilla, and ingr2</step>
       <step>Mix well</step>
       <step>Chill over night</step>
-      <step>Sprinkle with nutmeg</step>
+      <step>Sprinkle with ingr1</step>
       <step>Makes 6 servings.</step>
     </preparation>
   </cocktail>
@@ -3185,11 +3185,11 @@
       <ingredient id="ingr5" alc_type="" basic_taste="salty" measure="1/4 tsp" quantity="1.0" unit="gr">Salt</ingredient>
     </ingredients>
     <preparation>
-      <step>In large saucepan, beat together eggs, sugar and salt, if desired</step>
-      <step>Stir in 2 cups of the milk</step>
+      <step>In large saucepan, beat together eggs, ingr3 and ingr5, if desired</step>
+      <step>Stir in 2 cups of the ingr4</step>
       <step>Cook over low heat, stirring constantly, until mixture is thick enough to coat a metal spoon and reaches 160 degrees f</step>
       <step>Remove from heat</step>
-      <step>Stir in remaining 2 cups milk and vanilla</step>
+      <step>Stir in remaining 2 cups ingr4 and vanilla</step>
       <step>Cover and regfigerate until thoroughly chilled, several hours or overnight</step>
       <step>Just before serving, pour into bowl or pitcher</step>
       <step>Garnish or add stir-ins, if desired</step>
@@ -3209,10 +3209,10 @@
       <ingredient id="ingr5" alc_type="" basic_taste="water" measure="" quantity="" unit="">Carbonated Water</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour brandy, gin, and sweet vermouth into a highball glass over ice cubes</step>
-      <step>Fill with carbonated water</step>
-      <step>Add the twist of lemon peel, stir, and serve</step>
-      <step>(ginger ale may be substituted for carbonated water, if preferred.)</step>
+      <step>Pour ingr2, ingr3, and ingr4 into a highball glass over ice cubes</step>
+      <step>Fill with ingr5</step>
+      <step>Add the twist of ingr1, stir, and serve</step>
+      <step>(ginger ale may be substituted for ingr5, if preferred.)</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3228,9 +3228,9 @@
       <ingredient id="ingr6" alc_type="" basic_taste="sweet" measure="1" quantity="" unit="">Cherry</ingredient>
     </ingredients>
     <preparation>
-      <step>Rub rim of cocktail glass with lemon juice and dip rim of glass in powdered sugar</step>
-      <step>Shake all ingredients (except cherry) with ice and strain into sugar-rimmed glass</step>
-      <step>Top with the cherry and serve.</step>
+      <step>Rub rim of cocktail glass with ingr2 and dip rim of glass in powdered sugar</step>
+      <step>Shake all ingredients (except ingr6) with ice and strain into sugar-rimmed glass</step>
+      <step>Top with the ingr6 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3256,7 +3256,7 @@
       <ingredient id="ingr3" alc_type="" basic_taste="spicy" measure="1 dash" quantity="1.0" unit="ml">Tabasco Sauce</ingredient>
     </ingredients>
     <preparation>
-      <step>Cover bottom of shot glass with tabasco sauce and then fill with half firewater and half absolut peppar.</step>
+      <step>Cover bottom of shot glass with ingr3 and then fill with half ingr1 and half ingr2.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3271,9 +3271,9 @@
       <ingredient id="ingr5" alc_type="Vodka" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">Vodka</ingredient>
     </ingredients>
     <preparation>
-      <step>Add amaretto, bacardi, and vodka</step>
+      <step>Add ingr1, bacardi, and ingr5</step>
       <step>Mix in the dr</step>
-      <step>Pepper and beer</step>
+      <step>Pepper and ingr3</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3287,9 +3287,9 @@
       <ingredient id="ingr4" alc_type="Sambuca" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">Sambuca</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour the sambuca and kahlua into the cocktail glass and give the drinker a straw</step>
-      <step>Pour the baileys and blue curacao into two sepsrate shot glasses either side of the cocktail glass</step>
-      <step>Set light the concotion in the cocktail glass and start to drink through the straw (this drink should be drunk in one) , as the bottom of the glass is reached put out the fire by pouring the baileys and blue curacao into the cocktail glass and keep drinking till it's all gone!!</step>
+      <step>Pour the ingr4 and ingr2 into the cocktail glass and give the drinker a straw</step>
+      <step>Pour the baileys and ingr1 into two sepsrate shot glasses either side of the cocktail glass</step>
+      <step>Set light the concotion in the cocktail glass and start to drink through the straw (this drink should be drunk in one) , as the bottom of the glass is reached put out the fire by pouring the baileys and ingr1 into the cocktail glass and keep drinking till it's all gone!!</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3313,7 +3313,7 @@
       <ingredient id="ingr2" alc_type="Gin" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">Gin</ingredient>
     </ingredients>
     <preparation>
-      <step>In an old-fashioned glass almost filled with ice cubes, combine the gin and triple sec</step>
+      <step>In an old-fashioned glass almost filled with ice cubes, combine the ingr2 and ingr1</step>
       <step>Stir well.</step>
     </preparation>
   </cocktail>
@@ -3370,9 +3370,9 @@
       <ingredient id="ingr6" alc_type="" basic_taste="sweet" measure="2 tsp superfine" quantity="10.0" unit="ml">Sugar Superfine</ingredient>
     </ingredients>
     <preparation>
-      <step>Combine gin, sugar, and lemon juice in a cocktail shaker filled with ice</step>
-      <step>Shake vigorously and strain into a chilled champagne glass</step>
-      <step>Top up with champagne</step>
+      <step>Combine ingr4, sugar, and ingr3 in a cocktail shaker filled with ice</step>
+      <step>Shake vigorously and strain into a chilled ingr2 glass</step>
+      <step>Top up with ingr2</step>
       <step>Stir gently.</step>
     </preparation>
   </cocktail>
@@ -3417,8 +3417,8 @@
       <ingredient id="ingr6" alc_type="" basic_taste="sour" measure="1 slice" quantity="" unit="">Lime</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake all ingredients (except slices of lemon and lime) with ice and strain into a whiskey sour glass</step>
-      <step>Decorate with the slices of lemon and lime and serve.</step>
+      <step>Shake all ingredients (except slices of ingr1 and ingr3) with ice and strain into a whiskey sour glass</step>
+      <step>Decorate with the slices of ingr1 and ingr3 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3433,8 +3433,8 @@
       <ingredient id="ingr5" alc_type="" basic_taste="sour" measure="1 1/2 oz" quantity="45.0" unit="ml">Lime Juice</ingredient>
     </ingredients>
     <preparation>
-      <step>Combine all ingredients (except for the cherry) in an electric blender and blend at a low speed for five seconds, then blend at a high speed until firm</step>
-      <step>Pour contents into a champagne flute, top with the cherry, and serve.</step>
+      <step>Combine all ingredients (except for the ingr2) in an electric blender and blend at a low speed for five seconds, then blend at a high speed until firm</step>
+      <step>Pour contents into a champagne flute, top with the ingr2, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3478,8 +3478,8 @@
       <ingredient id="ingr2" alc_type="" basic_taste="bitter" measure="1/2" quantity="15.0" unit="ml">Coffee</ingredient>
     </ingredients>
     <preparation>
-      <step>Fill coffe mug half full of coffee</step>
-      <step>Fill the other half full of peach schnapps</step>
+      <step>Fill coffe mug half full of ingr2</step>
+      <step>Fill the other half full of ingr1</step>
       <step>Stir and drink while hot.</step>
     </preparation>
   </cocktail>
@@ -3492,8 +3492,8 @@
       <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="" quantity="" unit="">Ginger Ale</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour the galliano liqueur over ice</step>
-      <step>Fill the remainder of the glass with ginger ale and thats all there is to it</step>
+      <step>Pour the ingr1 liqueur over ice</step>
+      <step>Fill the remainder of the glass with ingr2 and thats all there is to it</step>
       <step>You now have a your very own gg.</step>
     </preparation>
   </cocktail>
@@ -3553,9 +3553,9 @@
       <ingredient id="ingr3" alc_type="Gin" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">Gin</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour the gin and the tonic water into a highball glass almost filled with ice cubes</step>
+      <step>Pour the ingr3 and the ingr2 into a highball glass almost filled with ice cubes</step>
       <step>Stir well</step>
-      <step>Garnish with the lime wedge.</step>
+      <step>Garnish with the ingr1 wedge.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3570,11 +3570,11 @@
       <ingredient id="ingr5" alc_type="" basic_taste="sweet" measure="" quantity="" unit="">Orange Spiral</ingredient>
     </ingredients>
     <preparation>
-      <step>Stir powdered sugar and 2 oz</step>
-      <step>Carbonated water in a collins glass</step>
-      <step>Fill glass with ice and add gin</step>
-      <step>Fill with carbonated water and stir</step>
-      <step>Add the lemon peel and the orange spiral so that the end of the orange spiral dangles over rim of glass.</step>
+      <step>Stir ingr1 and 2 oz</step>
+      <step>Ingr3 in a collins glass</step>
+      <step>Fill glass with ice and add ingr2</step>
+      <step>Fill with ingr3 and stir</step>
+      <step>Add the ingr4 and the ingr5 so that the end of the ingr5 dangles over rim of glass.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3590,9 +3590,9 @@
       <ingredient id="ingr6" alc_type="" basic_taste="sour" measure="1 oz" quantity="30.0" unit="ml">Lemon Juice</ingredient>
     </ingredients>
     <preparation>
-      <step>In a shaker half-filled with ice cubes, combine the wine, lemon juice, sugar, and grenadine</step>
+      <step>In a shaker half-filled with ice cubes, combine the wine, ingr6, sugar, and ingr4</step>
       <step>Shake well</step>
-      <step>Pour into an old-fashioned glass and garnish with the cherry and the orange slice.</step>
+      <step>Pour into an old-fashioned glass and garnish with the cherry and the ingr5 slice.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3624,9 +3624,9 @@
     </ingredients>
     <preparation>
       <step>Half-fill a tall glass with ice</step>
-      <step>Mix the gin and grenadine together and pour over the ice</step>
-      <step>Add the lime or lemon juice and top off with soda water</step>
-      <step>Decorate the glass with lime and/or lemon slices.</step>
+      <step>Mix the ingr5 and ingr4 together and pour over the ice</step>
+      <step>Add the ingr2 or ingr3 juice and top off with ingr1</step>
+      <step>Decorate the glass with ingr2 and/or ingr3 slices.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3641,10 +3641,10 @@
       <ingredient id="ingr5" alc_type="" basic_taste="sweet" measure="twist of" quantity="" unit="">Orange Peel</ingredient>
     </ingredients>
     <preparation>
-      <step>Dissolve powdered sugar in mixture of water and juice of lemon</step>
-      <step>Add gin</step>
+      <step>Dissolve ingr3 in mixture of ingr2 and juice of ingr1</step>
+      <step>Add ingr4</step>
       <step>Pour into an old-fashioned glass over ice cubes and stir</step>
-      <step>Add the twist of orange peel and serve.</step>
+      <step>Add the twist of ingr5 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3660,9 +3660,9 @@
       <ingredient id="ingr6" alc_type="" basic_taste="mint" measure="4" quantity="" unit="">Mint</ingredient>
     </ingredients>
     <preparation>
-      <step>Muddle sugar with carbonated water and mint sprigs in an old-fashioned glass</step>
-      <step>Add gin and 1 ice cube</step>
-      <step>Stir, add the orange slice and the cherry, and serve.</step>
+      <step>Muddle ingr5 with ingr3 and ingr6 sprigs in an old-fashioned glass</step>
+      <step>Add ingr1 and 1 ice cube</step>
+      <step>Stir, add the ingr4 slice and the ingr2, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3677,9 +3677,9 @@
       <ingredient id="ingr5" alc_type="" basic_taste="sweet" measure="1" quantity="" unit="">Orange</ingredient>
     </ingredients>
     <preparation>
-      <step>In a shaker half-filled with ice cubes, combine the gin, lemon juice, and sugar</step>
+      <step>In a shaker half-filled with ice cubes, combine the ingr3, ingr1, and sugar</step>
       <step>Shake well</step>
-      <step>Strain into a sour glass and garnish with the orange slice and the cherry.</step>
+      <step>Strain into a sour glass and garnish with the ingr5 slice and the cherry.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3695,9 +3695,9 @@
       <ingredient id="ingr6" alc_type="" basic_taste="water" measure="" quantity="" unit="">Carbonated Water</ingredient>
     </ingredients>
     <preparation>
-      <step>Stir gin, grenadine, and powdered sugar with ice and strain into a highball glass over ice cubes</step>
-      <step>Fill with carbonated water and stir</step>
-      <step>Decorate with the pineapple chunks and the strawberries and serve.</step>
+      <step>Stir ingr5, ingr1, and ingr3 with ice and strain into a highball glass over ice cubes</step>
+      <step>Fill with ingr6 and stir</step>
+      <step>Decorate with the ingr2 chunks and the ingr4 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3712,11 +3712,11 @@
       <ingredient id="ingr5" alc_type="" basic_taste="sweet" measure="3 oz" quantity="90.0" unit="ml">Club Soda</ingredient>
     </ingredients>
     <preparation>
-      <step>In a shaker half-filled with ice cubes, combine the lime juice, sugar, gin, and bitters</step>
+      <step>In a shaker half-filled with ice cubes, combine the ingr1, sugar, ingr4, and ingr2</step>
       <step>Shake well</step>
       <step>Almost fill a colling glass with ice cubes</step>
       <step>Stir until the glass is frosted</step>
-      <step>Strain the mixture in the shaker into the glass and add the club soda.</step>
+      <step>Strain the mixture in the shaker into the glass and add the ingr5.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3730,9 +3730,9 @@
       <ingredient id="ingr4" alc_type="Gin" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">Gin</ingredient>
     </ingredients>
     <preparation>
-      <step>Mix powdered sugar and water in an old-fashioned glass</step>
-      <step>Add gin and one ice cube</step>
-      <step>Stir, add the twist of lemon peel, and serve.</step>
+      <step>Mix ingr3 and ingr1 in an old-fashioned glass</step>
+      <step>Add ingr4 and one ice cube</step>
+      <step>Stir, add the twist of ingr2, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3746,9 +3746,9 @@
       <ingredient id="ingr4" alc_type="Cachaca" basic_taste="" measure="25 ml" quantity="25.0" unit="ml">Cachaca</ingredient>
     </ingredients>
     <preparation>
-      <step>Add the cachaca, lemon juice and syrup to your boston glass</step>
+      <step>Add the ingr4, ingr2 and syrup to your boston glass</step>
       <step>Add ice and shake until ice cold</step>
-      <step>Pour into a chilled flute and top-up with champagne</step>
+      <step>Pour into a chilled flute and top-up with ingr3</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3764,8 +3764,8 @@
       <ingredient id="ingr6" alc_type="" basic_taste="sour" measure="1 tblsp" quantity="14.0" unit="gr">Lemon Peel</ingredient>
     </ingredients>
     <preparation>
-      <step>Boil sugar and spices in water, leave in the water for 30 minutes</step>
-      <step>Strain the spiced water and mix with the wine</step>
+      <step>Boil ingr4 and spices in ingr1, leave in the ingr1 for 30 minutes</step>
+      <step>Strain the spiced ingr1 and mix with the wine</step>
       <step>Heat slowly until short of boiling temperature</step>
       <step>(to remove alcohol, let it boil for a while.) you may add lemon or orange juice to taste</step>
       <step>Serve in irish coffee cup.</step>
@@ -3806,7 +3806,7 @@
       <ingredient id="ingr2" alc_type="Sweet Liqueur" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">Amaretto</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour vodka and amaretto into an old-fashioned glass over ice and serve.</step>
+      <step>Pour ingr1 and ingr2 into an old-fashioned glass over ice and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3850,9 +3850,9 @@
       <ingredient id="ingr5" alc_type="" basic_taste="sweet" measure="1/2 tsp" quantity="2.0" unit="gr">Grenadine</ingredient>
     </ingredients>
     <preparation>
-      <step>In a shaker half-filled with ice cubes, combine the gin, triple sec, pineapple juice, and grenadine</step>
+      <step>In a shaker half-filled with ice cubes, combine the ingr4, ingr3, ingr1, and ingr5</step>
       <step>Shake well</step>
-      <step>Pour into an old-fashioned glass and garnish with the pineapple slice.</step>
+      <step>Pour into an old-fashioned glass and garnish with the ingr2 slice.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3879,7 +3879,7 @@
       <ingredient id="ingr3" alc_type="Beer" basic_taste="" measure="1/2 pint" quantity="236.5" unit="ml">Lager</ingredient>
     </ingredients>
     <preparation>
-      <step>Cider first, lager then curacao</step>
+      <step>Cider first, ingr3 then curacao</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3892,8 +3892,8 @@
       <ingredient id="ingr3" alc_type="Creamy Liqueur" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">Kahlua</ingredient>
     </ingredients>
     <preparation>
-      <step>Mix kahlua and 151 in glass</step>
-      <step>Quickly add ice and pour grenadine over ice to give ice red tint.</step>
+      <step>Mix ingr3 and 151 in glass</step>
+      <step>Quickly add ice and pour ingr2 over ice to give ice red tint.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3921,8 +3921,8 @@
       <ingredient id="ingr3" alc_type="Whisky" basic_taste="" measure="4 cl" quantity="40.0" unit="ml">Whisky</ingredient>
     </ingredients>
     <preparation>
-      <step>Mix the whisky and baileys cream in a beer-glass (at least 50 cl)</step>
-      <step>Fill the rest of the glass with coffee.</step>
+      <step>Mix the ingr3 and baileys cream in a beer-glass (at least 50 cl)</step>
+      <step>Fill the rest of the glass with ingr2.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -3935,8 +3935,8 @@
       <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="" quantity="" unit="">Ginger Ale</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour captain morgan's spiced rum over ice, fill glass to top with ginger ale</step>
-      <step>Garnish with lime</step>
+      <step>Pour captain morgan's ingr1 over ice, fill glass to top with ingr3</step>
+      <step>Garnish with ingr2</step>
       <step>Tastes like a cream soda</step>
       <step>Named for the gilligan's island reference ("the captain" *in* "ginger" is a happy skipper!)</step>
     </preparation>
@@ -3951,7 +3951,7 @@
       <ingredient id="ingr3" alc_type="Sweet Liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">Galliano</ingredient>
     </ingredients>
     <preparation>
-      <step>Stir the vodka and orange juice with ice in the glass, then float the galliano on top</step>
+      <step>Stir the ingr2 and ingr1 with ice in the glass, then float the ingr3 on top</step>
       <step>Garnish and serve.</step>
     </preparation>
   </cocktail>
@@ -4007,7 +4007,7 @@
       <ingredient id="ingr2" alc_type="" basic_taste="bitter" measure="very sweet" quantity="" unit="">Very Sweet Tea</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour hot damn 100 in bottom of a jar or regular glass</step>
+      <step>Pour ingr1 100 in bottom of a jar or regular glass</step>
       <step>Fill the rest of the glass with sweet tea</step>
       <step>Stir with spoon, straw, or better yet a cinnamon stick and leave it in.</step>
     </preparation>
@@ -4023,8 +4023,8 @@
       <ingredient id="ingr4" alc_type="Vermouth" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">Sweet Vermouth</ingredient>
     </ingredients>
     <preparation>
-      <step>Stir all ingredients (except olive) with ice and strain into a cocktail glass</step>
-      <step>Add the olive and serve.</step>
+      <step>Stir all ingredients (except ingr3) with ice and strain into a cocktail glass</step>
+      <step>Add the ingr3 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -4038,7 +4038,7 @@
       <ingredient id="ingr4" alc_type="Bitters" basic_taste="" measure="2 dashes" quantity="2.0" unit="ml">Bitters</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour brandy and ginger ale directly into highball glass with ice cubes</step>
+      <step>Pour ingr1 and ingr2 directly into highball glass with ice cubes</step>
       <step>Stir gently</step>
       <step>Garnish with lemon zest</step>
       <step>If desired, add dashes of angostura bitter.</step>
@@ -4067,7 +4067,7 @@
       <ingredient id="ingr3" alc_type="Vodka" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml">Vodka</ingredient>
     </ingredients>
     <preparation>
-      <step>Put vodka in glass fill with iced tea</step>
+      <step>Put ingr3 in glass fill with ingr2</step>
       <step>Stir in lemon to taste.</step>
     </preparation>
   </cocktail>
@@ -4108,8 +4108,8 @@
       <ingredient id="ingr5" alc_type="Rum" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">Light Rum</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake all ingredients (except carbonated water) with ice and strain into a highball glass over two ice cubes</step>
-      <step>Fill with carbonated water, stir, and serve.</step>
+      <step>Shake all ingredients (except ingr3) with ice and strain into a highball glass over two ice cubes</step>
+      <step>Fill with ingr3, stir, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -4123,7 +4123,7 @@
       <ingredient id="ingr4" alc_type="" basic_taste="bitter" measure="8 oz" quantity="240.0" unit="ml">Coffee</ingredient>
     </ingredients>
     <preparation>
-      <step>Heat the coffee, whiskey and sugar; do not boil</step>
+      <step>Heat the ingr4, whiskey and ingr2; do not boil</step>
       <step>Pour into glass and top with cream; serve hot.</step>
     </preparation>
   </cocktail>
@@ -4138,8 +4138,8 @@
       <ingredient id="ingr4" alc_type="Creamy Liqueur" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">Bailey'S Irish Cream</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour irish cream, vodka, and bourbon in a glass</step>
-      <step>Add some ice and mix in the orange juice.</step>
+      <step>Pour irish cream, ingr1, and ingr2 in a glass</step>
+      <step>Add some ice and mix in the ingr3.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -4171,8 +4171,8 @@
       <ingredient id="ingr6" alc_type="Whisky" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">Irish Whiskey</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour all ingredients (except orange slice and cherry) into a collins glass over ice cubes</step>
-      <step>Garnish with the slice of orange, add the cherry on top, and serve.</step>
+      <step>Pour all ingredients (except ingr3 slice and ingr4) into a collins glass over ice cubes</step>
+      <step>Garnish with the slice of ingr3, add the ingr4 on top, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -4225,8 +4225,8 @@
       <ingredient id="ingr4" alc_type="" basic_taste="sweet" measure="2 pinches" quantity="0.72" unit="gr">Sugar</ingredient>
     </ingredients>
     <preparation>
-      <step>Coat the rim of a shot glass with sugar using sugar syrup to stick</step>
-      <step>Add the chambord raspberry liqueur to the shot glass, and carefully layer the baileys irish cream on top</step>
+      <step>Coat the rim of a shot glass with ingr4 using ingr3 to stick</step>
+      <step>Add the ingr1 to the shot glass, and carefully layer the ingr2 on top</step>
       <step>Serve.</step>
     </preparation>
   </cocktail>
@@ -4242,7 +4242,7 @@
     <preparation>
       <step>Fill a tumbler with ice cubes</step>
       <step>Add a shot of tia maria and a shot of jamaican light rum</step>
-      <step>Fill the tumbler with milk</step>
+      <step>Fill the tumbler with ingr2</step>
       <step>Blend until smooth and serve immediately.</step>
     </preparation>
   </cocktail>
@@ -4257,9 +4257,9 @@
       <ingredient id="ingr4" alc_type="" basic_taste="cream" measure="" quantity="" unit="">Whipped Cream</ingredient>
     </ingredients>
     <preparation>
-      <step>Stir the rum, coffee and water together</step>
-      <step>Top with the whipped cream</step>
-      <step>Sprinkle with a pinch of well ground coffee and drink with a straw.</step>
+      <step>Stir the ingr1, ingr2 and water together</step>
+      <step>Top with the ingr4</step>
+      <step>Sprinkle with a pinch of well ground ingr2 and drink with a straw.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -4275,8 +4275,8 @@
       <ingredient id="ingr6" alc_type="" basic_taste="sweet" measure="1 tsp" quantity="4.0" unit="gr">Powdered Sugar</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake all ingredients (except carbonated water) with ice and strain into a highball glass over two ice cubes</step>
-      <step>Fill with carbonated water, stir, and serve.</step>
+      <step>Shake all ingredients (except ingr3) with ice and strain into a highball glass over two ice cubes</step>
+      <step>Fill with ingr3, stir, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -4289,9 +4289,9 @@
       <ingredient id="ingr3" alc_type="" basic_taste="water" measure="3 cups" quantity="711.0" unit="ml">Water</ingredient>
     </ingredients>
     <preparation>
-      <step>Boil 3 cups of water then add jello</step>
-      <step>Mix jello and water until jello is completely disolved</step>
-      <step>Add the two cups of vodka and mix together</step>
+      <step>Boil 3 cups of ingr3 then add ingr2</step>
+      <step>Mix ingr2 and ingr3 until ingr2 is completely disolved</step>
+      <step>Add the two cups of ingr1 and mix together</step>
       <step>Pour mixture into plastic shot glasses and chill until firm</step>
       <step>Then, eat away...</step>
     </preparation>
@@ -4337,7 +4337,7 @@
       <ingredient id="ingr7" alc_type="" basic_taste="sweet" measure="around rim put 1 pinch" quantity="" unit="">Sugar</ingredient>
     </ingredients>
     <preparation>
-      <step>Wet glass, dip rim in sugar</step>
+      <step>Wet glass, dip rim in ingr7</step>
       <step>Then add ice</step>
       <step>Then add everything else</step>
       <step>It's that simple!</step>
@@ -4385,7 +4385,7 @@
       <ingredient id="ingr2" alc_type="Vodka" basic_taste="" measure="2 parts" quantity="60.0" unit="ml">Grain Alcohol</ingredient>
     </ingredients>
     <preparation>
-      <step>Put a copper coin in a coffe-cup and fill up with coffee until you no longer see the coin, then add alcohol until you see the coin</step>
+      <step>Put a copper coin in a coffe-cup and fill up with ingr1 until you no longer see the coin, then add alcohol until you see the coin</step>
       <step>Norwegian speciality.</step>
     </preparation>
   </cocktail>
@@ -4398,7 +4398,7 @@
       <ingredient id="ingr2" alc_type="Sweet Liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">Benedictine</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour the bourbon and benedictine into a brandy snifter.</step>
+      <step>Pour the ingr1 and ingr2 into a brandy snifter.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -4411,7 +4411,7 @@
       <ingredient id="ingr3" alc_type="Whisky" basic_taste="" measure="3 oz" quantity="90.0" unit="ml">Bourbon</ingredient>
     </ingredients>
     <preparation>
-      <step>In a shaker half-filled with ice cubes combine the courbon and benedictine</step>
+      <step>In a shaker half-filled with ice cubes combine the courbon and ingr2</step>
       <step>Shake and strain into a cocktail glass</step>
       <step>Garnish with the lemon twist.</step>
     </preparation>
@@ -4451,7 +4451,7 @@
       <ingredient id="ingr2" alc_type="Sweet Liqueur" basic_taste="" measure="1 part" quantity="30.0" unit="ml">Creme De Cassis</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour creme de cassis in glass, gently pour champagne on top</step>
+      <step>Pour ingr2 in glass, gently pour ingr1 on top</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -4508,7 +4508,7 @@
     </ingredients>
     <preparation>
       <step>Pour into a large glass with ice and stir</step>
-      <step>Add a little cranberry juice to taste.</step>
+      <step>Add a little ingr1 to taste.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -4521,8 +4521,8 @@
     </ingredients>
     <preparation>
       <step>Fill half the shot glass with the kool-aid first</step>
-      <step>Then put a paper towel over the top of the glass and slowly pour in the vodka</step>
-      <step>If you do it right, you should be able to see that the two liquids are separated, with the vodka on top</step>
+      <step>Then put a paper towel over the top of the glass and slowly pour in the ingr1</step>
+      <step>If you do it right, you should be able to see that the two liquids are separated, with the ingr1 on top</step>
       <step>Now slam it! the last thing you'll taste is the kool-aid.</step>
     </preparation>
   </cocktail>
@@ -4535,7 +4535,7 @@
       <ingredient id="ingr2" alc_type="Vodka" basic_taste="" measure="4 cl" quantity="40.0" unit="ml">Absolut Kurant</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour absolut kurant into a comfortably big tea-cup</step>
+      <step>Pour ingr2 into a comfortably big tea-cup</step>
       <step>Add the not too hot(!) apple tea and, if you like, some sugar</step>
       <step>Enjoy!</step>
     </preparation>
@@ -4553,8 +4553,8 @@
       <ingredient id="ingr6" alc_type="" basic_taste="egg" measure="1" quantity="45.0" unit="ml">Egg White</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake all ingredients (except carbonated water) with ice and strain into a cocktail glass over two ice cubes</step>
-      <step>Fill with carbonated water, stir, and serve.</step>
+      <step>Shake all ingredients (except ingr3) with ice and strain into a cocktail glass over two ice cubes</step>
+      <step>Fill with ingr3, stir, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -4582,9 +4582,9 @@
       <ingredient id="ingr5" alc_type="Vodka" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">Absolut Citron</ingredient>
     </ingredients>
     <preparation>
-      <step>Mix galliano and absolut citron in a shot glass, lay lemon wedge sprinkled with sugar over glass and pour a rum over wedge and glass</step>
+      <step>Mix ingr4 and ingr5 in a shot glass, lay ingr2 wedge sprinkled with ingr1 over glass and pour a rum over wedge and glass</step>
       <step>Light rum with a lighter and let burn for a second</step>
-      <step>Do shot quickly and suck on lemon</step>
+      <step>Do shot quickly and suck on ingr2</step>
       <step>If it is done correctly, this will taste like a shot of sweet lemonade.</step>
     </preparation>
   </cocktail>
@@ -4597,7 +4597,7 @@
       <ingredient id="ingr2" alc_type="Rum" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">Bacardi Limon</ingredient>
     </ingredients>
     <preparation>
-      <step>Open the corona</step>
+      <step>Open the ingr1</step>
       <step>Fill the empty space in the neck in the bottle with the rum</step>
       <step>The bottle should be filled to the top</step>
       <step>Plug the bottle with your thumb or the palm of your hand</step>
@@ -4616,7 +4616,7 @@
       <ingredient id="ingr4" alc_type="Whisky" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">Drambuie</ingredient>
     </ingredients>
     <preparation>
-      <step>In a mixing glass half-filled with ice cubes, combine the scotch, drambuie, and vermouth</step>
+      <step>In a mixing glass half-filled with ice cubes, combine the ingr1, ingr4, and vermouth</step>
       <step>Stir well</step>
       <step>Strain into a cocktail glass</step>
       <step>Garnish with the lemon twist.</step>
@@ -4662,11 +4662,11 @@
       <ingredient id="ingr6" alc_type="" basic_taste="water" measure="" quantity="" unit="">Carbonated Water</ingredient>
     </ingredients>
     <preparation>
-      <step>Stir powdered sugar and 2 oz</step>
-      <step>Carbonated water in a collins glass</step>
-      <step>Fill glass with ice, add gin and vermouth, and stir</step>
-      <step>Fill with carbonated water and stir again</step>
-      <step>Add the twist of lemon peel and the orange spiral so that the end dangles over rim of glass.</step>
+      <step>Stir ingr5 and 2 oz</step>
+      <step>Ingr6 in a collins glass</step>
+      <step>Fill glass with ice, add ingr1 and vermouth, and stir</step>
+      <step>Fill with ingr6 and stir again</step>
+      <step>Add the twist of ingr2 and the ingr4 so that the end dangles over rim of glass.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -4683,7 +4683,7 @@
     </ingredients>
     <preparation>
       <step>Mix all contents in a highball glass and sitr gently</step>
-      <step>Add dash of coca-cola for the coloring and garnish with lemon or lime twist.</step>
+      <step>Add dash of ingr4 for the coloring and garnish with lemon or lime twist.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -4701,7 +4701,7 @@
     <preparation>
       <step>Combine all ingredients (except cola) and pour over ice in a highball glass</step>
       <step>Add the splash of cola for color</step>
-      <step>Decorate with a slice of lemon and serve.</step>
+      <step>Decorate with a slice of ingr5 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -4716,7 +4716,7 @@
     </ingredients>
     <preparation>
       <step>Shake a tall glass with ice cubes and angostura, coating the inside of the glass</step>
-      <step>Por the vodka onto this, add 1 slice of lime and squeeze juice out of remainder, mix with tonic, stir and voila you have a long vodka</step>
+      <step>Por the ingr3 onto this, add 1 slice of ingr4 and squeeze juice out of remainder, mix with tonic, stir and voila you have a long ingr3</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -4728,7 +4728,7 @@
       <ingredient id="ingr2" alc_type="Creamy Liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">Tia Maria</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour the rum and tia maria into an old-fashioned glass almost filled with ice cubes</step>
+      <step>Pour the rum and ingr2 into an old-fashioned glass almost filled with ice cubes</step>
       <step>Stir well.</step>
     </preparation>
   </cocktail>
@@ -4742,9 +4742,9 @@
       <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1 oz" quantity="30.0" unit="ml">Orange Juice</ingredient>
     </ingredients>
     <preparation>
-      <step>Fill a pint glass almost full with beer</step>
-      <step>Then fill the rest with orange juice (careful not to fill it to the top)</step>
-      <step>Then take the shot of amaretto and drop it in.</step>
+      <step>Fill a pint glass almost full with ingr2</step>
+      <step>Then fill the rest with ingr3 (careful not to fill it to the top)</step>
+      <step>Then take the shot of ingr1 and drop it in.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -4803,9 +4803,9 @@
       <ingredient id="ingr4" alc_type="" basic_taste="salty" measure="" quantity="" unit="">Salt</ingredient>
     </ingredients>
     <preparation>
-      <step>Rub the rim of the glass with the lime slice to make the salt stick to it</step>
-      <step>Take care to moisten only the outer rim and sprinkle the salt on it</step>
-      <step>The salt should present to the lips of the imbiber and never mix into the cocktail</step>
+      <step>Rub the rim of the glass with the lime slice to make the ingr4 stick to it</step>
+      <step>Take care to moisten only the outer rim and sprinkle the ingr4 on it</step>
+      <step>The ingr4 should present to the lips of the imbiber and never mix into the cocktail</step>
       <step>Shake the other ingredients with ice, then carefully pour into the glass.</step>
     </preparation>
   </cocktail>
@@ -4821,8 +4821,8 @@
       <ingredient id="ingr5" alc_type="Bitters" basic_taste="" measure="1 dash" quantity="1.0" unit="ml">Orange Bitters</ingredient>
     </ingredients>
     <preparation>
-      <step>Stir all ingredients (except cherry) with ice and strain into a cocktail glass</step>
-      <step>Top with the cherry and serve.</step>
+      <step>Stir all ingredients (except ingr4) with ice and strain into a cocktail glass</step>
+      <step>Top with the ingr4 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -4838,7 +4838,7 @@
       <step>Straight: pour all ingredients into mixing glass with ice cubes</step>
       <step>Stir well</step>
       <step>Strain in chilled martini cocktail glass</step>
-      <step>Squeeze oil from lemon peel onto the drink, or garnish with olive.</step>
+      <step>Squeeze oil from lemon peel onto the drink, or garnish with ingr2.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -4870,7 +4870,7 @@
       <step>Of rum with ice(set aside)</step>
       <step>Second: mix daiquiri with 2.5 oz</step>
       <step>Of rum with ice</step>
-      <step>Third: while frozen, add pina colda mix then daiquiri mix in glass (making sure they do not get mixed together).</step>
+      <step>Third: while frozen, add pina colda mix then ingr3 in glass (making sure they do not get mixed together).</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -4900,7 +4900,7 @@
       <ingredient id="ingr5" alc_type="Schnapps" basic_taste="" measure="dash" quantity="" unit="">Goldschlager</ingredient>
     </ingredients>
     <preparation>
-      <step>Fill a mixer with ice and add baileys, kahlua, goldshlager, and cream</step>
+      <step>Fill a mixer with ice and add baileys, ingr1, goldshlager, and cream</step>
       <step>Shake for 5 seconds and strain into a double rocks glass filled with ice</step>
       <step>Add chilled coffee stir and enjoy!</step>
     </preparation>
@@ -4946,8 +4946,8 @@
       <ingredient id="ingr6" alc_type="" basic_taste="water" measure="" quantity="" unit="">Carbonated Water</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake all ingredients (except carbonated water) with ice and strain into a collins glass over ice cubes</step>
-      <step>Fill with carbonated water, stir, and serve.</step>
+      <step>Shake all ingredients (except ingr6) with ice and strain into a collins glass over ice cubes</step>
+      <step>Fill with ingr6, stir, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -4962,8 +4962,8 @@
     </ingredients>
     <preparation>
       <step>Pour 6 oz</step>
-      <step>Of coffee in a mug or irish coffee cup</step>
-      <step>Add coca mix and chambord, mix well and top off with whipped cream.</step>
+      <step>Of ingr1 in a mug or irish ingr1 cup</step>
+      <step>Add coca mix and chambord, mix well and top off with ingr3.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -4978,9 +4978,9 @@
       <ingredient id="ingr5" alc_type="Rum" basic_taste="" measure="2-3 oz" quantity="75.0" unit="ml">Light Rum</ingredient>
     </ingredients>
     <preparation>
-      <step>Muddle mint leaves with sugar and lime juice</step>
-      <step>Add a splash of soda water and fill the glass with cracked ice</step>
-      <step>Pour the rum and top with soda water</step>
+      <step>Muddle ingr2 leaves with ingr1 and ingr3 juice</step>
+      <step>Add a splash of ingr4 and fill the glass with cracked ice</step>
+      <step>Pour the rum and top with ingr4</step>
       <step>Garnish and serve with straw.</step>
     </preparation>
   </cocktail>
@@ -4996,7 +4996,7 @@
       <ingredient id="ingr5" alc_type="" basic_taste="mint" measure="1/2 handful" quantity="50.0" unit="gr">Mint</ingredient>
     </ingredients>
     <preparation>
-      <step>Put mint with lemon juice in a glas, mash the mint with a spoon, ice, rum &amp; fill up with club soda</step>
+      <step>Put ingr5 with ingr3 in a glas, mash the ingr5 with a spoon, ice, rum &amp; fill up with ingr2</step>
       <step>Top it with angostura.</step>
     </preparation>
   </cocktail>
@@ -5038,7 +5038,7 @@
       <ingredient id="ingr3" alc_type="Tequila" basic_taste="" measure="2/5" quantity="12.0" unit="ml">Tequila</ingredient>
     </ingredients>
     <preparation>
-      <step>First you put rhe absinthe, then put tequila, then put the granadine syrup.</step>
+      <step>First you put rhe ingr1, then put ingr3, then put the granadine syrup.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -5051,8 +5051,8 @@
       <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="8 oz" quantity="240.0" unit="ml">Ginger Ale</ingredient>
     </ingredients>
     <preparation>
-      <step>Combine vodka and ginger beer in a highball glass filled with ice</step>
-      <step>Add lime juice</step>
+      <step>Combine ingr1 and ginger beer in a highball glass filled with ice</step>
+      <step>Add ingr2</step>
       <step>Stir gently</step>
       <step>Garnish.</step>
     </preparation>
@@ -5099,8 +5099,8 @@
       <ingredient id="ingr7" alc_type="" basic_taste="sweet" measure="1 cup" quantity="128.0" unit="gr">Sugar</ingredient>
     </ingredients>
     <preparation>
-      <step>Simmer 3 cups water with, sugar, cloves, cinnamon sticks, and lemon peel in a stainless steel pot for 10 minutes</step>
-      <step>Add wine heat to a "coffee temperature" (do not boil) then add the brandy.</step>
+      <step>Simmer 3 cups ingr1 with, ingr7, ingr5, ingr4 sticks, and ingr6 in a stainless steel pot for 10 minutes</step>
+      <step>Add wine heat to a "coffee temperature" (do not boil) then add the ingr3.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -5163,9 +5163,9 @@
       <ingredient id="ingr6" alc_type="" basic_taste="sour" measure="" quantity="" unit="">Lemon</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake blended whiskey, juice of lemon, and powdered sugar with ice and strain into a whiskey sour glass</step>
+      <step>Shake ingr1, juice of ingr4, and powdered ingr3 with ice and strain into a whiskey sour glass</step>
       <step>Float claret on top</step>
-      <step>Decorate with the half-slice of lemon and the cherry and serve.</step>
+      <step>Decorate with the half-slice of ingr4 and the ingr2 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -5192,7 +5192,7 @@
       <ingredient id="ingr4" alc_type="" basic_taste="sweet" measure="1 cube" quantity="4.0" unit="gr">Sugar</ingredient>
     </ingredients>
     <preparation>
-      <step>Place sugar cube in old fashioned glass and saturate with bitters, add a dash of plain water</step>
+      <step>Place ingr4 cube in old fashioned glass and saturate with bitters, add a dash of plain ingr2</step>
       <step>Muddle until dissolved</step>
       <step>Fill the glass with ice cubes and add whiskey</step>
       <step>Garnish with orange twist, and a cocktail cherry.</step>
@@ -5222,8 +5222,8 @@
       <ingredient id="ingr4" alc_type="" basic_taste="sweet" measure="" quantity="" unit="">Ginger Ale</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake brandy, gin, and orange juice with ice and strain into a highball glass over ice cubes</step>
-      <step>Fill with ginger ale, stir, and serve.</step>
+      <step>Shake brandy, ingr1, and ingr2 with ice and strain into a highball glass over ice cubes</step>
+      <step>Fill with ingr4, stir, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -5269,7 +5269,7 @@
       <ingredient id="ingr5" alc_type="Creamy Liqueur" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">Bailey'S Irish Cream</ingredient>
     </ingredients>
     <preparation>
-      <step>Blend vodka, kahlua, bailey's, ice-cream and the oreo well in a blender</step>
+      <step>Blend ingr2, ingr1, bailey's, ice-cream and the oreo well in a blender</step>
       <step>Pour into a large frosted glass</step>
       <step>Garnish with whipped cream and a cherry.</step>
     </preparation>
@@ -5339,9 +5339,9 @@
       <ingredient id="ingr2" alc_type="Gin" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">Gin</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour the bitters into a wine glass</step>
-      <step>Swirl the glass to coat the inside with the bitters, shake out the excess</step>
-      <step>Pour the gin into the glass</step>
+      <step>Pour the ingr1 into a wine glass</step>
+      <step>Swirl the glass to coat the inside with the ingr1, shake out the excess</step>
+      <step>Pour the ingr2 into the glass</step>
       <step>Do not add ice.</step>
     </preparation>
   </cocktail>
@@ -5453,7 +5453,7 @@
       <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 tblsp" quantity="14.0" unit="gr">Grenadine</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour carefully into a pousse-cafe glass, so that creme de menthe floats on grenadine</step>
+      <step>Pour carefully into a pousse-cafe glass, so that creme de menthe floats on ingr2</step>
       <step>Serve without mixing.</step>
     </preparation>
   </cocktail>
@@ -5481,8 +5481,8 @@
       <ingredient id="ingr5" alc_type="Port" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml">Port</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake all ingredients (except nutmeg) with ice and strain into a whiskey sour glass</step>
-      <step>Sprinkle nutmeg on top and serve.</step>
+      <step>Shake all ingredients (except ingr1) with ice and strain into a whiskey sour glass</step>
+      <step>Sprinkle ingr1 on top and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -5549,8 +5549,8 @@
       <ingredient id="ingr3" alc_type="Wine" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">Red Wine</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour red wine and grenadine into a collins glass over ice cubes</step>
-      <step>Fill with lemon-lime soda, stir, and serve.</step>
+      <step>Pour ingr3 and ingr2 into a collins glass over ice cubes</step>
+      <step>Fill with ingr1, stir, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -5577,7 +5577,7 @@
       <ingredient id="ingr4" alc_type="Creamy Liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">Kahlua</ingredient>
     </ingredients>
     <preparation>
-      <step>In a shaker half-filled with ice cubes, combine the rum, kahlua, and cream</step>
+      <step>In a shaker half-filled with ice cubes, combine the rum, ingr4, and cream</step>
       <step>Shake well</step>
       <step>Strain into a cocktail glass and garnish with the nutmeg.</step>
     </preparation>
@@ -5592,8 +5592,8 @@
       <ingredient id="ingr3" alc_type="Sweet Liqueur" basic_taste="" measure="1 part" quantity="30.0" unit="ml">Midori Melon Liqueur</ingredient>
     </ingredients>
     <preparation>
-      <step>In a shot glass add 1/3 kahlua first</step>
-      <step>Then 1/3 miduri, topping it off with a 1/3 bailey's irish cream</step>
+      <step>In a shot glass add 1/3 ingr1 first</step>
+      <step>Then 1/3 miduri, topping it off with a 1/3 ingr2</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -5605,7 +5605,7 @@
       <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="add 250 ml" quantity="250.0" unit="ml">Orange Juice</ingredient>
     </ingredients>
     <preparation>
-      <step>Simply add the orange juice, quite a quick pour in order to mix the sambucca with the orange juice</step>
+      <step>Simply add the ingr2, quite a quick pour in order to mix the sambucca with the ingr2</step>
       <step>The juice must have fruit pulp!</step>
     </preparation>
   </cocktail>
@@ -5637,7 +5637,7 @@
       <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="12 oz" quantity="360.0" unit="ml">7-Up</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour beer into large mug, slowly add the 7-up (or sprite).</step>
+      <step>Pour ingr1 into large mug, slowly add the ingr2 (or sprite).</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -5649,7 +5649,7 @@
       <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="4 oz" quantity="120.0" unit="ml">Lemon-Lime Soda</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour the raspberry vodka and soda into a highball glass almost filled with ice cubes</step>
+      <step>Pour the ingr1 and soda into a highball glass almost filled with ice cubes</step>
       <step>Stir well.</step>
     </preparation>
   </cocktail>
@@ -5692,7 +5692,7 @@
       <ingredient id="ingr2" alc_type="Whisky" basic_taste="" measure="1 part" quantity="30.0" unit="ml">Crown Royal</ingredient>
     </ingredients>
     <preparation>
-      <step>Into a shot glass layer the crown royal on top of the frangelico.</step>
+      <step>Into a shot glass layer the ingr2 on top of the ingr1.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -5737,8 +5737,8 @@
       <ingredient id="ingr5" alc_type="" basic_taste="sweet" measure="1 tsp" quantity="4.0" unit="gr">Powdered Sugar</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake all ingredients (except carbonated water) with ice and strain into a highball glass over two ice cubes</step>
-      <step>Fill with carbonated water, stir, and serve.</step>
+      <step>Shake all ingredients (except ingr3) with ice and strain into a highball glass over two ice cubes</step>
+      <step>Fill with ingr3, stir, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -5751,8 +5751,8 @@
       <ingredient id="ingr3" alc_type="Gin" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">Gin</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour gin and cranberry into a highball filled with ice cubes</step>
-      <step>Add grenadine and stir.</step>
+      <step>Pour ingr3 and cranberry into a highball filled with ice cubes</step>
+      <step>Add ingr2 and stir.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -5768,11 +5768,11 @@
       <ingredient id="ingr6" alc_type="" basic_taste="sweet" measure="1" quantity="" unit="">Maraschino Cherry</ingredient>
     </ingredients>
     <preparation>
-      <step>In an old-fashioned glass, dissolve the sugar in the club soda</step>
+      <step>In an old-fashioned glass, dissolve the sugar in the ingr4</step>
       <step>Add crushed ice until the glass is almost full</step>
       <step>Add the rum</step>
       <step>Stir well</step>
-      <step>Garnish with the cherry and the orange and lemon slices.</step>
+      <step>Garnish with the cherry and the ingr5 and ingr1 slices.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -5786,7 +5786,7 @@
     </ingredients>
     <preparation>
       <step>Pour the rum and soda into a collins glass almost filled with ice cubes</step>
-      <step>Stir well and garnish with the lemon wedge.</step>
+      <step>Stir well and garnish with the ingr1 wedge.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -5800,8 +5800,8 @@
       <ingredient id="ingr4" alc_type="" basic_taste="cream" measure="1 cup" quantity="128.0" unit="gr">Milk</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake all ingredients (except nutmeg) with ice and strain into a collins glass</step>
-      <step>Sprinkle nutmeg on top and serve.</step>
+      <step>Shake all ingredients (except ingr3) with ice and strain into a collins glass</step>
+      <step>Sprinkle ingr3 on top and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -5817,9 +5817,9 @@
       <ingredient id="ingr6" alc_type="Rum" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml">Light Rum</ingredient>
     </ingredients>
     <preparation>
-      <step>Stir powdered sugar, water, and bitters in an old-fashioned glass</step>
-      <step>When sugar has dissolved add ice cubes and light rum</step>
-      <step>Add the twist of lime peel, float 151 proof rum on top, and serve.</step>
+      <step>Stir ingr2, ingr4, and ingr5 in an old-fashioned glass</step>
+      <step>When sugar has dissolved add ice cubes and ingr6</step>
+      <step>Add the twist of ingr3, float ingr1 on top, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -5861,7 +5861,7 @@
     </ingredients>
     <preparation>
       <step>Pour rum into a highball glass over ice cubes</step>
-      <step>Add orange juice, stir, and serve.</step>
+      <step>Add ingr2, stir, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -5876,9 +5876,9 @@
       <ingredient id="ingr5" alc_type="" basic_taste="sweet" measure="1" quantity="" unit="">Orange</ingredient>
     </ingredients>
     <preparation>
-      <step>In a shaker half-filled with ice cubes, combine the rum, lemon juice, and sugar</step>
+      <step>In a shaker half-filled with ice cubes, combine the rum, ingr3, and sugar</step>
       <step>Shake well</step>
-      <step>Strain into a sour glass and garnish with the orange slice and the cherry.</step>
+      <step>Strain into a sour glass and garnish with the ingr5 slice and the cherry.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -5892,9 +5892,9 @@
       <ingredient id="ingr4" alc_type="" basic_taste="water" measure="2 tsp" quantity="8.0" unit="gr">Water</ingredient>
     </ingredients>
     <preparation>
-      <step>Dissolve powdered sugar in water in an old-fashioned glass</step>
+      <step>Dissolve ingr2 in ingr4 in an old-fashioned glass</step>
       <step>Add rum and one ice cube and stir</step>
-      <step>Add the twist of lemon peel and serve.</step>
+      <step>Add the twist of ingr3 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -5921,7 +5921,7 @@
       <ingredient id="ingr3" alc_type="" basic_taste="sour" measure="1 twist of" quantity="" unit="">Lemon Peel</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour the scotch and drambuie into an old-fashioned glass almost filled with ice cubes</step>
+      <step>Pour the ingr1 and ingr2 into an old-fashioned glass almost filled with ice cubes</step>
       <step>Stir well</step>
       <step>Garnish with the lemon twist.</step>
     </preparation>
@@ -5938,7 +5938,7 @@
     <preparation>
       <step>Pour all ingredients over ice cubes in a highball glass</step>
       <step>Stir well and serve</step>
-      <step>(vodka may be substituted for gin, if preferred.)</step>
+      <step>(vodka may be substituted for ingr2, if preferred.)</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -5952,7 +5952,7 @@
       <ingredient id="ingr4" alc_type="Vodka" basic_taste="" measure="2 cl" quantity="20.0" unit="ml">Vodka</ingredient>
     </ingredients>
     <preparation>
-      <step>Take a tall glass and put in a few ice cubes, fill the vodka over it and fill with juice then the "creme", to end fill in the grenadine but very carefully at the side of the glass so it will lay down in the bottom</step>
+      <step>Take a tall glass and put in a few ice cubes, fill the ingr4 over it and fill with juice then the "creme", to end fill in the ingr3 but very carefully at the side of the glass so it will lay down in the bottom</step>
       <step>Garnish with orange and strawberry.</step>
     </preparation>
   </cocktail>
@@ -5970,7 +5970,7 @@
     </ingredients>
     <preparation>
       <step>Mix all together in a pitcher and refrigerate</step>
-      <step>Add cloves and cinnamon sticks to taste</step>
+      <step>Add ingr3 and ingr2 sticks to taste</step>
       <step>Serve in wine glasses.</step>
     </preparation>
   </cocktail>
@@ -5988,9 +5988,9 @@
       <ingredient id="ingr7" alc_type="" basic_taste="sweet" measure="1 cup" quantity="128.0" unit="gr">Sugar</ingredient>
     </ingredients>
     <preparation>
-      <step>Mix wine, sugar and fruit, and let sit in the fridge for 18-24 hours</step>
+      <step>Mix wine, ingr7 and fruit, and let sit in the fridge for 18-24 hours</step>
       <step>The mixture will have a somewhat syrupy consistency</step>
-      <step>Before serving stir in brandy and cut the mixture with soda water until it have a thinner, more wine like consistency</step>
+      <step>Before serving stir in brandy and cut the mixture with ingr4 until it have a thinner, more wine like consistency</step>
       <step>Serve from a pitcher in wine glasses.</step>
     </preparation>
   </cocktail>
@@ -6010,7 +6010,7 @@
       <step>Rinse a chilled old-fashioned glass with the absinthe, add crushed ice, and set it aside</step>
       <step>Stir the remaining ingredients over ice and set it aside</step>
       <step>Discard the ice and any excess absinthe from the prepared glass, and strain the drink into the glass</step>
-      <step>Add the lemon peel for garnish.</step>
+      <step>Add the ingr4 for garnish.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6038,8 +6038,8 @@
       <ingredient id="ingr5" alc_type="" basic_taste="sweet" measure="1 slice" quantity="" unit="">Orange</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour scotch, brandy, and curacao over ice in an old-fashioned glass</step>
-      <step>Add the orange slice, top with the mint sprig, and serve.</step>
+      <step>Pour ingr4, ingr3, and ingr1 over ice in an old-fashioned glass</step>
+      <step>Add the ingr5 slice, top with the ingr2 sprig, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6054,8 +6054,8 @@
       <ingredient id="ingr5" alc_type="Whisky" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml">Scotch</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake scotch, juice of lime, and powdered sugar with ice and strain into a whiskey sour glass</step>
-      <step>Decorate with 1/2 slice lemon, top with the cherry, and serve.</step>
+      <step>Shake ingr5, juice of ingr2, and ingr1 with ice and strain into a whiskey sour glass</step>
+      <step>Decorate with 1/2 slice ingr3, top with the ingr4, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6068,11 +6068,11 @@
       <ingredient id="ingr3" alc_type="Vodka" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">Vodka</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour first vodka, then bailey's, then kahlua into a cocktail glass over crushed ice</step>
+      <step>Pour first ingr3, then bailey's, then ingr2 into a cocktail glass over crushed ice</step>
       <step>Stir</step>
-      <step>Caution: use only high quality vodka</step>
-      <step>Cheap vodka can cause the bailey's to curdle</step>
-      <step>Test your brand of vodka by mixing 1 tsp each of vodka and bailey's first.</step>
+      <step>Caution: use only high quality ingr3</step>
+      <step>Cheap ingr3 can cause the bailey's to curdle</step>
+      <step>Test your brand of ingr3 by mixing 1 tsp each of ingr3 and bailey's first.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6141,10 +6141,10 @@
       <ingredient id="ingr3" alc_type="" basic_taste="water" measure="3 cans" quantity="990.0" unit="ml">Water</ingredient>
     </ingredients>
     <preparation>
-      <step>Mix lemonade and water according to instructions on back of can</step>
-      <step>If the instructions say to add 4 1/3 cans of water do so</step>
+      <step>Mix ingr2 and ingr3 according to instructions on back of can</step>
+      <step>If the instructions say to add 4 1/3 cans of ingr3 do so</step>
       <step>Mix into pitcher</step>
-      <step>Add 1 1/2 cup of vodka (absolut)</step>
+      <step>Add 1 1/2 cup of ingr1 (absolut)</step>
       <step>Mix well</step>
       <step>Pour into glass of crushed ice</step>
       <step>Excellent!</step>
@@ -6162,9 +6162,9 @@
       <ingredient id="ingr5" alc_type="" basic_taste="spicy" measure="" quantity="" unit="">Nutmeg</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake sherry, powdered sugar, and egg with ice and strain into a collins glass</step>
-      <step>Fill with milk and stir</step>
-      <step>Sprinkle nutmeg on top and serve.</step>
+      <step>Shake sherry, ingr2, and ingr3 with ice and strain into a collins glass</step>
+      <step>Fill with ingr4 and stir</step>
+      <step>Sprinkle ingr5 on top and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6179,8 +6179,8 @@
       <ingredient id="ingr5" alc_type="" basic_taste="egg" measure="1 whole" quantity="45.0" unit="ml">Egg</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake all ingredients (except nutmeg) with ice and strain into a whiskey sour glass</step>
-      <step>Sprinkle nutmeg on top and serve.</step>
+      <step>Shake all ingredients (except ingr4) with ice and strain into a whiskey sour glass</step>
+      <step>Sprinkle ingr4 on top and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6193,7 +6193,7 @@
       <ingredient id="ingr3" alc_type="Whisky" basic_taste="" measure="1 part" quantity="30.0" unit="ml">Jim Beam</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour one part jack daneils and one part jim beam into shot glass then float wild turkey on top.</step>
+      <step>Pour one part jack daneils and one part ingr3 into shot glass then float ingr2 on top.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6239,7 +6239,7 @@
       <step>Pour all ingredients into cocktail shaker filled with ice cubes</step>
       <step>Shake well</step>
       <step>Strain into highball glass</step>
-      <step>Garnish with pineapple and cocktail cherry.</step>
+      <step>Garnish with pineapple and cocktail ingr2.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6293,8 +6293,8 @@
       <ingredient id="ingr3" alc_type="Beer" basic_taste="" measure="1/2 pint" quantity="236.5" unit="ml">Lager</ingredient>
     </ingredients>
     <preparation>
-      <step>Put blackcurrant squash in first up to about 1cm in glass</step>
-      <step>Then add the larger and cider one after another.</step>
+      <step>Put ingr1 in first up to about 1cm in glass</step>
+      <step>Then add the larger and ingr2 one after another.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6307,8 +6307,8 @@
       <ingredient id="ingr3" alc_type="Creamy Liqueur" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml">Advocaat</ingredient>
     </ingredients>
     <preparation>
-      <step>Place one ice cube in the glass and add 1 1/2 oz of advocaat</step>
-      <step>Fill up the glass with lemonade and decorate with a slice of lemon</step>
+      <step>Place one ice cube in the glass and add 1 1/2 oz of ingr3</step>
+      <step>Fill up the glass with lemonade and decorate with a slice of ingr1</step>
       <step>Serve at once.</step>
     </preparation>
   </cocktail>
@@ -6321,7 +6321,7 @@
       <ingredient id="ingr2" alc_type="Brandy" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml">Brandy</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake ingredients with ice, strain into a brandy snifter, and serve</step>
+      <step>Shake ingredients with ice, strain into a ingr2 snifter, and serve</step>
       <step>(the english translation of the name of this drink is "sun and shade", and after sampling this drink, you'll understand why</step>
       <step>Thanks, kirby.)</step>
     </preparation>
@@ -6340,8 +6340,8 @@
     </ingredients>
     <preparation>
       <step>Fill glass with ice and add shots of bacardi and malibu</step>
-      <step>Add splash of pineapple juice and top with orange juice</step>
-      <step>Add grenadine for color and garnish with cherries.</step>
+      <step>Add splash of ingr4 and top with ingr6</step>
+      <step>Add ingr1 for color and garnish with ingr3.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6413,8 +6413,8 @@
       <ingredient id="ingr6" alc_type="" basic_taste="salty" measure="" quantity="" unit="">Salt</ingredient>
     </ingredients>
     <preparation>
-      <step>Rub rim of cocktail glass with lemon juice and dip rim in salt</step>
-      <step>Shake schnapps, tequila, triple sec, lemon juice, and strawberries with ice, strain into the salt-rimmed glass, and serve.</step>
+      <step>Rub rim of cocktail glass with ingr5 and dip rim in ingr6</step>
+      <step>Shake schnapps, ingr3, ingr1, ingr5, and ingr4 with ice, strain into the ingr6-rimmed glass, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6456,8 +6456,8 @@
       <ingredient id="ingr2" alc_type="" basic_taste="bitter" measure="1 cup" quantity="128.0" unit="gr">Coffee</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour the coffee in an ordinary coffee cup</step>
-      <step>Add the aquavit</step>
+      <step>Pour the ingr2 in an ordinary ingr2 cup</step>
+      <step>Add the ingr1</step>
       <step>Add sugar by taste</step>
       <step>Stir and have a nice evening (morning)</step>
     </preparation>
@@ -6471,7 +6471,7 @@
       <ingredient id="ingr2" alc_type="" basic_taste="cream" measure="" quantity="" unit="">Milk</ingredient>
     </ingredients>
     <preparation>
-      <step>Put 2 shots godiva liquour into a glass, add as much or as little milk as you would like.</step>
+      <step>Put 2 shots godiva liquour into a glass, add as much or as little ingr2 as you would like.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6483,7 +6483,7 @@
       <ingredient id="ingr2" alc_type="" basic_taste="bitter" measure="1 part" quantity="30.0" unit="ml">Coffee</ingredient>
     </ingredients>
     <preparation>
-      <step>Add your gm and then add your coffee.</step>
+      <step>Add your gm and then add your ingr2.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6497,7 +6497,7 @@
       <ingredient id="ingr4" alc_type="Sweet Liqueur" basic_taste="" measure="4 oz" quantity="120.0" unit="ml">Amaretto</ingredient>
     </ingredients>
     <preparation>
-      <step>Mix coffee, jack daniels and amaretto</step>
+      <step>Mix ingr3, ingr1 and ingr4</step>
       <step>Add cream on top.</step>
     </preparation>
   </cocktail>
@@ -6513,8 +6513,8 @@
       <ingredient id="ingr5" alc_type="" basic_taste="sweet" measure="" quantity="" unit="">Ginger Ale</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake all ingredients (except ginger ale) with ice and strain into a collins glass over ice cubes</step>
-      <step>Fill with ginger ale, stir, and serve.</step>
+      <step>Shake all ingredients (except ingr5) with ice and strain into a collins glass over ice cubes</step>
+      <step>Fill with ingr5, stir, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6529,8 +6529,8 @@
       <ingredient id="ingr5" alc_type="" basic_taste="sour" measure="juice of 1/2" quantity="22.5" unit="ml">Lemon</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake tequila, juice of lemon, and powdered sugar with ice and strain into a whiskey sour glass</step>
-      <step>Add the half-slice of lemon, top with the cherry, and serve.</step>
+      <step>Shake ingr4, juice of ingr1, and ingr2 with ice and strain into a whiskey sour glass</step>
+      <step>Add the half-slice of ingr1, top with the ingr3, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6543,8 +6543,8 @@
       <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="" quantity="" unit="">Grenadine</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour the tequila and orange juice into glass over ice</step>
-      <step>Add the grenadine, which will sink to the bottom</step>
+      <step>Pour the ingr1 and ingr2 into glass over ice</step>
+      <step>Add the ingr3, which will sink to the bottom</step>
       <step>Stir gently to create the sunrise effect</step>
       <step>Garnish and serve.</step>
     </preparation>
@@ -6558,7 +6558,7 @@
       <ingredient id="ingr2" alc_type="" basic_taste="spicy" measure="about 8 drops" quantity="8.0" unit="ml">Tabasco Sauce</ingredient>
     </ingredients>
     <preparation>
-      <step>Fill shot glass with tequila</step>
+      <step>Fill shot glass with ingr1</step>
       <step>Add drops of tobasco sauce.</step>
     </preparation>
   </cocktail>
@@ -6590,7 +6590,7 @@
     </ingredients>
     <preparation>
       <step>Blend with ice until smooth</step>
-      <step>Serve in a tulip glass, top with whip cream.</step>
+      <step>Serve in a tulip glass, top with whip ingr3.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6634,11 +6634,11 @@
       <ingredient id="ingr6" alc_type="" basic_taste="sweet" measure="1 tsp superfine" quantity="5.0" unit="ml">Sugar Superfine</ingredient>
     </ingredients>
     <preparation>
-      <step>In a shaker half-filled with ice cubes, combine the gin, lemon juice, and sugar</step>
+      <step>In a shaker half-filled with ice cubes, combine the ingr2, ingr3, and sugar</step>
       <step>Shake well</step>
       <step>Strain into a collins glass alomst filled with ice cubes</step>
-      <step>Add the club soda</step>
-      <step>Stir and garnish with the cherry and the orange slice.</step>
+      <step>Add the ingr1</step>
+      <step>Stir and garnish with the cherry and the ingr5 slice.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6666,8 +6666,8 @@
       <ingredient id="ingr5" alc_type="" basic_taste="spicy" measure="1/4 tsp" quantity="1.0" unit="gr">Anis</ingredient>
     </ingredients>
     <preparation>
-      <step>Stir all ingredients (except orange peel) with ice and strain into a cocktail glass</step>
-      <step>Add the twist of orange peel and serve.</step>
+      <step>Stir all ingredients (except ingr2) with ice and strain into a cocktail glass</step>
+      <step>Add the twist of ingr2 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6697,7 +6697,7 @@
     </ingredients>
     <preparation>
       <step>Stir all ingredients with ice and strain into a cocktail glass</step>
-      <step>Garnish with a cherry and a twist of lemon zest.</step>
+      <step>Garnish with a ingr6 and a twist of lemon zest.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6727,10 +6727,10 @@
     </ingredients>
     <preparation>
       <step>Vampiros may be made in a tall glass or an old fashioned glass</step>
-      <step>Bartenders may first "rim" the glass with kosher salt, which is done by placing a layer of kosher salt on a chopping board, moistening the glass' rim with lime juice or water, and then placing the upside down glass rim onto the kosher salt, so that the salt sticks to the moistened rim</step>
-      <step>The second step is to fill half the glass with ice and add one or two shooter glasses full of high quality tequila</step>
+      <step>Bartenders may first "rim" the glass with kosher ingr3, which is done by placing a layer of kosher ingr3 on a chopping board, moistening the glass' rim with ingr6 or water, and then placing the upside down glass rim onto the kosher ingr3, so that the ingr3 sticks to the moistened rim</step>
+      <step>The second step is to fill half the glass with ice and add one or two shooter glasses full of high quality ingr4</step>
       <step>The next stage is to add the flavouring elements</step>
-      <step>This is done by squeezing a fresh lime into the glass, adding a few grains of salt, adding citrus-flavoured soda pop, until the glass is 4/5 full, and then adding spicy viuda de sanchez (or orange juice, lime juice and pico de gallo)</step>
+      <step>This is done by squeezing a fresh lime into the glass, adding a few grains of ingr3, adding citrus-flavoured soda pop, until the glass is 4/5 full, and then adding spicy viuda de sanchez (or ingr5, ingr6 and pico de gallo)</step>
       <step>The final step is to stir the ingredients so that the flavours are properly blended.</step>
     </preparation>
   </cocktail>
@@ -6757,8 +6757,8 @@
       <ingredient id="ingr3" alc_type="Vermouth" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml">Dry Vermouth</ingredient>
     </ingredients>
     <preparation>
-      <step>Stir vermouth and creme de cassis in a highball glass with ice cubes</step>
-      <step>Fill with carbonated water, stir again, and serve.</step>
+      <step>Stir vermouth and ingr2 in a highball glass with ice cubes</step>
+      <step>Fill with ingr1, stir again, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6798,7 +6798,7 @@
       <ingredient id="ingr2" alc_type="Brandy" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">Cherry Brandy</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour the rum and cherry brandy into an old-fashioned glass almost filled with ice cubes</step>
+      <step>Pour the rum and ingr2 into an old-fashioned glass almost filled with ice cubes</step>
       <step>Stir well.</step>
     </preparation>
   </cocktail>
@@ -6827,8 +6827,8 @@
       <ingredient id="ingr5" alc_type="" basic_taste="sweet" measure="1 slice" quantity="" unit="">Orange</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake all ingredients (except orange slice) with ice and strain into a collins glass over ice cubes</step>
-      <step>Add the slice of orange and serve.</step>
+      <step>Shake all ingredients (except ingr5 slice) with ice and strain into a collins glass over ice cubes</step>
+      <step>Add the slice of ingr5 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6840,8 +6840,8 @@
       <ingredient id="ingr2" alc_type="Vodka" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">Vodka</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour vodka into a highball glass over ice cubes</step>
-      <step>Fill with tonic water, stir, and serve.</step>
+      <step>Pour ingr2 into a highball glass over ice cubes</step>
+      <step>Fill with ingr1, stir, and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6855,8 +6855,8 @@
       <ingredient id="ingr4" alc_type="" basic_taste="spicy" measure="" quantity="" unit="">Nutmeg</ingredient>
     </ingredients>
     <preparation>
-      <step>Blend all ingredients, save nutmeg</step>
-      <step>Pour into large white wine glass and sprinkle nutmeg on top.</step>
+      <step>Blend all ingredients, save ingr4</step>
+      <step>Pour into large white wine glass and sprinkle ingr4 on top.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6869,7 +6869,7 @@
       <ingredient id="ingr3" alc_type="Vermouth" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">Dry Vermouth</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake the vodka and vermouth together with a number of ice cubes, strain into a cocktail glass, add the olive and serve.</step>
+      <step>Shake the ingr2 and vermouth together with a number of ice cubes, strain into a cocktail glass, add the ingr1 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -6950,8 +6950,8 @@
       <ingredient id="ingr3" alc_type="Vodka" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">Vodka</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour vodka and coffee liqueur over ice cubes in an old-fashioned glass</step>
-      <step>Fill with light cream and serve.</step>
+      <step>Pour ingr3 and ingr2 over ice cubes in an old-fashioned glass</step>
+      <step>Fill with ingr1 and serve.</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -7020,7 +7020,7 @@
       <ingredient id="ingr2" alc_type="Sambuca" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml">Sambuca</ingredient>
     </ingredients>
     <preparation>
-      <step>Mix sambuca with rootbeer and stir</step>
+      <step>Mix ingr2 with rootbeer and stir</step>
       <step>Add ice</step>
     </preparation>
   </cocktail>
@@ -7059,7 +7059,7 @@
     </ingredients>
     <preparation>
       <step>Fill glass with ice</step>
-      <step>Pour in chambord, then fill with zima</step>
+      <step>Pour in chambord, then fill with ingr2</step>
       <step>Mix and enjoy.</step>
     </preparation>
   </cocktail>
@@ -7072,7 +7072,7 @@
       <ingredient id="ingr2" alc_type="Sweet Liqueur" basic_taste="" measure="1.5 oz" quantity="45.0" unit="ml">Midori Melon Liqueur</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour zima in a collins glass over ice and then pour the shot of midori</step>
+      <step>Pour ingr1 in a collins glass over ice and then pour the shot of midori</step>
       <step>Don't stir</step>
       <step>Garnish with a cherry.</step>
     </preparation>
@@ -7087,7 +7087,7 @@
     </ingredients>
     <preparation>
       <step>Get a shot glass and pour in three shots of the schnapps</step>
-      <step>Do the same with the surge cola</step>
+      <step>Do the same with the ingr1 cola</step>
       <step>Then down it like scheetz would.</step>
     </preparation>
   </cocktail>
@@ -7103,7 +7103,7 @@
     <preparation>
       <step>Fill glass with rocks, add straw before putting in liquor</step>
       <step>Then add the ingredients in order, trying to keep layered as much as possible (i.e</step>
-      <step>Chambord on bottom, then vodka, then soda on top).</step>
+      <step>Chambord on bottom, then ingr3, then soda on top).</step>
     </preparation>
   </cocktail>
   <cocktail>
@@ -7116,7 +7116,7 @@
       <ingredient id="ingr3" alc_type="Sweet Liqueur" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">Amaretto</ingredient>
     </ingredients>
     <preparation>
-      <step>Mix kool-aid to taste then add rum and ammaretto</step>
+      <step>Mix kool-aid to taste then add ingr1 and ammaretto</step>
       <step>Shake well to disolve the sugar in the kool-aid..</step>
       <step>Serve cold</step>
     </preparation>
@@ -7131,7 +7131,7 @@
       <ingredient id="ingr3" alc_type="" basic_taste="sour" measure="or lime" quantity="20.0" unit="ml">Lemon</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour 5cl of cointreau on ice, add 2cl of fresh lemon (or lime) juice, stir gently, and finally add slices of lemon/lime in glass.</step>
+      <step>Pour 5cl of ingr1 on ice, add 2cl of fresh ingr3 (or lime) juice, stir gently, and finally add slices of ingr3/lime in glass.</step>
     </preparation>
   </cocktail>
   <cocktail>
