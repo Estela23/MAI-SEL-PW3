@@ -8,12 +8,14 @@ DATA_PATH = 'Data'
 Ingredient = namedtuple('Ingredient', ['name', 'identifier', 'alc_type', 'basic_taste', 'measure', 'quantity', 'unit']) 
 
 class Cocktail:
-    def __init__(self, name, category, glasstype, ingredients, preparation):
+    def __init__(self, name, category, glasstype, ingredients, preparation, evaluation, origin):
         self.name = name
         self.category = category
         self.glasstype = glasstype
         self.ingredients = ingredients
         self.preparation = preparation
+        self.evaluation = evaluation
+        self.origin = origin
         
     def print_preparation(self):
         for s in self.preparation:
@@ -45,6 +47,8 @@ def load_library(file):
         name = c.find('name').text
         category = c.find('category').text
         glasstype = c.find('glasstype').text
+        evaluation = c.find('evaluation').text
+        origin = c.find('origin').text
         ingredients = c.find('ingredients')
         preparation = c.find('preparation')
         preparation_steps = [s.text for s in preparation]
@@ -58,7 +62,8 @@ def load_library(file):
             ingredients_list.append(ing)
         
         # Create and append cocktail object
-        cocktails_list.append(Cocktail(name, category, glasstype, ingredients_list, preparation_steps))
+        cocktails_list.append(Cocktail(name, category, glasstype, ingredients_list,
+                                       preparation_steps, evaluation, origin))
 
     return cocktails_list    
 
@@ -84,6 +89,12 @@ def export_library(cocktails, out_name):
         
         glasstype = etree.SubElement(cocktail, "glasstype")
         glasstype.text = c.glasstype
+        
+        evaluation = etree.SubElement(cocktail, "evaluation")
+        evaluation.text = c.evaluation
+        
+        origin = etree.SubElement(cocktail, "origin")
+        origin.text = c.origin
         
         ingredients = etree.SubElement(cocktail, "ingredients")
         for i in c.ingredients:

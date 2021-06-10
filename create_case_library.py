@@ -99,6 +99,10 @@ def create_xml_library(csv):
             category.text = instance[1]
             glasstype = etree.SubElement(cocktail, "glasstype")
             glasstype.text = instance[2]
+            evaluation = etree.SubElement(cocktail, "evaluation")
+            evaluation.text = 'success'      # cases from dataset are successful by default
+            origin = etree.SubElement(cocktail, "origin")
+            origin.text = 'dataset'          # case comes from dataset
             ingredients = etree.SubElement(cocktail, "ingredients")
             insert_ingredient(ingredient_index, instance, ingredients)
             ingredient_index += 1
