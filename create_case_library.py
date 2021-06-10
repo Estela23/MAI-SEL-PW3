@@ -47,14 +47,19 @@ def add_preparation(preparation, cocktail_el, ingredients):
         cocktail_el (Element): cocktail element
         ingredients (list): containing the cocktail ingredients name
     """
-    return
+    prep = etree.SubElement(cocktail_el, "preparation")
+    
+    # Divide preparation steps and add them individually
+    steps = str(preparation).split(". ")
+    for s in steps:
+        step = etree.SubElement(prep, "step")
+        step.text = s.capitalize()
 
 def create_xml_library(csv):
     # Read .CSV
     dataset = pd.read_csv(csv_file, encoding='utf_8')
     dataset = dataset.drop(dataset.columns[0], axis=1)
     dataset = dataset.drop(dataset.columns[-2:], axis=1)
-
 
     # Start creating XML tree
     cocktails = etree.Element("cocktails")
@@ -72,17 +77,11 @@ def create_xml_library(csv):
             
         # If another cocktail appears
         else:
-            # Create the preparation xml structure for the previous cocktail
-            # (If we are not in the first cocktail)
+            # If we are not in the first cocktail
             if idx != 0:
+                # Add preparation xml structure for the previous cocktail
                 previous_preparation = dataset.iloc[idx-1]["strInstructions"]  
-                prep = etree.SubElement(cocktail, "preparation")
-                
-                # Divide preparation steps and add them individually
-                steps = str(previous_preparation).split(". ")
-                for s in steps:
-                    step = etree.SubElement(prep, "step")
-                    step.text = s.capitalize()
+                add_preparation(previous_preparation, cocktail, ingredients_list)
 
             # Create xml structure for new cocktail
             ingredient_index = 0
@@ -100,15 +99,9 @@ def create_xml_library(csv):
         
         previous_cocktail = instance[0]
 
-    # Create the preparation xml structure for the final cocktail
+    # Add the preparation xml structure for the final cocktail
     preparation = instance[6] 
-    prep = etree.SubElement(cocktail, "preparation")
-
-    # Divide preparation steps and add them individually
-    steps = str(preparation).split(". ")
-    for s in steps:
-        step = etree.SubElement(prep, "step")
-        step.text = s.capitalize()
+    add_preparation(preparation, cocktail, ingredients_list)
 
     # Write in file
     et = etree.ElementTree(cocktails)
@@ -117,3 +110,4 @@ def create_xml_library(csv):
 if __name__ == "__main__":
     csv_file = os.path.join(DATA_PATH, 'data_cocktails.csv')
     create_xml_library(csv_file)
+    
