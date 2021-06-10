@@ -21,6 +21,11 @@ class Cocktail:
                 s = s.replace(i.identifier, i.name)
             print(s)
             
+    def print_ingredients(self):
+        for i in self.ingredients:
+            print(f'{i.measure} {i.name}')
+            # print(f'{i.measure} {i.name} ({i.quantity} {i.unit})')
+            
 def load_library(file):
     """ Load an XML library of cocktails.
 
