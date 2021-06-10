@@ -4,11 +4,11 @@ from lxml import etree
 print("running with lxml.etree")
 
 # Read .CSV
-dataset = pd.read_csv("data_cocktails.csv", encoding='utf_8')
+dataset = pd.read_csv("Data/data_cocktails.csv", encoding='utf_8')
 dataset = dataset.drop(dataset.columns[0], axis=1)
 dataset = dataset.drop(dataset.columns[-2:], axis=1)
 # print(dataset.columns)
-print(dataset.heead(10))
+print(dataset.head(10))
 
 
 # Method to insert ingredient
