@@ -8,10 +8,10 @@ DATA_PATH = 'Data'
 Ingredient = namedtuple('Ingredient', ['name', 'identifier', 'alc_type', 'basic_taste', 'measure', 'quantity', 'unit']) 
 
 class Cocktail:
-    def __init__(self, name, category, glass_type, ingredients, preparation):
+    def __init__(self, name, category, glasstype, ingredients, preparation):
         self.name = name
         self.category = category
-        self.glass_type = glass_type
+        self.glasstype = glasstype
         self.ingredients = ingredients
         self.preparation = preparation
         
@@ -22,6 +22,15 @@ class Cocktail:
             print(s)
             
 def load_library(file):
+    """ Load an XML library of cocktails.
+
+    Args:
+        file (string): filename of the XML file
+
+    Returns:
+        list: containing objects of type Cocktail
+    """
+    
     tree = etree.parse(file)
     cocktails = tree.getroot()
     cocktails_list = []
@@ -30,7 +39,7 @@ def load_library(file):
         # Get cocktail information
         name = c.find('name').text
         category = c.find('category').text
-        glass_type = c.find('glasstype').text
+        glasstype = c.find('glasstype').text
         ingredients = c.find('ingredients')
         preparation = c.find('preparation')
         preparation_steps = [s.text for s in preparation]
@@ -44,13 +53,53 @@ def load_library(file):
             ingredients_list.append(ing)
         
         # Create and append cocktail object
-        cocktails_list.append(Cocktail(name, category, glass_type, ingredients_list, preparation_steps))
+        cocktails_list.append(Cocktail(name, category, glasstype, ingredients_list, preparation_steps))
 
     return cocktails_list    
 
-# def export_library():
-# TODO
+def export_library(cocktails, out_name):
+    """ Export a library of cocktails to XML.
 
+    Args:
+        cocktails (list): containing objects of type Cocktail
+        out_name (string): name of the output file
+    """
+    
+    root = etree.Element("cocktails")
+
+    for c in cocktails:
+        # Create xml structure for new cocktail
+        cocktail = etree.SubElement(root, "cocktail")
+    
+        name = etree.SubElement(cocktail, "name")
+        name.text = c.name
+        
+        category = etree.SubElement(cocktail, "category")
+        category.text = c.category
+        
+        glasstype = etree.SubElement(cocktail, "glasstype")
+        glasstype.text = c.glasstype
+        
+        ingredients = etree.SubElement(cocktail, "ingredients")
+        for i in c.ingredients:
+            ingr = etree.SubElement(ingredients, "ingredient", id=i.identifier,
+                                alc_type=i.alc_type, basic_taste=i.basic_taste, measure=i.measure,
+                                quantity=i.quantity, unit=i.unit)
+            
+            ingr.text = i.name
+            
+        prep = etree.SubElement(cocktail, "preparation")
+        for s in c.preparation:
+            step = etree.SubElement(prep, "step")
+            step.text = s
+            
+        # Write in file
+        et = etree.ElementTree(root)
+        et.write(os.path.join(DATA_PATH, f'{out_name}.xml'), pretty_print=True, encoding="UTF-8")
+
+        
 if __name__ == "__main__":
+    # Example
     xml_file = os.path.join(DATA_PATH, 'case_library.xml')
     cbl = load_library(xml_file)
+    export_library(cbl, 'output')
