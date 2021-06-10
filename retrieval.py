@@ -9,8 +9,18 @@ cocktails = tree.getroot()
 constraints = {'category': 'Cocktail', 'glasstype': 'Beer glass', 'ingredients': ['Vodka', 'Amaretto'],
                'alc_type': ['Rum']}
 
+
 # SEARCHING PHASE
 # Constructing hierarchical tree
+alcohol_types = set([child.find('ingredients').find('ingredient').attrib['alc_type'] for child in cocktails])
+
+alcohol_dict = {}
+for atype in alcohol_types:
+    brands = set([child.find('ingredients').find('ingredient').text for child in cocktails
+                if child.find('ingredients').find('ingredient').attrib['alc_type'] == atype])
+    alcohol_dict.update({atype:brands})
+
+#categories = [child.find('category').text for child in cocktails]
 #categories = set([child.find('category').text for child in cocktails])
 #print(categories)
 
@@ -22,12 +32,17 @@ def compute_similarity(input, case):
     sim = 0
     for key in input:
         if input[key]:
-            if key == "ingredients" or key == "alc_type":
-                for i in case.find("ingredients"):
-                    if input[key] == i.text:
-                        sim += 1
-                    if input[key] == i.attrib['alc_type']:
-                        sim += 1
+            if key == "ingredients":
+                for ingredient in input[key]:
+                    ingredient_alc_type = [k for k in alcohol_dict if ingredient in alcohol_dict[k]][0]
+                    for i in case.find(key):
+                        if input[key] == i.text:
+                            sim += 1
+                        elif ingredient_alc_type == i.attrib['alc_type']:
+                            sim += 0.5
+            elif key == "alc_type":
+                for atype in input[key]:
+                    sim += sum([1 for i in case.find("ingredients") if atype == i.attrib['alc_type']])
             else:
                 if input[key] == case.find(key).text:
                     sim += 1
@@ -38,3 +53,4 @@ sim_list = [compute_similarity(constraints, c) for c in searching_list]
 retrieved_case = searching_list[np.argmax(np.array(sim_list))]
 retrieved_case_name = retrieved_case.find('name').text
 print(retrieved_case_name)
+
