@@ -44,6 +44,9 @@ for btaste in basic_tastes:
 
 # Filter elements that correspond to the category constraint
 searching_list = [child for child in cocktails if child.find('category').text == constraints['category']]
+# If category constraint is empty, the outcome of the searching phase is the whole dataset
+if not searching_list:
+    searching_list = [child for child in cocktails]
 print([child.find("name").text for child in searching_list])
 
 # SELECTION PHASE
