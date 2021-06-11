@@ -49,6 +49,7 @@ sorted_counts_type_alc = [counts_type_alc[type] for type in alc_type]
 plt.bar([i for i in range(len(alc_type))], sorted_counts_type_alc, color="orange")
 plt.xticks(range(len(alc_type)), alc_type, rotation=45, horizontalalignment='right', fontsize=10)
 plt.title("Number of times an alcohol appears in a recipe")
+plt.tight_layout()
 plt.savefig(os.path.join(DATA_PATH, 'Representations/popular_alcohol_types'))
 plt.clf()
 
@@ -58,6 +59,7 @@ different_type_alc = [alc_ingr[alc_ingr['Alc_type'] == this_type]['strIngredient
 plt.bar([i for i in range(len(alc_type))], different_type_alc, color="tab:purple")
 plt.xticks(range(len(alc_type)), alc_type, rotation=45, horizontalalignment='right', fontsize=10)
 plt.title("Number of unique ingredients for each type of alcohol")
+plt.tight_layout()
 plt.savefig(os.path.join(DATA_PATH, 'Representations/unique_alcohols_by_type'))
 plt.clf()
 
@@ -67,5 +69,6 @@ different_type_non_alc = [non_alc_ingr[non_alc_ingr['Basic_taste'] == this_type]
 plt.bar([i for i in range(len(basic_taste))], different_type_non_alc, color="tab:green")
 plt.xticks(range(len(basic_taste)), basic_taste, rotation=45, horizontalalignment='right', fontsize=10)
 plt.title("Number of unique ingredients for each type of non alcoholic beverage")
+plt.tight_layout()
 plt.savefig(os.path.join(DATA_PATH, 'Representations/unique_beverages_by_type'))
 plt.clf()
