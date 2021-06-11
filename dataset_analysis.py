@@ -12,6 +12,10 @@ dataset = dataset.drop(dataset.columns[0], axis=1)
 dataset = dataset.drop(dataset.columns[-2:], axis=1)
 dataset.fillna('', inplace=True)
 
+#################################################################
+###########        Print information about dataset       ########
+#################################################################
+
 print('Dataset unique values')
 print(dataset.nunique())
 
@@ -38,6 +42,14 @@ glass = dataset['strGlass'].unique()
 glass = glass[glass != '']
 print(f'\nGlass ({len(glass)}):')
 print(', '.join(glass).replace(' / ', '/'))
+
+
+#################################################################
+###########              Plot histograms                 ########
+#################################################################
+
+# Set general font size
+#plt.rcParams['font.size'] = '16'
 
 alc_ingr = dataset[dataset['Alc_type'] != ''][['Alc_type', 'strIngredients']]
 non_alc_ingr = dataset[dataset['Alc_type'] == ''][['Basic_taste', 'strIngredients']]
@@ -71,4 +83,14 @@ plt.xticks(range(len(basic_taste)), basic_taste, rotation=45, horizontalalignmen
 plt.title("Number of unique ingredients for each type of non alcoholic beverage")
 plt.tight_layout()
 plt.savefig(os.path.join(DATA_PATH, 'Representations/unique_beverages_by_type'))
+plt.clf()
+
+# Number of cocktails by category
+category_drinks = [dataset[dataset['strCategory'] == category]['strIngredients'].nunique() for category in categories]
+
+plt.bar([i for i in range(len(categories))], category_drinks, color="tab:blue")
+plt.xticks(range(len(categories)), categories, rotation=45, horizontalalignment='right', fontsize=10)
+plt.title("Number of unique cocktails for each category")
+plt.tight_layout()
+plt.savefig(os.path.join(DATA_PATH, 'Representations/unique_cocktails_by_category'))
 plt.clf()
