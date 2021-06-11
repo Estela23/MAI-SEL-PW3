@@ -53,6 +53,9 @@ class CBR:
     def _compute_similarity(self, constraints, cocktail):
         """ Compute the similiraty between a set of constraints and a particular cocktail.
 
+        Start with similarity 0. Then, evaluate each constraint one by one and increase
+        similarity according to the feature weight.
+
         Args:
             constraints (dict): dictionary containing a set of constraints
             cocktail (Element): cocktail Element
@@ -60,20 +63,35 @@ class CBR:
         Returns:
             [type]: [description]
         """
+        # Start with similarity 0
         sim = 0
+        
+        # Get cocktails ingredients and alc_type
+        c_ingredients = [i.text for i in cocktail.findall('ingredients/ingredient')]
+        c_ingredients_type = [i.attrib['alc_type'] for i in cocktail.findall('ingredients/ingredient')]
+                        
+        # Evaluate each constraint one by one
         for key in constraints:
             if constraints[key]:
+                # Ingredient constraing has highest importance
                 if key == "ingredients":
                     for ingredient in constraints[key]:
+                        # Get ingredient alcohol type
                         ingredient_alc_type = [k for k in self.alcohol_dict if ingredient in self.alcohol_dict[k]][0]
-                        for i in cocktail.find(key):
-                            if constraints[key] == i.text:
-                                sim += 1
-                            elif ingredient_alc_type == i.attrib['alc_type']:
-                                sim += 0.5
+                        
+                        # Add 1 if constraint ingredient is used in cocktail
+                        if ingredient in c_ingredients:
+                            sim += 1
+                            
+                        # Add 0.5 if constraint ingredient alc_type is used in cocktail
+                        elif ingredient_alc_type in c_ingredients_type:
+                            sim += 0.5
+                                
+                # Alochol type is the second most important
                 elif key == "alc_type":
                     for atype in constraints[key]:
                         sim += sum([1 for i in cocktail.find("ingredients") if atype == i.attrib['alc_type']])
+                
                 # TODO: tener en cuenta más restricciones como "spicy/cream taste" para los basic_taste
                 else:
                     if constraints[key] == cocktail.find(key).text:
