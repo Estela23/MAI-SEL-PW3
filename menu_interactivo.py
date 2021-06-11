@@ -51,6 +51,3 @@ def menu_interactivo():
             constraints['exc_ingredients'].append(excluded_ingredients)
     print(constraints)
     return constraints
-
-
-menu_interactivo()

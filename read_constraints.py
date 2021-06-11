@@ -12,25 +12,25 @@ def read_parse_json(filename):
     alc_types = set([child.find('ingredients').find('ingredient').attrib['alc_type'] for child in cocktails])
     with open(filename) as json_file:
         data = json.load(json_file)
-    if len(data.keys())==0:
+    if len(data.keys()) == 0:
         print("Empty JSON, please add some constraint")
         exit(1)
     elif 'constraints' in data:
-        if len(data['constraints'].keys())==0:
+        if len(data['constraints'].keys()) == 0:
             print("No constraints specified, please specify some.")
             exit(1)
         if 'category' in data['constraints'] and data['constraints']['category'] not in categories:
-            data['constraints']['category']=""
+            data['constraints']['category'] = ""
         if 'glass_type' in data['constraints'] and data['constraints']['glass_type'] not in glasses:
-            data['constraints']['glass_type']=""
+            data['constraints']['glass_type'] = ""
         if 'ingredients' not in data['constraints']:
-            data['constraints']['ingredients']=[]
+            data['constraints']['ingredients'] = []
         else:
-            aux=0
+            aux = 0
             for idx, ingredient in enumerate(data['constraints']['ingredients']):
                 if ingredient not in ingredients:
-                    data['constraints']['ingredients'].remove(idx-aux)
-                    aux=aux+1
+                    data['constraints']['ingredients'].remove(idx - aux)
+                    aux = aux + 1
         if 'alc_type' not in data['constraints']:
             data['constraints']['alc_type']=[]
         else:
@@ -48,6 +48,3 @@ def read_parse_json(filename):
                     data['constraints']['alc_type'].remove(idx-aux)
                     aux=aux+1
     return data['constraints']
-
-#TODO: ELIMINAR ESTO DESPUES EH
-print(read_parse_json("Data/my_json.json"))
