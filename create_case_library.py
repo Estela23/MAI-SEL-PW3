@@ -6,6 +6,7 @@ from lxml import etree
 
 DATA_PATH = 'Data'
 
+
 # Method to insert ingredient
 def insert_ingredient(ingr_id, instance, ingredients):
     """ Insert an ingredient to the ingredients parent element.
@@ -40,6 +41,7 @@ def insert_ingredient(ingr_id, instance, ingredients):
 
     ingr.text = str(instance[3])
 
+
 def add_preparation(preparation, cocktail_el, ingredients):
     """ Add preparation steps to the cocktail element
 
@@ -61,6 +63,7 @@ def add_preparation(preparation, cocktail_el, ingredients):
             
         step = etree.SubElement(prep, "step")
         step.text = s.capitalize()
+
 
 def create_xml_library(csv):
     # Read .CSV
@@ -117,8 +120,8 @@ def create_xml_library(csv):
     # Write in file
     et = etree.ElementTree(cocktails)
     et.write(os.path.join(DATA_PATH, 'case_library.xml'), pretty_print=True, encoding="UTF-8")
-    
+
+
 if __name__ == "__main__":
     csv_file = os.path.join(DATA_PATH, 'data_cocktails.csv')
     create_xml_library(csv_file)
-    

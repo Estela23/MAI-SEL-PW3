@@ -9,7 +9,6 @@ cocktails = tree.getroot()
 constraints = {'category': 'Cocktail', 'glasstype': 'Beer glass', 'ingredients': ['Vodka', 'Amaretto'],
                'alc_type': ['Rum']}
 
-
 # SEARCHING PHASE
 # Constructing hierarchical tree
 alcohol_types = set([child.find('ingredients').find('ingredient').attrib['alc_type'] for child in cocktails])
@@ -17,15 +16,16 @@ alcohol_types = set([child.find('ingredients').find('ingredient').attrib['alc_ty
 alcohol_dict = {}
 for atype in alcohol_types:
     brands = set([child.find('ingredients').find('ingredient').text for child in cocktails
-                if child.find('ingredients').find('ingredient').attrib['alc_type'] == atype])
-    alcohol_dict.update({atype:brands})
+                  if child.find('ingredients').find('ingredient').attrib['alc_type'] == atype])
+    alcohol_dict.update({atype: brands})
 
-#categories = [child.find('category').text for child in cocktails]
-#categories = set([child.find('category').text for child in cocktails])
-#print(categories)
+# categories = [child.find('category').text for child in cocktails]
+# categories = set([child.find('category').text for child in cocktails])
+# print(categories)
 
 searching_list = [child for child in cocktails if child.find('category').text == constraints['category']]
 print(searching_list)
+
 
 # SELECTION PHASE
 def compute_similarity(input, case):
@@ -48,9 +48,9 @@ def compute_similarity(input, case):
                     sim += 1
     return sim
 
+
 sim_list = [compute_similarity(constraints, c) for c in searching_list]
 
 retrieved_case = searching_list[np.argmax(np.array(sim_list))]
 retrieved_case_name = retrieved_case.find('name').text
 print(retrieved_case_name)
-
