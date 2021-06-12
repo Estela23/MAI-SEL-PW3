@@ -13,7 +13,7 @@ import random
 from lxml import etree
 import numpy as np
 import random
-
+import itertools
 from caseBase import Ingredient
 
 
@@ -174,8 +174,9 @@ class CBR:
 
                 # Add 0.4 if glasstype is a match. Glasstype is not very relevant for the case
                 elif key == "glasstype":
-                    if constraints[key] == cocktail.find(key).text:
-                        sim += 1 * 0.4
+                    for glass in constraints[key]:
+                        if glass == cocktail.find(key).text:
+                            sim += 1 * 0.4
 
                 # If one of the excluded elements in the constraint is found in the cocktail, similarity is reduced
                 elif key == "exc_ingredients":
@@ -214,9 +215,10 @@ class CBR:
         """
         # SEARCHING PHASE
         # Filter elements that correspond to the category constraint
+        # If there are more than two category constraints
         if len(constraints['category']):
-            searching_list = [child for child in self.cocktails if child.find('category').text == constraints['category']]
-        # If category constraint is empty, the outcome of the searching phase is the whole dataset
+            searching_list = list(itertools.chain.from_iterable([[child for child in self.cocktails
+                                if child.find('category').text == category] for category in constraints['category']]))
         else:
             searching_list = [child for child in self.cocktails]
 
@@ -346,11 +348,12 @@ class CBR:
     def adaptation(self):
         return
 
-
+'''
 # To test RETRIEVAL step
-#constraints = {'category': 'Cocktail', 'glasstype': 'Beer glass', 'ingredients': ['Amaretto'],
-#                'alc_type': ['Rum'], 'basic_type': ['Sweet'], 'exc_ingredients': ['Vodka']}
+constraints = {'category': ['Cocktail', 'Shot'], 'glasstype': ['Beer glass', 'Shot glass'], 'ingredients': ['Amaretto'],
+                'alc_type': ['Rum'], 'basic_type': ['Sweet'], 'exc_ingredients': ['Vodka']}
 
-#cbr = CBR("Data/case_library.xml")
-#case_retrieved = cbr.retrieval(constraints)
+cbr = CBR("Data/case_library.xml")
+case_retrieved = cbr.retrieval(constraints)
+'''
 
