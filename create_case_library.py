@@ -97,8 +97,10 @@ def create_xml_library(csv):
                 add_preparation(previous_preparation, cocktail, ingredients_list)
                 utility = etree.SubElement(cocktail, "utility")
                 utility.text = str(1.0)
-                condition = etree.SubElement(cocktail, "condition")
-                condition.text = "Original"
+                derivation = etree.SubElement(cocktail, "derivation")
+                derivation.text = "Original"
+                evaluation = etree.SubElement(cocktail, "evaluation")
+                evaluation.text = 'Success'  # cases from dataset are successful by default
 
             # Create xml structure for new cocktail
             ingredient_index = 0
@@ -109,10 +111,6 @@ def create_xml_library(csv):
             category.text = instance[1]
             glasstype = etree.SubElement(cocktail, "glasstype")
             glasstype.text = instance[2]
-            evaluation = etree.SubElement(cocktail, "evaluation")
-            evaluation.text = 'success'      # cases from dataset are successful by default
-            origin = etree.SubElement(cocktail, "origin")
-            origin.text = 'dataset'          # case comes from dataset
             ingredients = etree.SubElement(cocktail, "ingredients")
             insert_ingredient(ingredient_index, instance, ingredients)
             ingredient_index += 1
@@ -125,8 +123,10 @@ def create_xml_library(csv):
     add_preparation(preparation, cocktail, ingredients_list)
     utility = etree.SubElement(cocktail, "utility")
     utility.text = str(1.0)
-    condition = etree.SubElement(cocktail, "condition")
-    condition.text = "Original"
+    derivation = etree.SubElement(cocktail, "derivation")
+    derivation.text = "Original"
+    evaluation = etree.SubElement(cocktail, "evaluation")
+    evaluation.text = 'Success'  # cases from dataset are successful by default
 
     # Write in file
     et = etree.ElementTree(cocktails)
