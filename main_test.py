@@ -3,7 +3,7 @@ import os
 
 DATA_PATH = 'Data'
 
-constraints = {'category': ['Cocktail'], 'glass_type': ['Beer glass'], 'ingredients': ['Vodka', 'Orange Juice'],
+constraints = {'category': ['Cocktail'], 'glass_type': ['Beer glass'], 'ingredients': ['vodka', 'orange juice'],
                 'alc_type': ['Rum'], 'exc_ingredients': []}
 
 # Create cocktails CBR
