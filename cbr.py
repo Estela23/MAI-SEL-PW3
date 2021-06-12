@@ -8,13 +8,14 @@ Authors:    Xavier Cucurull Salamero <xavier.cucurull@estudiantat.upc.edu>
             Fernando Vázquez Novoa <fernando.vazquez.novoa@estudiantat.upc.edu>
             Estela Vázquez-Monjardín Lorenzo <estela.vazquez-monjardin@estudiantat.upc.edu>
 """
-import random
-
 from lxml import etree
 import numpy as np
 import random
 import itertools
-from caseBase import Ingredient
+from collections import namedtuple
+
+# Declare Ingredient namedtuple() 
+Ingredient = namedtuple('Ingredient', ['name', 'identifier', 'alc_type', 'basic_taste', 'measure', 'quantity', 'unit'])
 
 
 class CBR:
@@ -316,6 +317,22 @@ class CBR:
 
         return retrieved_case
 
+    def _create_ingr_element(ingredient, cocktail, ingr_id):
+        """ Convert an Ingredient Named Tuple to an ingredient XML element
+
+        Args:
+            ingredient (namedtuple): ingredient namedtuple
+        """
+        ingr_element = etree.SubElement(cocktail.find("ingredients"), "ingredient",
+                                        id=ingr_id, alc_type=ingredient.alc_type,
+                                        basic_taste=ingredient.basic_taste,
+                                        measure=ingredient.measure,
+                                        quantity=ingredient.quantity,
+                                        unit=ingredient.unit)
+        ingr_element.text = ingredient.name
+        
+        return ingr_element
+        
     def adaptation_step(self, constraints, retrieved_cocktail):
         '''Falta el retrieved_cocktail como entrada, se le pondrá luego'''
         # El retrieved_cocktail por ahora se finje
@@ -338,9 +355,12 @@ class CBR:
         alc_type = constraints["alc_type"]
         ingredients_remove = constraints["exc_ingredients"]
         ingredients_cocktail = {}
-        # TODO: cambiar el vaso
-        if constraints["glass_type"] != "":
-            retrieved_cocktail.find("glasstype").text = constraints["glass_type"]
+        
+        # If glass does not fullfill constraint, change it
+        if len(constraints["glass_type"]):
+            if retrieved_cocktail.find("glasstype").text not in constraints["glass_type"]:
+                retrieved_cocktail.find("glasstype").text = random.choice(constraints["glass_type"])
+            
         # TODO: Revisar esta fase, es el remove.
         for ingr in retrieved_cocktail.find("ingredients"):
             if ingr.text in constraints["exc_ingredients"]:
@@ -349,6 +369,7 @@ class CBR:
                 for step in retrieved_cocktail.find("preparation"):
                     if ingr.get('id') in step.text:
                         retrieved_cocktail.find("preparation").remove(step)
+                        
         # TODO: Revisar, add y substitution step, puede contener errores, prefiero segundo vistazo
         idx_ingr = 2*len(retrieved_cocktail.find("ingredients"))
         for alcohol in alc_type:
@@ -362,12 +383,7 @@ class CBR:
                 possible_ingr = [ingredient_to_add for ingredient_to_add in ingredients_list if
                                  ingredient_to_add.alc_type == alcohol]
                 ingredient_to_add = random.choice(possible_ingr)
-                to_add = etree.SubElement(retrieved_cocktail.find("ingredients"), "ingredient",
-                                          id="ingr" + str(idx_ingr), alc_type=ingredient_to_add.alc_type,
-                                          basic_taste=ingredient_to_add.basic_taste,
-                                          measure=ingredient_to_add.measure,
-                                          quantity=ingredient_to_add.quantity, unit=ingredient_to_add.unit)
-                to_add.text = ingredient_to_add.name
+                to_add = self._create_ingr_element(ingredient_to_add, retrieved_cocktail, "ingr" + str(idx_ingr))                
                 retrieved_cocktail.find("ingredients").append(to_add)
                 step = etree.SubElement(retrieved_cocktail.find("preparation"), "step")
                 # Si añades el alcohol type, posiblemente se necesite un paso de preparacion que lo contenga, esta es una idea, luego veremos que tal pirula.
@@ -375,6 +391,7 @@ class CBR:
                 idx_ingr = idx_ingr + 1
                 retrieved_cocktail.find("preparation").append(step)
                 break
+            
         # Segun mi logica, primer se añade el alcohol type, una vez añadido si una bebida de ese alcohol type si en las constratins se especifico una bebida tb de ese alcohol type, se sustituye
         # Tabmién si en la receta hay un ron y nos pide concretamente Havana Club, se sustituye el ron por Havana Club.
         for ingre in ingredients:
@@ -397,13 +414,7 @@ class CBR:
                     elif len(without_alcohol)>0:
                         ingr = random.choice(without_alcohol)
                         retrieved_cocktail.find("ingredients").remove(ingr)
-                        to_add = etree.SubElement(retrieved_cocktail.find("ingredients"), "ingredient",
-                                                  id=ingr.get('id'), alc_type=ingredient_to_add.alc_type,
-                                                  basic_taste=ingredient_to_add.basic_taste,
-                                                  measure=ingredient_to_add.measure,
-                                                  quantity=ingredient_to_add.quantity,
-                                                  unit=ingredient_to_add.unit)
-                        to_add.text = ingredient_to_add.name
+                        to_add = self._create_ingr_element(ingredient_to_add, retrieved_cocktail, ingr.get('id'))
                         retrieved_cocktail.find("ingredients").append(to_add)
                         flag_to_add = False
                 else:
@@ -415,27 +426,17 @@ class CBR:
                     elif len(with_alcohol)>0:
                         ingr = random.choice(with_alcohol)
                         retrieved_cocktail.find("ingredients").remove(ingr)
-                        to_add = etree.SubElement(retrieved_cocktail.find("ingredients"), "ingredient",
-                                                  id=ingr.get('id'), alc_type=ingredient_to_add.alc_type,
-                                                  basic_taste=ingredient_to_add.basic_taste,
-                                                  measure=ingredient_to_add.measure,
-                                                  quantity=ingredient_to_add.quantity,
-                                                  unit=ingredient_to_add.unit)
+                        to_add = self._create_ingr_element(ingredient_to_add, retrieved_cocktail, ingr.get('id'))
                         to_add.text = ingredient_to_add.name
                         retrieved_cocktail.find("ingredients").append(to_add)
                         flag_to_add = False
+                        
                 '''for ingr in retrieved_cocktail.find("ingredients"):
                     if ingr.get('alc_type') == ingredient_to_add.alc_type and ingredient_to_add.alc_type == "":
                         # EN CASO DE BEEBIDA NO ALGOHOLICA SUSTITUYO POR BASIC TASTE
                         if ingr.get("basic_taste") == ingredient_to_add.basic_taste and ingr.text != ingredient_to_add.name:
                             retrieved_cocktail.find("ingredients").remove(ingr)
-                            to_add = etree.SubElement(retrieved_cocktail.find("ingredients"), "ingredient",
-                                                      id=ingr.get('id'), alc_type=ingredient_to_add.alc_type,
-                                                      basic_taste=ingredient_to_add.basic_taste,
-                                                      measure=ingredient_to_add.measure,
-                                                      quantity=ingredient_to_add.quantity,
-                                                      unit=ingredient_to_add.unit)
-                            to_add.text=ingredient_to_add.name
+                            to_add = self._create_ingr_element(ingredient_to_add, retrieved_cocktail, ingr.get('id'))
                             retrieved_cocktail.find("ingredients").append(to_add)
                             flag_to_add = False
                             break
@@ -446,13 +447,7 @@ class CBR:
                     elif ingr.get('alc_type') == ingredient_to_add.alc_type and ingredient_to_add.alc_type != "":
                         if ingr.get('alc_type') == ingredient_to_add.alc_type and ingr.text != ingredient_to_add.name:
                             retrieved_cocktail.find("ingredients").remove(ingr)
-                            to_add = etree.SubElement(retrieved_cocktail.find("ingredients"), "ingredient",
-                                                      id=ingr.get('id'), alc_type=ingredient_to_add.alc_type,
-                                                      basic_taste=ingredient_to_add.basic_taste,
-                                                      measure=ingredient_to_add.measure,
-                                                      quantity=ingredient_to_add.quantity,
-                                                      unit=ingredient_to_add.unit)
-                            to_add.text=ingredient_to_add.name
+                            to_add = self._create_ingr_element(ingredient_to_add, retrieved_cocktail, ingr.get('id'))
                             retrieved_cocktail.find("ingredients").append(to_add)
                             flag_to_add = False
                             break
@@ -461,13 +456,7 @@ class CBR:
                             break
                 #Si no había sustitución posible se añade'''
             if flag_to_add:
-                to_add = etree.SubElement(retrieved_cocktail.find("ingredients"), "ingredient",
-                                          id="ingr" + str(idx_ingr), alc_type=ingredient_to_add.alc_type,
-                                          basic_taste=ingredient_to_add.basic_taste,
-                                          measure=ingredient_to_add.measure,
-                                          quantity=ingredient_to_add.quantity,
-                                          unit=ingredient_to_add.unit)
-                to_add.text = ingredient_to_add.name
+                to_add = self._create_ingr_element(ingredient_to_add, retrieved_cocktail, "ingr" + str(idx_ingr))
                 retrieved_cocktail.find("ingredients").append(to_add)
                 step = etree.SubElement(retrieved_cocktail.find("preparation"), "step")
                 # Posiblemente se necesite añadir una step luego de añadir el nuevo elemento, revisar codigo de todas formas, y hay que pensar forma de añadirlo logicamente.
