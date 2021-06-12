@@ -6,7 +6,6 @@ def read_parse_json(filename):
     tree = ET.parse('Data/case_library.xml')
     cocktails = tree.getroot()
     categories = set([child.find('category').text for child in cocktails])
-    print(categories)
     glasses=set([child.find('glasstype').text for child in cocktails])
     ingredients=set([child.find('ingredients').find('ingredient').text for child in cocktails])
     alc_types = set([child.find('ingredients').find('ingredient').attrib['alc_type'] for child in cocktails])
@@ -48,3 +47,5 @@ def read_parse_json(filename):
                     data['constraints']['alc_type'].remove(idx-aux)
                     aux=aux+1
     return data['constraints']
+
+
