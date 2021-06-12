@@ -54,7 +54,7 @@ print(', '.join(glass).replace(' / ', '/'))
 alc_ingr = dataset[dataset['Alc_type'] != ''][['Alc_type', 'strIngredients']]
 non_alc_ingr = dataset[dataset['Alc_type'] == ''][['Basic_taste', 'strIngredients']]
 
-# Number of recipes by Alcohol type
+# Popular Alcohol type
 counts_type_alc = alc_ingr['Alc_type'].value_counts()
 # sorted_counts_type_alc = [counts_type_alc[type] for type in alc_type]
 
@@ -63,6 +63,16 @@ plt.xticks(range(len(alc_type)), counts_type_alc.axes[0].values, rotation=45, ho
 plt.title("Number of times an alcohol appears in a recipe")
 plt.tight_layout()
 plt.savefig(os.path.join(DATA_PATH, 'Representations/popular_alcohol_types'))
+plt.clf()
+
+# Popular basic taste
+counts_type_basic = non_alc_ingr['Basic_taste'].value_counts()
+
+plt.bar([i for i in range(len(basic_taste))], counts_type_basic, color="tab:green")
+plt.xticks(range(len(basic_taste)), counts_type_basic.axes[0].values, rotation=45, horizontalalignment='right', fontsize=10)
+plt.title("Number of times a basic taste appears in a recipe")
+plt.tight_layout()
+plt.savefig(os.path.join(DATA_PATH, 'Representations/popular_basic_tastes'))
 plt.clf()
 
 # Number of unique ingredients type for each Alcohol type
