@@ -97,7 +97,10 @@ class CBR:
         return adapted_case, self.cocktails
 
     def _update_case_library(self, new_case):
-        # TODO: update the structure when new cases are added
+        # TODO: update utility function and case label
+        self.cocktails.append(new_case)
+        et = etree.ElementTree(self.cocktails)
+        et.write('Data/case_library.xml', pretty_print=True, encoding="UTF-8")
         return
 
     def _compute_similarity(self, constraints, cocktail):
