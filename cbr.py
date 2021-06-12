@@ -108,26 +108,33 @@ class CBR:
 
                         # Add 0.5 if constraint ingredient alc_type is used in cocktail
                         elif ingredient_alc_type in c_ingredients_atype:
-                            sim += 0.5
+                            sim += 1 * 0.5
 
                         # Add 0.5 if constraint ingredient basic_type is used in cocktail
                         elif ingredient_basic_type in c_ingredients_btype:
-                            sim += 0.5
+                            sim += 1 * 0.5
 
-                # Alochol type is the second most important
+                # Alochol_type has a lot of importance, but less than the ingredient constraints
                 elif key == "alc_type":
                     for atype in constraints[key]:
-                        sim += sum([1 for i in cocktail.find("ingredients") if atype == i.attrib['alc_type']])
+                        sim += sum([1*0.8 for i in cocktail.find("ingredients") if atype == i.attrib['alc_type']])
 
+                # Basic_type has a lot of importance, but less than the ingredient constraints
                 elif key == "basic_taste":
                     for btype in constraints[key]:
-                        sim += sum([1 for i in cocktail.find("ingredients") if btype == i.attrib['basic_type']])
-                        
-                # TODO: tener en cuenta más restricciones como "spicy/cream taste" para los basic_taste
+                        sim += sum([1*0.8 for i in cocktail.find("ingredients") if btype == i.attrib['basic_type']])
 
-                else:
+                # TODO: tener en cuenta más restricciones como "spicy/cream taste" para los basic_taste
+                # Glasstype is not very relevant for the case
+                elif key == "glasstype":
                     if constraints[key] == cocktail.find(key).text:
-                        sim += 1
+                        sim += 1 * 0.4
+
+                # If one of the excluded elements in the constraint is found in the cocktail, similarity is reduced
+                elif key == "exc_ingredients":
+                    for ingredient in constraints[key]:
+                        if ingredient in c_ingredients:
+                            sim -= 2
         return sim
 
     def retrieval(self, constraints):
@@ -170,3 +177,6 @@ class CBR:
 
 constraints = {'category': 'Cocktail', 'glasstype': 'Beer glass', 'ingredients': ['Amaretto'],
                 'alc_type': ['Rum'], 'basic_type': ['Sweet'], 'exc_ingredients': ['Vodka']}
+
+cbr = CBR("Data/case_library.xml")
+case_retrieved = cbr.retrieval(constraints)
