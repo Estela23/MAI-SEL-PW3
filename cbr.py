@@ -50,6 +50,28 @@ class CBR:
                 self.basic_dict[btaste].update(set([i.text for i in self.cocktails.findall('cocktail/ingredients/ingredient') 
                                                 if i.attrib['basic_taste'] == btaste]))     
     
+    def _print_ingredients(self, cocktail):
+        """ Print the ingredients (with measures) of the given cocktail.
+
+        Args:
+            cocktail (Element): cocktail Element
+        """
+        for i in cocktail.findall('ingredients/ingredient'):
+            print(f'{i.get("measure")} {i.text}')
+            # print(f'{i.measure} {i.name} ({i.quantity} {i.unit})')
+        
+    def _print_preparation(self, cocktail):
+        """ Print the preparation steps (with ingredient names) of the given cocktail.
+
+        Args:
+            cocktail (Element): cocktail Element
+        """ 
+        for s in cocktail.findall('preparation/step'):
+            step = s.text
+            for i in cocktail.findall('ingredients/ingredient'):
+                step = step.replace(i.get('id'), i.text)
+            print(step)      
+            
     def _compute_similarity(self, constraints, cocktail):
         """ Compute the similiraty between a set of constraints and a particular cocktail.
 
