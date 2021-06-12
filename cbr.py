@@ -301,8 +301,8 @@ class CBR:
         """
         # SEARCHING PHASE
         # Filter elements that correspond to the category constraint
-        # If there are more than two category constraints
-        if len(constraints['category']):
+        # If category constraints is not empty
+        if constraints['category']:
             searching_list = list(itertools.chain.from_iterable([[child for child in self.cocktails
                                 if child.find('category').text == category] for category in constraints['category']]))
         else:
