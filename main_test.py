@@ -3,7 +3,7 @@ import os
 
 DATA_PATH = 'Data'
 
-constraints = {'category': 'Cocktail', 'glass_type': 'Beer glass', 'ingredients': ['Vodka', 'Orange Juice'],
+constraints = {'category': ['Cocktail'], 'glass_type': ['Beer glass'], 'ingredients': ['Vodka', 'Orange Juice'],
                 'alc_type': ['Rum'], 'exc_ingredients': []}
 
 # Create cocktails CBR
@@ -30,11 +30,11 @@ cocktails_cbr._print_ingredients(adapted_cocktail)
 print('\nAdapted Preparation:')
 cocktails_cbr._print_preparation(adapted_cocktail)
 
-#ingredient = 'Yellow Chartreuse'
-#ingredient_alc_type = [k for k in cocktails_cbr.alcohol_dict if ingredient in cocktails_cbr.alcohol_dict[k]][0]
+# Evaluate constraints
+evaluation, eval_results = cocktails_cbr._evaluate_constraints_fullfillment(constraints, adapted_cocktail)
 
-# 155 Belmont	
-# Vodka and Orange Juice
-
-# 50/50
-# Vanilla vodka and Orange Juice
+if evaluation:
+    print('\nAll contstraints fullfilled!')
+else:
+    print('\nConstraints error:')
+    print('\n'.join(eval_results))

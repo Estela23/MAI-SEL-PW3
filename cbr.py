@@ -80,6 +80,79 @@ class CBR:
                 step = step.replace(i.get('id'), i.text)
             print(step)
 
+    def _evaluate_constraints_fullfillment(self, constraints, cocktail):
+        """ Check that a cocktail fullfills all the requiered constraints.
+
+        Args:
+            constraings (dict): constraints to fulfill
+            cocktail (Element): cocktail Element to evaluate
+        """
+        ckt_category = cocktail.find('category').text
+        ckt_glass = cocktail.find('glasstype').text
+        ckt_ingredients = [i.text for i in cocktail.findall('ingredients/ingredient')]
+        ckt_alc_types = [i.get('alc_type') for i in cocktail.findall('ingredients/ingredient')]
+        ckt_basic_tastes = [i.get('basic_taste') for i in cocktail.findall('ingredients/ingredient')]
+        
+        cnst_categories = constraints.get('category')
+        cnst_glass = constraints.get('glass_type')
+        cnst_ingredients = constraints.get('ingredients')
+        cnst_alc_types = constraints.get('alc_type')
+        cnst_basic_tastes = constraints.get('basic_taste')
+        cnst_exc_ingredients = constraints.get('exc_ingredients')
+
+        evaluation = []
+        evaluation_results = []
+        
+        # Check that cocktail contains ingredients
+        if cnst_ingredients:
+            if all(i in ckt_ingredients for i in cnst_ingredients):
+                evaluation.append(True)
+            else:
+                evaluation.append(False)
+                evaluation_results.append('Ingredients constraint failed')
+        
+        # Check that cocktail does not contain any of the excluded ingredients
+        if cnst_exc_ingredients:
+            if not any(i in ckt_ingredients for i in cnst_ingredients):
+                evaluation.append(True)
+            else:
+                evaluation.append(False)
+                evaluation_results.append('Excluded ingredients constraint failed')
+    
+        # Check cocktail category
+        if cnst_categories:
+            if ckt_category in cnst_categories:
+                evaluation.append(True)
+            else:
+                evaluation.append(False)
+                evaluation_results.append('Category constraint failed')
+        
+        # Check glass type
+        if cnst_glass:
+            if ckt_glass in cnst_glass:
+                evaluation.append(True)
+            else:
+                evaluation.append(False)
+                evaluation_results.append('Glass constraint failed')
+                
+        # Chekc alc_type
+        if cnst_alc_types:
+            if all(i in ckt_alc_types for i in cnst_alc_types):
+                evaluation.append(True)
+            else:
+                evaluation.append(False)
+                evaluation_results.append('Alcohol types constraint failed')
+        
+        # Chekc basic_taste
+        if cnst_basic_tastes:
+            if all(i in ckt_basic_tastes for i in cnst_basic_tastes):
+                evaluation.append(True)
+            else:
+                evaluation.append(False)
+                evaluation_results.append('Basic tastes constraint failed')     
+        
+        return False not in evaluation, evaluation_results
+
     def _process(self, constraints):
         """ CBR principal flow, where the different stages of the CBR will be called
 
