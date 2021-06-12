@@ -341,7 +341,7 @@ class CBR:
         
         return ingr_element
         
-    def adaptation_step(self, constraints, retrieved_cocktail):
+    def adaptation(self, constraints, retrieved_cocktail):
         """ Adapt a retrieved cocktail to fullfill the given constraints
 
         Args:
@@ -462,11 +462,8 @@ class CBR:
                 step.text = "Add ingr" + str(idx_ingr) + " to the cocktail."
                 idx_ingr = idx_ingr + 1
                 adapted_cocktail.find("preparation").append(step)
+                
         return adapted_cocktail
-
-    def adaptation(self):
-        return
-
 '''
 # To test RETRIEVAL step
 constraints = {'category': ['Cocktail', 'Shot'], 'glasstype': ['Beer glass', 'Shot glass'], 'ingredients': ['Amaretto'],
