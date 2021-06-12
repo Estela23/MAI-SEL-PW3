@@ -105,6 +105,7 @@ class CBR:
         Returns:
 
         """
+        # TODO: What happens with the failures, are they saved in the case library as well?
         # TODO: update utility function and case label
         self.cocktails.append(new_case)
         et = etree.ElementTree(self.cocktails)

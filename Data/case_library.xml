@@ -14,6 +14,8 @@
       <step>Add white creme de cacao and ingr2</step>
       <step>Stir</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>1-900-FUK-MEUP</name>
@@ -35,6 +37,8 @@
       <step>Shake ingredients in a mixing tin filled with ice cubes</step>
       <step>Strain into a rocks glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>110 in the shade</name>
@@ -50,6 +54,8 @@
       <step>Drop shooter in glass</step>
       <step>Fill with beer</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>151 Florida Bushwacker</name>
@@ -72,6 +78,8 @@
       <step>Blend until smooth</step>
       <step>Garnish with chocolate shavings if desired.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>155 Belmont</name>
@@ -90,6 +98,8 @@
       <step>Serve in a wine glass</step>
       <step>Garnish with carrot.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>24k nightmare</name>
@@ -106,6 +116,8 @@
     <preparation>
       <step>Add over ice,shake and pour.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>252</name>
@@ -120,6 +132,8 @@
     <preparation>
       <step>Add both ingredients to shot glass, shoot, and get drunk quick</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>3 Wise Men</name>
@@ -136,6 +150,8 @@
       <step>Put them them in a glass..</step>
       <step>And slam it to tha head.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>3-Mile Long Island Iced Tea</name>
@@ -159,6 +175,8 @@
       <step>Fill 2/3 glass with cola and remainder with sweet &amp; sour</step>
       <step>Top with dash of ingr6 and ingr7 wedge.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>410 Gone</name>
@@ -173,6 +191,8 @@
     <preparation>
       <step>Pour 2oz vodka into a low ball glass, top up with coke.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>50/50</name>
@@ -191,6 +211,8 @@
       <step>Add a splash of grand-marnier</step>
       <step>Fill with o.j.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>501 Blue</name>
@@ -208,6 +230,8 @@
     <preparation>
       <step>Mix equal amounts into a glass with ice.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>69 Special</name>
@@ -228,6 +252,8 @@
       <step>Add ingr3 for flavor</step>
       <step>If you are weak, top up glass with more ingr1.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>747</name>
@@ -243,6 +269,8 @@
     <preparation>
       <step>Pour kaluha, then baileys, then ingr3 not chilled and not layered -- serve!!!</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>9 1/2 Weeks</name>
@@ -261,6 +289,8 @@
       <step>Chill and strain into cocktail glass</step>
       <step>Garnish with sliced strawberry.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>A Day at the Beach</name>
@@ -279,6 +309,8 @@
       <step>Strain over ice into a highball glass</step>
       <step>Add ingr1 and garnish with a pineapple wedge and a strawberry.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>A Furlong Too Late</name>
@@ -296,6 +328,8 @@
       <step>Stir well</step>
       <step>Garnish with the lemon twist.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>A Gilligan's Island</name>
@@ -312,6 +346,8 @@
     <preparation>
       <step>Shaken, not stirred!</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>A Night In Old Mandalay</name>
@@ -334,6 +370,8 @@
       <step>Top with the ingr1</step>
       <step>Garnish with the lemon twist.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>A Piece of Ass</name>
@@ -351,6 +389,8 @@
       <step>Pour in shots</step>
       <step>Fill with ingr1.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>A Splash of Nash</name>
@@ -368,6 +408,8 @@
       <step>Drop shot glass with banana &amp; melon liquers into a 9 oz hi- ball glass containing ingr3 and ingr4</step>
       <step>Drink in one shot.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>A True Amaretto Sour</name>
@@ -386,6 +428,8 @@
       <step>Strain into glass and add ice</step>
       <step>Garnish with a marachino cherry.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>A midsummernight dream</name>
@@ -405,6 +449,8 @@
       <step>Shake well and pour in a highballglass</step>
       <step>Fill up with the russchian water</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>A. J.</name>
@@ -419,6 +465,8 @@
     <preparation>
       <step>Shake ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>A.D.M. (After Dinner Mint)</name>
@@ -435,6 +483,8 @@
     <preparation>
       <step>Shake vigorously</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>A1</name>
@@ -451,6 +501,8 @@
     <preparation>
       <step>Pour all ingredients into a cocktail shaker, mix and serve over ice into a chilled glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>ABC</name>
@@ -466,6 +518,8 @@
     <preparation>
       <step>Layered in a shot glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>ACID</name>
@@ -480,6 +534,8 @@
     <preparation>
       <step>Poor in the 151 first followed by the 101 served with a coke or dr pepper chaser.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>AT&amp;T</name>
@@ -495,6 +551,8 @@
     <preparation>
       <step>Pour vodka and ingr2 over ice, add tonic and stir</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Abbey Cocktail</name>
@@ -512,6 +570,8 @@
       <step>Shake all ingredients (except for the ingr3) with ice and strain into a cocktail glass</step>
       <step>Top with the ingr3 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Abbey Martini</name>
@@ -528,6 +588,8 @@
     <preparation>
       <step>Put all ingredients into a shaker and mix, then strain contents into a chilled cocktail glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Abilene</name>
@@ -544,6 +606,8 @@
       <step>Pour all of the ingredients into a highball glass almost filled with ice cubes</step>
       <step>Stir well.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Absolut Evergreen</name>
@@ -559,6 +623,8 @@
     <preparation>
       <step>Mix, pour over ice and top up with ingr2.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Absolut Sex</name>
@@ -575,6 +641,8 @@
     <preparation>
       <step>Shake ingr4, midori, and ingr3 in shaker with ice: strain into rocks glass: splash of seven on top.absolut sex.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Absolut Stress #2</name>
@@ -594,6 +662,8 @@
       <step>Garnish with orange and cherry</step>
       <step>Enjoy</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Absolut Summertime</name>
@@ -614,6 +684,8 @@
       <step>Strain contents into ice filled collins glass</step>
       <step>Garnish with ingr3.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Absolut limousine</name>
@@ -631,6 +703,8 @@
       <step>Add ingr1</step>
       <step>Add ice and lime wedges.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Absolutely Cranberry Smash</name>
@@ -647,6 +721,8 @@
       <step>Stir ingredients together</step>
       <step>Serve over ice.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Absolutely Fabulous</name>
@@ -663,6 +739,8 @@
       <step>Mix the ingr3 and ingr2 together in a shaker and strain into a glass</step>
       <step>Top up with ingr1.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Absolutly Screwed Up</name>
@@ -680,6 +758,8 @@
       <step>Shake it up it tasts better that way, but you can stir it if you want</step>
       <step>6 of those and you will be wasted for the rest of the night.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Acapulco</name>
@@ -699,6 +779,8 @@
       <step>Combine and shake all ingredients (except ingr1) with ice and strain into an old-fashioned glass over ice cubes</step>
       <step>Add the sprig of ingr1 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Ace</name>
@@ -716,6 +798,8 @@
     <preparation>
       <step>Shake all the ingredients in a cocktail shaker and ice then strain in a cold glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Adam</name>
@@ -733,6 +817,8 @@
       <step>Shake well</step>
       <step>Strain into a cocktail glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Adam &amp; Eve</name>
@@ -749,6 +835,8 @@
     <preparation>
       <step>Shake together all the ingredients and strain into a cold glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Adam Bomb</name>
@@ -769,6 +857,8 @@
       <step>Blend till smooth, rim glass with sugar or ingr2 and pour mixture in</step>
       <step>Garnish with lemon or lime slice.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Adam Sunrise</name>
@@ -788,6 +878,8 @@
       <step>Put 10 tsp of ingr2, add 1/2 can ingr3 concentrate, fill to top with ingr1</step>
       <step>Blend for 60 seconds.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Addington</name>
@@ -805,6 +897,8 @@
       <step>Top up with a squirt of ingr2</step>
       <step></step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Addison</name>
@@ -819,6 +913,8 @@
     <preparation>
       <step>Shake together all the ingredients and strain into a cold glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Addison Special</name>
@@ -836,6 +932,8 @@
       <step>Fill half full with ice and shake well</step>
       <step>Strain into glass with ice and garnish with a cherry and orange wedge.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Adios Amigos Cocktail</name>
@@ -855,6 +953,8 @@
     <preparation>
       <step>Shake together all the ingredients and strain into a cold glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Adonis Cocktail</name>
@@ -870,6 +970,8 @@
     <preparation>
       <step>Stir all ingredients with ice, strain contents into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Affair</name>
@@ -887,6 +989,8 @@
       <step>Pour schnapps, ingr1, and ingr2 over ice in a highball glass</step>
       <step>Top with ingr3 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Affinity</name>
@@ -905,6 +1009,8 @@
       <step>Stir well</step>
       <step>Strain into a cocktail glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>After Dinner Cocktail</name>
@@ -922,6 +1028,8 @@
       <step>Shake all ingredients (except ingr3 wedge) with ice and strain into a cocktail glass</step>
       <step>Add the wedge of ingr3 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>After Five</name>
@@ -943,6 +1051,8 @@
       <step>Done correctly, this will provide a layer of bailey's floating over the ingr1</step>
       <step>Toss it down all at once for something like a peppermint pattie, with a bang!!! note: best if all ingredients are chilled</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>After Supper Cocktail</name>
@@ -958,6 +1068,8 @@
     <preparation>
       <step>Shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>After sex</name>
@@ -974,6 +1086,8 @@
       <step>Pour the ingr2 and creme over some ice cubes in a tall glass and fill up with juice</step>
       <step>To make it beuty full make the top of the glass with a grenadine and sugar</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Afternoon</name>
@@ -993,6 +1107,8 @@
       <step>Ingr2 on top if wanted</step>
       <step>Served directly.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Alabama Slammer</name>
@@ -1010,6 +1126,8 @@
       <step>Pour all ingredients (except for ingr3) over ice in a highball glass</step>
       <step>Stir, add a dash of ingr3, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Alaska Cocktail</name>
@@ -1027,6 +1145,8 @@
       <step>Stir all ingredients with ice, strain contents into a cocktail glass</step>
       <step>Drop in a twist of lemon and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Alexander</name>
@@ -1044,6 +1164,8 @@
       <step>Shake all ingredients with ice and strain contents into a cocktail glass</step>
       <step>Sprinkle ingr3 on top and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Alfie Cocktail</name>
@@ -1059,6 +1181,8 @@
     <preparation>
       <step>Combine and shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Algonquin</name>
@@ -1074,6 +1198,8 @@
     <preparation>
       <step>Combine and shake all ingredients with ice, strain contents into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Alice in Wonderland</name>
@@ -1089,6 +1215,8 @@
     <preparation>
       <step>Just mix the three ingredients one to one to one</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Allegheny</name>
@@ -1107,6 +1235,8 @@
       <step>Shake all ingredients (except ingr1) with ice and strain into a cocktail glass</step>
       <step>Top with the twist of ingr1 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Allies Cocktail</name>
@@ -1122,6 +1252,8 @@
     <preparation>
       <step>Stir all ingredients with ice, strain contents into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Almeria</name>
@@ -1139,6 +1271,8 @@
       <step>Shake well</step>
       <step>Strain into a cocktail glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Almond Chocolate Coffee</name>
@@ -1155,6 +1289,8 @@
       <step>Pour in order into ingr2 cup</step>
       <step>Top with whipped creme and chocolate shcvings.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Almond Joy</name>
@@ -1170,6 +1306,8 @@
     <preparation>
       <step>Shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Amaretto And Cream</name>
@@ -1184,6 +1322,8 @@
     <preparation>
       <step>Shake well with cracked ice, strain contents into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Amaretto Mist</name>
@@ -1200,6 +1340,8 @@
       <step>Add the wedge of ingr2 and serve</step>
       <step>(a wedge of lemon may be substituted for ingr2, if preferred.)</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Amaretto Rose</name>
@@ -1216,6 +1358,8 @@
       <step>Pour ingr1 and ingr2 over ice in a collins glass</step>
       <step>Fill with ingr3 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Amaretto Shake</name>
@@ -1232,6 +1376,8 @@
       <step>Combine all ingredients in a blender and blend at high speed until smooth</step>
       <step>Serve in chilled glass garnished with bittersweet chocolate shavings.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Amaretto Sour</name>
@@ -1247,6 +1393,8 @@
       <step>Shake and strain</step>
       <step>Garnish with a cherry and an orange slice.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Amaretto Stinger</name>
@@ -1261,6 +1409,8 @@
     <preparation>
       <step>Shake ingredients well with cracked ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Amaretto Stone Sour</name>
@@ -1276,6 +1426,8 @@
     <preparation>
       <step>Shake and serve over ice</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Amaretto Stone Sour #3</name>
@@ -1295,6 +1447,8 @@
       <step>Add a splash of oj</step>
       <step>Garnish with orange slice and a cherry.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Amaretto Sunrise</name>
@@ -1311,6 +1465,8 @@
       <step>Mix together the ingr2 and ingr3</step>
       <step>Pour into glass and then add the ingr1 untill you see the sunrise.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Amaretto Sunset</name>
@@ -1327,6 +1483,8 @@
       <step>Shake ingredients in bartender's mixer quickly, just 5 shakes</step>
       <step>Strain out ice, serve in glass immediately with a slice of orange.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Amaretto Sweet &amp; Sour</name>
@@ -1346,6 +1504,8 @@
       <step>Add about 1" of ingr1, 1/2" of melon liqeur, and 1/2 to 1/4" of ingr2</step>
       <step>Then blend the mix until it is of margaritta consistency or thinner.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Amaretto Tea</name>
@@ -1363,6 +1523,8 @@
       <step>Add ingr2, but do not stir</step>
       <step>Top with chilled ingr1 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Americano</name>
@@ -1379,6 +1541,8 @@
     <preparation>
       <step>Pour the ingr2 and vermouth over ice into glass, add a splash of soda water and garnish with half orange slice.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Angel Face</name>
@@ -1394,6 +1558,8 @@
     <preparation>
       <step>Shake all ingredients with ice and strain contents into a cocktail glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Apple Cider Punch #1</name>
@@ -1417,6 +1583,8 @@
       <step>Stir occasionally</step>
       <step>If you want an alcoholic drink, rum would be nice.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Apple Grande</name>
@@ -1431,6 +1599,8 @@
     <preparation>
       <step>Chill both ingredients!! mix in a tumbler and enjoy!</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Apple Pie with A Crust</name>
@@ -1447,6 +1617,8 @@
       <step>Just mix the two liquids and sprinkle in the ingr2</step>
       <step>Serve either cold or heated.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Apple Slammer</name>
@@ -1461,6 +1633,8 @@
     <preparation>
       <step>Pour into a shot glass and present to consumer, they are expected to cover the top of the shotglass with thier palm, raise the glass, slam it on the bar and the swallow quickly.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Applecar</name>
@@ -1476,6 +1650,8 @@
     <preparation>
       <step>Shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Applejack</name>
@@ -1491,6 +1667,8 @@
     <preparation>
       <step>Add all ingredients into mixing glass, chill and strain into cocktail glass</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Apricot Lady</name>
@@ -1512,6 +1690,8 @@
       <step>Strain into an old-fashioned glass almost filled with ice cubes</step>
       <step>Garnish with the ingr2 slice.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Apricot punch</name>
@@ -1530,6 +1710,8 @@
       <step>Pour all ingrediants into a large punch bowl</step>
       <step>Add ice and 4 oranges that are peeled and divided.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Archbishop</name>
@@ -1547,6 +1729,8 @@
       <step>In an old-fashioned glass almost filled with ice cubes, combine all of the ingredients</step>
       <step>Stir well.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Arctic Fish</name>
@@ -1564,6 +1748,8 @@
       <step>Fill glass with ice and fish, add ingr4, ingr3 and ingr1</step>
       <step>Do not stir!!!!! serve well chilled.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Arctic Mouthwash</name>
@@ -1580,6 +1766,8 @@
       <step>It should be of a slushy consistency</step>
       <step>Pour immediately and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Arise My Love</name>
@@ -1595,6 +1783,8 @@
       <step>Put creme de menthe into a ingr1 flute</step>
       <step>Fill with chilled ingr1 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Arizona Antifreeze</name>
@@ -1610,6 +1800,8 @@
     <preparation>
       <step>Pour all ingredients into shot glass and slam !!!!</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Arizona Stingers</name>
@@ -1627,6 +1819,8 @@
       <step>Stir to mix using a spoon</step>
       <step>Drink up and enjoy!!!!!!!</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Arizona Twister</name>
@@ -1651,6 +1845,8 @@
       <step>Crushed ice should already be in glass</step>
       <step>Top off the glass with a ingr1 wedge.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Army special</name>
@@ -1667,6 +1863,8 @@
       <step>Pour ingr1, ingr3 and lime cordial into glass, and top up with crushed ice</step>
       <step>Wait for ice to melt slightly and sip without a straw.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Arthur Tompkins</name>
@@ -1685,6 +1883,8 @@
       <step>Shake well</step>
       <step>Strain into a sour glass and garnish with the lemon twist.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Artillery</name>
@@ -1700,6 +1900,8 @@
     <preparation>
       <step>Stir all ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Artillery Punch</name>
@@ -1722,6 +1924,8 @@
       <step>If found too dry, sugar syrup may be added</step>
       <step>Decorate with twists of lemon peel.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Atlantic Sun</name>
@@ -1740,6 +1944,8 @@
       <step>Shake all the ingredients, top the drink with soda</step>
       <step>Garnish with a slice of orange.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Atomic Lokade</name>
@@ -1759,6 +1965,8 @@
       <step>Shake with ice and strain into glass</step>
       <step>Add ingr5 to taste</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Auburn Headbanger</name>
@@ -1776,6 +1984,8 @@
       <step>Sit down before shotting</step>
       <step>Enjoy!!</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Autodafé</name>
@@ -1792,6 +2002,8 @@
       <step>Mix and fill up with ingr2</step>
       <step>Drunk by finns on a sunny day any time of the year and day.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Avalanche</name>
@@ -1807,6 +2019,8 @@
     <preparation>
       <step>Mix in highball glass over ice, shake well.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Avalon</name>
@@ -1828,6 +2042,8 @@
       <step>The cucumber provides zest and looks attractive</step>
       <step>This drink, created by timo haimi, took first prize in the 1991 finlandia ingr2 long drink competition.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Aviation</name>
@@ -1845,6 +2061,8 @@
       <step>Shake well and strain into cocktail glass</step>
       <step>Garnish with a cherry.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Aztec Punch</name>
@@ -1862,6 +2080,8 @@
       <step>Mix all ingredients in a pitcher</step>
       <step>Mix thoroughly and pour into whatever is available, the bigger the better! this drink packs a big punch, so don't over do it.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>B-52</name>
@@ -1878,6 +2098,8 @@
       <step>Layer ingredients into a shot glass</step>
       <step>Serve with a stirrer.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>B-53</name>
@@ -1894,6 +2116,8 @@
       <step>Layer the ingr2, sambucca and ingr1 into a shot glas in that order</step>
       <step>Better than b-52</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Baby Eskimo</name>
@@ -1912,6 +2136,8 @@
       <step>Consume immediately and often</step>
       <step>Nice and light, great for following a heavy drink.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Baby Guinness</name>
@@ -1928,6 +2154,8 @@
       <step>Then, carefully pour baileys, using wall of shot glass</step>
       <step>This will give the "guinness" its "head".</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Bacardi Cocktail</name>
@@ -1945,6 +2173,8 @@
       <step>Shake together with ice</step>
       <step>Strain into glass and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Bailey's Dream Shake</name>
@@ -1961,6 +2191,8 @@
       <step>Blend ingredients for 30 seconds</step>
       <step>Definitely refreshing for a hot summer's day !</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Balmoral</name>
@@ -1979,6 +2211,8 @@
       <step>Stir well</step>
       <step>Strain into a cocktail glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Banana Daiquiri</name>
@@ -1999,6 +2233,8 @@
       <step>Shake well</step>
       <step>Strain in chilled cocktail glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Barracuda</name>
@@ -2017,6 +2253,8 @@
       <step>Shake pour ingredients with ice</step>
       <step>Strain into glass, top with sparkling wine.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Belgian Blue</name>
@@ -2033,6 +2271,8 @@
     <preparation>
       <step>Just pour all ingredients in the glass and stir...</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Bellini</name>
@@ -2048,6 +2288,8 @@
       <step>Pour peach purée into chilled flute, add sparkling wine</step>
       <step>Stir gently.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Bellini Martini</name>
@@ -2070,6 +2312,8 @@
       <step>Strain into glass</step>
       <step>Add lemon twist peel.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Bermuda Highball</name>
@@ -2090,6 +2334,8 @@
       <step>Add the twist of lemon and serve</step>
       <step>(ginger ale may be substituted for ingr4, if preferred.)</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Berry Deadly</name>
@@ -2108,6 +2354,8 @@
       <step>Stir gently</step>
       <step>Serve chilled.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Between The Sheets</name>
@@ -2124,6 +2372,8 @@
     <preparation>
       <step>Pour all ingredients into shaker with ice cubes, shake, strain into chilled cocktail glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Bible Belt</name>
@@ -2140,6 +2390,8 @@
     <preparation>
       <step>Mix all ingredients, and pour over ice.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Big Red</name>
@@ -2154,6 +2406,8 @@
     <preparation>
       <step>Pour ingredients into 1 ounce shot glass</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Black &amp; Tan</name>
@@ -2170,6 +2424,8 @@
       <step>Next pour guiness over a spoon slowly until glass is full</step>
       <step>If done correctly the guiness will stay on top and the bass on bottom hence the name black &amp; tan.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Black Forest Shake</name>
@@ -2187,6 +2443,8 @@
       <step>In a blender put ice cubes, ingr4, ingr2, ingr3, and ingr1</step>
       <step>Blend very well.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Black Russian</name>
@@ -2202,6 +2460,8 @@
       <step>Pour the ingredients into an old fashioned glass filled with ice cubes</step>
       <step>Stir gently.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Black and Brown</name>
@@ -2216,6 +2476,8 @@
     <preparation>
       <step>Carefully to avoid explosive head formation: pour beer glass half full of favorite rootbeer and top off with guinness.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Blackthorn</name>
@@ -2232,6 +2494,8 @@
       <step>Stir ingr2 and vermouth with ice and strain into a cocktail glass</step>
       <step>Add the twist of ingr1 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Bleeding Surgeon</name>
@@ -2251,6 +2515,8 @@
       <step>Finish off glass with ingr4</step>
       <step>Be carefull, warm ingr3 may foam over the glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Blind Russian</name>
@@ -2271,6 +2537,8 @@
       <step>Add ingr2</step>
       <step>Shake.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Bloody Maria</name>
@@ -2290,6 +2558,8 @@
       <step>Shake all ingredients (except ingr6 slice) with cracked ice and strain into an old-fashioned glass over ice cubes</step>
       <step>Add the slice of ingr6 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Bloody Mary</name>
@@ -2309,6 +2579,8 @@
       <step>Stirring gently, pour all ingredients into highball glass</step>
       <step>Garnish.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Blue Lagoon</name>
@@ -2326,6 +2598,8 @@
       <step>Pour ingr3 and curacao over ice in a highball glass</step>
       <step>Fill with ingr1, top with the ingr4, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Blue Margarita</name>
@@ -2344,6 +2618,8 @@
       <step>Dip rim in coarse ingr2</step>
       <step>Shake ingr4, ingr3, and ingr1 with ice, strain into the ingr2-rimmed glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Blue Mountain</name>
@@ -2363,6 +2639,8 @@
       <step>Shake well</step>
       <step>Strain into an old-fashioned glass alomst filled with ice cubes.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Bluebird</name>
@@ -2383,6 +2661,8 @@
       <step>Stir well</step>
       <step>Strain into a cocktail glass and garnish with the lemon twist and the cherry.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Bob Marley</name>
@@ -2398,6 +2678,8 @@
     <preparation>
       <step>Layer in a 2 oz shot glass or pony glass</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Bobby Burns Cocktail</name>
@@ -2415,6 +2697,8 @@
       <step>Stir all ingredients (except ingr3) with ice and strain into a cocktail glass</step>
       <step>Add the twist of ingr3 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Boomerang</name>
@@ -2434,6 +2718,8 @@
       <step>Stir well</step>
       <step>Strain into a cocktail glass and garnish with the cherry.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Boozy Snickers Milkshake</name>
@@ -2456,6 +2742,8 @@
       <step>Blend until shake is thick and frothy</step>
       <step>Pour into glasses and top with chocolate liquor and whip cream.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Boston Sidecar</name>
@@ -2472,6 +2760,8 @@
     <preparation>
       <step>Shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Boston Sour</name>
@@ -2491,6 +2781,8 @@
       <step>Shake juice of ingr3, ingr2, ingr6, and ingr1 with cracked ice and strain into a whiskey sour glass</step>
       <step>Add the slice of ingr3, top with the ingr5, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Bourbon Sling</name>
@@ -2512,6 +2804,8 @@
       <step>Strain into a highball glass</step>
       <step>Garnish with the lemon twist.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Bourbon Sour</name>
@@ -2531,6 +2825,8 @@
       <step>Shake well</step>
       <step>Strain into a whiskey sour glass, garnish with the ingr5 slice and cherry.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Boxcar</name>
@@ -2550,6 +2846,8 @@
       <step>Shake well</step>
       <step>Strain into a sour glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Brain Fart</name>
@@ -2570,6 +2868,8 @@
       <step>Slowly and gently</step>
       <step>Works best if ice is added to punch bowl and soda's are very cold.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Brainteaser</name>
@@ -2586,6 +2886,8 @@
       <step>Layered erin first, then sambuca and then avocart(should sit in middle of other two</step>
       <step>To drink: use a straw to suck up avocart then shot the rest and then suck fumes up through straw.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Bramble</name>
@@ -2605,6 +2907,8 @@
       <step>Stir, and then pour blackberry liqueur over in a circular fashion to create marbling effect</step>
       <step>Garnish with two blackberries and lemon slice.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Brandon and Will's Coke Float</name>
@@ -2623,6 +2927,8 @@
       <step>Then, pour in coke</step>
       <step>Gently stir and enjoy.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Brandy Alexander</name>
@@ -2640,6 +2946,8 @@
       <step>Shake all ingredients (except ingr2) with ice and strain contents into a cocktail glass</step>
       <step>Sprinkle ingr2 on top and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Brandy Cobbler</name>
@@ -2662,6 +2970,8 @@
       <step>Stir well</step>
       <step>Garnish with the cherry and the ingr5 and ingr4 slices.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Brandy Flip</name>
@@ -2681,6 +2991,8 @@
       <step>Shake well</step>
       <step>Strain into a sour glass and garnish with the nutmeg.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Brandy Sour</name>
@@ -2699,6 +3011,8 @@
       <step>Shake ingr5, juice of ingr1, and ingr2 with ice and strain into a whiskey sour glass</step>
       <step>Decorate with the ingr1 slice, top with the ingr3, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Brave Bull Shooter</name>
@@ -2713,6 +3027,8 @@
     <preparation>
       <step>Pour tabasco into bottom of shot glass and fill with ingr2.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Bruce's Puce</name>
@@ -2730,6 +3046,8 @@
       <step>It goes down really smooth ,and you don't even need a chaser</step>
       <step>It tastes just like chocolate milk.(really!)</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Bruised Heart</name>
@@ -2746,6 +3064,8 @@
     <preparation>
       <step>Pour all ingredients in a mixing tin over ice, stir, and strain into shot glass</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Bubble Gum</name>
@@ -2762,6 +3082,8 @@
     <preparation>
       <step>Layer in order into a shot glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Buccaneer</name>
@@ -2776,6 +3098,8 @@
     <preparation>
       <step>Pour the ingr1 into an 18oz beer glass pour the ingr2 into the beer stir very gently</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Bumble Bee #1</name>
@@ -2797,6 +3121,8 @@
       <step>If done properly, the alcohol will stay separated and resemble a bumble bee</step>
       <step>Enjoy!!!</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Butter Baby</name>
@@ -2814,6 +3140,8 @@
       <step>Blend together in a blender</step>
       <step>Serve in a chilled beer mug with fresh blueberries and caramel for topping.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Cafe Savoy</name>
@@ -2831,6 +3159,8 @@
       <step>Fill mug almost to top with ingr2.add ingr3, ingr1 and ingr4</step>
       <step>Stir.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Caipirinha</name>
@@ -2847,6 +3177,8 @@
       <step>Place ingr3 and ingr2 into old fashioned glass and muddle (mash the two ingredients together using a muddler or a wooden spoon)</step>
       <step>Fill the glass with ice and add the cachaça.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Caipirissima</name>
@@ -2863,6 +3195,8 @@
       <step>Same as caipirinha but instead of cachaca you add ingr1</step>
       <step>It's great!!!!!!!!</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>California Lemonade</name>
@@ -2884,6 +3218,8 @@
       <step>Decorate with slices of orange and ingr5</step>
       <step>Add the cherry and serve with a straw.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>California Root Beer</name>
@@ -2899,6 +3235,8 @@
     <preparation>
       <step>Put ingr3 and ingr2 in highball glass fill with soda</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Campari Beer</name>
@@ -2915,6 +3253,8 @@
       <step>Add ingr1 first</step>
       <step>Fill with beer.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Caribbean Boilermaker</name>
@@ -2929,6 +3269,8 @@
     <preparation>
       <step>Pour the ingr2 into an 18oz beer glass pour the rum into the beer.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Casino</name>
@@ -2950,6 +3292,8 @@
       <step>Garnish with a lemon twist and a maraschino ingr2</step>
       <step>Serve without a straw.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Casino Royale</name>
@@ -2969,6 +3313,8 @@
       <step>Shake well</step>
       <step>Strain into a sour glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Champagne Cocktail</name>
@@ -2988,6 +3334,8 @@
       <step>Add ingr1 followed by gently pouring chilled ingr5</step>
       <step>Garnish with orange slice and maraschino cherry.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Cherry Electric Lemonade</name>
@@ -3009,6 +3357,8 @@
       <step>Now stir vigorously and then pour over a large cup of ice</step>
       <step>Now drink it with a straw and stir occasionally.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Cherry Rum</name>
@@ -3024,6 +3374,8 @@
     <preparation>
       <step>Shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Chicago Fizz</name>
@@ -3043,6 +3395,8 @@
       <step>Shake all ingredients (except ingr4) with ice and strain into a highball glass over two ice cubes</step>
       <step>Fill with ingr4, stir, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Chocolate Black Russian</name>
@@ -3059,6 +3413,8 @@
       <step>Combine all ingredients in an electric blender and blend at a low speed for a short length of time</step>
       <step>Pour into a chilled champagne flute and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Chocolate Milk</name>
@@ -3076,6 +3432,8 @@
       <step>Do not mix</step>
       <step>Slam it!</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Chocolate Monkey</name>
@@ -3097,6 +3455,8 @@
       <step>Blend liqeuors with ice-cream, milk and syrup</step>
       <step>Pour into parfait glass, top with ingr6 and garnish with ingr3 and ingr7.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Citrus Coke</name>
@@ -3113,6 +3473,8 @@
       <step>Then add bacardi and top it off with the remaining coke</step>
       <step>Stir and drink up!</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>City Slicker</name>
@@ -3130,6 +3492,8 @@
       <step>Shake well</step>
       <step>Strain into a cocktail glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Classic Old-Fashioned</name>
@@ -3151,6 +3515,8 @@
       <step>Garnish with the ingr3 slice and the cherry</step>
       <step>Serve with a swizzle stick.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Clove Cocktail</name>
@@ -3166,6 +3532,8 @@
     <preparation>
       <step>Stir all ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Clover Club</name>
@@ -3182,6 +3550,8 @@
     <preparation>
       <step>Dry shake ingredients to emulsify, add ice, shake and served straight up.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Cosmopolitan</name>
@@ -3200,6 +3570,8 @@
       <step>Shake well and double strain into large cocktail glass</step>
       <step>Garnish with lime wheel.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Cosmopolitan Martini</name>
@@ -3216,6 +3588,8 @@
     <preparation>
       <step>Pour all ingredients in mixing glass half filled with ice, shake and strain into chilled martini glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Cream Soda</name>
@@ -3231,6 +3605,8 @@
       <step>Pour 1oz of ingr2 into a highball glass with ice</step>
       <step>Fill with ingr1.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Cuba Libra</name>
@@ -3251,6 +3627,8 @@
       <step>Garnish with ingr2 slice</step>
       <step>Enjoy!</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Cuba Libre</name>
@@ -3267,6 +3645,8 @@
       <step>Build all ingredients in a collins glass filled with ice</step>
       <step>Garnish with ingr2 wedge.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Daiquiri</name>
@@ -3284,6 +3664,8 @@
       <step>Shake well</step>
       <step>Strain in chilled cocktail glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Damned if you do</name>
@@ -3300,6 +3682,8 @@
       <step>Put in mouth</step>
       <step>Repeat as deemed necessary.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Danbooka</name>
@@ -3314,6 +3698,8 @@
     <preparation>
       <step>Pour it in and mix it.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Dark Caipirinha</name>
@@ -3332,6 +3718,8 @@
       <step>Pour the ingr1 into the glass</step>
       <step>Stir well.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Dark and Stormy</name>
@@ -3347,6 +3735,8 @@
       <step>In a highball glass filled with ice add 6cl ingr1 and top with ingr2</step>
       <step>Garnish with lime wedge.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Darkwood Sling</name>
@@ -3366,6 +3756,8 @@
       <step>For a sour sling use tonic (most people prefer the drink without tonic)</step>
       <step>Afterwards you fill the glass with ingr1 and ice cubes.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Derby</name>
@@ -3384,6 +3776,8 @@
       <step>Strain into a cocktail glass</step>
       <step>Garnish with a sprig of fresh ingr1 in the drink.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Diesel</name>
@@ -3401,6 +3795,8 @@
       <step>Top up with the ingr2</step>
       <step>The colour sholud be very dark approaching the colour of guiness.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Dirty Martini</name>
@@ -3421,6 +3817,8 @@
       <step>Strain the contents of the cocktail shaker into the glass and add the ingr3</step>
       <step>A dirty martini contains a splash of ingr3 brine or ingr3 juice and is typically garnished with an ingr3.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Dirty Nipple</name>
@@ -3436,6 +3834,8 @@
     <preparation>
       <step>This is a layered shot - the bailey's must be on top</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Downshift</name>
@@ -3455,6 +3855,8 @@
       <step>After that, add the minute maid ingr4, then float the 151</step>
       <step>Rocks optional.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Dragonfly</name>
@@ -3472,6 +3874,8 @@
       <step>Stir well</step>
       <step>Garnish with the ingr3 wedge.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Dry Rob Roy</name>
@@ -3490,6 +3894,8 @@
       <step>Strain into a cocktail glass</step>
       <step>Garnish with the lemon twist.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Dubonnet Cocktail</name>
@@ -3507,6 +3913,8 @@
       <step>Stir all ingredients (except ingr4) with ice and strain into a cocktail glass</step>
       <step>Add the twist of ingr4 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Duchamp's Punch</name>
@@ -3528,6 +3936,8 @@
       <step>Double strain in a chilled double old fashioned glass with abig ice cube</step>
       <step>Garnish with a couple of ingr3 sprigs</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Egg Nog #4</name>
@@ -3563,6 +3973,8 @@
       <step>Serve in a punch bowl or another big bowl</step>
       <step>Note: for a nonalcoholic eggnog, prepare eggnog as above, except omit the ingr2 and rum and increase the ingr7 to 3 cups.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Egg Nog - Healthy</name>
@@ -3586,6 +3998,8 @@
       <step>Sprinkle with ingr1</step>
       <step>Makes 6 servings.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Egg-Nog - Classic Cooked</name>
@@ -3612,6 +4026,8 @@
       <step>Choose 1 or several of: chocolate curls, cinnamon sticks, extracts of flavorings, flavored brandy or liqueur, fruit juice or nectar, ground nutmeg, maraschino cherries, orange slices, peppermint sticks or candy canes, plain brandy, run or whiskey, sherbet or ice-cream, whipping cream, whipped</step>
       <step>Serve immediately.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>English Highball</name>
@@ -3632,6 +4048,8 @@
       <step>Add the twist of ingr1, stir, and serve</step>
       <step>(ginger ale may be substituted for ingr5, if preferred.)</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>English Rose Cocktail</name>
@@ -3652,6 +4070,8 @@
       <step>Shake all ingredients (except ingr6) with ice and strain into sugar-rimmed glass</step>
       <step>Top with the ingr6 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Espresso Martini</name>
@@ -3667,6 +4087,8 @@
     <preparation>
       <step>Pour ingredients into shaker filled with ice, shake vigorously, and strain into chilled martini glass</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Fahrenheit 5000</name>
@@ -3682,6 +4104,8 @@
     <preparation>
       <step>Cover bottom of shot glass with ingr3 and then fill with half ingr1 and half ingr2.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Flaming Dr. Pepper</name>
@@ -3701,6 +4125,8 @@
       <step>Mix in the dr</step>
       <step>Pepper and ingr3</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Flaming Lamborghini</name>
@@ -3719,6 +4145,8 @@
       <step>Pour the baileys and ingr1 into two sepsrate shot glasses either side of the cocktail glass</step>
       <step>Set light the concotion in the cocktail glass and start to drink through the straw (this drink should be drunk in one) , as the bottom of the glass is reached put out the fire by pouring the baileys and ingr1 into the cocktail glass and keep drinking till it's all gone!!</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Flander's Flake-Out</name>
@@ -3733,6 +4161,8 @@
     <preparation>
       <step>Bang 'em both in.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Flying Dutchman</name>
@@ -3748,6 +4178,8 @@
       <step>In an old-fashioned glass almost filled with ice cubes, combine the ingr2 and ingr1</step>
       <step>Stir well.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Flying Scotchman</name>
@@ -3764,6 +4196,8 @@
     <preparation>
       <step>Shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Foxy Lady</name>
@@ -3779,6 +4213,8 @@
     <preparation>
       <step>Shake all ingredients with ice, strain into a chilled cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Freddy Kruger</name>
@@ -3794,6 +4230,8 @@
     <preparation>
       <step>Make it an ample size shot!!</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>French 75</name>
@@ -3815,6 +4253,8 @@
       <step>Top up with ingr2</step>
       <step>Stir gently.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>French Connection</name>
@@ -3830,6 +4270,8 @@
       <step>Pour all ingredients directly into old fashioned glass filled with ice cubes</step>
       <step>Stir gently.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>French Martini</name>
@@ -3847,6 +4289,8 @@
       <step>Shake well and strain into a chilled cocktail glass</step>
       <step>Squeeze oil from lemon peel onto the drink.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Frisco Sour</name>
@@ -3866,6 +4310,8 @@
       <step>Shake all ingredients (except slices of ingr1 and ingr3) with ice and strain into a whiskey sour glass</step>
       <step>Decorate with the slices of ingr1 and ingr3 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Frozen Daiquiri</name>
@@ -3884,6 +4330,8 @@
       <step>Combine all ingredients (except for the ingr2) in an electric blender and blend at a low speed for five seconds, then blend at a high speed until firm</step>
       <step>Pour contents into a champagne flute, top with the ingr2, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Frozen Mint Daiquiri</name>
@@ -3902,6 +4350,8 @@
       <step>Blend at a low speed for a short length of time</step>
       <step>Pour into an old-fashioned glass and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Frozen Pineapple Daiquiri</name>
@@ -3920,6 +4370,8 @@
       <step>Blend at a low speed for a short length of time</step>
       <step>Pour into a champagne flute and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Fuzzy Asshole</name>
@@ -3936,6 +4388,8 @@
       <step>Fill the other half full of ingr1</step>
       <step>Stir and drink while hot.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>GG</name>
@@ -3952,6 +4406,8 @@
       <step>Fill the remainder of the glass with ingr2 and thats all there is to it</step>
       <step>You now have a your very own gg.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Gagliardo</name>
@@ -3969,6 +4425,8 @@
       <step>Shake well and serve in a cocktail glass</step>
       <step>This is a home cocktail of american/internet bar del pozzo, pavia, italy.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Gentleman's Club</name>
@@ -3986,6 +4444,8 @@
       <step>In an old-fashioned glass almost filled with ice cubes, combine all of the ingredients</step>
       <step>Stir well.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Gideon's Green Dinosaur</name>
@@ -4004,6 +4464,8 @@
     <preparation>
       <step>Add all ingredients in collins glass with ice and stir.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Gin And Tonic</name>
@@ -4021,6 +4483,8 @@
       <step>Stir well</step>
       <step>Garnish with the ingr1 wedge.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Gin Cooler</name>
@@ -4042,6 +4506,8 @@
       <step>Fill with ingr3 and stir</step>
       <step>Add the ingr4 and the ingr5 so that the end of the ingr5 dangles over rim of glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Gin Daisy</name>
@@ -4062,6 +4528,8 @@
       <step>Shake well</step>
       <step>Pour into an old-fashioned glass and garnish with the cherry and the ingr5 slice.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Gin Fizz</name>
@@ -4080,6 +4548,8 @@
       <step>Pour into glass</step>
       <step>Top with soda water.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Gin Rickey</name>
@@ -4100,6 +4570,8 @@
       <step>Add the ingr2 or ingr3 juice and top off with ingr1</step>
       <step>Decorate the glass with ingr2 and/or ingr3 slices.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Gin Sling</name>
@@ -4120,6 +4592,8 @@
       <step>Pour into an old-fashioned glass over ice cubes and stir</step>
       <step>Add the twist of ingr5 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Gin Smash</name>
@@ -4140,6 +4614,8 @@
       <step>Add ingr1 and 1 ice cube</step>
       <step>Stir, add the ingr4 slice and the ingr2, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Gin Sour</name>
@@ -4159,6 +4635,8 @@
       <step>Shake well</step>
       <step>Strain into a sour glass and garnish with the ingr5 slice and the cherry.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Gin Squirt</name>
@@ -4179,6 +4657,8 @@
       <step>Fill with ingr6 and stir</step>
       <step>Decorate with the ingr2 chunks and the ingr4 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Gin Swizzle</name>
@@ -4200,6 +4680,8 @@
       <step>Stir until the glass is frosted</step>
       <step>Strain the mixture in the shaker into the glass and add the ingr5.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Gin Toddy</name>
@@ -4218,6 +4700,8 @@
       <step>Add ingr4 and one ice cube</step>
       <step>Stir, add the twist of ingr2, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Girl From Ipanema</name>
@@ -4236,6 +4720,8 @@
       <step>Add ice and shake until ice cold</step>
       <step>Pour into a chilled flute and top-up with ingr3</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Gluehwein</name>
@@ -4258,6 +4744,8 @@
       <step>(to remove alcohol, let it boil for a while.) you may add lemon or orange juice to taste</step>
       <step>Serve in irish coffee cup.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Godchild</name>
@@ -4273,6 +4761,8 @@
     <preparation>
       <step>Shake all ingredients well with cracked ice, strain into a champagne flute, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Godfather</name>
@@ -4288,6 +4778,8 @@
       <step>Pour all ingredients directly into old fashioned glass filled with ice cubes</step>
       <step>Stir gently.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Godmother</name>
@@ -4302,6 +4794,8 @@
     <preparation>
       <step>Pour ingr1 and ingr2 into an old-fashioned glass over ice and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Golden dream</name>
@@ -4319,6 +4813,8 @@
       <step>Shake with cracked ice</step>
       <step>Strain into glass and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Grand Blue</name>
@@ -4335,6 +4831,8 @@
     <preparation>
       <step>Serve in an old fashioned glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Grass Skirt</name>
@@ -4354,6 +4852,8 @@
       <step>Shake well</step>
       <step>Pour into an old-fashioned glass and garnish with the ingr2 slice.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Grasshopper</name>
@@ -4370,6 +4870,8 @@
       <step>Pour ingredients into a cocktail shaker with ice</step>
       <step>Shake briskly and then strain into a chilled cocktail glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Green Goblin</name>
@@ -4385,6 +4887,8 @@
     <preparation>
       <step>Cider first, ingr3 then curacao</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Grim Reaper</name>
@@ -4401,6 +4905,8 @@
       <step>Mix ingr3 and 151 in glass</step>
       <step>Quickly add ice and pour ingr2 over ice to give ice red tint.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Grizzly Bear</name>
@@ -4418,6 +4924,8 @@
       <step>Served over ice</step>
       <step>Sounds nasty, but tastes great.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>H.D.</name>
@@ -4434,6 +4942,8 @@
       <step>Mix the ingr3 and baileys cream in a beer-glass (at least 50 cl)</step>
       <step>Fill the rest of the glass with ingr2.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Happy Skipper</name>
@@ -4452,6 +4962,8 @@
       <step>Tastes like a cream soda</step>
       <step>Named for the gilligan's island reference ("the captain" *in* "ginger" is a happy skipper!)</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Harvey Wallbanger</name>
@@ -4468,6 +4980,8 @@
       <step>Stir the ingr2 and ingr1 with ice in the glass, then float the ingr3 on top</step>
       <step>Garnish and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Havana Cocktail</name>
@@ -4485,6 +4999,8 @@
       <step>Shake well</step>
       <step>Strain into a cocktail glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Hawaiian Cocktail</name>
@@ -4500,6 +5016,8 @@
     <preparation>
       <step>Shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Hemingway Special</name>
@@ -4517,6 +5035,8 @@
       <step>Pour all ingredients into a shaker with ice</step>
       <step>Shake.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Herbal flame</name>
@@ -4533,6 +5053,8 @@
       <step>Fill the rest of the glass with sweet tea</step>
       <step>Stir with spoon, straw, or better yet a cinnamon stick and leave it in.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Highland Fling Cocktail</name>
@@ -4550,6 +5072,8 @@
       <step>Stir all ingredients (except ingr3) with ice and strain into a cocktail glass</step>
       <step>Add the ingr3 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Horse's Neck</name>
@@ -4569,6 +5093,8 @@
       <step>Garnish with lemon zest</step>
       <step>If desired, add dashes of angostura bitter.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Hot Creamy Bush</name>
@@ -4584,6 +5110,8 @@
     <preparation>
       <step>Combine all ingredients in glass</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Ice Pick #1</name>
@@ -4600,6 +5128,8 @@
       <step>Put ingr3 in glass fill with ingr2</step>
       <step>Stir in lemon to taste.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Iced Coffee Fillip</name>
@@ -4614,6 +5144,8 @@
     <preparation>
       <step>Mix together in a coffee mug and chill before serving.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Imperial Cocktail</name>
@@ -4629,6 +5161,8 @@
     <preparation>
       <step>Shake with ice and strain into cocktail glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Imperial Fizz</name>
@@ -4647,6 +5181,8 @@
       <step>Shake all ingredients (except ingr3) with ice and strain into a highball glass over two ice cubes</step>
       <step>Fill with ingr3, stir, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Irish Coffee</name>
@@ -4664,6 +5200,8 @@
       <step>Heat the ingr4, whiskey and ingr2; do not boil</step>
       <step>Pour into glass and top with cream; serve hot.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Irish Curdling Cow</name>
@@ -4681,6 +5219,8 @@
       <step>Pour irish cream, ingr1, and ingr2 in a glass</step>
       <step>Add some ice and mix in the ingr3.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Irish Russian</name>
@@ -4699,6 +5239,8 @@
       <step>Care must be taken when adding the guinness to prevent an excess of foam</step>
       <step>Do not add ice.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Irish Spring</name>
@@ -4718,6 +5260,8 @@
       <step>Pour all ingredients (except ingr3 slice and ingr4) into a collins glass over ice cubes</step>
       <step>Garnish with the slice of ingr3, add the ingr4 on top, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Jack Rose Cocktail</name>
@@ -4733,6 +5277,8 @@
     <preparation>
       <step>Shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Jack's Vanilla Coke</name>
@@ -4749,6 +5295,8 @@
       <step>After pouring in your ingredients, and adding 3-5 ice cubes, according to taste</step>
       <step>Stir the drink with a stirrer to get the vanilla off the bottom.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Jackhammer</name>
@@ -4763,6 +5311,8 @@
     <preparation>
       <step>Serve over ice- warning,deadly!</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Jam Donut</name>
@@ -4781,6 +5331,8 @@
       <step>Add the ingr1 to the shot glass, and carefully layer the ingr2 on top</step>
       <step>Serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Jamaica Kiss</name>
@@ -4799,6 +5351,8 @@
       <step>Fill the tumbler with ingr2</step>
       <step>Blend until smooth and serve immediately.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Jamaican Coffee</name>
@@ -4817,6 +5371,8 @@
       <step>Top with the ingr4</step>
       <step>Sprinkle with a pinch of well ground ingr2 and drink with a straw.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Japanese Fizz</name>
@@ -4836,6 +5392,8 @@
       <step>Shake all ingredients (except ingr3) with ice and strain into a highball glass over two ice cubes</step>
       <step>Fill with ingr3, stir, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Jello shots</name>
@@ -4855,6 +5413,8 @@
       <step>Pour mixture into plastic shot glasses and chill until firm</step>
       <step>Then, eat away...</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Jelly Bean</name>
@@ -4869,6 +5429,8 @@
     <preparation>
       <step>Mix equal parts in pony glass-tastes just like a jelly bean!</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Jewel Of The Nile</name>
@@ -4886,6 +5448,8 @@
       <step>Stir well</step>
       <step>Strain into a cocktail glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Jitterbug</name>
@@ -4908,6 +5472,8 @@
       <step>Then add everything else</step>
       <step>It's that simple!</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>John Collins</name>
@@ -4929,6 +5495,8 @@
       <step>Garnish</step>
       <step>Add a dash of angostura bitters.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Kamikaze</name>
@@ -4945,6 +5513,8 @@
       <step>Shake all ingredients together with ice</step>
       <step>Strain into glass, garnish and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Karsk</name>
@@ -4960,6 +5530,8 @@
       <step>Put a copper coin in a coffe-cup and fill up with ingr1 until you no longer see the coin, then add alcohol until you see the coin</step>
       <step>Norwegian speciality.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Kentucky B And B</name>
@@ -4974,6 +5546,8 @@
     <preparation>
       <step>Pour the ingr1 and ingr2 into a brandy snifter.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Kentucky Colonel</name>
@@ -4991,6 +5565,8 @@
       <step>Shake and strain into a cocktail glass</step>
       <step>Garnish with the lemon twist.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Kioki Coffee</name>
@@ -5007,6 +5583,8 @@
       <step>Stir</step>
       <step>Add whipped cream to the top.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Kir</name>
@@ -5021,6 +5599,8 @@
     <preparation>
       <step>Add the crème de cassis to the bottom of the glass, then top up with wine.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Kir Royale</name>
@@ -5035,6 +5615,8 @@
     <preparation>
       <step>Pour ingr2 in glass, gently pour ingr1 on top</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Kiss me Quick</name>
@@ -5051,6 +5633,8 @@
     <preparation>
       <step>Mix in the glass</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Kiwi Lemon</name>
@@ -5067,6 +5651,8 @@
       <step>Stirr</step>
       <step>Garnish with slice of kiwi.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Kool First Aid</name>
@@ -5082,6 +5668,8 @@
       <step>Add kool aid to a double shot glass, and top with rum</step>
       <step>Slam and shoot.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Kool-Aid Shot</name>
@@ -5100,6 +5688,8 @@
       <step>Pour into a large glass with ice and stir</step>
       <step>Add a little ingr1 to taste.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Kool-Aid Slammer</name>
@@ -5117,6 +5707,8 @@
       <step>If you do it right, you should be able to see that the two liquids are separated, with the ingr1 on top</step>
       <step>Now slam it! the last thing you'll taste is the kool-aid.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Kurant Tea</name>
@@ -5133,6 +5725,8 @@
       <step>Add the not too hot(!) apple tea and, if you like, some sugar</step>
       <step>Enjoy!</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Lady Love Fizz</name>
@@ -5152,6 +5746,8 @@
       <step>Shake all ingredients (except ingr3) with ice and strain into a cocktail glass over two ice cubes</step>
       <step>Fill with ingr3, stir, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Lemon Drop</name>
@@ -5167,6 +5763,8 @@
     <preparation>
       <step>Shake and strain into a chilled cocktail glass rimmed with sugar.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Lemon Shot</name>
@@ -5187,6 +5785,8 @@
       <step>Do shot quickly and suck on ingr2</step>
       <step>If it is done correctly, this will taste like a shot of sweet lemonade.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Limona Corona</name>
@@ -5206,6 +5806,8 @@
       <step>Turn the bottle upside-down so the rum and beer mix</step>
       <step>Turn the bottle rightside-up, unplug, and drink.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Loch Lomond</name>
@@ -5225,6 +5827,8 @@
       <step>Strain into a cocktail glass</step>
       <step>Garnish with the lemon twist.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>London Town</name>
@@ -5242,6 +5846,8 @@
       <step>Stir well</step>
       <step>Strain into a cocktail glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Lone Tree Cocktail</name>
@@ -5256,6 +5862,8 @@
     <preparation>
       <step>Stir ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Lone Tree Cooler</name>
@@ -5278,6 +5886,8 @@
       <step>Fill with ingr6 and stir again</step>
       <step>Add the twist of ingr2 and the ingr4 so that the end dangles over rim of glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Long Island Iced Tea</name>
@@ -5297,6 +5907,8 @@
       <step>Mix all contents in a highball glass and sitr gently</step>
       <step>Add dash of ingr4 for the coloring and garnish with lemon or lime twist.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Long Island Tea</name>
@@ -5317,6 +5929,8 @@
       <step>Add the splash of cola for color</step>
       <step>Decorate with a slice of ingr5 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Long vodka</name>
@@ -5334,6 +5948,8 @@
       <step>Shake a tall glass with ice cubes and angostura, coating the inside of the glass</step>
       <step>Por the ingr3 onto this, add 1 slice of ingr4 and squeeze juice out of remainder, mix with tonic, stir and voila you have a long ingr3</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Lord And Lady</name>
@@ -5349,6 +5965,8 @@
       <step>Pour the rum and ingr2 into an old-fashioned glass almost filled with ice cubes</step>
       <step>Stir well.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Lunch Box</name>
@@ -5366,6 +5984,8 @@
       <step>Then fill the rest with ingr3 (careful not to fill it to the top)</step>
       <step>Then take the shot of ingr1 and drop it in.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Mai Tai</name>
@@ -5385,6 +6005,8 @@
       <step>Strain into glass</step>
       <step>Garnish and serve with straw.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Malibu Twister</name>
@@ -5400,6 +6022,8 @@
     <preparation>
       <step>Add rum &amp; trister then, add cranberry jucie,stir</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Manhattan</name>
@@ -5417,6 +6041,8 @@
     <preparation>
       <step>Stirred over ice, strained into a chilled glass, garnished, and served up.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Margarita</name>
@@ -5436,6 +6062,8 @@
       <step>The ingr4 should present to the lips of the imbiber and never mix into the cocktail</step>
       <step>Shake the other ingredients with ice, then carefully pour into the glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Martinez Cocktail</name>
@@ -5454,6 +6082,8 @@
       <step>Stir all ingredients (except ingr4) with ice and strain into a cocktail glass</step>
       <step>Top with the ingr4 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Martini</name>
@@ -5472,6 +6102,8 @@
       <step>Strain in chilled martini cocktail glass</step>
       <step>Squeeze oil from lemon peel onto the drink, or garnish with ingr2.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Mary Pickford</name>
@@ -5489,6 +6121,8 @@
     <preparation>
       <step>Shake and strain into a chilled large cocktail glass</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Miami Vice</name>
@@ -5508,6 +6142,8 @@
       <step>Of rum with ice</step>
       <step>Third: while frozen, add pina colda mix then ingr3 in glass (making sure they do not get mixed together).</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Midnight Cowboy</name>
@@ -5525,6 +6161,8 @@
       <step>Shake well</step>
       <step>Strain into a cocktail glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Midnight Manx</name>
@@ -5544,6 +6182,8 @@
       <step>Shake for 5 seconds and strain into a double rocks glass filled with ice</step>
       <step>Add chilled coffee stir and enjoy!</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Midnight Mint</name>
@@ -5561,6 +6201,8 @@
       <step>Add ingredients into shaker with ice</step>
       <step>Shake well then strain into cocktail glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Mimosa</name>
@@ -5576,6 +6218,8 @@
       <step>Ensure both ingredients are well chilled, then mix into the glass</step>
       <step>Serve cold.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Mississippi Planters Punch</name>
@@ -5595,6 +6239,8 @@
       <step>Shake all ingredients (except ingr6) with ice and strain into a collins glass over ice cubes</step>
       <step>Fill with ingr6, stir, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Mocha-Berry</name>
@@ -5613,6 +6259,8 @@
       <step>Of ingr1 in a mug or irish ingr1 cup</step>
       <step>Add coca mix and chambord, mix well and top off with ingr3.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Mojito</name>
@@ -5633,6 +6281,8 @@
       <step>Pour the rum and top with ingr4</step>
       <step>Garnish and serve with straw.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Mojito #3</name>
@@ -5651,6 +6301,8 @@
       <step>Put ingr5 with ingr3 in a glas, mash the ingr5 with a spoon, ice, rum &amp; fill up with ingr2</step>
       <step>Top it with angostura.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Monkey Gland</name>
@@ -5667,6 +6319,8 @@
     <preparation>
       <step>Shake well over ice cubes in a shaker, strain into a chilled cocktail glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Monkey Wrench</name>
@@ -5683,6 +6337,8 @@
       <step>Pour all of the ingredients into an old-fashioned glass almost filled with ice cubes</step>
       <step>Stir well.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Moranguito</name>
@@ -5698,6 +6354,8 @@
     <preparation>
       <step>First you put rhe ingr1, then put ingr3, then put the granadine syrup.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Moscow Mule</name>
@@ -5716,6 +6374,8 @@
       <step>Stir gently</step>
       <step>Garnish.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Mother's Milk</name>
@@ -5732,6 +6392,8 @@
       <step>Shake over ice, strain</step>
       <step>Serves two.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Mudslinger</name>
@@ -5748,6 +6410,8 @@
       <step>Add all contents to a large jug or punch bowl</step>
       <step>Stir well!</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Mulled Wine</name>
@@ -5768,6 +6432,8 @@
       <step>Simmer 3 cups ingr1 with, ingr7, ingr5, ingr4 sticks, and ingr6 in a stainless steel pot for 10 minutes</step>
       <step>Add wine heat to a "coffee temperature" (do not boil) then add the ingr3.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>National Aquarium</name>
@@ -5788,6 +6454,8 @@
       <step>Shake well</step>
       <step>Serve on the rocks.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Negroni</name>
@@ -5803,6 +6471,8 @@
     <preparation>
       <step>Stir into glass over ice, garnish and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>New York Lemonade</name>
@@ -5821,6 +6491,8 @@
       <step>Lemon and sugar the rim</step>
       <step>Stir and strain.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>New York Sour</name>
@@ -5841,6 +6513,8 @@
       <step>Float claret on top</step>
       <step>Decorate with the half-slice of ingr4 and the ingr2 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Nutty Irishman</name>
@@ -5856,6 +6530,8 @@
     <preparation>
       <step>Serve over ice</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Old Fashioned</name>
@@ -5875,6 +6551,8 @@
       <step>Fill the glass with ice cubes and add whiskey</step>
       <step>Garnish with orange twist, and a cocktail cherry.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Orange Crush</name>
@@ -5890,6 +6568,8 @@
     <preparation>
       <step>Add all ingredients to tumbler-pour as shot</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Orange Oasis</name>
@@ -5907,6 +6587,8 @@
       <step>Shake brandy, ingr1, and ingr2 with ice and strain into a highball glass over ice cubes</step>
       <step>Fill with ingr4, stir, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Orange Push-up</name>
@@ -5926,6 +6608,8 @@
       <step>Garnish with an orange and cherry flag</step>
       <step>So good it will melt in your mouth!!!</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Orange Whip</name>
@@ -5942,6 +6626,8 @@
     <preparation>
       <step>Pour ingredients over ice and stir.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Oreo Mudslide</name>
@@ -5961,6 +6647,8 @@
       <step>Pour into a large frosted glass</step>
       <step>Garnish with whipped cream and a cherry.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Orgasm</name>
@@ -5978,6 +6666,8 @@
     <preparation>
       <step>Shake all ingredients with ice, strain into a chilled cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Owen's Grandmother's Revenge</name>
@@ -5993,6 +6683,8 @@
     <preparation>
       <step>Add ingredients and mix in blender.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Paradise</name>
@@ -6009,6 +6701,8 @@
       <step>Shake together over ice</step>
       <step>Strain into cocktail glass and serve chilled.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Pina Colada</name>
@@ -6025,6 +6719,8 @@
       <step>Mix with crushed ice in blender until smooth</step>
       <step>Pour into chilled glass, garnish and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Pink Gin</name>
@@ -6042,6 +6738,8 @@
       <step>Pour the ingr2 into the glass</step>
       <step>Do not add ice.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Pink Lady</name>
@@ -6058,6 +6756,8 @@
     <preparation>
       <step>Shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Pink Panty Pulldowns</name>
@@ -6073,6 +6773,8 @@
     <preparation>
       <step>Shake well</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Pink Penocha</name>
@@ -6090,6 +6792,8 @@
     <preparation>
       <step>Mix all ingredients into bowl keep iced stir frequently</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Pisco Sour</name>
@@ -6105,6 +6809,8 @@
     <preparation>
       <step>Vigorously shake and strain contents in a cocktail shaker with ice cubes, then pour into glass and garnish with bitters.[1]</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Planter's Punch</name>
@@ -6125,6 +6831,8 @@
       <step>Add angostura bitters, "on top"</step>
       <step>Garnish with cocktail cherry and pineapple.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Popped cherry</name>
@@ -6141,6 +6849,8 @@
     <preparation>
       <step>Served over ice in a tall glass with a popped cherry (can add more popped cherries if in the mood)!</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Poppy Cocktail</name>
@@ -6155,6 +6865,8 @@
     <preparation>
       <step>Shake ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Port And Starboard</name>
@@ -6170,6 +6882,8 @@
       <step>Pour carefully into a pousse-cafe glass, so that creme de menthe floats on ingr2</step>
       <step>Serve without mixing.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Port Wine Cocktail</name>
@@ -6184,6 +6898,8 @@
     <preparation>
       <step>Stir ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Port Wine Flip</name>
@@ -6202,6 +6918,8 @@
       <step>Shake all ingredients (except ingr1) with ice and strain into a whiskey sour glass</step>
       <step>Sprinkle ingr1 on top and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Porto flip</name>
@@ -6218,6 +6936,8 @@
       <step>Shake ingredients together in a mixer with ice</step>
       <step>Strain into glass, garnish and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Quaker's Cocktail</name>
@@ -6234,6 +6954,8 @@
     <preparation>
       <step>Shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Quarter Deck Cocktail</name>
@@ -6249,6 +6971,8 @@
     <preparation>
       <step>Stir all ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Queen Bee</name>
@@ -6264,6 +6988,8 @@
     <preparation>
       <step>Shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Queen Charlotte</name>
@@ -6280,6 +7006,8 @@
       <step>Pour ingr3 and ingr2 into a collins glass over ice cubes</step>
       <step>Fill with ingr1, stir, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Queen Elizabeth</name>
@@ -6295,6 +7023,8 @@
     <preparation>
       <step>Stir all ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Quentin</name>
@@ -6313,6 +7043,8 @@
       <step>Shake well</step>
       <step>Strain into a cocktail glass and garnish with the nutmeg.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Quick F**K</name>
@@ -6329,6 +7061,8 @@
       <step>In a shot glass add 1/3 ingr1 first</step>
       <step>Then 1/3 miduri, topping it off with a 1/3 ingr2</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Quick-sand</name>
@@ -6344,6 +7078,8 @@
       <step>Simply add the ingr2, quite a quick pour in order to mix the sambucca with the ingr2</step>
       <step>The juice must have fruit pulp!</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Radioactive Long Island Iced Tea</name>
@@ -6365,6 +7101,8 @@
       <step>Pour all ingredients over ice in a very tall glass</step>
       <step>Sip cautiously.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Radler</name>
@@ -6379,6 +7117,8 @@
     <preparation>
       <step>Pour ingr1 into large mug, slowly add the ingr2 (or sprite).</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Raspberry Cooler</name>
@@ -6394,6 +7134,8 @@
       <step>Pour the ingr1 and soda into a highball glass almost filled with ice cubes</step>
       <step>Stir well.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Red Snapper</name>
@@ -6409,6 +7151,8 @@
     <preparation>
       <step>One shot each, shake n shoot</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Rose</name>
@@ -6428,6 +7172,8 @@
       <step>Shake together in a cocktail shaker, then strain into chilled glass</step>
       <step>Garnish and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Royal Bitch</name>
@@ -6442,6 +7188,8 @@
     <preparation>
       <step>Into a shot glass layer the ingr2 on top of the ingr1.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Royal Fizz</name>
@@ -6459,6 +7207,8 @@
       <step>Shake all ingredients (except cola) with ice and strain into a chilled collins glass</step>
       <step>Fill with cola and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Royal Flush</name>
@@ -6476,6 +7226,8 @@
       <step>Pour all the ingredients into tumbler over ice</step>
       <step>Strain into glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Royal Gin Fizz</name>
@@ -6494,6 +7246,8 @@
       <step>Shake all ingredients (except ingr3) with ice and strain into a highball glass over two ice cubes</step>
       <step>Fill with ingr3, stir, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Ruby Tuesday</name>
@@ -6510,6 +7264,8 @@
       <step>Pour ingr3 and cranberry into a highball filled with ice cubes</step>
       <step>Add ingr2 and stir.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Rum Cobbler</name>
@@ -6532,6 +7288,8 @@
       <step>Stir well</step>
       <step>Garnish with the cherry and the ingr5 and ingr1 slices.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Rum Cooler</name>
@@ -6548,6 +7306,8 @@
       <step>Pour the rum and soda into a collins glass almost filled with ice cubes</step>
       <step>Stir well and garnish with the ingr1 wedge.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Rum Milk Punch</name>
@@ -6565,6 +7325,8 @@
       <step>Shake all ingredients (except ingr3) with ice and strain into a collins glass</step>
       <step>Sprinkle ingr3 on top and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Rum Old-fashioned</name>
@@ -6585,6 +7347,8 @@
       <step>When sugar has dissolved add ice cubes and ingr6</step>
       <step>Add the twist of ingr3, float ingr1 on top, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Rum Punch</name>
@@ -6601,6 +7365,8 @@
     <preparation>
       <step>Mix all ingredients in a punch bowl and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Rum Runner</name>
@@ -6618,6 +7384,8 @@
     <preparation>
       <step>Mix all ingredients in glass &amp; add ice.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Rum Screwdriver</name>
@@ -6633,6 +7401,8 @@
       <step>Pour rum into a highball glass over ice cubes</step>
       <step>Add ingr2, stir, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Rum Sour</name>
@@ -6652,6 +7422,8 @@
       <step>Shake well</step>
       <step>Strain into a sour glass and garnish with the ingr5 slice and the cherry.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Rum Toddy</name>
@@ -6670,6 +7442,8 @@
       <step>Add rum and one ice cube and stir</step>
       <step>Add the twist of ingr3 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Russian Spring Punch</name>
@@ -6686,6 +7460,8 @@
     <preparation>
       <step>Pour the ingredients into an highball glass, top with sparkling wine.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Rusty Nail</name>
@@ -6703,6 +7479,8 @@
       <step>Stir well</step>
       <step>Garnish with the lemon twist.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Salty Dog</name>
@@ -6720,6 +7498,8 @@
       <step>Stir well and serve</step>
       <step>(vodka may be substituted for ingr2, if preferred.)</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>San Francisco</name>
@@ -6737,6 +7517,8 @@
       <step>Take a tall glass and put in a few ice cubes, fill the ingr4 over it and fill with juice then the "creme", to end fill in the ingr3 but very carefully at the side of the glass so it will lay down in the bottom</step>
       <step>Garnish with orange and strawberry.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Sangria #1</name>
@@ -6757,6 +7539,8 @@
       <step>Add ingr3 and ingr2 sticks to taste</step>
       <step>Serve in wine glasses.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Sangria - The World's Best</name>
@@ -6779,6 +7563,8 @@
       <step>Before serving stir in brandy and cut the mixture with ingr4 until it have a thinner, more wine like consistency</step>
       <step>Serve from a pitcher in wine glasses.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Sazerac</name>
@@ -6800,6 +7586,8 @@
       <step>Discard the ice and any excess absinthe from the prepared glass, and strain the drink into the glass</step>
       <step>Add the ingr4 for garnish.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Scooter</name>
@@ -6815,6 +7603,8 @@
     <preparation>
       <step>Shake all ingredients well with cracked ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Scotch Cobbler</name>
@@ -6833,6 +7623,8 @@
       <step>Pour ingr4, ingr3, and ingr1 over ice in an old-fashioned glass</step>
       <step>Add the ingr5 slice, top with the ingr2 sprig, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Scotch Sour</name>
@@ -6851,6 +7643,8 @@
       <step>Shake ingr5, juice of ingr2, and ingr1 with ice and strain into a whiskey sour glass</step>
       <step>Decorate with 1/2 slice ingr3, top with the ingr4, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Screaming Orgasm</name>
@@ -6870,6 +7664,8 @@
       <step>Cheap ingr3 can cause the bailey's to curdle</step>
       <step>Test your brand of ingr3 by mixing 1 tsp each of ingr3 and bailey's first.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Screwdriver</name>
@@ -6885,6 +7681,8 @@
       <step>Mix in a highball glass with ice</step>
       <step>Garnish and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Sea breeze</name>
@@ -6901,6 +7699,8 @@
       <step>Build all ingredients in a highball glass filled with ice</step>
       <step>Garnish with lime wedge.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Sex on the Beach</name>
@@ -6918,6 +7718,8 @@
       <step>Build all ingredients in a highball glass filled with ice</step>
       <step>Garnish with orange slice.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Shanghai Cocktail</name>
@@ -6934,6 +7736,8 @@
     <preparation>
       <step>Shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Shark Attack</name>
@@ -6955,6 +7759,8 @@
       <step>Pour into glass of crushed ice</step>
       <step>Excellent!</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Sherry Eggnog</name>
@@ -6974,6 +7780,8 @@
       <step>Fill with ingr4 and stir</step>
       <step>Sprinkle ingr5 on top and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Sherry Flip</name>
@@ -6992,6 +7800,8 @@
       <step>Shake all ingredients (except ingr4) with ice and strain into a whiskey sour glass</step>
       <step>Sprinkle ingr4 on top and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Shot-gun</name>
@@ -7007,6 +7817,8 @@
     <preparation>
       <step>Pour one part jack daneils and one part ingr3 into shot glass then float ingr2 on top.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Sidecar</name>
@@ -7023,6 +7835,8 @@
       <step>Pour all ingredients into cocktail shaker filled with ice</step>
       <step>Shake well and strain into cocktail glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Sidecar Cocktail</name>
@@ -7038,6 +7852,8 @@
     <preparation>
       <step>Shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Singapore Sling</name>
@@ -7059,6 +7875,8 @@
       <step>Strain into highball glass</step>
       <step>Garnish with pineapple and cocktail ingr2.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Sloe Gin Cocktail</name>
@@ -7074,6 +7892,8 @@
     <preparation>
       <step>Stir all ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Smut</name>
@@ -7090,6 +7910,8 @@
     <preparation>
       <step>Throw it all together and serve real cold.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Snake Bite (UK)</name>
@@ -7106,6 +7928,8 @@
       <step>Drink</step>
       <step>Fall over.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Snakebite and Black</name>
@@ -7122,6 +7946,8 @@
       <step>Put ingr1 in first up to about 1cm in glass</step>
       <step>Then add the larger and ingr2 one after another.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Snowball</name>
@@ -7139,6 +7965,8 @@
       <step>Fill up the glass with lemonade and decorate with a slice of ingr1</step>
       <step>Serve at once.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Sol Y Sombra</name>
@@ -7155,6 +7983,8 @@
       <step>(the english translation of the name of this drink is "sun and shade", and after sampling this drink, you'll understand why</step>
       <step>Thanks, kirby.)</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Space Odyssey</name>
@@ -7175,6 +8005,8 @@
       <step>Add splash of ingr4 and top with ingr6</step>
       <step>Add ingr1 for color and garnish with ingr3.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Spritz</name>
@@ -7190,6 +8022,8 @@
     <preparation>
       <step>Build into glass over ice, garnish and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Stinger</name>
@@ -7205,6 +8039,8 @@
       <step>Pour in a mixing glass with ice, stir and strain into a cocktail glass</step>
       <step>May also be served on rocks in a rocks glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Stone Sour</name>
@@ -7220,6 +8056,8 @@
     <preparation>
       <step>Shake all ingredients with ice, strain into a chilled whiskey sour glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Strawberry Daiquiri</name>
@@ -7239,6 +8077,8 @@
       <step>Shake well</step>
       <step>Strain in chilled cocktail glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Strawberry Margarita</name>
@@ -7258,6 +8098,8 @@
       <step>Rub rim of cocktail glass with ingr5 and dip rim in ingr6</step>
       <step>Shake schnapps, ingr3, ingr1, ingr5, and ingr4 with ice, strain into the ingr6-rimmed glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Sunny Holiday Punch</name>
@@ -7276,6 +8118,8 @@
     <preparation>
       <step>Combine all ingredients in a punch bowl.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Surf City Lifesaver</name>
@@ -7292,6 +8136,8 @@
     <preparation>
       <step>Lots of ice and soda top up in tall glass with cherry and a grin.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Swedish Coffee</name>
@@ -7309,6 +8155,8 @@
       <step>Add sugar by taste</step>
       <step>Stir and have a nice evening (morning)</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Sweet Tooth</name>
@@ -7323,6 +8171,8 @@
     <preparation>
       <step>Put 2 shots godiva liquour into a glass, add as much or as little ingr2 as you would like.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Talos Coffee</name>
@@ -7337,6 +8187,8 @@
     <preparation>
       <step>Add your gm and then add your ingr2.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Tennesee Mud</name>
@@ -7354,6 +8206,8 @@
       <step>Mix ingr3, ingr1 and ingr4</step>
       <step>Add cream on top.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Tequila Fizz</name>
@@ -7372,6 +8226,8 @@
       <step>Shake all ingredients (except ingr5) with ice and strain into a collins glass over ice cubes</step>
       <step>Fill with ingr5, stir, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Tequila Sour</name>
@@ -7390,6 +8246,8 @@
       <step>Shake ingr4, juice of ingr1, and ingr2 with ice and strain into a whiskey sour glass</step>
       <step>Add the half-slice of ingr1, top with the ingr3, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Tequila Sunrise</name>
@@ -7408,6 +8266,8 @@
       <step>Stir gently to create the sunrise effect</step>
       <step>Garnish and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Tequila Surprise</name>
@@ -7423,6 +8283,8 @@
       <step>Fill shot glass with ingr1</step>
       <step>Add drops of tobasco sauce.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Texas Rattlesnake</name>
@@ -7440,6 +8302,8 @@
       <step>Mix all ingredients and shake well</step>
       <step>Sweet at first, with a bite at the end...</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Texas Sling</name>
@@ -7458,6 +8322,8 @@
       <step>Blend with ice until smooth</step>
       <step>Serve in a tulip glass, top with whip ingr3.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>The Evil Blue Thing</name>
@@ -7473,6 +8339,8 @@
     <preparation>
       <step>Pour ingredients into glass, and drop in a blue whale! the blue whale isn't really necessary, but it makes the drink more "fun".</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Thriller</name>
@@ -7490,6 +8358,8 @@
       <step>Shake well</step>
       <step>Strain into a cocktail glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Tom Collins</name>
@@ -7512,6 +8382,8 @@
       <step>Add the ingr1</step>
       <step>Stir and garnish with the cherry and the ingr5 slice.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Tommy's Margarita</name>
@@ -7527,6 +8399,8 @@
     <preparation>
       <step>Shake and strain into a chilled cocktail glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Turf Cocktail</name>
@@ -7545,6 +8419,8 @@
       <step>Stir all ingredients (except ingr2) with ice and strain into a cocktail glass</step>
       <step>Add the twist of ingr2 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Turkeyball</name>
@@ -7560,6 +8436,8 @@
     <preparation>
       <step>Shake with ice and strain into a shot glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Tuxedo Cocktail</name>
@@ -7579,6 +8457,8 @@
       <step>Stir all ingredients with ice and strain into a cocktail glass</step>
       <step>Garnish with a ingr6 and a twist of lemon zest.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Valencia Cocktail</name>
@@ -7594,6 +8474,8 @@
     <preparation>
       <step>Shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Vampiro</name>
@@ -7617,6 +8499,8 @@
       <step>This is done by squeezing a fresh lime into the glass, adding a few grains of ingr3, adding citrus-flavoured soda pop, until the glass is 4/5 full, and then adding spicy viuda de sanchez (or ingr5, ingr6 and pico de gallo)</step>
       <step>The final step is to stir the ingredients so that the flavours are properly blended.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Van Vleet</name>
@@ -7632,6 +8516,8 @@
     <preparation>
       <step>Shake all ingredients with ice, strain into an old-fashioned glass over ice cubes, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Vermouth Cassis</name>
@@ -7648,6 +8534,8 @@
       <step>Stir vermouth and ingr2 in a highball glass with ice cubes</step>
       <step>Fill with ingr1, stir again, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Vesper</name>
@@ -7663,6 +8551,8 @@
     <preparation>
       <step>Shake over ice until well chilled, then strain into a deep goblet and garnish with a thin slice of lemon peel.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Vesuvio</name>
@@ -7680,6 +8570,8 @@
     <preparation>
       <step>Shake all ingredients with ice, strain into an old-fashioned glass over ice cubes, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Veteran</name>
@@ -7695,6 +8587,8 @@
       <step>Pour the rum and ingr2 into an old-fashioned glass almost filled with ice cubes</step>
       <step>Stir well.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Victor</name>
@@ -7710,6 +8604,8 @@
     <preparation>
       <step>Shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Victory Collins</name>
@@ -7728,6 +8624,8 @@
       <step>Shake all ingredients (except ingr5 slice) with ice and strain into a collins glass over ice cubes</step>
       <step>Add the slice of ingr5 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Vodka And Tonic</name>
@@ -7743,6 +8641,8 @@
       <step>Pour ingr2 into a highball glass over ice cubes</step>
       <step>Fill with ingr1, stir, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Vodka Fizz</name>
@@ -7760,6 +8660,8 @@
       <step>Blend all ingredients, save ingr4</step>
       <step>Pour into large white wine glass and sprinkle ingr4 on top.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Vodka Martini</name>
@@ -7775,6 +8677,8 @@
     <preparation>
       <step>Shake the ingr2 and vermouth together with a number of ice cubes, strain into a cocktail glass, add the ingr1 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Vodka Russian</name>
@@ -7789,6 +8693,8 @@
     <preparation>
       <step>Mix it as a ordinary drink .</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Waikiki Beachcomber</name>
@@ -7804,6 +8710,8 @@
     <preparation>
       <step>Shake all ingredients with ice, strain into a cocktail glass, and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Whiskey Sour</name>
@@ -7823,6 +8731,8 @@
       <step>Strain into chilled glass, garnish and serve</step>
       <step>If served 'on the rocks', strain ingredients into old-fashioned glass filled with ice.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Whisky Mac</name>
@@ -7837,6 +8747,8 @@
     <preparation>
       <step>Pour both of the ingredients into a wine goblet with no ice.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>White Lady</name>
@@ -7853,6 +8765,8 @@
       <step>Add all ingredients into cocktail shaker filled with ice</step>
       <step>Shake well and strain into large cocktail glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>White Russian</name>
@@ -7869,6 +8783,8 @@
       <step>Pour ingr3 and ingr2 over ice cubes in an old-fashioned glass</step>
       <step>Fill with ingr1 and serve.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Whitecap Margarita</name>
@@ -7885,6 +8801,8 @@
       <step>Place all ingredients in a blender and blend until smooth</step>
       <step>This makes one drink.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Wine Cooler</name>
@@ -7901,6 +8819,8 @@
       <step>Pour into glass</step>
       <step>Add ice.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Wine Punch</name>
@@ -7918,6 +8838,8 @@
     <preparation>
       <step>Combine all of the ingredients and pour over a block of ice.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Yellow Bird</name>
@@ -7934,6 +8856,8 @@
     <preparation>
       <step>Shake and strain into a chilled cocktail glass</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Zambeer</name>
@@ -7949,6 +8873,8 @@
       <step>Mix ingr2 with rootbeer and stir</step>
       <step>Add ice</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Zenmeister</name>
@@ -7963,6 +8889,8 @@
     <preparation>
       <step>Mix together and enjoy</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Ziemes Martini Apfelsaft</name>
@@ -7978,6 +8906,8 @@
       <step>Serve without ice</step>
       <step>At least the juice shold have room temperature.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Zima Blaster</name>
@@ -7994,6 +8924,8 @@
       <step>Pour in chambord, then fill with ingr2</step>
       <step>Mix and enjoy.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Zimadori Zinger</name>
@@ -8010,6 +8942,8 @@
       <step>Don't stir</step>
       <step>Garnish with a cherry.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Zinger</name>
@@ -8026,6 +8960,8 @@
       <step>Do the same with the ingr1 cola</step>
       <step>Then down it like scheetz would.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Zipperhead</name>
@@ -8043,6 +8979,8 @@
       <step>Then add the ingredients in order, trying to keep layered as much as possible (i.e</step>
       <step>Chambord on bottom, then ingr3, then soda on top).</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Zippy's Revenge</name>
@@ -8060,6 +8998,8 @@
       <step>Shake well to disolve the sugar in the kool-aid..</step>
       <step>Serve cold</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Zizi Coin-coin</name>
@@ -8075,6 +9015,8 @@
     <preparation>
       <step>Pour 5cl of ingr1 on ice, add 2cl of fresh ingr3 (or lime) juice, stir gently, and finally add slices of ingr3/lime in glass.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Zorbatini</name>
@@ -8090,6 +9032,8 @@
       <step>Prepare like a martini</step>
       <step>Garnish with a green olive.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
   <cocktail>
     <name>Zorro</name>
@@ -8105,5 +9049,7 @@
     <preparation>
       <step>Add all and pour black coffee and add whipped cream on top.</step>
     </preparation>
+    <utility>1.0</utility>
+    <condition>Original</condition>
   </cocktail>
 </cocktails>
