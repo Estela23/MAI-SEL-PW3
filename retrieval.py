@@ -1,6 +1,7 @@
 from lxml import etree
 import numpy as np
-
+import random
+from copy import deepcopy
 
 # Import Case Library (XML)
 # Import XML tree
@@ -73,6 +74,11 @@ def compute_similarity(input, case):
 
 sim_list = [compute_similarity(constraints, c) for c in searching_list]
 
-retrieved_case = searching_list[np.argmax(np.array(sim_list))]
+max_indices = np.argwhere(np.array(sim_list) == np.amax(np.array(sim_list))).flatten().tolist()
+if len(max_indices) > 1:
+    index_retrieved = random.choice(max_indices)
+else:
+    index_retrieved = max_indices[0]
+retrieved_case = searching_list[index_retrieved]
 retrieved_case_name = retrieved_case.find('name').text
 print(retrieved_case_name)
