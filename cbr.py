@@ -225,7 +225,7 @@ class CBR:
 
         return retrieved_case
 
-    def adaptation_step(self, constraints, retrieved_case):
+    def adaptation_step(self, constraints, retrieved_cocktail):
         '''Falta el retrieved_cocktail como entrada, se le pondrá luego'''
         #El retrieved_cocktail por ahora se finje
         tree = etree.parse('Data/case_library.xml')
@@ -238,7 +238,7 @@ class CBR:
                 ing = Ingredient(i.text, i.get('id'), i.get('alc_type'), i.get('basic_taste'), i.get('measure'),
                                  i.get('quantity'), i.get('unit'))
             ingredients_list.append(ing)
-        retrieved_cocktail = cocktails[0]
+
         # Adapt the ingredients:
         # Add ingredients
         # TODO: hacer esto al revés para tener las cantidades, meter primero los de la receta
