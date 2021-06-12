@@ -70,7 +70,7 @@ class CBR:
 
         return adapted_case, self.cocktails
 
-    def compute_similarity(self, constraints, cocktail):
+    def _compute_similarity(self, constraints, cocktail):
         """ Compute the similiraty between a set of constraints and a particular cocktail.
 
         Start with similarity 0. Then, evaluate each constraint one by one and increase
@@ -89,7 +89,7 @@ class CBR:
         # Get cocktails ingredients and alc_type
         c_ingredients = [i.text for i in cocktail.findall('ingredients/ingredient')]
         c_ingredients_atype = [i.attrib['alc_type'] for i in cocktail.findall('ingredients/ingredient')]
-        c_ingredients_btype = [i.attrib['basic_type'] for i in cocktail.findall('ingredients/ingredient')]
+        c_ingredients_btype = [i.attrib['basic_taste'] for i in cocktail.findall('ingredients/ingredient')]
 
         # Evaluate each constraint one by one
         for key in constraints:
@@ -97,35 +97,40 @@ class CBR:
                 # Ingredient constraing has highest importance
                 if key == "ingredients":
                     for ingredient in constraints[key]:
-                        # Get ingredient alcohol type
-                        ingredient_alc_type = [k for k in self.alcohol_dict if ingredient in self.alcohol_dict[k]][0]
-                        # Get ingredient alcohol type
-                        ingredient_basic_type = [k for k in self.basic_dict if ingredient in self.basic_dict[k]][0]
+                        # Get ingredient alcohol_type, if any
+                        ingredient_alc_type = [k for k in self.alcohol_dict if ingredient in self.alcohol_dict[k]]
+                        if ingredient_alc_type:
+                            itype = "alcohol"
+                            ingredient_alc_type = ingredient_alc_type[0]
+                        # If the ingredient is not alcoholic, get its basic_taste
+                        else:
+                            itype = "non-alcohol"
+                            ingredient_basic_taste = [k for k in self.basic_dict if ingredient in self.basic_dict[k]][0]
+
 
                         # Add 1 if constraint ingredient is used in cocktail
                         if ingredient in c_ingredients:
                             sim += 1
 
                         # Add 0.5 if constraint ingredient alc_type is used in cocktail
-                        elif ingredient_alc_type in c_ingredients_atype:
+                        elif itype == "alcohol" and ingredient_alc_type in c_ingredients_atype:
                             sim += 1 * 0.5
 
-                        # Add 0.5 if constraint ingredient basic_type is used in cocktail
-                        elif ingredient_basic_type in c_ingredients_btype:
+                        # Add 0.5 if constraint ingredient basic_taste is used in cocktail
+                        elif itype == "non-alcohol" and ingredient_basic_taste in c_ingredients_btype:
                             sim += 1 * 0.5
 
-                # Alochol_type has a lot of importance, but less than the ingredient constraints
+                # Add 0.8 because alochol_type has a lot of importance, but less than the ingredient constraints
                 elif key == "alc_type":
                     for atype in constraints[key]:
-                        sim += sum([1*0.8 for i in cocktail.find("ingredients") if atype == i.attrib['alc_type']])
+                        sim += sum([1 * 0.8 for i in cocktail.find("ingredients") if atype == i.attrib['alc_type']])
 
-                # Basic_type has a lot of importance, but less than the ingredient constraints
+                # Add 0.8 because basic_taste has a lot of importance, but less than the ingredient constraints
                 elif key == "basic_taste":
                     for btype in constraints[key]:
-                        sim += sum([1*0.8 for i in cocktail.find("ingredients") if btype == i.attrib['basic_type']])
+                        sim += sum([1 * 0.8 for i in cocktail.find("ingredients") if btype == i.attrib['basic_taste']])
 
-                # TODO: tener en cuenta más restricciones como "spicy/cream taste" para los basic_taste
-                # Glasstype is not very relevant for the case
+                # Add 0.4 if glasstype is a match. Glasstype is not very relevant for the case
                 elif key == "glasstype":
                     if constraints[key] == cocktail.find(key).text:
                         sim += 1 * 0.4
@@ -133,8 +138,27 @@ class CBR:
                 # If one of the excluded elements in the constraint is found in the cocktail, similarity is reduced
                 elif key == "exc_ingredients":
                     for ingredient in constraints[key]:
+                        # Get excluded_ingredient alcohol_type, if any
+                        exc_ingredient_alc_type = [k for k in self.alcohol_dict if ingredient in self.alcohol_dict[k]]
+                        if exc_ingredient_alc_type:
+                            itype = "alcohol"
+                            exc_ingredient_alc_type = exc_ingredient_alc_type[0]
+                        # If the excluded_ingredient is not alcoholic, get its basic_taste
+                        else:
+                            itype = "non-alcohol"
+                            exc_ingredient_basic_taste = [k for k in self.basic_dict if ingredient in self.basic_dict[k]][0]
+
+                        # Decrease similarity by -2 if ingredient excluded is found in cocktail
                         if ingredient in c_ingredients:
                             sim -= 2
+
+                        # Decrease similarity by -1 if if excluded ingredient alc_type is used in cocktail
+                        elif itype == "alcohol" and exc_ingredient_alc_type in c_ingredients_atype:
+                            sim -= 1
+
+                        # Decrease similarity by -1 if if excluded ingredient basic_taste is used in cocktail
+                        elif itype == "non-alcohol" and exc_ingredient_basic_taste in c_ingredients_btype:
+                            sim -= 1
         return sim
 
     def retrieval(self, constraints):
