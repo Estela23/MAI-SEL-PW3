@@ -24,6 +24,7 @@ class CBR:
         self.cocktails = tree.getroot()
         self.alcohol_types = set()
         self.basic_tastes = set()
+        self.ingredients_list = []
 
         self._init_structure()
 
@@ -58,6 +59,12 @@ class CBR:
             self.basic_dict[btaste].update(
                 set([i.text for i in self.cocktails.findall('cocktail/ingredients/ingredient')
                      if i.attrib['basic_taste'] == btaste]))
+            
+        # Get all ingredients
+        self.ingredients_list = [Ingredient(i.text, i.get('id'), i.get('alc_type'), i.get('basic_taste'), 
+                                            i.get('measure'), i.get('quantity'), i.get('unit')) 
+                                 for i in self.cocktails.findall('cocktail/ingredients/ingredient')]
+        
 
     def _print_ingredients(self, cocktail):
         """ Print the ingredients (with measures) of the given cocktail.
@@ -334,18 +341,16 @@ class CBR:
         return ingr_element
         
     def adaptation_step(self, constraints, retrieved_cocktail):
-        '''Falta el retrieved_cocktail como entrada, se le pondrá luego'''
-        # El retrieved_cocktail por ahora se finje
-        tree = etree.parse('Data/case_library.xml')
-        cocktails = tree.getroot()
-        # Cargo todos los ingredientes
-        ingredients_list = []
-        for c in cocktails:
-            ingredients = c.find('ingredients')
-            for i in ingredients:
-                ing = Ingredient(i.text, i.get('id'), i.get('alc_type'), i.get('basic_taste'), i.get('measure'),
-                                 i.get('quantity'), i.get('unit'))
-            ingredients_list.append(ing)
+        """[summary]
+
+        Args:
+            constraints ([type]): [description]
+            retrieved_cocktail ([type]): [description]
+
+        Returns:
+            [type]: [description]
+        """
+
 
         # Adapt the ingredients:
         # Add ingredients
@@ -380,7 +385,7 @@ class CBR:
                     flag_to_add = False
             # Paso de añadir alcohol type
             if flag_to_add:
-                possible_ingr = [ingredient_to_add for ingredient_to_add in ingredients_list if
+                possible_ingr = [ingredient_to_add for ingredient_to_add in self.ingredients_list if
                                  ingredient_to_add.alc_type == alcohol]
                 ingredient_to_add = random.choice(possible_ingr)
                 to_add = self._create_ingr_element(ingredient_to_add, retrieved_cocktail, "ingr" + str(idx_ingr))                
@@ -396,7 +401,7 @@ class CBR:
         # Tabmién si en la receta hay un ron y nos pide concretamente Havana Club, se sustituye el ron por Havana Club.
         for ingre in ingredients:
             # Recupero posibles ingredientes
-            possible_ingr = [ingredient_to_add for ingredient_to_add in ingredients_list if
+            possible_ingr = [ingredient_to_add for ingredient_to_add in self.ingredients_list if
                              ingredient_to_add.name == ingre]
             flag_to_add = True
             # Si hay posible ingrediente
