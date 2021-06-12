@@ -63,7 +63,7 @@ class CBR:
         for i in cocktail.findall('ingredients/ingredient'):
             print(f'{i.get("measure")} {i.text}')
             # print(f'{i.measure} {i.name} ({i.quantity} {i.unit})')
-        
+
     def _print_preparation(self, cocktail):
         """ Print the preparation steps (with ingredient names) of the given cocktail.
 
@@ -227,7 +227,7 @@ class CBR:
 
     def adaptation_step(self, constraints, retrieved_cocktail):
         '''Falta el retrieved_cocktail como entrada, se le pondrá luego'''
-        #El retrieved_cocktail por ahora se finje
+        # El retrieved_cocktail por ahora se finje
         tree = etree.parse('Data/case_library.xml')
         cocktails = tree.getroot()
         # Cargo todos los ingredientes
