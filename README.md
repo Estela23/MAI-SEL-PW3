@@ -1,3 +1,5 @@
+[![Python application](https://github.com/Estela23/MAI-SEL-PW3/actions/workflows/python-app.yml/badge.svg?branch=main)](https://github.com/Estela23/MAI-SEL-PW3/actions/workflows/python-app.yml)
+
 # MAI-SEL-PW3
 A CBR prototype for a synthetic task: planning / design / configuration in a concrete domain.
 
