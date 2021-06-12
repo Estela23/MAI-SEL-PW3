@@ -75,6 +75,9 @@ def create_xml_library(csv):
     cocktails = etree.Element("cocktails")
     previous_cocktail = ""
     ingredients_list = []
+    ingredient_index = 0
+    ingredients = None
+    cocktail = None
 
     # Loop over all instances of the dataset
     for idx, instance in enumerate(dataset.values):
