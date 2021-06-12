@@ -47,5 +47,3 @@ def read_parse_json(filename):
                     data['constraints']['alc_type'].remove(idx-aux)
                     aux=aux+1
     return data['constraints']
-
-
