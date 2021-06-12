@@ -341,17 +341,15 @@ class CBR:
         return ingr_element
         
     def adaptation_step(self, constraints, retrieved_cocktail):
-        """[summary]
+        """ Adapt a retrieved cocktail to fullfill the given constraints
 
         Args:
-            constraints ([type]): [description]
-            retrieved_cocktail ([type]): [description]
+            constraints (dict): constraints to be fullfilled
+            retrieved_cocktail (Element): cocktail element that needs to be adapted
 
         Returns:
-            [type]: [description]
+            Element: adapted cocktail element
         """
-
-
         # Adapt the ingredients:
         # Add ingredients
         # TODO: hacer esto al revés para tener las cantidades, meter primero los de la receta
