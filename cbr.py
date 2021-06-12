@@ -98,7 +98,7 @@ class CBR:
 
     def _update_case_library(self, new_case):
         # TODO: update the structure when new cases are added
-
+        return
 
     def _compute_similarity(self, constraints, cocktail):
         """ Compute the similiraty between a set of constraints and a particular cocktail.
@@ -125,7 +125,7 @@ class CBR:
         for key in constraints:
             if constraints[key]:
 
-                # Ingredient constraing has highest importance
+                # Ingredient constraint has highest importance
                 if key == "ingredients":
                     for ingredient in constraints[key]:
                         # Get ingredient alcohol_type, if any
