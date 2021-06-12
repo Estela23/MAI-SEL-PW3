@@ -97,6 +97,14 @@ class CBR:
         return adapted_case, self.cocktails
 
     def _update_case_library(self, new_case):
+        """ Update the case_library with the succesful adapted case
+
+        Args:
+            new_case: adapted and evaluated succesful case
+
+        Returns:
+
+        """
         # TODO: update utility function and case label
         self.cocktails.append(new_case)
         et = etree.ElementTree(self.cocktails)
