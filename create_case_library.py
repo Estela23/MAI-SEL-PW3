@@ -95,6 +95,10 @@ def create_xml_library(csv):
                 # Add preparation xml structure for the previous cocktail
                 previous_preparation = dataset.iloc[idx-1]["strInstructions"]  
                 add_preparation(previous_preparation, cocktail, ingredients_list)
+                utility = etree.SubElement(cocktail, "utility")
+                utility.text = str(1.0)
+                condition = etree.SubElement(cocktail, "condition")
+                condition.text = "Original"
 
             # Create xml structure for new cocktail
             ingredient_index = 0
@@ -119,6 +123,10 @@ def create_xml_library(csv):
     # Add the preparation xml structure for the final cocktail
     preparation = instance[6] 
     add_preparation(preparation, cocktail, ingredients_list)
+    utility = etree.SubElement(cocktail, "utility")
+    utility.text = str(1.0)
+    condition = etree.SubElement(cocktail, "condition")
+    condition.text = "Original"
 
     # Write in file
     et = etree.ElementTree(cocktails)
