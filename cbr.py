@@ -13,7 +13,6 @@ from lxml import etree
 import numpy as np
 import random
 
-# TODO create a method of the CBR that updates the structure when new cases are added
 class CBR:
     def __init__(self, cbl_filename):
         tree = etree.parse(cbl_filename)
@@ -70,6 +69,9 @@ class CBR:
 
         return adapted_case, self.cocktails
 
+    def _update_case_library(self, new_case):
+        # TODO: update the structure when new cases are added
+
     def _compute_similarity(self, constraints, cocktail):
         """ Compute the similiraty between a set of constraints and a particular cocktail.
 
@@ -94,6 +96,7 @@ class CBR:
         # Evaluate each constraint one by one
         for key in constraints:
             if constraints[key]:
+
                 # Ingredient constraing has highest importance
                 if key == "ingredients":
                     for ingredient in constraints[key]:
@@ -106,7 +109,6 @@ class CBR:
                         else:
                             itype = "non-alcohol"
                             ingredient_basic_taste = [k for k in self.basic_dict if ingredient in self.basic_dict[k]][0]
-
 
                         # Add 1 if constraint ingredient is used in cocktail
                         if ingredient in c_ingredients:
@@ -199,8 +201,9 @@ class CBR:
         return
 
 
-constraints = {'category': 'Cocktail', 'glasstype': 'Beer glass', 'ingredients': ['Amaretto'],
-                'alc_type': ['Rum'], 'basic_type': ['Sweet'], 'exc_ingredients': ['Vodka']}
+# To test RETRIEVAL step
+#constraints = {'category': 'Cocktail', 'glasstype': 'Beer glass', 'ingredients': ['Amaretto'],
+#                'alc_type': ['Rum'], 'basic_type': ['Sweet'], 'exc_ingredients': ['Vodka']}
 
-cbr = CBR("Data/case_library.xml")
-case_retrieved = cbr.retrieval(constraints)
+#cbr = CBR("Data/case_library.xml")
+#case_retrieved = cbr.retrieval(constraints)
