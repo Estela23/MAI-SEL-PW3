@@ -13,6 +13,7 @@ from lxml import etree
 import numpy as np
 import random
 
+# TODO create a method of the CBR that updates the structure when new cases are added
 class CBR:
     def __init__(self, cbl_filename):
         tree = etree.parse(cbl_filename)
@@ -69,9 +70,7 @@ class CBR:
 
         return adapted_case, self.cocktails
 
-
-
-    def _compute_similarity(self, constraints, cocktail):
+    def compute_similarity(self, constraints, cocktail):
         """ Compute the similiraty between a set of constraints and a particular cocktail.
 
         Start with similarity 0. Then, evaluate each constraint one by one and increase
@@ -86,11 +85,12 @@ class CBR:
         """
         # Start with similarity 0
         sim = 0
-        
+
         # Get cocktails ingredients and alc_type
         c_ingredients = [i.text for i in cocktail.findall('ingredients/ingredient')]
-        c_ingredients_type = [i.attrib['alc_type'] for i in cocktail.findall('ingredients/ingredient')]
-                        
+        c_ingredients_atype = [i.attrib['alc_type'] for i in cocktail.findall('ingredients/ingredient')]
+        c_ingredients_btype = [i.attrib['basic_type'] for i in cocktail.findall('ingredients/ingredient')]
+
         # Evaluate each constraint one by one
         for key in constraints:
             if constraints[key]:
@@ -99,21 +99,32 @@ class CBR:
                     for ingredient in constraints[key]:
                         # Get ingredient alcohol type
                         ingredient_alc_type = [k for k in self.alcohol_dict if ingredient in self.alcohol_dict[k]][0]
-                        
+                        # Get ingredient alcohol type
+                        ingredient_basic_type = [k for k in self.basic_dict if ingredient in self.basic_dict[k]][0]
+
                         # Add 1 if constraint ingredient is used in cocktail
                         if ingredient in c_ingredients:
                             sim += 1
-                            
+
                         # Add 0.5 if constraint ingredient alc_type is used in cocktail
-                        elif ingredient_alc_type in c_ingredients_type:
+                        elif ingredient_alc_type in c_ingredients_atype:
                             sim += 0.5
-                                
+
+                        # Add 0.5 if constraint ingredient basic_type is used in cocktail
+                        elif ingredient_basic_type in c_ingredients_btype:
+                            sim += 0.5
+
                 # Alochol type is the second most important
                 elif key == "alc_type":
                     for atype in constraints[key]:
                         sim += sum([1 for i in cocktail.find("ingredients") if atype == i.attrib['alc_type']])
 
+                elif key == "basic_taste":
+                    for btype in constraints[key]:
+                        sim += sum([1 for i in cocktail.find("ingredients") if btype == i.attrib['basic_type']])
+                        
                 # TODO: tener en cuenta más restricciones como "spicy/cream taste" para los basic_taste
+
                 else:
                     if constraints[key] == cocktail.find(key).text:
                         sim += 1
@@ -128,13 +139,15 @@ class CBR:
         Args:
             constraints (ditc): dictionary of constraints
         """
+        # SEARCHING PHASE
         # Filter elements that correspond to the category constraint
         if len(constraints['category']):
             searching_list = [child for child in self.cocktails if child.find('category').text == constraints['category']]
         # If category constraint is empty, the outcome of the searching phase is the whole dataset
         else:
             searching_list = [child for child in self.cocktails]
-        
+
+        # SELECTION PHASE
         # Compute similarity with each of the cocktails of the searching list
         sim_list = [self._compute_similarity(constraints, c) for c in searching_list]
 
@@ -154,3 +167,6 @@ class CBR:
     def adaptation(self):
         return
 
+
+constraints = {'category': 'Cocktail', 'glasstype': 'Beer glass', 'ingredients': ['Amaretto'],
+                'alc_type': ['Rum'], 'basic_type': ['Sweet'], 'exc_ingredients': ['Vodka']}
