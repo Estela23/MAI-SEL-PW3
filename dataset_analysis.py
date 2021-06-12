@@ -49,17 +49,17 @@ print(', '.join(glass).replace(' / ', '/'))
 #################################################################
 
 # Set general font size
-#plt.rcParams['font.size'] = '16'
+# plt.rcParams['font.size'] = '16'
 
 alc_ingr = dataset[dataset['Alc_type'] != ''][['Alc_type', 'strIngredients']]
 non_alc_ingr = dataset[dataset['Alc_type'] == ''][['Basic_taste', 'strIngredients']]
 
 # Number of recipes by Alcohol type
 counts_type_alc = alc_ingr['Alc_type'].value_counts()
-sorted_counts_type_alc = [counts_type_alc[type] for type in alc_type]
+# sorted_counts_type_alc = [counts_type_alc[type] for type in alc_type]
 
-plt.bar([i for i in range(len(alc_type))], sorted_counts_type_alc, color="orange")
-plt.xticks(range(len(alc_type)), alc_type, rotation=45, horizontalalignment='right', fontsize=10)
+plt.bar([i for i in range(len(alc_type))], counts_type_alc, color="tab:green")
+plt.xticks(range(len(alc_type)), counts_type_alc.axes[0].values, rotation=45, horizontalalignment='right', fontsize=10)
 plt.title("Number of times an alcohol appears in a recipe")
 plt.tight_layout()
 plt.savefig(os.path.join(DATA_PATH, 'Representations/popular_alcohol_types'))
@@ -67,9 +67,10 @@ plt.clf()
 
 # Number of unique ingredients type for each Alcohol type
 different_type_alc = [alc_ingr[alc_ingr['Alc_type'] == this_type]['strIngredients'].nunique() for this_type in alc_type]
+info_unique_alc_types = [t for t in zip(*sorted(zip(different_type_alc, alc_type), reverse=True))]
 
-plt.bar([i for i in range(len(alc_type))], different_type_alc, color="tab:purple")
-plt.xticks(range(len(alc_type)), alc_type, rotation=45, horizontalalignment='right', fontsize=10)
+plt.bar([i for i in range(len(alc_type))], info_unique_alc_types[0], color="tab:green")
+plt.xticks(range(len(alc_type)), info_unique_alc_types[1], rotation=45, horizontalalignment='right', fontsize=10)
 plt.title("Number of unique ingredients for each type of alcohol")
 plt.tight_layout()
 plt.savefig(os.path.join(DATA_PATH, 'Representations/unique_alcohols_by_type'))
@@ -77,9 +78,10 @@ plt.clf()
 
 # Number of unique ingredients type for each Basic taste type
 different_type_non_alc = [non_alc_ingr[non_alc_ingr['Basic_taste'] == this_type]['strIngredients'].nunique() for this_type in basic_taste]
+info_unique_non_alc_types = [t for t in zip(*sorted(zip(different_type_non_alc, basic_taste), reverse=True))]
 
-plt.bar([i for i in range(len(basic_taste))], different_type_non_alc, color="tab:green")
-plt.xticks(range(len(basic_taste)), basic_taste, rotation=45, horizontalalignment='right', fontsize=10)
+plt.bar([i for i in range(len(basic_taste))], info_unique_non_alc_types[0], color="tab:green")
+plt.xticks(range(len(basic_taste)), info_unique_non_alc_types[1], rotation=45, horizontalalignment='right', fontsize=10)
 plt.title("Number of unique ingredients for each type of non alcoholic beverage")
 plt.tight_layout()
 plt.savefig(os.path.join(DATA_PATH, 'Representations/unique_beverages_by_type'))
@@ -87,9 +89,10 @@ plt.clf()
 
 # Number of cocktails by category
 category_drinks = [dataset[dataset['strCategory'] == category]['strIngredients'].nunique() for category in categories]
+info_unique_categories = [t for t in zip(*sorted(zip(category_drinks, categories), reverse=True))]
 
-plt.bar([i for i in range(len(categories))], category_drinks, color="tab:blue")
-plt.xticks(range(len(categories)), categories, rotation=45, horizontalalignment='right', fontsize=10)
+plt.bar([i for i in range(len(categories))], info_unique_categories[0], color="tab:green")
+plt.xticks(range(len(categories)), info_unique_categories[1], rotation=45, horizontalalignment='right', fontsize=10)
 plt.title("Number of unique cocktails for each category")
 plt.tight_layout()
 plt.savefig(os.path.join(DATA_PATH, 'Representations/unique_cocktails_by_category'))
