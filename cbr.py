@@ -199,7 +199,7 @@ class CBR:
         # RETRIEVAL PHASE
         retrieved_case = self._retrieval(constraints)
         # ADAPTATION PHASE
-        adapted_case = self._adaptation(retrieved_case)
+        adapted_case, n_changes = self._adaptation(retrieved_case)
         # EVALUATION PHASE
         # LEARNING PHASE
         self._learning(retrieved_case, adapted_case)
@@ -461,11 +461,12 @@ class CBR:
         following the constraints fixed by the user
 
         Args:
-            constraints (dict): dictionary of constraints to be fullfilled
+            constraints (dict): dictionary of constraints to be fulfilled
             retrieved_cocktail (Element): retrieved cocktail element that needs to be adapted
 
         Returns:
             adapted_cocktail (Element): Element of the adapted cocktail from the retrieved one
+            n_changes (int): number of changes needed to adapt the solution of the case
         """
 
         adapted_cocktail = deepcopy(retrieved_cocktail)
@@ -582,34 +583,8 @@ class CBR:
 
                         idx_ingr += 1
                         n_changes += 1
-
-
-                #### TODO: a partir de aquí no entiendo para qué sirve, creo que son cosas que ya se hacen antes, no?
-                for ingr in adapted_cocktail.find("ingredients"):
-                    if ingr.get('alc_type') == ingredient_to_add.alc_type and ingredient_to_add.alc_type == "":
-                        # EN CASO DE BEBIDA NO ALGOHOLICA SUSTITUYO POR BASIC TASTE
-                        if ingr.get("basic_taste") == ingredient_to_add.basic_taste and ingr.text != ingredient_to_add.name:
-                            adapted_cocktail.find("ingredients").remove(ingr)
-                            to_add = self._create_ingr_element(ingredient_to_add, adapted_cocktail, ingr.get('id'))
-                            adapted_cocktail.find("ingredients").append(to_add)
-                            flag_to_add = False
-                            break
-                        elif ingr.get("basic_taste") == ingredient_to_add.basic_taste and ingr.text == ingredient_to_add.name:
-                            flag_to_add = False
-                            break
-                    # Si es mismo alcohol Y DIFERENTE NOMBRE SE CAMBIA
-                    elif ingr.get('alc_type') == ingredient_to_add.alc_type and ingredient_to_add.alc_type != "":
-                        if ingr.get('alc_type') == ingredient_to_add.alc_type and ingr.text != ingredient_to_add.name:
-                            adapted_cocktail.find("ingredients").remove(ingr)
-                            to_add = self._create_ingr_element(ingredient_to_add, adapted_cocktail, ingr.get('id'))
-                            adapted_cocktail.find("ingredients").append(to_add)
-                            flag_to_add = False
-                            break
-                        elif ingr.get('alc_type') == ingredient_to_add.alc_type and ingr.text == ingredient_to_add.name:
-                            flag_to_add = False
-                            break
                 
-        return adapted_cocktail
+        return adapted_cocktail, n_changes
       
     def evaluation(self, adapted_cocktail):
         """ Evaluate the ingredients and steps of the preparation by the user in order to determine if the
