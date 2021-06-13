@@ -1,8 +1,6 @@
 import sys
 
-from adaptation import adaptation
 from cbr import CBR
-from menu_interactivo import menu_interactivo
 from read_constraints import read_parse_json
 #from retrieval import retrieval_step
 
