@@ -425,7 +425,7 @@ class CBR:
 
         return ingr_element
 
-    def add_ingredient(self, cocktail, idx_ingr, ingr_type, type):
+    def add_ingredient_by_type(self, cocktail, idx_ingr, ingr_type, type):
         if type == "alc_type":
             possible_ingr = [ingredient_to_add for ingredient_to_add in self.ingredients_list if
                              ingredient_to_add.alc_type == ingr_type]
@@ -472,7 +472,7 @@ class CBR:
         n_changes = 0
 
         # Change the name of the cocktail according to the constraints
-        if len(constraints["name"]):
+        if constraints["name"]:
             adapted_cocktail.find("name").text = constraints["name"]
         else:
             adapted_cocktail.find("name").text += "2.0"
@@ -500,57 +500,91 @@ class CBR:
         for alcohol in constraints["alc_type"]:
             # If the desired alcohol type it is not in the recipe, add some ingredient from this type
             if alcohol not in [ingr.get("alc_type") for ingr in adapted_cocktail.find("ingredients")]:
-                self.add_ingredient(cocktail=adapted_cocktail, idx_ingr=idx_ingr, ingr_type=alcohol, type="alc_type")
+                self.add_ingredient_by_type(cocktail=adapted_cocktail, idx_ingr=idx_ingr, ingr_type=alcohol,
+                                            type="alc_type")
                 idx_ingr += 1
                 n_changes += 1
 
         for taste in constraints["basic_taste"]:
             # If the desired basic taste it is not in the recipe, add some ingredient from this type
             if taste not in [ingr.get("basic_taste") for ingr in adapted_cocktail.find("ingredients")]:
-                self.add_ingredient(cocktail=adapted_cocktail, idx_ingr=idx_ingr, ingr_type=taste, type="basic_taste")
+                self.add_ingredient_by_type(cocktail=adapted_cocktail, idx_ingr=idx_ingr, ingr_type=taste,
+                                            type="basic_taste")
                 idx_ingr += 1
                 n_changes += 1
 
-        # Segun mi logica, primer se añade el alcohol type, una vez añadido si una bebida de ese alcohol type si en
-        # las constratins se especifico una bebida tb de ese alcohol type, se sustituye
-        # Tabmién si en la receta hay un ron y nos pide concretamente Havana Club, se sustituye el ron por Havana Club.
+        # If a desired concrete ingredient is not in the recipe, ADD it or SUBSTITUTE another from the same type
+        # Taking into account that the one we substitute is not another "mandatory" ingredient desired by the user
         for ingre in constraints["ingredients"]:
-            # Recupero posibles ingredientes
-            possible_ingr = [ingredient_to_add for ingredient_to_add in self.ingredients_list if
-                             ingredient_to_add.name == ingre]
-            flag_to_add = True
-            # Si hay posible ingrediente
-            if len(possible_ingr) > 0:
-                # Se selecciona aleatorio, para no escoger siemrpe el mismo
+            # If the desired ingredient is already in the cocktail we skip this constraint and check the following one
+            if ingre in [ingr.text for ingr in adapted_cocktail.find("ingredients")]:
+                continue
+
+            # Otherwise, we try to substitute some ingredient of the same type or add it directly
+            else:
+                # Choose a random ingredient (with different quantities and indexes) with this name
+                possible_ingr = [ingredient_to_add for ingredient_to_add in self.ingredients_list if
+                                 ingredient_to_add.name == ingre]
                 ingredient_to_add = random.choice(possible_ingr)
+
+                # If we are including a non-alcoholic ingredient
                 if ingredient_to_add.alc_type == "":
+                    # Store all the non-alcoholic ingredients in the recipe with the same basic_taste than the desired
+                    # and that are not one of the desired ingredients
                     without_alcohol = [ingr for ingr in adapted_cocktail.find("ingredients") if
-                     ingr.get('alc_type') == ingredient_to_add.alc_type and ingr.get("alc_type") == "" and ingr.get(
-                         "basic_taste") == ingredient_to_add.basic_taste and ingredient_to_add.name != ingr.text]
-                    if len([ingr for ingr in adapted_cocktail.find("ingredients") if
-                            ingr.get('alc_type') == ingredient_to_add.alc_type and ingr.get("alc_type") == "" and ingr.get(
-                                "basic_taste") == ingredient_to_add.basic_taste and ingr.text == ingredient_to_add.name]) > 0:
-                        flag_to_add = False
-                    elif len(without_alcohol) > 0:
+                                       ingr.get("basic_taste") == ingredient_to_add.basic_taste and
+                                       ingr.text not in constraints["ingredients"]]
+
+                    if len(without_alcohol) > 0:
+                        # If we have any possible ingredients to be substituted, we SUBSTITUTE one by the desired
                         ingr = random.choice(without_alcohol)
                         adapted_cocktail.find("ingredients").remove(ingr)
                         to_add = self._create_ingr_element(ingredient_to_add, adapted_cocktail, ingr.get('id'))
                         adapted_cocktail.find("ingredients").append(to_add)
-                        flag_to_add = False
+
+                        n_changes += 1
+                    else:
+                        # If there is none ingredient of that basic taste we directly ADD the desired one
+                        to_add = self._create_ingr_element(ingredient_to_add, adapted_cocktail, "ingr" + str(idx_ingr))
+                        adapted_cocktail.find("ingredients").append(to_add)
+                        # ADD also a step concerning this ingredient to the recipe
+                        step = etree.SubElement(adapted_cocktail.find("preparation"), "step")
+                        step.text = "Add ingr" + str(idx_ingr) + " to the cocktail."
+                        adapted_cocktail.find("preparation").append(step)
+
+                        idx_ingr += 1
+                        n_changes += 1
+
+                # If we are including an alcoholic ingredient
                 else:
+                    # Store all the alcoholic ingredients in the recipe with the same alcohol type than the desired
+                    # and that are not one of the desired ingredients
                     with_alcohol = [ingr for ingr in adapted_cocktail.find("ingredients") if
-                                       ingr.get('alc_type') == ingredient_to_add.alc_type and ingr.get("alc_type") != "" and ingr.text!= ingredient_to_add.name]
-                    if len([ingr for ingr in adapted_cocktail.find("ingredients") if
-                            ingr.get('alc_type') == ingredient_to_add.alc_type and ingr.get("alc_type") != "" and ingr.text == ingredient_to_add.name]) > 0:
-                        flag_to_add=False
-                    elif len(with_alcohol)>0:
+                                    ingr.get('alc_type') == ingredient_to_add.alc_type and
+                                    ingr.text not in constraints["ingredients"]]
+
+                    if len(with_alcohol) > 0:
+                        # If we have any possible ingredients to be substituted, we SUBSTITUTE one by the desired
                         ingr = random.choice(with_alcohol)
                         adapted_cocktail.find("ingredients").remove(ingr)
                         to_add = self._create_ingr_element(ingredient_to_add, adapted_cocktail, ingr.get('id'))
-                        to_add.text = ingredient_to_add.name
                         adapted_cocktail.find("ingredients").append(to_add)
-                        flag_to_add = False
+                        n_changes += 1
+                    else:
+                        # If there is none ingredient of that alcohol type we directly ADD the desired one
+                        to_add = self._create_ingr_element(ingredient_to_add, adapted_cocktail, "ingr" + str(idx_ingr))
+                        adapted_cocktail.find("ingredients").append(to_add)
 
+                        # ADD also a step concerning this ingredient to the recipe
+                        step = etree.SubElement(adapted_cocktail.find("preparation"), "step")
+                        step.text = "Add ingr" + str(idx_ingr) + " to the cocktail."
+                        adapted_cocktail.find("preparation").append(step)
+
+                        idx_ingr += 1
+                        n_changes += 1
+
+
+                #### TODO: a partir de aquí no entiendo para qué sirve, creo que son cosas que ya se hacen antes, no?
                 for ingr in adapted_cocktail.find("ingredients"):
                     if ingr.get('alc_type') == ingredient_to_add.alc_type and ingredient_to_add.alc_type == "":
                         # EN CASO DE BEBIDA NO ALGOHOLICA SUSTITUYO POR BASIC TASTE
@@ -574,16 +608,6 @@ class CBR:
                         elif ingr.get('alc_type') == ingredient_to_add.alc_type and ingr.text == ingredient_to_add.name:
                             flag_to_add = False
                             break
-                #Si no había sustitución posible se añade'''
-            if flag_to_add:
-                to_add = self._create_ingr_element(ingredient_to_add, adapted_cocktail, "ingr" + str(idx_ingr))
-                adapted_cocktail.find("ingredients").append(to_add)
-                step = etree.SubElement(adapted_cocktail.find("preparation"), "step")
-                # Posiblemente se necesite añadir una step luego de añadir el nuevo elemento, revisar codigo de todas formas, y hay que pensar forma de añadirlo logicamente.
-                step.text = "Add ingr" + str(idx_ingr) + " to the cocktail."
-                idx_ingr = idx_ingr + 1
-
-                adapted_cocktail.find("preparation").append(step)
                 
         return adapted_cocktail
       
@@ -610,3 +634,21 @@ class CBR:
         else:
             adapted_cocktail.find('evaluation').text = "Failure"
         return adapted_cocktail, score
+
+'''
+# To test RETRIEVAL step
+constraints = {'category': ['Cocktail', 'Shot'], 'glasstype': ['Beer glass', 'Shot glass'], 'ingredients': ['Amaretto'],
+                'alc_type': ['Rum'], 'basic_type': ['Sweet'], 'exc_ingredients': ['Vodka']}
+
+
+
+
+    '''
+''''# To test RETRIEVAL step
+constraints = {'category': ['Cocktail', 'Shot'], 'glasstype': ['Beer glass', 'Shot glass'], 'ingredients': ['Amaretto'],
+                'alc_type': ['Rum'], 'basic_type': ['Sweet'], 'exc_ingredients': ['Vodka']}
+
+cbr = CBR("Data/case_library.xml")
+case_retrieved = cbr.retrieval(constraints)
+'''
+
