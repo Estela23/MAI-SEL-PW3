@@ -49,7 +49,9 @@ class CBR:
         Parse cocktails tree and extract relevant information such as 
         the unique categories, alcohol types, ingredients, etc.
         """
-
+        # Get unique categories of cocktail
+        self.categories = set([c.find('category').text for c in self.cocktails])
+        
         # Get unique values for alcohol types
         self.alcohol_types.update(
             [i.attrib['alc_type'] for i in self.cocktails.findall('cocktail/ingredients/ingredient')])
@@ -461,8 +463,8 @@ class CBR:
         n_changes = 0
 
         # Change the name of the cocktail according to the constraints
-        if len(constraints["cocktail_name"]):
-            adapted_cocktail.find("name").text = constraints["cocktail_name"]
+        if len(constraints["name"]):
+            adapted_cocktail.find("name").text = constraints["name"]
         else:
             adapted_cocktail.find("name").text += "2.0"
 
@@ -599,19 +601,4 @@ class CBR:
         else:
             adapted_cocktail.find('evaluation').text = "Failure"
         return adapted_cocktail, score
-'''
-# To test RETRIEVAL step
-constraints = {'category': ['Cocktail', 'Shot'], 'glasstype': ['Beer glass', 'Shot glass'], 'ingredients': ['Amaretto'],
-                'alc_type': ['Rum'], 'basic_type': ['Sweet'], 'exc_ingredients': ['Vodka']}
-
-
-
-
-    '''
-    # To test RETRIEVAL step
-    constraints = {'category': ['Cocktail', 'Shot'], 'glasstype': ['Beer glass', 'Shot glass'], 'ingredients': ['Amaretto'],
-                    'alc_type': ['Rum'], 'basic_type': ['Sweet'], 'exc_ingredients': ['Vodka']}
     
-    cbr = CBR("Data/case_library.xml")
-    case_retrieved = cbr.retrieval(constraints)
-    '''
