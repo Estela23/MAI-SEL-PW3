@@ -1,6 +1,6 @@
 import sys
 
-from adaptation import adaptation_step
+from adaptation import adaptation
 from cbr import CBR
 from menu_interactivo import menu_interactivo
 from read_constraints import read_parse_json
@@ -15,7 +15,7 @@ def main():
         print(constraints)
         #constraints, retrieved_case = retrieval_step(constraints)
         aaaaa=None
-        adapted_case=cbr.adaptation_step( constraints,aaaaa)
+        adapted_case=cbr.adaptation( constraints,aaaaa)
         print(adapted_case.find("glasstype").text)
         for ingre in adapted_case.find("ingredients"):
             print(ingre.text)
@@ -25,7 +25,7 @@ def main():
     else:
         constraints = menu_interactivo()
         #constraints, retrieved_case = retrieval_step(constraints)
-        adaptation_step( constraints)
+        adaptation( constraints)
 
 
 if __name__ == "__main__":

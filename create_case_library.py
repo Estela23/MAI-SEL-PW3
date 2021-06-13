@@ -39,7 +39,7 @@ def insert_ingredient(ingr_id, instance, ingredients):
                             alc_type=str(alc_type), basic_taste=basic_taste, measure=str(measure),
                             quantity=str(quantity), unit=str(unit))
 
-    ingr.text = str(instance[3])
+    ingr.text = str(instance[3]).lower()
 
 
 def add_preparation(preparation, cocktail_el, ingredients):

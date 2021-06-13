@@ -3,7 +3,7 @@ import os
 
 DATA_PATH = 'Data'
 
-constraints = {'category': ['Cocktail'], 'glass_type': ['Beer glass'], 'ingredients': ['Vodka', 'Orange Juice'],
+constraints = {'category': ['Cocktail'], 'glass_type': ['Beer glass'], 'ingredients': ['vodka', 'orange juice'],
                 'alc_type': ['Rum'], 'exc_ingredients': []}
 
 # Create cocktails CBR
@@ -22,7 +22,7 @@ cocktails_cbr._print_ingredients(c)
 print('\nOriginal Preparation:')
 cocktails_cbr._print_preparation(c)
 
-adapted_cocktail = cocktails_cbr.adaptation_step(constraints, c)
+adapted_cocktail = cocktails_cbr.adaptation(constraints, c)
 print(f'\n{adapted_cocktail.find("name").text} cocktail adapted')
 
 print('\nAdapted Ingredients:')
