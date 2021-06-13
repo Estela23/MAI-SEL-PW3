@@ -31,8 +31,9 @@ class CBR:
             verbose (boolean, optional): defines if execution messages are printed in the terminal. 
                                          Defaults to False.
         """
-        tree = etree.parse(cbl_filename)
-        self.cocktails = tree.getroot()
+        self.cbl_filename = cbl_filename
+        self.tree = etree.parse(cbl_filename)
+        self.cocktails = self.tree.getroot()
         self.alcohol_types = set()
         self.basic_tastes = set()
         self.ingredients_list = []
@@ -204,7 +205,7 @@ class CBR:
         # TODO: update utility function and case label
         self.cocktails.append(new_case)
         et = etree.ElementTree(self.cocktails)
-        et.write('Data/case_library.xml', pretty_print=True, encoding="UTF-8")
+        et.write(self.cbl_filename, pretty_print=True, encoding="UTF-8")
 
     def _compute_similarity(self, constraints, cocktail):
         """ Compute the similiraty between a set of constraints and a particular cocktail.
