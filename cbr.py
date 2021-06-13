@@ -305,7 +305,7 @@ class CBR:
         # SEARCHING PHASE
         # Filter elements that correspond to the category constraint
         # If category constraints is not empty
-        if constraints['category']:
+        if len(constraints['category']):
             searching_list = list(itertools.chain.from_iterable([[child for child in self.cocktails
                                                                   if child.find('category').text == category] for
                                                                  category in constraints['category']]))
@@ -358,45 +358,49 @@ class CBR:
         """
 
         adapted_cocktail = deepcopy(retrieved_cocktail)
+        n_changes = 0
 
-        # If glass does not fullfill constraint, change it
+        # If glass does not fulfill constraint, change it
         if len(constraints["glass_type"]):
             if adapted_cocktail.find("glasstype").text not in constraints["glass_type"]:
                 adapted_cocktail.find("glasstype").text = random.choice(constraints["glass_type"])
+                n_changes += 1
             
-        # Remove ingredients that are in the exclude intredients constraint 
-        for ingr in adapted_cocktail.find("ingredients"):
-            if ingr.text in constraints["exc_ingredients"]:
-                adapted_cocktail.find("ingredients").remove(ingr)
-                
-                # TODO: Check si es la mejor forma de remover de las steps
-                for step in adapted_cocktail.find("preparation"):
-                    if ingr.get('id') in step.text:
-                        adapted_cocktail.find("preparation").remove(step)
-                        
-        # TODO: Revisar, add y substitution step, puede contener errores, prefiero segundo vistazo
+        # REMOVE ingredients that are in the exclude ingredients constraint
+        if len(constraints["exc_ingredients"]):
+            for ingr in adapted_cocktail.find("ingredients"):
+                if ingr.text in constraints["exc_ingredients"]:
+                    adapted_cocktail.find("ingredients").remove(ingr)
+                    n_changes += 1
+
+                    # Adapt the step that contains the excluded ingredient
+                    for step in adapted_cocktail.find("preparation"):
+                        # If there is any other ingredient in the step, remove only the excluded one
+                        if ingr.get('id') in step.text and \
+                                any([ingr in step for ingr in adapted_cocktail.find("ingredients")]):
+                            step.text.replace(ingr.get('id'), "")
+                        # If the excluded is the only ingredient in the step, remove the whole step from the recipe
+                        elif ingr.get('id') in step.text:
+                            adapted_cocktail.find("preparation").remove(step)
+
+        # If a desired alcohol type / basic taste is not in the recipe, ADD an ingredient of this type from the database
         idx_ingr = 2*len(adapted_cocktail.find("ingredients"))
         for alcohol in constraints["alc_type"]:
-            flag_to_add = True
-            for ingr in adapted_cocktail.find("ingredients"):
-                # Si un alcohol type no esta, se añade a la preparation
-                if ingr.get('alc_type') == alcohol:
-                    flag_to_add = False
-                    
-            # Paso de añadir alcohol type
-            if flag_to_add:
+            # If the desired alcohol type it is not in the recipe, add some ingredient from this type
+            if alcohol not in [ingr.get("alc_type") for ingr in adapted_cocktail.find("ingredients")]:
                 possible_ingr = [ingredient_to_add for ingredient_to_add in self.ingredients_list if
                                  ingredient_to_add.alc_type == alcohol]
+                # Choose a random ingredient with this alcohol type from the database
                 ingredient_to_add = random.choice(possible_ingr)
-
-                to_add = self._create_ingr_element(ingredient_to_add, adapted_cocktail, "ingr" + str(idx_ingr))                
+                # Add it to the recipe with a new index
+                to_add = self._create_ingr_element(ingredient_to_add, adapted_cocktail, "ingr" + str(idx_ingr))
                 adapted_cocktail.find("ingredients").append(to_add)
+                # New step to the recipe in which we include the added alcohol to the cocktail
                 step = etree.SubElement(adapted_cocktail.find("preparation"), "step")
-
-                # Si añades el alcohol type, posiblemente se necesite un paso de preparacion que lo contenga, esta es una idea, luego veremos que tal pirula.
                 step.text = "Add ingr" + str(idx_ingr) + " to the cocktail."
-                idx_ingr = idx_ingr + 1
                 adapted_cocktail.find("preparation").append(step)
+
+                idx_ingr += 1
                 break
 
         # Segun mi logica, primer se añade el alcohol type, una vez añadido si una bebida de ese alcohol type si en las constratins se especifico una bebida tb de ese alcohol type, se sustituye
@@ -438,7 +442,6 @@ class CBR:
                         adapted_cocktail.find("ingredients").append(to_add)
                         flag_to_add = False
 
-                        
                 for ingr in adapted_cocktail.find("ingredients"):
                     if ingr.get('alc_type') == ingredient_to_add.alc_type and ingredient_to_add.alc_type == "":
                         # EN CASO DE BEBIDA NO ALGOHOLICA SUSTITUYO POR BASIC TASTE
@@ -475,11 +478,11 @@ class CBR:
                 
         return adapted_cocktail
 
-'''
-# To test RETRIEVAL step
-constraints = {'category': ['Cocktail', 'Shot'], 'glasstype': ['Beer glass', 'Shot glass'], 'ingredients': ['Amaretto'],
-                'alc_type': ['Rum'], 'basic_type': ['Sweet'], 'exc_ingredients': ['Vodka']}
-
-cbr = CBR("Data/case_library.xml")
-case_retrieved = cbr.retrieval(constraints)
-'''
+    '''
+    # To test RETRIEVAL step
+    constraints = {'category': ['Cocktail', 'Shot'], 'glasstype': ['Beer glass', 'Shot glass'], 'ingredients': ['Amaretto'],
+                    'alc_type': ['Rum'], 'basic_type': ['Sweet'], 'exc_ingredients': ['Vodka']}
+    
+    cbr = CBR("Data/case_library.xml")
+    case_retrieved = cbr.retrieval(constraints)
+    '''
