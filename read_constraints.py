@@ -51,7 +51,7 @@ def read_parse_json(filename):
             aux=0
             for idx, exc_ingredients in enumerate(data['constraints']['exc_ingredients']):
                 if exc_ingredients not in ingredients or exc_ingredients in data['constraints']['ingredients']:
-                    data['constraints']['alc_type'].remove(idx-aux)
+                    data['constraints']['exc_ingredients'].remove(idx-aux)
                     aux=aux+1
         if 'basic_taste' not in data['constraints']:
             data['constraints']['basic_taste']=[]
@@ -59,6 +59,6 @@ def read_parse_json(filename):
             aux=0
             for idx, basic_taste in enumerate(data['constraints']['basic_taste']):
                 if basic_taste not in ingredients:
-                    data['constraints']['alc_type'].remove(idx-aux)
+                    data['constraints']['basic_taste'].remove(idx-aux)
                     aux=aux+1
     return data['constraints']
