@@ -402,8 +402,8 @@ class CBR:
         n_changes = 0
 
         # Change the name of the cocktail according to the constraints
-        if constraints["cocktail_name"]:
-            adapted_cocktail.find("name").text = constraints["cocktail_name"]
+        if constraints["name"]:
+            adapted_cocktail.find("name").text = constraints["name"]
         else:
             adapted_cocktail.find("name").text += "2.0"
 
@@ -573,10 +573,10 @@ constraints = {'category': ['Cocktail', 'Shot'], 'glasstype': ['Beer glass', 'Sh
 
 
     '''
-    # To test RETRIEVAL step
-    constraints = {'category': ['Cocktail', 'Shot'], 'glasstype': ['Beer glass', 'Shot glass'], 'ingredients': ['Amaretto'],
-                    'alc_type': ['Rum'], 'basic_type': ['Sweet'], 'exc_ingredients': ['Vodka']}
-    
-    cbr = CBR("Data/case_library.xml")
-    case_retrieved = cbr.retrieval(constraints)
-    '''
+''''# To test RETRIEVAL step
+constraints = {'category': ['Cocktail', 'Shot'], 'glasstype': ['Beer glass', 'Shot glass'], 'ingredients': ['Amaretto'],
+                'alc_type': ['Rum'], 'basic_type': ['Sweet'], 'exc_ingredients': ['Vodka']}
+
+cbr = CBR("Data/case_library.xml")
+case_retrieved = cbr.retrieval(constraints)
+'''
