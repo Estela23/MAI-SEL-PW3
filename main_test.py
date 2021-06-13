@@ -31,6 +31,7 @@ print('\nAdapted Ingredients:')
 cocktails_cbr._print_ingredients(adapted_cocktail)
 print('\nAdapted Preparation:')
 cocktails_cbr._print_preparation(adapted_cocktail)
+print("\nAdapted_case category: " + adapted_cocktail.find("category").text)
 
 # Evaluate constraints
 evaluation, eval_results = cocktails_cbr._evaluate_constraints_fullfillment(constraints, adapted_cocktail)
