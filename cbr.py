@@ -353,7 +353,7 @@ class CBR:
                         # Decrease similarity by -1 if if excluded ingredient basic_taste is used in cocktail
                         elif itype == "non-alcohol" and exc_ingredient_basic_taste in c_ingredients_btype:
                             sim -= 1
-        return sim
+        return (sim * float(cocktail.find("utility").text))
 
     def _retrieval(self, constraints):
         """ Retrieve most appropriate cocktail given the provided constraints.
