@@ -3,6 +3,7 @@ import numpy as np
 import os
 import re
 from lxml import etree
+from operator import attrgetter
 
 DATA_PATH = 'Data'
 
@@ -63,7 +64,6 @@ def add_preparation(preparation, cocktail_el, ingredients):
             
         step = etree.SubElement(prep, "step")
         step.text = s.capitalize()
-
 
 def create_xml_library(csv):
     # Read .CSV
@@ -128,8 +128,16 @@ def create_xml_library(csv):
     evaluation = etree.SubElement(cocktail, "evaluation")
     evaluation.text = 'Success'  # cases from dataset are successful by default
 
+    # Order by category
+    new_cocktails = etree.Element("cocktails")
+    categories = set([c.find('category').text for c in cocktails])
+    for cat in categories:
+        cat_cases = [c for c in cocktails if c.find("category").text == cat]
+        for case in cat_cases:
+            new_cocktails.append(case)
+
     # Write in file
-    et = etree.ElementTree(cocktails)
+    et = etree.ElementTree(new_cocktails)
     et.write(os.path.join(DATA_PATH, 'case_library.xml'), pretty_print=True, encoding="UTF-8")
 
 

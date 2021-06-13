@@ -246,12 +246,13 @@ class CBR:
         # Initialize utility of adapted_case to 1.0 always
         adapted_case.find("utility").text = str(1.0)
 
+        # Add new adapted_case to case library
+        self._update_case_library(adapted_case)
         # Update case_historial with the adapted case:
         self.cases_historial.update({adapted_case.find('name').text: [0, 0]})
         # Update library_by_category
         self.library_by_category[adapted_case.find("category").text] = self.library_by_category[adapted_case.find("category").text].append(adapted_case)
-        # Add new adapted_case to case library
-        self._update_case_library(adapted_case)
+
         # TODO: Decide what to do with failures
         '''
         # FOR WHEN DECIDING WHAT TO DO WITH FAILURES
@@ -274,8 +275,8 @@ class CBR:
             new_case (Element): new cocktail element to be added to the case library
 
         """
-        # TODO: Introduce the new succesful case in the neighbourhood when 9-division case library is built
-        self.cocktails.append(new_case)
+        index_to_insert = self.cocktails.index(self.library_by_category[new_case.find("category").text][-1])
+        self.cocktails.insert(index_to_insert+1, new_case)
         et = etree.ElementTree(self.cocktails)
         et.write(self.cbl_filename, pretty_print=True, encoding="UTF-8")
 
