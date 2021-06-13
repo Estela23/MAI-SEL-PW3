@@ -344,7 +344,25 @@ class CBR:
         ingr_element.text = ingredient.name
 
         return ingr_element
-        
+
+    def add_ingredient(self, cocktail, idx_ingr, ingr_type, type):
+        if type == "alc_type":
+            possible_ingr = [ingredient_to_add for ingredient_to_add in self.ingredients_list if
+                             ingredient_to_add.alc_type == ingr_type]
+        elif type == "basic_taste":
+            possible_ingr = [ingredient_to_add for ingredient_to_add in self.ingredients_list if
+                             ingredient_to_add.basic_taste == ingr_type]
+
+        # Choose a random ingredient with this ingredient_type from the database
+        ingredient_to_add = random.choice(possible_ingr)
+        # Add it to the recipe with a new index
+        to_add = self._create_ingr_element(ingredient_to_add, cocktail, "ingr" + str(idx_ingr))
+        cocktail.find("ingredients").append(to_add)
+        # New step to the recipe in which we include the added ingredient to the cocktail
+        step = etree.SubElement(cocktail.find("preparation"), "step")
+        step.text = "Add ingr" + str(idx_ingr) + " to the cocktail."
+        cocktail.find("preparation").append(step)
+
     def adaptation(self, constraints, retrieved_cocktail):
         """ Adapt the ingredients and steps of the preparation for the best retrieved case
         following the constraints fixed by the user
@@ -383,25 +401,23 @@ class CBR:
                         elif ingr.get('id') in step.text:
                             adapted_cocktail.find("preparation").remove(step)
 
-        # If a desired alcohol type / basic taste is not in the recipe, ADD an ingredient of this type from the database
+        # Define an index for the ingredients in order to avoid repetitions in the indexes when adding new ingredients
         idx_ingr = 2*len(adapted_cocktail.find("ingredients"))
+
+        # If a desired alcohol type / basic taste is not in the recipe, ADD an ingredient of this type from the database
         for alcohol in constraints["alc_type"]:
             # If the desired alcohol type it is not in the recipe, add some ingredient from this type
             if alcohol not in [ingr.get("alc_type") for ingr in adapted_cocktail.find("ingredients")]:
-                possible_ingr = [ingredient_to_add for ingredient_to_add in self.ingredients_list if
-                                 ingredient_to_add.alc_type == alcohol]
-                # Choose a random ingredient with this alcohol type from the database
-                ingredient_to_add = random.choice(possible_ingr)
-                # Add it to the recipe with a new index
-                to_add = self._create_ingr_element(ingredient_to_add, adapted_cocktail, "ingr" + str(idx_ingr))
-                adapted_cocktail.find("ingredients").append(to_add)
-                # New step to the recipe in which we include the added alcohol to the cocktail
-                step = etree.SubElement(adapted_cocktail.find("preparation"), "step")
-                step.text = "Add ingr" + str(idx_ingr) + " to the cocktail."
-                adapted_cocktail.find("preparation").append(step)
-
+                add_ingredient(self, cocktail=adapted_cocktail, idx_ingr=idx_ingr, ingr_type=alcohol, type="alc_type")
                 idx_ingr += 1
-                break
+                n_changes += 1
+
+        for taste in constraints["basic_taste"]:
+            # If the desired basic taste it is not in the recipe, add some ingredient from this type
+            if taste not in [ingr.get("basic_taste") for ingr in adapted_cocktail.find("ingredients")]:
+                add_ingredient(self, cocktail=adapted_cocktail, idx_ingr=idx_ingr, ingr_type=taste, type="basic_taste")
+                idx_ingr += 1
+                n_changes += 1
 
         # Segun mi logica, primer se añade el alcohol type, una vez añadido si una bebida de ese alcohol type si en las constratins se especifico una bebida tb de ese alcohol type, se sustituye
         # Tabmién si en la receta hay un ron y nos pide concretamente Havana Club, se sustituye el ron por Havana Club.
@@ -477,6 +493,10 @@ class CBR:
                 adapted_cocktail.find("preparation").append(step)
                 
         return adapted_cocktail
+
+
+
+
 
     '''
     # To test RETRIEVAL step
