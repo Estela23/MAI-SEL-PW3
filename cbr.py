@@ -20,7 +20,17 @@ Ingredient = namedtuple('Ingredient', ['name', 'identifier', 'alc_type', 'basic_
 
 
 class CBR:
-    def __init__(self, cbl_filename):
+    """ Class that implements our Case Based Reasoning algorithm.
+    """
+    
+    def __init__(self, cbl_filename, verbose=False):
+        """ Initialize CBR.
+
+        Args:
+            cbl_filename (string): filename of the XML case library
+            verbose (boolean, optional): defines if execution messages are printed in the terminal. 
+                                         Defaults to False.
+        """
         tree = etree.parse(cbl_filename)
         self.cocktails = tree.getroot()
         self.alcohol_types = set()
@@ -28,6 +38,8 @@ class CBR:
         self.ingredients_list = []
 
         self._init_structure()
+        
+        self.verboseprint = print if verbose else lambda *a, **k: None
 
     def _init_structure(self):
         """ Initialize library structure
@@ -182,12 +194,10 @@ class CBR:
         return adapted_case, self.cocktails
 
     def _update_case_library(self, new_case):
-        """ Update the case_library with the succesful adapted case
+        """ Update the case_library with a new case
 
         Args:
-            new_case: adapted and evaluated succesful case
-
-        Returns:
+            new_case (Element): new cocktail element to be added to the case library
 
         """
         # TODO: What happens with the failures, are they saved in the case library as well?
@@ -195,7 +205,6 @@ class CBR:
         self.cocktails.append(new_case)
         et = etree.ElementTree(self.cocktails)
         et.write('Data/case_library.xml', pretty_print=True, encoding="UTF-8")
-        return
 
     def _compute_similarity(self, constraints, cocktail):
         """ Compute the similiraty between a set of constraints and a particular cocktail.
@@ -321,7 +330,7 @@ class CBR:
             index_retrieved = max_indices[0]
         retrieved_case = searching_list[index_retrieved]
         retrieved_case_name = retrieved_case.find('name').text
-        print("Retrieved case: " + str(retrieved_case_name))
+        self.verboseprint("Retrieved case: " + str(retrieved_case_name))
 
         return retrieved_case
 
