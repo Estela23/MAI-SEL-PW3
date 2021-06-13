@@ -18,10 +18,10 @@ def insert_ingredient(ingr_id, instance, ingredients):
     """
     alc_type = ""
     if isinstance(instance[4], str):
-        alc_type = instance[4]
+        alc_type = instance[4].lower()
     basic_taste = ""
     if isinstance(instance[5], str):
-        basic_taste = instance[5]
+        basic_taste = instance[5].lower()
     measure = ""
     if isinstance(instance[-3], str):
         measure = instance[-3]
@@ -108,18 +108,18 @@ def create_xml_library(csv):
             name = etree.SubElement(cocktail, "name")
             name.text = instance[0]
             category = etree.SubElement(cocktail, "category")
-            category.text = instance[1]
+            category.text = instance[1].lower()
             glasstype = etree.SubElement(cocktail, "glasstype")
-            glasstype.text = instance[2]
+            glasstype.text = instance[2].lower()
             ingredients = etree.SubElement(cocktail, "ingredients")
             insert_ingredient(ingredient_index, instance, ingredients)
             ingredient_index += 1
-            ingredients_list = [instance[3]]
+            ingredients_list = [instance[3].lower()]
         
         previous_cocktail = instance[0]
 
     # Add the preparation xml structure for the final cocktail
-    preparation = instance[6] 
+    preparation = instance[6]
     add_preparation(preparation, cocktail, ingredients_list)
     utility = etree.SubElement(cocktail, "utility")
     utility.text = str(1.0)

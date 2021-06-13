@@ -20,14 +20,28 @@ Ingredient = namedtuple('Ingredient', ['name', 'identifier', 'alc_type', 'basic_
 
 
 class CBR:
-    def __init__(self, cbl_filename):
-        tree = etree.parse(cbl_filename)
-        self.cocktails = tree.getroot()
+    """ Class that implements our Case Based Reasoning algorithm.
+    """
+    
+    def __init__(self, cbl_filename, threshold_eval=8.0, verbose=False):
+        """ Initialize CBR.
+
+        Args:
+            cbl_filename (string): filename of the XML case library
+            verbose (boolean, optional): defines if execution messages are printed in the terminal. 
+                                         Defaults to False.
+        """
+        self.cbl_filename = cbl_filename
+        self.tree = etree.parse(cbl_filename)
+        self.cocktails = self.tree.getroot()
         self.alcohol_types = set()
         self.basic_tastes = set()
         self.ingredients_list = []
+        self.threshold_eval = threshold_eval
 
         self._init_structure()
+        
+        self.verboseprint = print if verbose else lambda *a, **k: None
 
     def _init_structure(self):
         """ Initialize library structure
@@ -182,20 +196,17 @@ class CBR:
         return adapted_case, self.cocktails
 
     def _update_case_library(self, new_case):
-        """ Update the case_library with the succesful adapted case
+        """ Update the case_library with a new case
 
         Args:
-            new_case: adapted and evaluated succesful case
-
-        Returns:
+            new_case (Element): new cocktail element to be added to the case library
 
         """
         # TODO: What happens with the failures, are they saved in the case library as well?
         # TODO: update utility function and case label
         self.cocktails.append(new_case)
         et = etree.ElementTree(self.cocktails)
-        et.write('Data/case_library.xml', pretty_print=True, encoding="UTF-8")
-        return
+        et.write(self.cbl_filename, pretty_print=True, encoding="UTF-8")
 
     def _compute_similarity(self, constraints, cocktail):
         """ Compute the similiraty between a set of constraints and a particular cocktail.
@@ -324,12 +335,11 @@ class CBR:
         else:
             index_retrieved = max_indices[0]
         retrieved_case = searching_list[index_retrieved]
-        retrieved_case_name = retrieved_case.find('name').text
-        print("Retrieved case: " + str(retrieved_case_name))
-
+        self.verboseprint(f"[CBR] Retrieved case: {retrieved_case.find('name').text}")
+        
         return retrieved_case
 
-    def _create_ingr_element(ingredient, cocktail, ingr_id):
+    def _create_ingr_element(self, ingredient, cocktail, ingr_id):
         """ Convert an Ingredient Named Tuple to an ingredient XML element
 
         Args:
@@ -506,7 +516,34 @@ class CBR:
                 adapted_cocktail.find("preparation").append(step)
                 
         return adapted_cocktail
+      
+    def evaluation(self, adapted_cocktail):
+        """ Evaluate the ingredients and steps of the preparation by the user in order to determine if the
+         adapted case is a success or a failure
 
+        Args:
+            adapted_cocktail (Element): adapted cocktail element that needs to be evaluated
+
+        Returns:
+            adapted_cocktail (Element): adapted cocktail with
+            score (float64): value of the score assigned by the expert user
+        """
+        print("The cocktail to evaluate contains the following ingredients:")
+        self._print_ingredients(adapted_cocktail)
+        print("The preparation steps of the cocktail is the following one:")
+        self._print_preparation(adapted_cocktail)
+        print("How good was the cocktail?")
+        print("Please, introduce a score between 0 and 10 (You can use decimals)")
+        score=float(input())
+        if score >= self.threshold_eval:
+            adapted_cocktail.find('evaluation').text = "Success"
+        else:
+            adapted_cocktail.find('evaluation').text = "Failure"
+        return adapted_cocktail, score
+'''
+# To test RETRIEVAL step
+constraints = {'category': ['Cocktail', 'Shot'], 'glasstype': ['Beer glass', 'Shot glass'], 'ingredients': ['Amaretto'],
+                'alc_type': ['Rum'], 'basic_type': ['Sweet'], 'exc_ingredients': ['Vodka']}
 
 
 
