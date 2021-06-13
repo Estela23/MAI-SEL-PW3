@@ -1,7 +1,7 @@
 import xml.etree.ElementTree as ET
 
 
-def menu_interactivo():
+def interactive_menu():
     constraints = {'alc_type': [], 'ingredients': [], 'exc_ingredients': []}
     tree = ET.parse('Data/case_library.xml')
     cocktails = tree.getroot()
@@ -48,4 +48,5 @@ def menu_interactivo():
         else:
             constraints['exc_ingredients'].append(excluded_ingredients)
     print(constraints)
+
     return constraints
