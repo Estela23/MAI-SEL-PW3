@@ -83,6 +83,11 @@ class CBR:
         # Define historial for all cases in case library, containing number of successes and failures
         self.cases_historial = {}
         [self.cases_historial.update({c.find("name").text:[0,0]}) for c in self.cocktails]
+
+        self.categories = set([c.find("category").text for c in self.cocktails])
+        self.library_by_category = {}
+        [self.library_by_category.update({cat: [c for c in self.cocktails
+                                                if c.find('category').text == cat]}) for cat in self.categories]
         
 
     def _print_ingredients(self, cocktail):
@@ -190,11 +195,12 @@ class CBR:
 
         """
         # RETRIEVAL PHASE
-        retrieved_case = self.retrieval(constraints)
+        retrieved_case = self._retrieval(constraints)
         # ADAPTATION PHASE
-        adapted_case = self.adaptation(retrieved_case)
+        adapted_case = self._adaptation(retrieved_case)
         # EVALUATION PHASE
         # LEARNING PHASE
+        self._learning(retrieved_case, adapted_case)
         # TODO: Add the rest of the phases in the future
 
         return adapted_case, self.cocktails
@@ -203,8 +209,8 @@ class CBR:
         """ Learning phase in order to decide if the evaluated case is a success or a failure, and act consequently
 
         Args:
-            case_adapted: case resulting from adaptation phase
-            score: score obtained in the evaluation phase
+            retrieved_case (Element): case resulting from retrieval phase
+            adapted_case (Element): case resulting from adaptation phase, which has been evaluated
 
         Returns:
 
@@ -222,8 +228,11 @@ class CBR:
         utility_score = (self.cases_historial[retrieved_case.find("name").text][0] - \
                         self.cases_historial[retrieved_case.find("name").text][1] + 1) / 2
 
-        # Update retrieved case utility score if the computed utility score has changed
-        if str(utility_score) != retrieved_case.find("utility").text:
+        # If utility score is 0.0, remove retrieved_case from case library
+        if utility_score == 0.0:
+            self.cocktails.remove(retrieved_case)
+        # Otherwise, update retrieved case utility score if the computed utility score has changed
+        elif str(utility_score) != retrieved_case.find("utility").text:
             for c in self.cocktails:
                 if c.find("name").text == retrieved_case.find("name").text:
                     c.find("utility").text = str(utility_score)
@@ -353,7 +362,7 @@ class CBR:
                         # Decrease similarity by -1 if if excluded ingredient basic_taste is used in cocktail
                         elif itype == "non-alcohol" and exc_ingredient_basic_taste in c_ingredients_btype:
                             sim -= 1
-        return sim
+        return (sim * float(cocktail.find("utility").text))
 
     def _retrieval(self, constraints):
         """ Retrieve most appropriate cocktail given the provided constraints.
@@ -370,10 +379,9 @@ class CBR:
         # SEARCHING PHASE
         # Filter elements that correspond to the category constraint
         # If category constraints is not empty
-        if len(constraints['category']):
-            searching_list = list(itertools.chain.from_iterable([[child for child in self.cocktails
-                                                                  if child.find('category').text == category] for
-                                                                 category in constraints['category']]))
+        if constraints['category']:
+            searching_list = list(itertools.chain.from_iterable([self.library_by_category[cat]
+                                                                 for cat in constraints['category']]))
         else:
             searching_list = [child for child in self.cocktails]
 
@@ -440,7 +448,7 @@ class CBR:
             elif ingredient.get('id') in step.text:
                 cocktail.find("preparation").remove(step)
 
-    def adaptation(self, constraints, retrieved_cocktail):
+    def _adaptation(self, constraints, retrieved_cocktail):
         """ Adapt the ingredients and steps of the preparation for the best retrieved case
         following the constraints fixed by the user
 
