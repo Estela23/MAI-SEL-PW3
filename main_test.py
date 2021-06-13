@@ -3,8 +3,8 @@ import os
 
 DATA_PATH = 'Data'
 
-constraints = {'category': ['Cocktail'], 'glass_type': ['Beer glass'], 'ingredients': ['vodka', 'orange juice'],
-                'alc_type': ['Rum'], 'exc_ingredients': []}
+constraints = {'category': ['cocktail'], 'glass_type': ['beer glass'], 'ingredients': ['vodka', 'orange juice'],
+                'alc_type': ['rum'], 'exc_ingredients': []}
 
 # Create cocktails CBR
 cocktails_cbr = CBR(os.path.join(DATA_PATH, 'case_library.xml'), verbose=True)

@@ -334,12 +334,11 @@ class CBR:
         else:
             index_retrieved = max_indices[0]
         retrieved_case = searching_list[index_retrieved]
-        retrieved_case_name = retrieved_case.find('name').text
-        self.verboseprint("Retrieved case: " + str(retrieved_case_name))
-
+        self.verboseprint(f"[CBR] Retrieved case: {retrieved_case.find('name').text}")
+        
         return retrieved_case
 
-    def _create_ingr_element(ingredient, cocktail, ingr_id):
+    def _create_ingr_element(self, ingredient, cocktail, ingr_id):
         """ Convert an Ingredient Named Tuple to an ingredient XML element
 
         Args:
