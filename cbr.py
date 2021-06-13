@@ -23,7 +23,7 @@ class CBR:
     """ Class that implements our Case Based Reasoning algorithm.
     """
     
-    def __init__(self, cbl_filename, verbose=False):
+    def __init__(self, cbl_filename, threshold_eval=8.0, verbose=False):
         """ Initialize CBR.
 
         Args:
@@ -37,6 +37,7 @@ class CBR:
         self.alcohol_types = set()
         self.basic_tastes = set()
         self.ingredients_list = []
+        self.threshold_eval = threshold_eval
 
         self._init_structure()
         
@@ -483,7 +484,29 @@ class CBR:
                 adapted_cocktail.find("preparation").append(step)
                 
         return adapted_cocktail
+    def evaluation(self, adapted_cocktail):
+        """ Evaluate the ingredients and steps of the preparation by the user in order to determine if the
+         adapted case is a success or a failure
 
+        Args:
+            adapted_cocktail (Element): adapted cocktail element that needs to be evaluated
+
+        Returns:
+            adapted_cocktail (Element): adapted cocktail with
+            score (float64): value of the score assigned by the expert user
+        """
+        print("The cocktail to evaluate contains the following ingredients:")
+        self._print_ingredients(adapted_cocktail)
+        print("The preparation steps of the cocktail is the following one:")
+        self._print_preparation(adapted_cocktail)
+        print("How good was the cocktail?")
+        print("Please, introduce a score between 0 and 10 (You can use decimals)")
+        score=float(input())
+        if score >= self.threshold_eval:
+            adapted_cocktail.find('evaluation').text = "Success"
+        else:
+            adapted_cocktail.find('evaluation').text = "Failure"
+        return adapted_cocktail, score
 '''
 # To test RETRIEVAL step
 constraints = {'category': ['Cocktail', 'Shot'], 'glasstype': ['Beer glass', 'Shot glass'], 'ingredients': ['Amaretto'],
