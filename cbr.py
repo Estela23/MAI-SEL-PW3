@@ -363,6 +363,19 @@ class CBR:
         step.text = "Add ingr" + str(idx_ingr) + " to the cocktail."
         cocktail.find("preparation").append(step)
 
+    def remove_ingredient(self, cocktail, ingredient):
+        cocktail.find("ingredients").remove(ingredient)
+
+        # Adapt the step that contains the excluded ingredient
+        for step in cocktail.find("preparation"):
+            # If there is any other ingredient in the step, remove only the excluded one
+            if ingredient.get('id') in step.text and \
+                    any([ingr in step for ingr in cocktail.find("ingredients")]):
+                step.text.replace(ingredient.get('id'), "")
+            # If the excluded is the only ingredient in the step, remove the whole step from the recipe
+            elif ingredient.get('id') in step.text:
+                cocktail.find("preparation").remove(step)
+
     def adaptation(self, constraints, retrieved_cocktail):
         """ Adapt the ingredients and steps of the preparation for the best retrieved case
         following the constraints fixed by the user
@@ -378,6 +391,15 @@ class CBR:
         adapted_cocktail = deepcopy(retrieved_cocktail)
         n_changes = 0
 
+        # Change the name of the cocktail according to the constraints
+        if len(constraints["cocktail_name"]):
+            adapted_cocktail.find("name").text = constraints["cocktail_name"]
+        else:
+            adapted_cocktail.find("name").text += "2.0"
+
+        # Save the derivation parameter for the adapted case
+        adapted_cocktail.find("derivation").text = retrieved_cocktail.find("name").text
+
         # If glass does not fulfill constraint, change it
         if len(constraints["glass_type"]):
             if adapted_cocktail.find("glasstype").text not in constraints["glass_type"]:
@@ -388,18 +410,8 @@ class CBR:
         if len(constraints["exc_ingredients"]):
             for ingr in adapted_cocktail.find("ingredients"):
                 if ingr.text in constraints["exc_ingredients"]:
-                    adapted_cocktail.find("ingredients").remove(ingr)
+                    self.remove_ingredient(cocktail=adapted_cocktail, ingredient=ingr)
                     n_changes += 1
-
-                    # Adapt the step that contains the excluded ingredient
-                    for step in adapted_cocktail.find("preparation"):
-                        # If there is any other ingredient in the step, remove only the excluded one
-                        if ingr.get('id') in step.text and \
-                                any([ingr in step for ingr in adapted_cocktail.find("ingredients")]):
-                            step.text.replace(ingr.get('id'), "")
-                        # If the excluded is the only ingredient in the step, remove the whole step from the recipe
-                        elif ingr.get('id') in step.text:
-                            adapted_cocktail.find("preparation").remove(step)
 
         # Define an index for the ingredients in order to avoid repetitions in the indexes when adding new ingredients
         idx_ingr = 2*len(adapted_cocktail.find("ingredients"))
@@ -408,18 +420,19 @@ class CBR:
         for alcohol in constraints["alc_type"]:
             # If the desired alcohol type it is not in the recipe, add some ingredient from this type
             if alcohol not in [ingr.get("alc_type") for ingr in adapted_cocktail.find("ingredients")]:
-                add_ingredient(self, cocktail=adapted_cocktail, idx_ingr=idx_ingr, ingr_type=alcohol, type="alc_type")
+                self.add_ingredient(cocktail=adapted_cocktail, idx_ingr=idx_ingr, ingr_type=alcohol, type="alc_type")
                 idx_ingr += 1
                 n_changes += 1
 
         for taste in constraints["basic_taste"]:
             # If the desired basic taste it is not in the recipe, add some ingredient from this type
             if taste not in [ingr.get("basic_taste") for ingr in adapted_cocktail.find("ingredients")]:
-                add_ingredient(self, cocktail=adapted_cocktail, idx_ingr=idx_ingr, ingr_type=taste, type="basic_taste")
+                self.add_ingredient(cocktail=adapted_cocktail, idx_ingr=idx_ingr, ingr_type=taste, type="basic_taste")
                 idx_ingr += 1
                 n_changes += 1
 
-        # Segun mi logica, primer se añade el alcohol type, una vez añadido si una bebida de ese alcohol type si en las constratins se especifico una bebida tb de ese alcohol type, se sustituye
+        # Segun mi logica, primer se añade el alcohol type, una vez añadido si una bebida de ese alcohol type si en
+        # las constratins se especifico una bebida tb de ese alcohol type, se sustituye
         # Tabmién si en la receta hay un ron y nos pide concretamente Havana Club, se sustituye el ron por Havana Club.
         for ingre in constraints["ingredients"]:
             # Recupero posibles ingredientes
@@ -431,7 +444,7 @@ class CBR:
                 # Se selecciona aleatorio, para no escoger siemrpe el mismo
                 ingredient_to_add = random.choice(possible_ingr)
                 if ingredient_to_add.alc_type == "":
-                    without_alcohol=[ingr for ingr in adapted_cocktail.find("ingredients") if
+                    without_alcohol = [ingr for ingr in adapted_cocktail.find("ingredients") if
                      ingr.get('alc_type') == ingredient_to_add.alc_type and ingr.get("alc_type") == "" and ingr.get(
                          "basic_taste") == ingredient_to_add.basic_taste and ingredient_to_add.name != ingr.text]
                     if len([ingr for ingr in adapted_cocktail.find("ingredients") if
