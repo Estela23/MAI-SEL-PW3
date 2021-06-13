@@ -4,7 +4,7 @@ import os
 DATA_PATH = 'Data'
 
 
-constraints = {'name': ['SEL-cocktail'], 'category': ['shot'], 'glass_type': ['old-fashioned glass'], 'ingredients': ['cranberry juice', 'malibu rum'],
+constraints = {'name': 'SEL-cocktail', 'category': ['shot'], 'glass_type': ['old-fashioned glass'], 'ingredients': ['cranberry juice', 'malibu rum'],
                'alc_type': ['sweet liqueur', 'vodka'], 'basic_taste': [], 'exc_ingredients': ['pineapple juice']}
 
 
@@ -40,4 +40,4 @@ if evaluation:
 else:
     print('\nConstraints error:')
     print('\n'.join(eval_results))
-    assert (evaluation)
+    #assert (evaluation)

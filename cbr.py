@@ -49,7 +49,9 @@ class CBR:
         Parse cocktails tree and extract relevant information such as 
         the unique categories, alcohol types, ingredients, etc.
         """
-
+        # Get unique categories of cocktail
+        self.categories = set([c.find('category').text for c in self.cocktails])
+        
         # Get unique values for alcohol types
         self.alcohol_types.update(
             [i.attrib['alc_type'] for i in self.cocktails.findall('cocktail/ingredients/ingredient')])
