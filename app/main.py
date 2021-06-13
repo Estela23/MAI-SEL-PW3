@@ -10,6 +10,7 @@ from cbr import CBR
 
 DATA_PATH = 'Data'
 
+        
 class OutLog:
     def __init__(self, edit, out=None, color=None):
         """
@@ -47,26 +48,48 @@ class CocktailsApp():
         self.dialog.btn_getrecipes.clicked.connect(self.btn_click)
         self.dialog.show()
         
+        
+        self.cbr = self.cbr = CBR(os.path.join(DATA_PATH, 'case_library.xml'), verbose=True)
+    
+        # self.dialog.scrollArea.setLayout(self.vbox)
+        
+        #Scroll Area Properties
+        # self.dialog.scrollArea.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
+        # self.dialog.scrollArea.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
+        #self.dialog.scrollArea.setWidgetResizable(True)
+        #   self.dialog.scrollArea.setWidget(self.widget)
+
         # Redirect stdout and stderr
         sys.stdout = OutLog(self.dialog.logText)
         sys.stderr = OutLog(self.dialog.logText, color=QtGui.QColor(255,0,0))
         
-        
-        self.cbr = self.cbr = CBR(os.path.join(DATA_PATH, 'case_library.xml'), verbose=True)
-        
-        # Initialize comboBox with categories
-        for c in self.cbr.categories:
-            self.dialog.comboBox_categories.addItem(c)
-
     def btn_click(self):
         ingredients = self.dialog.text_ingredients.text().split(', ')
+        if not ingredients[0]:
+            ingredients = []
+            print('KDAJFLKDASJFLKJAKLDFJKLASDS')
+            
         alc_types = self.dialog.text_alc_types.text().split(', ')
+        if not alc_types[0]:
+            alc_types = []
+            
         basic_tastes = self.dialog.text_basic_tastes.text().split(', ')
+        if not basic_tastes[0]:
+            basic_tastes = []
+            
         exc_ingredients = self.dialog.text_exc_ingredients.text().split(', ')
-        category = self.dialog.comboBox_categories.currentText()
+        if not exc_ingredients[0]:
+            exc_ingredients = []
+            
+        name = self.dialog.text_name.text()
+        if not name:
+            name = 'SEL-Cocktail'
+        
+        #category = self.dialog.comboBox_categories.currentText()
+        categories = []
         glass_types = ['old-fashioned glass']
 
-        constraints = {'name': 'SEL-cocktail', 'category': [category], 'glass_type': glass_types, 'ingredients': ingredients,
+        constraints = {'name': name, 'category': categories, 'glass_type': glass_types, 'ingredients': ingredients,
                     'alc_type': alc_types, 'basic_taste': basic_tastes, 'exc_ingredients': exc_ingredients}
         
         print(f'constraints: {constraints}\n')        
