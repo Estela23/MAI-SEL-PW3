@@ -2,8 +2,8 @@
    "constraints":{
        "category":"Cocktail",
        "glass_type":"Beer Glass",
-       "ingredients":["Amaretto"],
-       "exc_ingredients": ["Vodka"],
+       "ingredients":["amaretto"],
+       "exc_ingredients": ["vodka"],
        "alc_type":["Rum"]
    }
 }
