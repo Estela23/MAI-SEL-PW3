@@ -81,6 +81,10 @@ class CBR:
         self.ingredients_list = [Ingredient(i.text, i.get('id'), i.get('alc_type'), i.get('basic_taste'), 
                                             i.get('measure'), i.get('quantity'), i.get('unit')) 
                                  for i in self.cocktails.findall('cocktail/ingredients/ingredient')]
+
+        # Define historial for all cases in case library, containing number of successes and failures
+        self.cases_historial = {}
+        [self.cases_historial.update({c.find("name").text:[0,0]}) for c in self.cocktails]
         
 
     def _print_ingredients(self, cocktail):
@@ -197,6 +201,57 @@ class CBR:
 
         return adapted_case, self.cocktails
 
+    def _learning(self, retrieved_case, adapted_case):
+        """ Learning phase in order to decide if the evaluated case is a success or a failure, and act consequently
+
+        Args:
+            case_adapted: case resulting from adaptation phase
+            score: score obtained in the evaluation phase
+
+        Returns:
+
+        """
+        # MANAGING UTILITY SCORE OF THE RETRIEVED CASE
+        # Update the cases_historial of the retrieved case based on the status
+        # If the adapted case is a success, according to the human oracle
+        if adapted_case.find('evaluation').text == "Success":
+            self.cases_historial[retrieved_case.find("name").text][0] += 1
+        # If the adapted case is a failure, according to the human oracle
+        elif adapted_case.find('evaluation').text == "Failure":
+            self.cases_historial[retrieved_case.find("name").text][1] += 1
+
+        # Compute utility score for retrieved_case
+        utility_score = (self.cases_historial[retrieved_case.find("name").text][0] - \
+                        self.cases_historial[retrieved_case.find("name").text][1] + 1) / 2
+
+        # Update retrieved case utility score if the computed utility score has changed
+        if str(utility_score) != retrieved_case.find("utility").text:
+            for c in self.cocktails:
+                if c.find("name").text == retrieved_case.find("name").text:
+                    c.find("utility").text = str(utility_score)
+
+        # Initialize utility of adapted_case to 1.0 always
+        adapted_case.find("utility").text = str(1.0)
+
+        # Update case_historial with the adapted case:
+        self.cases_historial.update({adapted_case.find('name').text: [0, 0]})
+        # Add new adapted_case to case library
+        self._update_case_library(adapted_case)
+        # TODO: Decide what to do with failures
+        '''
+        # FOR WHEN DECIDING WHAT TO DO WITH FAILURES
+        if adapted_case.find('evaluation').text == "Success":
+            # Update case_historial with the adapted case:
+            self.cases_historial.update({adapted_case.find('name').text: [0,0]})
+            # Add new adapted_case to case library
+            self._update_case_library(adapted_case)
+        else:
+            # TODO: Decide what to do with failures
+            print()
+        '''
+
+        return
+
     def _update_case_library(self, new_case):
         """ Update the case_library with a new case
 
@@ -204,8 +259,7 @@ class CBR:
             new_case (Element): new cocktail element to be added to the case library
 
         """
-        # TODO: What happens with the failures, are they saved in the case library as well?
-        # TODO: update utility function and case label
+        # TODO: Introduce the new succesful case in the neighbourhood when 9-division case library is built
         self.cocktails.append(new_case)
         et = etree.ElementTree(self.cocktails)
         et.write(self.cbl_filename, pretty_print=True, encoding="UTF-8")
@@ -303,7 +357,7 @@ class CBR:
                             sim -= 1
         return sim
 
-    def retrieval(self, constraints):
+    def _retrieval(self, constraints):
         """ Retrieve most appropriate cocktail given the provided constraints.
         
         It does a structured search by first filtering by the category.
@@ -356,6 +410,7 @@ class CBR:
         ingr_element.text = ingredient.name
 
         return ingr_element
+<<<<<<< Updated upstream
 
     def add_ingredient(self, cocktail, idx_ingr, ingr_type, type):
         if type == "alc_type":
@@ -389,6 +444,10 @@ class CBR:
                 cocktail.find("preparation").remove(step)
 
     def adaptation(self, constraints, retrieved_cocktail):
+=======
+        
+    def _adaptation(self, constraints, retrieved_cocktail):
+>>>>>>> Stashed changes
         """ Adapt the ingredients and steps of the preparation for the best retrieved case
         following the constraints fixed by the user
 
