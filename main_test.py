@@ -3,11 +3,13 @@ import os
 
 DATA_PATH = 'Data'
 
-constraints = {'cocktail_name': 'SEL-cocktail', 'category': ['Shot'], 'glass_type': ['Old-fashioned glass'], 'ingredients': ['cranberry juice', 'malibu rum'],
+
+constraints = {'name': ['SEL-cocktail'], 'category': ['Shot'], 'glass_type': ['Old-fashioned glass'], 'ingredients': ['cranberry juice', 'malibu rum'],
                'alc_type': ['Sweet Liqueur', 'Vodka'], 'basic_taste': [], 'exc_ingredients': ['pineapple juice']}
 
+
 # Create cocktails CBR
-cocktails_cbr = CBR(os.path.join(DATA_PATH, 'case_library.xml'))
+cocktails_cbr = CBR(os.path.join(DATA_PATH, 'case_library.xml'), verbose=True)
 print('Cocktails CBR initialized')
 
 print('\nConstraints:')
