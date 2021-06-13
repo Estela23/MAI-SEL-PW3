@@ -7,7 +7,7 @@ constraints = {'category': ['Cocktail'], 'glass_type': ['Beer glass'], 'ingredie
                 'alc_type': ['Rum'], 'exc_ingredients': []}
 
 # Create cocktails CBR
-cocktails_cbr = CBR(os.path.join(DATA_PATH, 'case_library.xml'))
+cocktails_cbr = CBR(os.path.join(DATA_PATH, 'case_library.xml'), verbose=True)
 print('Cocktails CBR initialized')
 
 print('\nConstraints:')
