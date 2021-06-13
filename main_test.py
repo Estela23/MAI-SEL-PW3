@@ -4,8 +4,8 @@ import os
 DATA_PATH = 'Data'
 
 
-constraints = {'name': ['SEL-cocktail'], 'category': ['Shot'], 'glass_type': ['Old-fashioned glass'], 'ingredients': ['cranberry juice', 'malibu rum'],
-               'alc_type': ['Sweet Liqueur', 'Vodka'], 'basic_taste': [], 'exc_ingredients': ['pineapple juice']}
+constraints = {'name': 'SEL-cocktail', 'category': ['shot'], 'glass_type': ['old-fashioned glass'], 'ingredients': ['cranberry juice', 'malibu rum'],
+               'alc_type': ['sweet liqueur', 'vodka'], 'basic_taste': [], 'exc_ingredients': ['pineapple juice']}
 
 
 # Create cocktails CBR
@@ -16,7 +16,7 @@ print('\nConstraints:')
 print(constraints)
 
 # Retrive cocktail wight given constraints
-c = cocktails_cbr.retrieval(constraints)
+c = cocktails_cbr._retrieval(constraints)
 print(f'\n{c.find("name").text} cocktail retrieved')
 
 print('\nOriginal Ingredients:')
@@ -24,7 +24,7 @@ cocktails_cbr._print_ingredients(c)
 print('\nOriginal Preparation:')
 cocktails_cbr._print_preparation(c)
 
-adapted_cocktail = cocktails_cbr.adaptation(constraints, c)
+adapted_cocktail = cocktails_cbr._adaptation(constraints, c)
 print(f'\n{adapted_cocktail.find("name").text} cocktail adapted')
 
 print('\nAdapted Ingredients:')
@@ -40,4 +40,11 @@ if evaluation:
 else:
     print('\nConstraints error:')
     print('\n'.join(eval_results))
-    assert (evaluation)
+
+    assert(evaluation)
+
+
+# Evalutation
+
+# Learning
+cocktails_cbr._learning(c, adapted_cocktail)

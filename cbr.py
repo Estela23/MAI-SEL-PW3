@@ -49,6 +49,8 @@ class CBR:
         Parse cocktails tree and extract relevant information such as 
         the unique categories, alcohol types, ingredients, etc.
         """
+        # Get unique categories
+        self.categories = set([c.find('category').text for c in self.cocktails])
 
         # Get unique values for alcohol types
         self.alcohol_types.update(
@@ -79,6 +81,15 @@ class CBR:
         self.ingredients_list = [Ingredient(i.text, i.get('id'), i.get('alc_type'), i.get('basic_taste'), 
                                             i.get('measure'), i.get('quantity'), i.get('unit')) 
                                  for i in self.cocktails.findall('cocktail/ingredients/ingredient')]
+
+        # Define historial for all cases in case library, containing number of successes and failures
+        self.cases_historial = {}
+        [self.cases_historial.update({c.find("name").text:[0,0]}) for c in self.cocktails]
+
+        self.categories = set([c.find("category").text for c in self.cocktails])
+        self.library_by_category = {}
+        [self.library_by_category.update({cat: [c for c in self.cocktails
+                                                if c.find('category').text == cat]}) for cat in self.categories]
         
 
     def _print_ingredients(self, cocktail):
@@ -136,7 +147,7 @@ class CBR:
 
         # Check that cocktail does not contain any of the excluded ingredients
         if cnst_exc_ingredients:
-            if not any(i in ckt_ingredients for i in cnst_ingredients):
+            if not any(i in ckt_ingredients for i in cnst_exc_ingredients):
                 evaluation.append(True)
             else:
                 evaluation.append(False)
@@ -186,14 +197,75 @@ class CBR:
 
         """
         # RETRIEVAL PHASE
-        retrieved_case = self.retrieval(constraints)
+        retrieved_case = self._retrieval(constraints)
         # ADAPTATION PHASE
-        adapted_case = self.adaptation(retrieved_case)
+        adapted_case = self._adaptation(retrieved_case)
         # EVALUATION PHASE
         # LEARNING PHASE
+        self._learning(retrieved_case, adapted_case)
         # TODO: Add the rest of the phases in the future
 
         return adapted_case, self.cocktails
+
+    def _learning(self, retrieved_case, adapted_case):
+        """ Learning phase in order to decide if the evaluated case is a success or a failure, and act consequently
+
+        Args:
+            retrieved_case (Element): case resulting from retrieval phase
+            adapted_case (Element): case resulting from adaptation phase, which has been evaluated
+
+        Returns:
+
+        """
+        # MANAGING UTILITY SCORE OF THE RETRIEVED CASE
+        # Update the cases_historial of the retrieved case based on the status
+        # If the adapted case is a success, according to the human oracle
+        if adapted_case.find('evaluation').text == "Success":
+            self.cases_historial[retrieved_case.find("name").text][0] += 1
+        # If the adapted case is a failure, according to the human oracle
+        elif adapted_case.find('evaluation').text == "Failure":
+            self.cases_historial[retrieved_case.find("name").text][1] += 1
+
+        # Compute utility score for retrieved_case
+        utility_score = (self.cases_historial[retrieved_case.find("name").text][0] - \
+                        self.cases_historial[retrieved_case.find("name").text][1] + 1) / 2
+
+        # If utility score is 0.0, remove retrieved_case from case library, from cases_historial and from library_by_category
+        if utility_score == 0.0:
+            self.cocktails.remove(retrieved_case)
+            rem = self.cases_historial.pop([retrieved_case.find("name").text], None)
+            if rem == None:
+                print("ERROR: You are trying to delete a cocktail that doesn't exist in the cases_historial structure")
+            self.library_by_category[retrieved_case.find("category").text] = self.library_by_category[retrieved_case.find("category").text].remove(retrieved_case)
+        # Otherwise, update retrieved case utility score if the computed utility score has changed
+        elif str(utility_score) != retrieved_case.find("utility").text:
+            for c in self.cocktails:
+                if c.find("name").text == retrieved_case.find("name").text:
+                    c.find("utility").text = str(utility_score)
+
+        # Initialize utility of adapted_case to 1.0 always
+        adapted_case.find("utility").text = str(1.0)
+
+        # Update case_historial with the adapted case:
+        self.cases_historial.update({adapted_case.find('name').text: [0, 0]})
+        # Update library_by_category
+        self.library_by_category[adapted_case.find("category").text] = self.library_by_category[adapted_case.find("category").text].append(adapted_case)
+        # Add new adapted_case to case library
+        self._update_case_library(adapted_case)
+        # TODO: Decide what to do with failures
+        '''
+        # FOR WHEN DECIDING WHAT TO DO WITH FAILURES
+        if adapted_case.find('evaluation').text == "Success":
+            # Update case_historial with the adapted case:
+            self.cases_historial.update({adapted_case.find('name').text: [0,0]})
+            # Add new adapted_case to case library
+            self._update_case_library(adapted_case)
+        else:
+            # TODO: Decide what to do with failures
+            print()
+        '''
+
+        return
 
     def _update_case_library(self, new_case):
         """ Update the case_library with a new case
@@ -202,8 +274,7 @@ class CBR:
             new_case (Element): new cocktail element to be added to the case library
 
         """
-        # TODO: What happens with the failures, are they saved in the case library as well?
-        # TODO: update utility function and case label
+        # TODO: Introduce the new succesful case in the neighbourhood when 9-division case library is built
         self.cocktails.append(new_case)
         et = etree.ElementTree(self.cocktails)
         et.write(self.cbl_filename, pretty_print=True, encoding="UTF-8")
@@ -299,9 +370,9 @@ class CBR:
                         # Decrease similarity by -1 if if excluded ingredient basic_taste is used in cocktail
                         elif itype == "non-alcohol" and exc_ingredient_basic_taste in c_ingredients_btype:
                             sim -= 1
-        return sim
+        return (sim * float(cocktail.find("utility").text))
 
-    def retrieval(self, constraints):
+    def _retrieval(self, constraints):
         """ Retrieve most appropriate cocktail given the provided constraints.
         
         It does a structured search by first filtering by the category.
@@ -316,10 +387,9 @@ class CBR:
         # SEARCHING PHASE
         # Filter elements that correspond to the category constraint
         # If category constraints is not empty
-        if len(constraints['category']):
-            searching_list = list(itertools.chain.from_iterable([[child for child in self.cocktails
-                                                                  if child.find('category').text == category] for
-                                                                 category in constraints['category']]))
+        if constraints['category']:
+            searching_list = list(itertools.chain.from_iterable([self.library_by_category[cat]
+                                                                 for cat in constraints['category']]))
         else:
             searching_list = [child for child in self.cocktails]
 
@@ -386,7 +456,7 @@ class CBR:
             elif ingredient.get('id') in step.text:
                 cocktail.find("preparation").remove(step)
 
-    def adaptation(self, constraints, retrieved_cocktail):
+    def _adaptation(self, constraints, retrieved_cocktail):
         """ Adapt the ingredients and steps of the preparation for the best retrieved case
         following the constraints fixed by the user
 
@@ -564,19 +634,3 @@ class CBR:
         else:
             adapted_cocktail.find('evaluation').text = "Failure"
         return adapted_cocktail, score
-'''
-# To test RETRIEVAL step
-constraints = {'category': ['Cocktail', 'Shot'], 'glasstype': ['Beer glass', 'Shot glass'], 'ingredients': ['Amaretto'],
-                'alc_type': ['Rum'], 'basic_type': ['Sweet'], 'exc_ingredients': ['Vodka']}
-
-
-
-
-    '''
-    # To test RETRIEVAL step
-    constraints = {'category': ['Cocktail', 'Shot'], 'glasstype': ['Beer glass', 'Shot glass'], 'ingredients': ['Amaretto'],
-                    'alc_type': ['Rum'], 'basic_type': ['Sweet'], 'exc_ingredients': ['Vodka']}
-    
-    cbr = CBR("Data/case_library.xml")
-    case_retrieved = cbr.retrieval(constraints)
-    '''

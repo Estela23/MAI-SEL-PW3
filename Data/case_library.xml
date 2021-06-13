@@ -847,7 +847,7 @@
     <preparation>
       <step>Mix both the vermouth's in a shaker and strain into a cold glass</step>
       <step>Top up with a squirt of ingr2</step>
-      <step></step>
+      <step/>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8579,4 +8579,42 @@
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
-</cocktails>
+<cocktail>
+    <name>155 Belmont</name>
+    <category>cocktail</category>
+    <glasstype>beer glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="rum" basic_taste="" measure="2 shots" quantity="50.0" unit="ml">light rum</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 shot" quantity="25.0" unit="ml">orange juice</ingredient>
+      <ingredient id="ingr3" alc_type="vodka" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">vodka</ingredient>
+      <ingredient id="ingr4" alc_type="rum" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">dark rum</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Blend with ice</step>
+      <step>Serve in a wine glass</step>
+      <step>Garnish with carrot.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>155 Belmont</name>
+    <category>cocktail</category>
+    <glasstype>beer glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="rum" basic_taste="" measure="2 shots" quantity="50.0" unit="ml">light rum</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 shot" quantity="25.0" unit="ml">orange juice</ingredient>
+      <ingredient id="ingr3" alc_type="vodka" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">vodka</ingredient>
+      <ingredient id="ingr4" alc_type="rum" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">dark rum</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Blend with ice</step>
+      <step>Serve in a wine glass</step>
+      <step>Garnish with carrot.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  </cocktails>
