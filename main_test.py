@@ -3,8 +3,10 @@ import os
 
 DATA_PATH = 'Data'
 
-constraints = {'category': ['cocktail'], 'glass_type': ['beer glass'], 'ingredients': ['vodka', 'orange juice'],
-                'alc_type': ['rum'], 'exc_ingredients': []}
+
+constraints = {'name': ['SEL-cocktail'], 'category': ['Shot'], 'glass_type': ['Old-fashioned glass'], 'ingredients': ['cranberry juice', 'malibu rum'],
+               'alc_type': ['Sweet Liqueur', 'Vodka'], 'basic_taste': [], 'exc_ingredients': ['pineapple juice']}
+
 
 # Create cocktails CBR
 cocktails_cbr = CBR(os.path.join(DATA_PATH, 'case_library.xml'), verbose=True)
@@ -30,7 +32,7 @@ cocktails_cbr._print_ingredients(adapted_cocktail)
 print('\nAdapted Preparation:')
 cocktails_cbr._print_preparation(adapted_cocktail)
 
-# Evaluate constraints
+# Evaluate constraints
 evaluation, eval_results = cocktails_cbr._evaluate_constraints_fullfillment(constraints, adapted_cocktail)
 
 if evaluation:
@@ -38,4 +40,4 @@ if evaluation:
 else:
     print('\nConstraints error:')
     print('\n'.join(eval_results))
-    assert(evaluation)
+    assert (evaluation)
