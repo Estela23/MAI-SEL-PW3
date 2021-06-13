@@ -24,7 +24,7 @@ cocktails_cbr._print_ingredients(c)
 print('\nOriginal Preparation:')
 cocktails_cbr._print_preparation(c)
 
-adapted_cocktail = cocktails_cbr.adaptation(constraints, c)
+adapted_cocktail = cocktails_cbr._adaptation(constraints, c)
 print(f'\n{adapted_cocktail.find("name").text} cocktail adapted')
 
 print('\nAdapted Ingredients:')
