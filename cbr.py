@@ -49,6 +49,8 @@ class CBR:
         Parse cocktails tree and extract relevant information such as 
         the unique categories, alcohol types, ingredients, etc.
         """
+        # Get unique categories
+        self.categories = set([c.find('category').text for c in self.cocktails])
 
         # Get unique values for alcohol types
         self.alcohol_types.update(
@@ -145,7 +147,7 @@ class CBR:
 
         # Check that cocktail does not contain any of the excluded ingredients
         if cnst_exc_ingredients:
-            if not any(i in ckt_ingredients for i in cnst_ingredients):
+            if not any(i in ckt_ingredients for i in cnst_exc_ingredients):
                 evaluation.append(True)
             else:
                 evaluation.append(False)
