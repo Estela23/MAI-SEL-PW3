@@ -40,7 +40,9 @@ if evaluation:
 else:
     print('\nConstraints error:')
     print('\n'.join(eval_results))
+
     assert(evaluation)
+
 
 # Evalutation
 

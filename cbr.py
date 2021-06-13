@@ -230,9 +230,13 @@ class CBR:
         utility_score = (self.cases_historial[retrieved_case.find("name").text][0] - \
                         self.cases_historial[retrieved_case.find("name").text][1] + 1) / 2
 
-        # If utility score is 0.0, remove retrieved_case from case library
+        # If utility score is 0.0, remove retrieved_case from case library, from cases_historial and from library_by_category
         if utility_score == 0.0:
             self.cocktails.remove(retrieved_case)
+            rem = self.cases_historial.pop([retrieved_case.find("name").text], None)
+            if rem == None:
+                print("ERROR: You are trying to delete a cocktail that doesn't exist in the cases_historial structure")
+            self.library_by_category[retrieved_case.find("category").text] = self.library_by_category[retrieved_case.find("category").text].remove(retrieved_case)
         # Otherwise, update retrieved case utility score if the computed utility score has changed
         elif str(utility_score) != retrieved_case.find("utility").text:
             for c in self.cocktails:
@@ -244,6 +248,8 @@ class CBR:
 
         # Update case_historial with the adapted case:
         self.cases_historial.update({adapted_case.find('name').text: [0, 0]})
+        # Update library_by_category
+        self.library_by_category[adapted_case.find("category").text] = self.library_by_category[adapted_case.find("category").text].append(adapted_case)
         # Add new adapted_case to case library
         self._update_case_library(adapted_case)
         # TODO: Decide what to do with failures
