@@ -3,7 +3,6 @@ import numpy as np
 import os
 import re
 from lxml import etree
-from operator import attrgetter
 
 DATA_PATH = 'Data'
 

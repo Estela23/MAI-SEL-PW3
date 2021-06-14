@@ -1092,6 +1092,43 @@
     <evaluation>Success</evaluation>
   </cocktail>
   <cocktail>
+    <name>SEL-cocktail</name>
+    <category>shot</category>
+    <glasstype>old-fashioned glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="triple sec" basic_taste="" measure="1/4 oz" quantity="7.5" unit="ml">grand marnier</ingredient>
+      <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="1/4 oz" quantity="7.5" unit="ml">midori melon liqueur</ingredient>
+      <ingredient id="ingr3" alc_type="rum" basic_taste="" measure="1/4 oz" quantity="7.5" unit="ml">malibu rum</ingredient>
+      <ingredient id="ingr4" alc_type="sweet liqueur" basic_taste="" measure="1/4 oz" quantity="7.5" unit="ml">amaretto</ingredient>
+      <ingredient id="ingr5" alc_type="" basic_taste="sour" measure="1/2 oz" quantity="15.0" unit="ml">cranberry juice</ingredient>
+      <ingredient id="ingr7" alc_type="sweet liqueur" basic_taste="" measure="1/4 oz" quantity="7.5" unit="ml">chambord raspberry liqueur</ingredient>
+      <ingredient id="ingr8" alc_type="vodka" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">absolut kurant</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Shake ingredients in a mixing tin filled with ice cubes</step>
+      <step>Strain into a rocks glass.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>SEL-cocktail</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>SEL-cocktail</name>
+    <category>shot</category>
+    <glasstype>old-fashioned glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="absinthe" basic_taste="" measure="2/5" quantity="12.0" unit="ml">absinthe</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1/5" quantity="6.0" unit="ml">grenadine</ingredient>
+      <ingredient id="ingr3" alc_type="tequila" basic_taste="" measure="2/5" quantity="12.0" unit="ml">tequila</ingredient>
+    <ingredient id="ingr6" alc_type="sweet liqueur" basic_taste="" measure="2 cl" quantity="20.0" unit="ml">white creme de menthe</ingredient><ingredient id="ingr7" alc_type="vodka" basic_taste="" measure="5 parts" quantity="150.0" unit="ml">peach vodka</ingredient><ingredient id="ingr8" alc_type="" basic_taste="sour" measure="2 oz" quantity="60.0" unit="ml">cranberry juice</ingredient><ingredient id="ingr9" alc_type="rum" basic_taste="" measure="2 parts" quantity="60.0" unit="ml">malibu rum</ingredient></ingredients>
+    <preparation>
+      <step>First you put rhe ingr1, then put ingr3, then put the granadine syrup.</step>
+    <step>Add ingr6 to the cocktail.</step><step>Add ingr7 to the cocktail.</step><step>Add ingr8 to the cocktail.</step><step>Add ingr9 to the cocktail.</step></preparation>
+    <utility>1.0</utility>
+    <derivation>Moranguito</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
     <name>Adam Bomb</name>
     <category>punch / party drink</category>
     <glasstype>margarita/coupette glass</glasstype>
