@@ -306,19 +306,24 @@ class CBR:
         """
         # RETRIEVAL PHASE
         retrieved_case = self._retrieval(constraints)
+        
         # ADAPTATION PHASE
         adapted_case, n_changes = self._adaptation(constraints, retrieved_case)
+        
         # CHECK ADAPTED SOLUTION HAS AT LEAST A CHANGE
         if n_changes == 0:
             return adapted_case, self.cocktails
+        
         # CHECK ADAPTED SOLUTION IS NOT A FAILURE
         if self._check_adapted_failure(adapted_case):
             adapted_case.get('evaluation').text="Failure"
             ev_score = 0    # Esto salta a learning directo?????????????????????????????
             self._learning(retrieved_case, adapted_case, ev_score)
             return adapted_case, self.cocktails
+        
         # EVALUATION PHASE
-        adapted_case, ev_score = self._evaluation(adapted_case)
+        adapted_case, ev_score = self.evaluation(adapted_case)
+        
         # LEARNING PHASE
         self._learning(retrieved_case, adapted_case, ev_score)
 
