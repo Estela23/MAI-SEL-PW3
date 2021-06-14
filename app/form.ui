@@ -20,7 +20,7 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>30</x>
       <y>60</y>
       <width>991</width>
       <height>161</height>
@@ -123,7 +123,7 @@
      <property name="widgetResizable">
       <bool>true</bool>
      </property>
-     <widget class="QWidget" name="scrollAreaWidgetContents">
+     <widget class="QWidget" name="categoriesBox">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -171,14 +171,14 @@
        <item>
         <widget class="QCheckBox" name="QCheckBox6">
          <property name="text">
-          <string>Punch / Party dring</string>
+          <string>Punch / Party drink</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="QCheckBox9">
          <property name="text">
-          <string>Other / Unknown</string>
+          <string>Other/Unknown</string>
          </property>
         </widget>
        </item>
@@ -215,7 +215,7 @@
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>30</x>
       <y>220</y>
       <width>991</width>
       <height>91</height>
@@ -307,7 +307,7 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>340</x>
       <y>10</y>
       <width>411</width>
       <height>61</height>
@@ -424,7 +424,7 @@
      </layout>
     </widget>
    </widget>
-   <widget class="QTextBrowser" name="logText_2">
+   <widget class="QTextBrowser" name="or_recipe_text">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -450,7 +450,7 @@
      <string>Retrieved Recipe</string>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="logText_3">
+   <widget class="QTextBrowser" name="ad_recipe_text">
     <property name="geometry">
      <rect>
       <x>710</x>
@@ -509,7 +509,7 @@
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionLoad">
    <property name="text">
-    <string>Load constraitns</string>
+    <string>Load constraints</string>
    </property>
   </action>
   <action name="actionExport">
