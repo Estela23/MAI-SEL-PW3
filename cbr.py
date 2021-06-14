@@ -150,7 +150,7 @@ class CBR:
         for s in cocktail.findall('preparation/step'):
             step = s.text
             for i in cocktail.findall('ingredients/ingredient'):
-                step = step.replace(i.get('id') + " ", i.text + " ")    # TODO: check we don't mislead ingr10 with ingr1 + 0
+                step = step.replace(i.get('id') + " ", i.text + " ")
             print(step)
 
     def _evaluate_constraints_fulfillment(self, constraints, cocktail):
@@ -506,11 +506,11 @@ class CBR:
         if type == "alc_type":
             possible_ingr = [ingredient_to_add for ingredient_to_add in self.ingredients_list if
                              ingredient_to_add.alc_type == ingr_type and
-                             ingredient_to_add.text not in constraints["ingredients"]]
+                             ingredient_to_add.text not in constraints["exc_ingredients"]]
         elif type == "basic_taste":
             possible_ingr = [ingredient_to_add for ingredient_to_add in self.ingredients_list if
                              ingredient_to_add.basic_taste == ingr_type and
-                             ingredient_to_add.text not in constraints["ingredients"]]
+                             ingredient_to_add.text not in constraints["exc_ingredients"]]
 
         # Choose a random ingredient with this ingredient_type from the database, excluding the non-desired ones
         ingredient_to_add = random.choice(possible_ingr)
