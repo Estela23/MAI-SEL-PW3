@@ -20,7 +20,7 @@
    <widget class="QGroupBox" name="groupBox">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>30</x>
       <y>60</y>
       <width>991</width>
       <height>161</height>
@@ -123,7 +123,7 @@
      <property name="widgetResizable">
       <bool>true</bool>
      </property>
-     <widget class="QWidget" name="scrollAreaWidgetContents">
+     <widget class="QWidget" name="categoriesBox">
       <property name="geometry">
        <rect>
         <x>0</x>
@@ -171,14 +171,14 @@
        <item>
         <widget class="QCheckBox" name="QCheckBox6">
          <property name="text">
-          <string>Punch / Party dring</string>
+          <string>Punch / Party drink</string>
          </property>
         </widget>
        </item>
        <item>
         <widget class="QCheckBox" name="QCheckBox9">
          <property name="text">
-          <string>Other / Unknown</string>
+          <string>Other/Unknown</string>
          </property>
         </widget>
        </item>
@@ -215,7 +215,7 @@
    <widget class="QGroupBox" name="groupBox_2">
     <property name="geometry">
      <rect>
-      <x>20</x>
+      <x>30</x>
       <y>220</y>
       <width>991</width>
       <height>91</height>
@@ -307,7 +307,7 @@
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
-      <x>330</x>
+      <x>340</x>
       <y>10</y>
       <width>411</width>
       <height>61</height>
@@ -424,7 +424,7 @@
      </layout>
     </widget>
    </widget>
-   <widget class="QTextBrowser" name="logText_2">
+   <widget class="QTextBrowser" name="or_recipe_text">
     <property name="geometry">
      <rect>
       <x>380</x>
@@ -450,7 +450,7 @@
      <string>Retrieved Recipe</string>
     </property>
    </widget>
-   <widget class="QTextBrowser" name="logText_3">
+   <widget class="QTextBrowser" name="ad_recipe_text">
     <property name="geometry">
      <rect>
       <x>710</x>
@@ -475,6 +475,85 @@
     <property name="text">
      <string>Adapted Recipe</string>
     </property>
+   </widget>
+   <widget class="QGroupBox" name="groupBox_4">
+    <property name="geometry">
+     <rect>
+      <x>30</x>
+      <y>460</y>
+      <width>321</width>
+      <height>101</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Evaluation</string>
+    </property>
+    <widget class="QPushButton" name="btn_rate">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
+     <property name="geometry">
+      <rect>
+       <x>100</x>
+       <y>60</y>
+       <width>112</width>
+       <height>32</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Rate</string>
+     </property>
+     <property name="checkable">
+      <bool>false</bool>
+     </property>
+     <property name="autoDefault">
+      <bool>false</bool>
+     </property>
+     <property name="default">
+      <bool>false</bool>
+     </property>
+     <property name="flat">
+      <bool>false</bool>
+     </property>
+    </widget>
+    <widget class="QSlider" name="slider_evaluation">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>30</y>
+       <width>241</width>
+       <height>21</height>
+      </rect>
+     </property>
+     <property name="maximum">
+      <number>10</number>
+     </property>
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="invertedAppearance">
+      <bool>false</bool>
+     </property>
+     <property name="invertedControls">
+      <bool>false</bool>
+     </property>
+     <property name="tickPosition">
+      <enum>QSlider::NoTicks</enum>
+     </property>
+    </widget>
+    <widget class="QLabel" name="label_rating">
+     <property name="geometry">
+      <rect>
+       <x>280</x>
+       <y>30</y>
+       <width>21</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>0</string>
+     </property>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -509,7 +588,7 @@
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionLoad">
    <property name="text">
-    <string>Load constraitns</string>
+    <string>Load constraints</string>
    </property>
   </action>
   <action name="actionExport">

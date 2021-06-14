@@ -1,7 +1,7 @@
 import sys
 
 from cbr import CBR
-from read_constraints import read_parse_json
+from utils import load_json, interactive_menu
 
 
 # from retrieval import retrieval_step
@@ -10,7 +10,7 @@ from read_constraints import read_parse_json
 def main():
     if len(sys.argv) > 1:
         json = sys.argv[1]
-        constraints = read_parse_json(json)
+        constraints = load_json(json)
         cbr = CBR('Data/case_library.xml')
         print(constraints)
         # constraints, retrieved_case = retrieval_step(constraints)
@@ -23,9 +23,9 @@ def main():
             print(ingre.text)
 
     else:
-        constraints = menu_interactivo()
+        constraints = interactive_menu()
         # constraints, retrieved_case = retrieval_step(constraints)
-        adaptation(constraints)
+        interactive_menu(constraints)
 
 
 if __name__ == "__main__":
