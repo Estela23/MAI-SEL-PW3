@@ -529,10 +529,10 @@ class CBR:
                         matches = [i for i in cocktail.find("ingredients") if atype == i.attrib['alc_type']]
                         if len(matches) > 0:
                             sim += [self.similarity_weights["exc_alc_type"]]
-                            cumulative_normalization_score += [self.similarity_weights["exc_alc_type"]]
+                            cumulative_normalization_score += self.similarity_weights["exc_alc_type"]
                         # In case the constraint is not fulfilled we add the weight to the normalization score
                         else:
-                            cumulative_normalization_score += [self.similarity_weights["exc_alc_type"]]
+                            cumulative_normalization_score += self.similarity_weights["exc_alc_type"]
 
                 # If one of the excluded basic_tastes is found in the cocktail, similarity is reduced
                 elif key == "exc_basic_taste":
