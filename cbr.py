@@ -273,6 +273,7 @@ class CBR:
         constraints = {'glass_type': [], 'basic_taste': [], 'ingredients': [], 'exc_ingredients': [], 'alc_type': [],
                        'category': adapted_case.find('category').text}
         constraints['glass_type'].append(adapted_case.find('glasstype').text)
+        
         # A constraint is created to reuse the _compute_similarity function
         for ingr in adapted_case.findall('ingredients/ingredient'):
             constraints['ingredients'].append(ingr.text)
@@ -280,11 +281,16 @@ class CBR:
                 constraints['alc_type'].append(ingr.get('alc_type'))
             if ingr.get('basic_taste') not in constraints['basic_taste'] and ingr.get('basic_taste') != "":
                 constraints['basic_taste'].append(ingr.get('basic_taste'))
+        
         # Compute similarities with the adapted case
         sim_list = [self._compute_similarity(constraints, c) for c in searching_list]
+        
         # Retrieve case with higher similarity
         max_indices = np.argwhere(np.array(sim_list) == np.amax(np.array(sim_list))).flatten().tolist()
         list_failures = [searching_list[max_indices[cocktail_idx]].find('evaluation').text for cocktail_idx in max_indices]
+        
+        # If the adapted case is very similar to a previously failed one
+        # it returns failure (True)
         if max(sim_list) > 0.95 and "Failure" in list_failures:
             return True
         return False
@@ -300,19 +306,24 @@ class CBR:
         """
         # RETRIEVAL PHASE
         retrieved_case = self._retrieval(constraints)
+        
         # ADAPTATION PHASE
         adapted_case, n_changes = self._adaptation(constraints, retrieved_case)
+        
         # CHECK ADAPTED SOLUTION HAS AT LEAST A CHANGE
         if n_changes == 0:
             return adapted_case, self.cocktails
+        
         # CHECK ADAPTED SOLUTION IS NOT A FAILURE
         if self._check_adapted_failure(adapted_case):
             adapted_case.get('evaluation').text="Failure"
             ev_score = 0    # Esto salta a learning directo?????????????????????????????
             self._learning(retrieved_case, adapted_case, ev_score)
             return adapted_case, self.cocktails
+        
         # EVALUATION PHASE
-        adapted_case, ev_score = self._evaluation(adapted_case)
+        adapted_case, ev_score = self.evaluation(adapted_case)
+        
         # LEARNING PHASE
         self._learning(retrieved_case, adapted_case, ev_score)
 
