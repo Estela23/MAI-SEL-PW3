@@ -5,9 +5,9 @@ DATA_PATH = 'Data'
 
 
 constraints = {'name': 'SEL-cocktail', 'category': ['shot'], 'glass_type': ['old-fashioned glass'],
-               'ingredients': ['cranberry juice', 'malibu rum'], 'exc_alc_type': ['cachaca'],
-               'exc_basic_taste': ['spicy'], 'alc_type': ['sweet liqueur', 'vodka'],
-               'basic_taste': [], 'exc_ingredients': ['amaretto', 'pineapple juice']}
+               'ingredients': ['cranberry juice', 'malibu rum'], 'alc_type': ['sweet liqueur', 'vodka'],
+               'basic_taste': [], 'exc_ingredients': ['amaretto', 'pineapple juice'], 'exc_alc_type': ['cachaca'],
+               'exc_basic_taste': ['sour', 'spicy']}
 
 
 # Create cocktails CBR
@@ -36,7 +36,7 @@ cocktails_cbr._print_preparation(adapted_cocktail)
 print("\nAdapted_case category: " + adapted_cocktail.find("category").text)
 
 # Evaluate constraints
-evaluation, eval_results = cocktails_cbr._evaluate_constraints_fullfillment(constraints, adapted_cocktail)
+evaluation, eval_results = cocktails_cbr._evaluate_constraints_fulfillment(constraints, adapted_cocktail)
 
 if evaluation:
     print('\nAll contstraints fullfilled!')
@@ -44,7 +44,7 @@ else:
     print('\nConstraints error:')
     print('\n'.join(eval_results))
 
-    assert(evaluation)
+    assert evaluation
 
 
 # Evalutation
