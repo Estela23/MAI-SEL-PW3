@@ -484,15 +484,17 @@ class CBR:
 
         return ingr_element
 
-    def add_ingredient_by_type(self, cocktail, idx_ingr, ingr_type, type):
+    def add_ingredient_by_type(self, cocktail, constraints, idx_ingr, ingr_type, type):
         if type == "alc_type":
             possible_ingr = [ingredient_to_add for ingredient_to_add in self.ingredients_list if
-                             ingredient_to_add.alc_type == ingr_type]
+                             ingredient_to_add.alc_type == ingr_type and
+                             ingredient_to_add.text not in constraints["ingredients"]]
         elif type == "basic_taste":
             possible_ingr = [ingredient_to_add for ingredient_to_add in self.ingredients_list if
-                             ingredient_to_add.basic_taste == ingr_type]
+                             ingredient_to_add.basic_taste == ingr_type and
+                             ingredient_to_add.text not in constraints["ingredients"]]
 
-        # Choose a random ingredient with this ingredient_type from the database
+        # Choose a random ingredient with this ingredient_type from the database, excluding the non-desired ones
         ingredient_to_add = random.choice(possible_ingr)
         # Add it to the recipe with a new index
         to_add = self._create_ingr_element(ingredient_to_add, cocktail, "ingr" + str(idx_ingr))
@@ -553,6 +555,20 @@ class CBR:
                     self.remove_ingredient(cocktail=adapted_cocktail, ingredient=ingr)
                     n_changes += 1
 
+        # REMOVE alcohol types that are in the exclude alcohol types constraint
+        if len(constraints["exc_alc_type"]):
+            for ingr in adapted_cocktail.find("ingredients"):
+                if ingr.get("alc_type") in constraints["exc_alc_type"]:
+                    self.remove_ingredient(cocktail=adapted_cocktail, ingredient=ingr)
+                    n_changes += 1
+
+        # REMOVE basic tastes that are in the exclude basic tastes constraint
+        if len(constraints["exc_basic_taste"]):
+            for ingr in adapted_cocktail.find("ingredients"):
+                if ingr.get("basic_taste") in constraints["exc_basic_taste"]:
+                    self.remove_ingredient(cocktail=adapted_cocktail, ingredient=ingr)
+                    n_changes += 1
+
         # Define an index for the ingredients in order to avoid repetitions in the indexes when adding new ingredients
         idx_ingr = 2*len(adapted_cocktail.find("ingredients"))
 
@@ -560,16 +576,16 @@ class CBR:
         for alcohol in constraints["alc_type"]:
             # If the desired alcohol type it is not in the recipe, add some ingredient from this type
             if alcohol not in [ingr.get("alc_type") for ingr in adapted_cocktail.find("ingredients")]:
-                self.add_ingredient_by_type(cocktail=adapted_cocktail, idx_ingr=idx_ingr, ingr_type=alcohol,
-                                            type="alc_type")
+                self.add_ingredient_by_type(cocktail=adapted_cocktail, constraints=constraints, idx_ingr=idx_ingr,
+                                            ingr_type=alcohol, type="alc_type")
                 idx_ingr += 1
                 n_changes += 1
 
         for taste in constraints["basic_taste"]:
             # If the desired basic taste it is not in the recipe, add some ingredient from this type
             if taste not in [ingr.get("basic_taste") for ingr in adapted_cocktail.find("ingredients")]:
-                self.add_ingredient_by_type(cocktail=adapted_cocktail, idx_ingr=idx_ingr, ingr_type=taste,
-                                            type="basic_taste")
+                self.add_ingredient_by_type(cocktail=adapted_cocktail, constraints=constraints, idx_ingr=idx_ingr,
+                                            ingr_type=taste, type="basic_taste")
                 idx_ingr += 1
                 n_changes += 1
 

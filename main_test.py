@@ -4,8 +4,10 @@ import os
 DATA_PATH = 'Data'
 
 
-constraints = {'name': 'SEL-cocktail', 'category': ['shot'], 'glass_type': ['old-fashioned glass'], 'ingredients': ['cranberry juice', 'malibu rum'],
-               'alc_type': ['sweet liqueur', 'vodka'], 'basic_taste': [], 'exc_ingredients': ['pineapple juice']}
+constraints = {'name': 'SEL-cocktail', 'category': ['shot'], 'glass_type': ['old-fashioned glass'],
+               'ingredients': ['cranberry juice', 'malibu rum'], 'exc_alc_type': ['cachaca'],
+               'exc_basic_taste': ['spicy'], 'alc_type': ['sweet liqueur', 'vodka'],
+               'basic_taste': [], 'exc_ingredients': ['amaretto', 'pineapple juice']}
 
 
 # Create cocktails CBR
