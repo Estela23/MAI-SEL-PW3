@@ -286,7 +286,6 @@ class CBR:
         adapted_case, ev_score = self._evaluation(adapted_case)
         # LEARNING PHASE
         self._learning(retrieved_case, adapted_case, ev_score)
-        # TODO: Add the rest of the phases in the future
 
         return adapted_case, self.cocktails
 
