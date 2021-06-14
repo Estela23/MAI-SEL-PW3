@@ -100,7 +100,6 @@ class CBR:
         [self.cases_history.update({c.find("name").text:[0,0]}) for c in self.cocktails]
 
         # Define a structure that stores all the cases of the dataset divided by category
-        self.categories = set([c.find("category").text for c in self.cocktails])
         self.library_by_category = {}
         [self.library_by_category.update({cat: [c for c in self.cocktails
                                                 if c.find('category').text == cat]}) for cat in self.categories]
@@ -117,7 +116,7 @@ class CBR:
         # Define list of parents of failures
         self.failure_parents = []
 
-    def _set_similarity_weights(self, new_weights):
+    def set_similarity_weights(self, new_weights):
         """ Method to set new similarity weights
 
         Args:
@@ -138,7 +137,7 @@ class CBR:
         self.similarity_weights.update(new_weights_dict)
         return
 
-    def _get_similarity_weights(self):
+    def get_similarity_weights(self):
         """ Method to obtain the current similarity weights
 
         Returns: similarity_weights (list): current similarity weights
@@ -288,7 +287,8 @@ class CBR:
         if max(sim_list)>0.95 and "Failure" in list_failures:
             return True
         return False
-    def _process(self, constraints):
+
+    def process(self, constraints):
         """ CBR principal flow, where the different stages of the CBR will be called
 
         Args:
@@ -317,7 +317,7 @@ class CBR:
 
         return adapted_case, self.cocktails
 
-    def _learning(self, retrieved_case, adapted_case, ev_score):
+    def learning(self, retrieved_case, adapted_case, ev_score):
         """ Learning phase in order to decide if the evaluated case is a success or a failure, and act consequently
 
         Args:
@@ -547,7 +547,7 @@ class CBR:
 
         return normalized_sim * float(cocktail.find("utility").text)
 
-    def _retrieval(self, constraints):
+    def retrieval(self, constraints):
         """ Retrieve most appropriate cocktail given the provided constraints.
         
         It does a structured search by first filtering by the category.
@@ -791,7 +791,7 @@ class CBR:
 
         return adapted_cocktail, n_changes
       
-    def _evaluation(self, adapted_cocktail):
+    def evaluation(self, adapted_cocktail):
         """ Evaluate the ingredients and steps of the preparation by the user in order to determine if the
          adapted case is a success or a failure
 
