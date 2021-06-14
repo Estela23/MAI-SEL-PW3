@@ -14,6 +14,7 @@ import random
 import itertools
 from collections import namedtuple
 from copy import deepcopy
+import re
 
 # Declare Ingredient namedtuple() 
 Ingredient = namedtuple('Ingredient', ['name', 'identifier', 'alc_type', 'basic_taste', 'measure', 'quantity', 'unit'])
@@ -150,7 +151,9 @@ class CBR:
         for s in cocktail.findall('preparation/step'):
             step = s.text
             for i in cocktail.findall('ingredients/ingredient'):
-                step = step.replace(i.get('id') + " ", i.text + " ")    # TODO: check we don't mislead ingr10 with ingr1 + 0
+                ingr_pattern = r"\b({})\b".format(i.get('id'))
+                step = re.sub(ingr_pattern, i.text, step)
+    
             print(step)
 
     def _evaluate_constraints_fulfillment(self, constraints, cocktail):
@@ -536,7 +539,10 @@ class CBR:
             # If there is any other ingredient in the step, remove only the excluded one
             if ingredient.get('id') in step.text and \
                     any([ingr in step for ingr in cocktail.find("ingredients")]):
-                step.text.replace(ingredient.get('id'), "")
+                
+                # Remove ingredient id in step
+                ingr_pattern = r"\b({})\b".format(ingredient.get('id'))
+                step = re.sub(ingr_pattern, "", step)
                 
             # If the excluded is the only ingredient in the step, remove the whole step from the recipe
             elif ingredient.get('id') in step.text:
