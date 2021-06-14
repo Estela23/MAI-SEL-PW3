@@ -1,10 +1,13 @@
 {
    "constraints":{
-       "category":"Cocktail",
-       "glass_type":["Beer Glass"],
+       "name":"my-cocktail",
+       "category":["cocktail"],
+       "glass_type":["beer glass"],
+       "alc_type":["rum"],
        "basic_taste":["sour"],
        "ingredients":["amaretto"],
        "exc_ingredients": ["vodka"],
-       "alc_type":["Rum"]
+       "exc_alc_type": ["cachaca"],
+       "exc_basic_taste": ["spicy"]
    }
 }
