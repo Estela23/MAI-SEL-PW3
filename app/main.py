@@ -150,6 +150,7 @@ class CocktailsApp():
         exc_alc_types= self.dialog.text_exc_alc_types.text().split(', ')
         if not exc_alc_types[0]:
             exc_alc_types = []
+        print(f'exc_alc_types: {exc_alc_types}')
             
         exc_basic_tastes = self.dialog.text_exc_basic_tastes.text().split(', ')
         if not exc_basic_tastes[0]:
@@ -185,7 +186,7 @@ class CocktailsApp():
             constraints (dict): constraints to fulfill
         """
         # Retrive cocktail wight given constraints
-        c = self.cbr._retrieval(constraints)
+        c = self.cbr.retrieval(constraints)
         print(f'\n{c.find("name").text} cocktail retrieved')
 
         print('\nOriginal Ingredients:')
@@ -193,7 +194,7 @@ class CocktailsApp():
         print('\nOriginal Preparation:')
         or_prep_str = self.cbr._print_preparation(c)
 
-        adapted_cocktail, n_changes = self.cbr._adaptation(constraints, c)
+        adapted_cocktail, n_changes = self.cbr.adaptation(constraints, c)
         print(f'\n{adapted_cocktail.find("name").text} cocktail adapted')
 
         print('\nAdapted Ingredients:')

@@ -588,7 +588,7 @@
   <widget class="QStatusBar" name="statusbar"/>
   <action name="actionLoad">
    <property name="text">
-    <string>Load constraints</string>
+    <string>Load constraints...</string>
    </property>
   </action>
   <action name="actionExport">
