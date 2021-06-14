@@ -246,7 +246,25 @@ class CBR:
                 evaluation_results.append('Excluded basic tastes constraint failed')
 
         return False not in evaluation, evaluation_results
-
+    def _check_adapted_failure(self, adapted_case):
+        searching_list = list(itertools.chain.from_iterable([self.library_by_category[adapted_case.find('category').text]]))
+        constraints={'glass_type':[],'basic_taste':[], 'ingredients':[],'exc_ingredients':[], 'alc_type':[]}
+        constraints['category']=adapted_case.find('category').text
+        constraints['glass_type'].append(adapted_case.find('glasstype').text)
+        #A constraints is created to reuse the _compute_similarity function
+        for ingr in adapted_case.findall('ingredients/ingredient'):
+            constraints['ingredients'].append(ingr.text)
+            if ingr.get('alc_type') not in constraints['alc_type'] and ingr.get('alc_type') != "":
+                constraints['alc_type'].append(ingr.get('alc_type'))
+            if ingr.get('basic_taste') not in constraints['basic_taste'] and ingr.get('basic_taste') != "":
+                constraints['basic_taste'].append(ingr.get('basic_taste'))
+        #Compute similarities with the adapted case
+        sim_list = [self._compute_similarity(constraints, c) for c in searching_list]
+        # Retrieve case with higher similarity
+        max_indices = np.argwhere(np.array(sim_list) == np.amax(np.array(sim_list))).flatten().tolist()
+        if max(sim_list)>0.95 and searching_list[max_indices[0]].find('evaluation').text == "Failure":
+            return True
+        return False
     def _process(self, constraints):
         """ CBR principal flow, where the different stages of the CBR will be called
 
@@ -259,7 +277,16 @@ class CBR:
         # RETRIEVAL PHASE
         retrieved_case = self._retrieval(constraints)
         # ADAPTATION PHASE
-        adapted_case, n_changes = self._adaptation(retrieved_case)
+        adapted_case, n_changes = self._adaptation(constraints, retrieved_case)
+        # CHECK ADAPTED SOLUTION HAS AT LEAST A CHANGE
+        if n_changes == 0:
+            return adapted_case, self.cocktails
+        # CHECK ADAPTED SOLUTION IS NOT A FAILURE
+        if self._check_adapted_failure(adapted_case):
+            adapted_case.get('evaluation').text="Failure"
+            ev_score=0 #Esto salta a learning directo?????????????????????????????
+            self._learning(retrieved_case, adapted_case, ev_score)
+            return adapted_case, self.cocktails
         # EVALUATION PHASE
         adapted_case, ev_score = self._evaluation(adapted_case)
         # LEARNING PHASE
