@@ -6,11 +6,15 @@ from PySide2.QtWidgets import QApplication, QMainWindow
 from PySide2.QtCore import QFile
 import os
 import platform
+import subprocess
+import webbrowser as wb
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from cbr import CBR
+from utils import load_json
 
 DATA_PATH = os.path.join(os.path.dirname(__file__), '..', 'Data')
+USER_MANUAL = 'User_Manual.pdf'
 
 loader = QUiLoader()
         
@@ -67,6 +71,7 @@ class CocktailsApp():
         # Menu actions
         self.dialog.actionAbout.triggered.connect(self.about)
         self.dialog.actionLoad.triggered.connect(self.load_file)
+        self.dialog.actionUser_Manual.triggered.connect(self.open_user_manual)
         
         # Slider action
         self.dialog.slider_evaluation.valueChanged.connect(self.slider_change)
@@ -78,6 +83,14 @@ class CocktailsApp():
         sys.stdout = OutLog(self.dialog.logText)
         sys.stderr = OutLog(self.dialog.logText, color=QtGui.QColor(255,0,0))
     
+    def open_user_manual(self):
+        """ Open Ueser Manual PDF
+        """
+        filename = os.path.join(os.path.dirname(__file__), '..', 'Documentation', USER_MANUAL)
+        filename = os.path.abspath(filename)
+        print(f'Opening {filename}...')
+        wb.open_new(r'file://{}'.format(filename))
+        
     def slider_change(self):
         """ When evaluation slider changes, update label.
         """
@@ -222,10 +235,31 @@ class CocktailsApp():
         dlg.exec_()
 
     def load_file(self):
-        path, _ = QtWidgets.QFileDialog.getOpenFileName(self.dialog, "Open File", DATA_PATH,
-                                                    'Configuration Files (*.ini)')
-        #self.filepath_lineEdit.setText(path)    
+        constraints_file, _ = QtWidgets.QFileDialog.getOpenFileName(self.dialog, "Open File", DATA_PATH,
+                                                    'Json Files (*.json)')
+        print(f'Load constraints from: {constraints_file} ...')
         
+        # Load constraints
+        constraints = load_json(constraints_file)
+        
+        # Set constraints
+        self.dialog.text_ingredients.setText(', '.join(constraints['ingredients']))
+        self.dialog.text_alc_types.setText(', '.join(constraints['alc_type']))
+        self.dialog.text_basic_tastes.setText(', '.join(constraints['basic_taste']))
+        self.dialog.text_glass_types.setText(', '.join(constraints['glass_type']))
+        self.dialog.text_exc_ingredients.setText(', '.join(constraints['exc_ingredients']))
+        self.dialog.text_exc_alc_types.setText(', '.join(constraints['exc_alc_type']))
+        self.dialog.text_exc_basic_tastes.setText(', '.join(constraints['exc_basic_taste']))
+        self.dialog.text_name.setText(constraints['name'])
+        
+        # Set categories
+        cat_checkboxes = self.dialog.categoriesBox.findChildren(QtWidgets.QCheckBox)
+        for c in cat_checkboxes:
+            if c.text().lower() in constraints['category']:
+                c.setChecked(True)
+            else:
+                c.setChecked(False)
+                
            
 if __name__ == "__main__":
     ui_filename = 'form.ui'

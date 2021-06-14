@@ -336,7 +336,7 @@
      </rect>
     </property>
     <property name="text">
-     <string>output</string>
+     <string>Log</string>
     </property>
    </widget>
    <widget class="QGroupBox" name="groupBox_3">
