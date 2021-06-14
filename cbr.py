@@ -262,7 +262,8 @@ class CBR:
         sim_list = [self._compute_similarity(constraints, c) for c in searching_list]
         # Retrieve case with higher similarity
         max_indices = np.argwhere(np.array(sim_list) == np.amax(np.array(sim_list))).flatten().tolist()
-        if max(sim_list)>0.95 and searching_list[max_indices[0]].find('evaluation').text == "Failure":
+        list_failures = [searching_list[max_indices[cocktail_idx]].find('evaluation').text for cocktail_idx in max_indices]
+        if max(sim_list)>0.95 and "Failure" in list_failures:
             return True
         return False
     def _process(self, constraints):
