@@ -173,6 +173,7 @@ class CBR:
             for i in cocktail.findall('ingredients/ingredient'):
                 ingr_pattern = r"\b({})\b".format(i.get('id'))
                 step = re.sub(ingr_pattern, i.text, step)
+            prep_str += f'{step}\n'
             print(step)
             
         return prep_str
