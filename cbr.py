@@ -150,7 +150,7 @@ class CBR:
         for s in cocktail.findall('preparation/step'):
             step = s.text
             for i in cocktail.findall('ingredients/ingredient'):
-                step = step.replace(i.get('id'), i.text)    # TODO: check we don't mislead ingr10 with ingr1 + 0
+                step = step.replace(i.get('id') + " ", i.text + " ")    # TODO: check we don't mislead ingr10 with ingr1 + 0
             print(step)
 
     def _evaluate_constraints_fulfillment(self, constraints, cocktail):
