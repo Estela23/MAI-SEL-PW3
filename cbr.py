@@ -713,7 +713,11 @@ class CBR:
 
                         idx_ingr += 1
                         n_changes += 1
-                
+
+        # If there were no changes and we are giving the user the original cocktail, give the original name
+        if n_changes == 0:
+            adapted_cocktail.find("name").text = retrieved_cocktail.find("name").text
+
         return adapted_cocktail, n_changes
       
     def _evaluation(self, adapted_cocktail):
