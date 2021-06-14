@@ -609,6 +609,16 @@ class CBR:
         return ingr_element
 
     def add_ingredient_by_type(self, cocktail, constraints, idx_ingr, ingr_type, type):
+        """ Adds an ingredient from the database to a cocktail given its alc_type or basic_taste
+
+        Args:
+            cocktail: cocktail in which we aim to add the ingredient
+            constraints(dict): dictionary of constraints to be fulfilled by the cocktail,
+                               used in order to avoid adding excluded ingredients
+            idx_ingr (int): corresponding ingredient index to the ingredient we are including
+            ingr_type (str): concrete alc_type or basic_taste of the ingredient we aim to add
+            type (str): "alc_type" or "basic_taste", depending of the type of the ingredient we aim to add
+        """
         if type == "alc_type":
             possible_ingr = [ingredient_to_add for ingredient_to_add in self.ingredients_list if
                              ingredient_to_add.alc_type == ingr_type and
@@ -631,6 +641,14 @@ class CBR:
         cocktail.find("preparation").append(step)
 
     def remove_ingredient(self, cocktail, ingredient):
+        """ Removes a concrete ingredient from a cocktail and
+        adapts the corresponding steps of the solution (preparation).
+
+        Args:
+            cocktail (Element): cocktail Element from which we aim to remove an ingredient
+            ingredient (Element): ingredient to remove
+
+        """
         cocktail.find("ingredients").remove(ingredient)
 
         # Adapt the step that contains the excluded ingredient
