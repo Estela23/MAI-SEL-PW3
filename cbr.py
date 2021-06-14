@@ -114,6 +114,9 @@ class CBR:
         [self.similarity_weights.update({sim_case: sim_weight})
          for sim_case, sim_weight in zip(self.similarity_cases, self.similarity_weights_values)]
 
+        # Define list of parents of failures
+        self.failure_parents = []
+
     def _set_similarity_weights(self, new_weights):
         """ Method to set new similarity weights
 
@@ -301,15 +304,21 @@ class CBR:
         # Update the cases_history of the retrieved case based on the status
         # If the adapted case is a success, according to the human oracle
         if adapted_case.find('evaluation').text == "Success":
-            self.cases_history[retrieved_case.find("name").text][0] += 1
+            self.cases_history[retrieved_case.find("name").text][0] += 1 * ev_score
         # If the adapted case is a failure, according to the human oracle
         elif adapted_case.find('evaluation').text == "Failure":
-            self.cases_history[retrieved_case.find("name").text][1] += 1
+            self.cases_history[retrieved_case.find("name").text][1] += 1 * ev_score
+            self.failure_parents.append(adapted_case.find("name").text)
 
         # Compute utility score for retrieved_case
         utility_score = (self.cases_history[retrieved_case.find("name").text][0] - \
                         self.cases_history[retrieved_case.find("name").text][1] + 1) / 2
 
+        for c in self.cocktails:
+            if c.find("name").text == retrieved_case.find("name").text:
+                c.find("utility").text = str(utility_score)
+                break
+        '''
         # If utility score is 0.0, remove retrieved_case from case library, from cases_history and from library_by_category
         if utility_score == 0.0:
             self.cocktails.remove(retrieved_case)
@@ -317,16 +326,16 @@ class CBR:
             if rem == None:
                 print("ERROR: You are trying to delete a cocktail that doesn't exist in the cases_history structure")
             self.library_by_category[retrieved_case.find("category").text] = self.library_by_category[retrieved_case.find("category").text].remove(retrieved_case)
-       
+        
         # Otherwise, update retrieved case utility score if the computed utility score has changed
         elif str(utility_score) != retrieved_case.find("utility").text:
             for c in self.cocktails:
                 if c.find("name").text == retrieved_case.find("name").text:
                     c.find("utility").text = str(utility_score)
                     break
+        '''
 
-        # Initialize utility of adapted_case to 1.0 always
-        # TODO: what to do with failures when multiplying by ev_score
+        # Initialize utility of adapted_case to 1.0*evaluation_score
         adapted_case.find("utility").text = str(1.0 * ev_score)
 
         # Add new adapted_case to case library
@@ -337,20 +346,10 @@ class CBR:
         self.cases_history.update({adapted_case.find('name').text: [0, 0]})
         
         # Update library_by_category
-        self.library_by_category[adapted_case.find("category").text] = self.library_by_category[adapted_case.find("category").text].append(adapted_case)
+        self.library_by_category[adapted_case.find("category").text] = \
+            self.library_by_category[adapted_case.find("category").text].append(adapted_case)
 
-        # TODO: Decide what to do with failures
-        '''
-        # FOR WHEN DECIDING WHAT TO DO WITH FAILURES
-        if adapted_case.find('evaluation').text == "Success":
-            # Update case_history with the adapted case:
-            self.cases_history.update({adapted_case.find('name').text: [0,0]})
-            # Add new adapted_case to case library
-            self._update_case_library(adapted_case)
-        else:
-            # TODO: Decide what to do with failures
-            print()
-        '''
+
 
         return
 
@@ -501,6 +500,10 @@ class CBR:
         # SELECTION PHASE
         # Compute similarity with each of the cocktails of the searching list
         sim_list = [self._compute_similarity(constraints, c) for c in searching_list]
+
+        # Keep only the cases which are not failure nor parents of failures
+        sim_list = [sim for sim in sim_list if searching_list[sim_list.index(sim)].find("evaluation").text != "Failure"
+                    or searching_list[sim_list.index(sim)].find("name").text not in set(self.failure_parents)]
 
         # Retrieve case with higher similarity
         max_indices = np.argwhere(np.array(sim_list) == np.amax(np.array(sim_list))).flatten().tolist()
