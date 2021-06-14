@@ -37,7 +37,11 @@ class CBR:
         self.cocktails = self.tree.getroot()
         self.alcohol_types = set()
         self.basic_tastes = set()
+        self.glass_types = set()
+        self.categories = set()
+        self.cocktail_names = set()
         self.ingredients_list = []
+        self.ingredient_names = []
         self.threshold_eval = threshold_eval
 
         self._init_structure()
@@ -53,6 +57,12 @@ class CBR:
         # Get unique categories
         self.categories = set([c.find('category').text for c in self.cocktails])
 
+        # Get unique cocktail names
+        self.cocktail_names = set([c.find('name').text for c in self.cocktails])
+
+        # Get unique values for glass type
+        self.glass_types = set([c.find('glasstype').text for c in self.cocktails])
+        
         # Get unique values for alcohol types
         self.alcohol_types.update(
             [i.attrib['alc_type'] for i in self.cocktails.findall('cocktail/ingredients/ingredient')])
@@ -62,7 +72,8 @@ class CBR:
         self.basic_tastes.update(
             [i.attrib['basic_taste'] for i in self.cocktails.findall('cocktail/ingredients/ingredient')])
         self.basic_tastes.remove('')  # remove empty type
-
+        
+        # Get dicts of alcohol types and basic tastes
         self.alcohol_dict = {atype: set() for atype in self.alcohol_types}
         self.basic_dict = {btype: set() for btype in self.basic_tastes}
 
@@ -82,6 +93,7 @@ class CBR:
         self.ingredients_list = [Ingredient(i.text, i.get('id'), i.get('alc_type'), i.get('basic_taste'), 
                                             i.get('measure'), i.get('quantity'), i.get('unit')) 
                                  for i in self.cocktails.findall('cocktail/ingredients/ingredient')]
+        self.ingredient_names = [i.name for i in self.ingredients_list]
 
         # Define history for all cases in case library, containing number of successes and failures
         self.cases_history = {}
@@ -138,23 +150,31 @@ class CBR:
         Args:
             cocktail (Element): cocktail Element
         """
+        ingr_str = ""
+        
         for i in cocktail.findall('ingredients/ingredient'):
             print(f'{i.get("measure")} {i.text}')
-            # print(f'{i.measure} {i.name} ({i.quantity} {i.unit})')
-
+            ingr_str += f'{i.get("measure")} {i.text}\n'
+        
+        return ingr_str
+            
     def _print_preparation(self, cocktail):
         """ Print the preparation steps (with ingredient names) of the given cocktail.
 
         Args:
             cocktail (Element): cocktail Element
         """
+        prep_str = ""
+        
         for s in cocktail.findall('preparation/step'):
             step = s.text
             for i in cocktail.findall('ingredients/ingredient'):
                 ingr_pattern = r"\b({})\b".format(i.get('id'))
                 step = re.sub(ingr_pattern, i.text, step)
-    
+            prep_str += f'{step}\n'
             print(step)
+            
+        return prep_str
 
     def _evaluate_constraints_fulfillment(self, constraints, cocktail):
         """ Check that a cocktail fulfills all the requiered constraints.
@@ -312,8 +332,11 @@ class CBR:
 
         # Add new adapted_case to case library
         self._update_case_library(adapted_case)
+        self.cocktail_names.update(adapted_case.find('name').text)
+        
         # Update case_history with the adapted case:
         self.cases_history.update({adapted_case.find('name').text: [0, 0]})
+        
         # Update library_by_category
         self.library_by_category[adapted_case.find("category").text] = self.library_by_category[adapted_case.find("category").text].append(adapted_case)
 
@@ -717,3 +740,49 @@ class CBR:
         else:
             adapted_cocktail.find('evaluation').text = "Failure"
         return adapted_cocktail, score
+
+    def check_constraints(self, constraints):
+        """ Check that constraints contain valid values.
+
+        Args:
+            constraints (dictionary): constraints to fulfill
+        """
+        errors = []
+        
+        # Check name
+        if constraints['name'] in self.cocktail_names:
+            errors.append('Name already in use')
+        
+        # Check categories
+        if not all([i in self.categories for i in constraints['category']]):
+            errors.append('Some invalid categories')
+        
+        # Check glass type:
+        if not all([i in self.glass_types for i in constraints['glass_type']]):
+            errors.append('Some invalid glass types')
+            
+        # Check ingredients:
+        if not all([i in self.ingredient_names for i in constraints['ingredients']]):
+            errors.append('Some invalid ingredients')
+        
+        # Check basic tastes:
+        if not all([i in self.basic_tastes for i in constraints['basic_taste']]):
+            errors.append('Some invalid basic tastes')
+        
+        # Check alcohol types:
+        if not all([i in self.alcohol_types for i in constraints['alc_type']]):
+            errors.append('Some invalid alcohol types')
+            
+        # Check exc ingredients:
+        if not all([i in self.ingredient_names for i in constraints['exc_ingredients']]):
+            errors.append('Some invalid exc ingredients')
+        
+        # Check exc alcohol types:
+        if not all([i in self.alcohol_types for i in constraints['exc_alc_type']]):
+            errors.append('Some invalid exc alcohol types')
+            
+        # Check exc basic tastes:
+        if not all([i in self.basic_tastes for i in constraints['exc_basic_taste']]):
+            errors.append('Some invalid exc basic tastes')
+
+        return errors
