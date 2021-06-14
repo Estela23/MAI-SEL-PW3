@@ -114,6 +114,9 @@ class CBR:
         [self.similarity_weights.update({sim_case: sim_weight})
          for sim_case, sim_weight in zip(self.similarity_cases, self.similarity_weights_values)]
 
+        # Define list of parents of failures
+        self.failure_parents = []
+
     def _set_similarity_weights(self, new_weights):
         """ Method to set new similarity weights
 
@@ -265,7 +268,26 @@ class CBR:
                 evaluation_results.append('Excluded basic tastes constraint failed')
 
         return False not in evaluation, evaluation_results
-
+    def _check_adapted_failure(self, adapted_case):
+        searching_list = list(itertools.chain.from_iterable([self.library_by_category[adapted_case.find('category').text]]))
+        constraints={'glass_type':[],'basic_taste':[], 'ingredients':[],'exc_ingredients':[], 'alc_type':[]}
+        constraints['category']=adapted_case.find('category').text
+        constraints['glass_type'].append(adapted_case.find('glasstype').text)
+        #A constraints is created to reuse the _compute_similarity function
+        for ingr in adapted_case.findall('ingredients/ingredient'):
+            constraints['ingredients'].append(ingr.text)
+            if ingr.get('alc_type') not in constraints['alc_type'] and ingr.get('alc_type') != "":
+                constraints['alc_type'].append(ingr.get('alc_type'))
+            if ingr.get('basic_taste') not in constraints['basic_taste'] and ingr.get('basic_taste') != "":
+                constraints['basic_taste'].append(ingr.get('basic_taste'))
+        #Compute similarities with the adapted case
+        sim_list = [self._compute_similarity(constraints, c) for c in searching_list]
+        # Retrieve case with higher similarity
+        max_indices = np.argwhere(np.array(sim_list) == np.amax(np.array(sim_list))).flatten().tolist()
+        list_failures = [searching_list[max_indices[cocktail_idx]].find('evaluation').text for cocktail_idx in max_indices]
+        if max(sim_list)>0.95 and "Failure" in list_failures:
+            return True
+        return False
     def _process(self, constraints):
         """ CBR principal flow, where the different stages of the CBR will be called
 
@@ -278,7 +300,16 @@ class CBR:
         # RETRIEVAL PHASE
         retrieved_case = self._retrieval(constraints)
         # ADAPTATION PHASE
-        adapted_case, n_changes = self._adaptation(retrieved_case)
+        adapted_case, n_changes = self._adaptation(constraints, retrieved_case)
+        # CHECK ADAPTED SOLUTION HAS AT LEAST A CHANGE
+        if n_changes == 0:
+            return adapted_case, self.cocktails
+        # CHECK ADAPTED SOLUTION IS NOT A FAILURE
+        if self._check_adapted_failure(adapted_case):
+            adapted_case.get('evaluation').text="Failure"
+            ev_score=0 #Esto salta a learning directo?????????????????????????????
+            self._learning(retrieved_case, adapted_case, ev_score)
+            return adapted_case, self.cocktails
         # EVALUATION PHASE
         adapted_case, ev_score = self._evaluation(adapted_case)
         # LEARNING PHASE
@@ -301,15 +332,21 @@ class CBR:
         # Update the cases_history of the retrieved case based on the status
         # If the adapted case is a success, according to the human oracle
         if adapted_case.find('evaluation').text == "Success":
-            self.cases_history[retrieved_case.find("name").text][0] += 1
+            self.cases_history[retrieved_case.find("name").text][0] += 1 * ev_score
         # If the adapted case is a failure, according to the human oracle
         elif adapted_case.find('evaluation').text == "Failure":
-            self.cases_history[retrieved_case.find("name").text][1] += 1
+            self.cases_history[retrieved_case.find("name").text][1] += 1 * ev_score
+            self.failure_parents.append(adapted_case.find("name").text)
 
         # Compute utility score for retrieved_case
         utility_score = (self.cases_history[retrieved_case.find("name").text][0] - \
                         self.cases_history[retrieved_case.find("name").text][1] + 1) / 2
 
+        for c in self.cocktails:
+            if c.find("name").text == retrieved_case.find("name").text:
+                c.find("utility").text = str(utility_score)
+                break
+        '''
         # If utility score is 0.0, remove retrieved_case from case library, from cases_history and from library_by_category
         if utility_score == 0.0:
             self.cocktails.remove(retrieved_case)
@@ -317,16 +354,16 @@ class CBR:
             if rem == None:
                 print("ERROR: You are trying to delete a cocktail that doesn't exist in the cases_history structure")
             self.library_by_category[retrieved_case.find("category").text] = self.library_by_category[retrieved_case.find("category").text].remove(retrieved_case)
-       
+        
         # Otherwise, update retrieved case utility score if the computed utility score has changed
         elif str(utility_score) != retrieved_case.find("utility").text:
             for c in self.cocktails:
                 if c.find("name").text == retrieved_case.find("name").text:
                     c.find("utility").text = str(utility_score)
                     break
+        '''
 
-        # Initialize utility of adapted_case to 1.0 always
-        # TODO: what to do with failures when multiplying by ev_score
+        # Initialize utility of adapted_case to 1.0*evaluation_score
         adapted_case.find("utility").text = str(1.0 * ev_score)
 
         # Add new adapted_case to case library
@@ -337,20 +374,10 @@ class CBR:
         self.cases_history.update({adapted_case.find('name').text: [0, 0]})
         
         # Update library_by_category
-        self.library_by_category[adapted_case.find("category").text] = self.library_by_category[adapted_case.find("category").text].append(adapted_case)
+        self.library_by_category[adapted_case.find("category").text] = \
+            self.library_by_category[adapted_case.find("category").text].append(adapted_case)
 
-        # TODO: Decide what to do with failures
-        '''
-        # FOR WHEN DECIDING WHAT TO DO WITH FAILURES
-        if adapted_case.find('evaluation').text == "Success":
-            # Update case_history with the adapted case:
-            self.cases_history.update({adapted_case.find('name').text: [0,0]})
-            # Add new adapted_case to case library
-            self._update_case_library(adapted_case)
-        else:
-            # TODO: Decide what to do with failures
-            print()
-        '''
+
 
         return
 
@@ -367,7 +394,7 @@ class CBR:
         et.write(self.cbl_filename, pretty_print=True, encoding="UTF-8")
 
     def _compute_similarity(self, constraints, cocktail):
-        """ Compute the similiraty between a set of constraints and a particular cocktail.
+        """ Compute the similarity between a set of constraints and a particular cocktail.
 
         Start with similarity 0. Then, evaluate each constraint one by one and increase
         similarity according to the feature weight.
@@ -379,8 +406,11 @@ class CBR:
         Returns:
             [type]: [description]
         """
-        # Start with similarity 0
+        # Start with cumulative similarity equal to 0
         sim = 0
+
+        # Initialize variable to normalize the final cumulated similarity
+        cumulative_normalization_score = 0
 
         # Get cocktails ingredients and alc_type
         c_ingredients = [i.text for i in cocktail.findall('ingredients/ingredient')]
@@ -406,35 +436,56 @@ class CBR:
 
                         # Increase similarity if constraint ingredient is used in cocktail
                         if ingredient in c_ingredients:
-                            sim += 1 * self.similarity_weights["ingr_match"]
+                            sim += self.similarity_weights["ingr_match"]
+                            cumulative_normalization_score += self.similarity_weights["ingr_match"]
 
                         # Increase similarity if constraint ingredient alc_type is used in cocktail
                         elif itype == "alcohol" and ingredient_alc_type in c_ingredients_atype:
-                            sim += 1 * self.similarity_weights["ingr_alc_type_match"]
+                            sim += self.similarity_weights["ingr_alc_type_match"]
+                            cumulative_normalization_score += self.similarity_weights["ingr_match"]
 
-                        # Incrase similarity if constraint ingredient basic_taste is used in cocktail
+                        # Increase similarity if constraint ingredient basic_taste is used in cocktail
                         elif itype == "non-alcohol" and ingredient_basic_taste in c_ingredients_btype:
-                            sim += 1 * self.similarity_weights["ingr_basic_taste_match"]
+                            sim += self.similarity_weights["ingr_basic_taste_match"]
+                            cumulative_normalization_score += self.similarity_weights["ingr_match"]
+
+                        # In case the constraint is not fulfilled we add the weight to the normalization score
+                        else:
+                            cumulative_normalization_score += self.similarity_weights["ingr_match"]
 
                 # Increase similarity if alc_type is a match. Alc_type has a lot of importance,
                 # but less than the ingredient constraints
                 elif key == "alc_type":
                     for atype in constraints[key]:
-                        sim += sum([1 * self.similarity_weights["alc_type_match"]
-                                    for i in cocktail.find("ingredients") if atype == i.attrib['alc_type']])
+                        matches = [i for i in cocktail.find("ingredients") if atype == i.attrib['alc_type']]
+                        if len(matches) > 0:
+                            sim += self.similarity_weights["alc_type_match"]
+                            cumulative_normalization_score += self.similarity_weights["alc_type_match"]
+                        # In case the constraint is not fulfilled we add the weight to the normalization score
+                        else:
+                            cumulative_normalization_score += self.similarity_weights["alc_type_match"]
 
                 # Increase similarity if basic_taste is a match. Basic_taste has a lot of importance,
                 # but less than the ingredient constraints
                 elif key == "basic_taste":
                     for btype in constraints[key]:
-                        sim += sum([1 * self.similarity_weights["basic_taste_match"]
-                                    for i in cocktail.find("ingredients") if btype == i.attrib['basic_taste']])
+                        matches = [i for i in cocktail.find("ingredients") if btype == i.attrib['basic_taste']]
+                        if len(matches) > 0:
+                            sim += self.similarity_weights["basic_taste_match"]
+                            cumulative_normalization_score += self.similarity_weights["basic_taste_match"]
+                        # In case the constraint is not fulfilled we add the weight to the normalization score
+                        else:
+                            cumulative_normalization_score += self.similarity_weights["basic_taste_match"]
 
                 # Increase similarity if glasstype is a match. Glasstype is not very relevant for the case
                 elif key == "glasstype":
                     for glass in constraints[key]:
                         if glass == cocktail.find(key).text:
-                            sim += 1 * self.similarity_weights["glasstype_match"]
+                            sim += self.similarity_weights["glasstype_match"]
+                            cumulative_normalization_score += self.similarity_weights["glasstype_match"]
+                        # In case the constraint is not fulfilled we add the weight to the normalization score
+                        else:
+                            cumulative_normalization_score += self.similarity_weights["glasstype_match"]
 
                 # If one of the excluded elements in the constraint is found in the cocktail, similarity is reduced
                 elif key == "exc_ingredients":
@@ -453,29 +504,49 @@ class CBR:
 
                         # Decrease similarity if ingredient excluded is found in cocktail
                         if ingredient in c_ingredients:
-                            sim += 1 * self.similarity_weights["exc_ingr_match"]
+                            sim += self.similarity_weights["exc_ingr_match"]
+                            cumulative_normalization_score += self.similarity_weights["ingr_match"]
 
                         # Decrease similarity if excluded ingredient alc_type is used in cocktail
                         elif itype == "alcohol" and exc_ingredient_alc_type in c_ingredients_atype:
-                            sim += 1 * self.similarity_weights["exc_ingr_alc_type_match"]
+                            sim += self.similarity_weights["exc_ingr_alc_type_match"]
+                            cumulative_normalization_score += self.similarity_weights["ingr_match"]
 
                         # Decrease similarity if excluded ingredient basic_taste is used in cocktail
                         elif itype == "non-alcohol" and exc_ingredient_basic_taste in c_ingredients_btype:
-                            sim += 1 * self.similarity_weights["exc_ingr_basic_taste_match"]
+                            sim += self.similarity_weights["exc_ingr_basic_taste_match"]
+                            cumulative_normalization_score += self.similarity_weights["ingr_match"]
+
+                        # In case the constraint is not fulfilled we add the weight to the normalization score
+                        else:
+                            cumulative_normalization_score += self.similarity_weights["ingr_match"]
 
                 # If one of the excluded alcohol_types is found in the cocktail, similarity is reduced
                 elif key == "exc_alc_type":
                     for atype in constraints[key]:
-                        sim += sum([1 * self.similarity_weights["exc_alc_type"]
-                                    for i in cocktail.find("ingredients") if atype == i.attrib['alc_type']])
+                        matches = [i for i in cocktail.find("ingredients") if atype == i.attrib['alc_type']]
+                        if len(matches) > 0:
+                            sim += [self.similarity_weights["exc_alc_type"]]
+                            cumulative_normalization_score += [self.similarity_weights["exc_alc_type"]]
+                        # In case the constraint is not fulfilled we add the weight to the normalization score
+                        else:
+                            cumulative_normalization_score += [self.similarity_weights["exc_alc_type"]]
 
                 # If one of the excluded basic_tastes is found in the cocktail, similarity is reduced
                 elif key == "exc_basic_taste":
                     for atype in constraints[key]:
-                        sim += sum([1 * self.similarity_weights["exc_basic_taste"]
-                                    for i in cocktail.find("ingredients") if atype == i.attrib['basic_taste']])
+                        matches = [i for i in cocktail.find("ingredients") if atype == i.attrib['basic_taste']]
+                        if len(matches) > 0:
+                            sim += self.similarity_weights["exc_basic_taste"]
+                            cumulative_normalization_score += self.similarity_weights["exc_basic_taste"]
+                        # In case the constraint is not fulfilled we add the weight to the normalization score
+                        else:
+                            cumulative_normalization_score += self.similarity_weights["exc_basic_taste"]
 
-        return (sim * float(cocktail.find("utility").text))
+        # Normalize the obtained similarity
+        normalized_sim = sim / cumulative_normalization_score
+
+        return normalized_sim * float(cocktail.find("utility").text)
 
     def _retrieval(self, constraints):
         """ Retrieve most appropriate cocktail given the provided constraints.
@@ -501,6 +572,10 @@ class CBR:
         # SELECTION PHASE
         # Compute similarity with each of the cocktails of the searching list
         sim_list = [self._compute_similarity(constraints, c) for c in searching_list]
+
+        # Keep only the cases which are not failure nor parents of failures
+        sim_list = [sim for sim in sim_list if searching_list[sim_list.index(sim)].find("evaluation").text != "Failure"
+                    or searching_list[sim_list.index(sim)].find("name").text not in set(self.failure_parents)]
 
         # Retrieve case with higher similarity
         max_indices = np.argwhere(np.array(sim_list) == np.amax(np.array(sim_list))).flatten().tolist()
@@ -675,13 +750,10 @@ class CBR:
                     else:
                         # If there is none ingredient of that basic taste we directly ADD the desired one
                         to_add = self._create_ingr_element(ingredient_to_add, adapted_cocktail, "ingr" + str(idx_ingr))
-                        # TODO: check the following line is not neccessary, auto-overwrite
-                        # adapted_cocktail.find("ingredients").append(to_add)
+                        adapted_cocktail.find("ingredients").append(to_add)
                         # ADD also a step concerning this ingredient to the recipe
                         step = etree.SubElement(adapted_cocktail.find("preparation"), "step")
                         step.text = "Add ingr" + str(idx_ingr) + " to the cocktail."
-                        # TODO: check the following line is not neccessary, auto-overwrite
-                        # adapted_cocktail.find("preparation").append(step)
 
                         idx_ingr += 1
                         n_changes += 1
@@ -713,7 +785,11 @@ class CBR:
 
                         idx_ingr += 1
                         n_changes += 1
-                
+
+        # If there were no changes and we are giving the user the original cocktail, give the original name
+        if n_changes == 0:
+            adapted_cocktail.find("name").text = retrieved_cocktail.find("name").text
+
         return adapted_cocktail, n_changes
       
     def _evaluation(self, adapted_cocktail):
