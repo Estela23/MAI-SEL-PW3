@@ -267,24 +267,25 @@ class CBR:
                 evaluation_results.append('Excluded basic tastes constraint failed')
 
         return False not in evaluation, evaluation_results
+
     def _check_adapted_failure(self, adapted_case):
         searching_list = list(itertools.chain.from_iterable([self.library_by_category[adapted_case.find('category').text]]))
-        constraints={'glass_type':[],'basic_taste':[], 'ingredients':[],'exc_ingredients':[], 'alc_type':[]}
-        constraints['category']=adapted_case.find('category').text
+        constraints = {'glass_type': [], 'basic_taste': [], 'ingredients': [], 'exc_ingredients': [], 'alc_type': [],
+                       'category': adapted_case.find('category').text}
         constraints['glass_type'].append(adapted_case.find('glasstype').text)
-        #A constraints is created to reuse the _compute_similarity function
+        # A constraint is created to reuse the _compute_similarity function
         for ingr in adapted_case.findall('ingredients/ingredient'):
             constraints['ingredients'].append(ingr.text)
             if ingr.get('alc_type') not in constraints['alc_type'] and ingr.get('alc_type') != "":
                 constraints['alc_type'].append(ingr.get('alc_type'))
             if ingr.get('basic_taste') not in constraints['basic_taste'] and ingr.get('basic_taste') != "":
                 constraints['basic_taste'].append(ingr.get('basic_taste'))
-        #Compute similarities with the adapted case
+        # Compute similarities with the adapted case
         sim_list = [self._compute_similarity(constraints, c) for c in searching_list]
         # Retrieve case with higher similarity
         max_indices = np.argwhere(np.array(sim_list) == np.amax(np.array(sim_list))).flatten().tolist()
         list_failures = [searching_list[max_indices[cocktail_idx]].find('evaluation').text for cocktail_idx in max_indices]
-        if max(sim_list)>0.95 and "Failure" in list_failures:
+        if max(sim_list) > 0.95 and "Failure" in list_failures:
             return True
         return False
 
@@ -307,7 +308,7 @@ class CBR:
         # CHECK ADAPTED SOLUTION IS NOT A FAILURE
         if self._check_adapted_failure(adapted_case):
             adapted_case.get('evaluation').text="Failure"
-            ev_score=0 #Esto salta a learning directo?????????????????????????????
+            ev_score = 0    # Esto salta a learning directo?????????????????????????????
             self._learning(retrieved_case, adapted_case, ev_score)
             return adapted_case, self.cocktails
         # EVALUATION PHASE
@@ -644,7 +645,7 @@ class CBR:
             elif ingredient.get('id') in step.text:
                 cocktail.find("preparation").remove(step)
 
-    def _adaptation(self, constraints, retrieved_cocktail):
+    def adaptation(self, constraints, retrieved_cocktail):
         """ Adapt the ingredients and steps of the preparation for the best retrieved case
         following the constraints fixed by the user
 
