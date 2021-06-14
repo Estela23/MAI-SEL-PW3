@@ -62,10 +62,14 @@ class CocktailsApp():
         # Button actions
         self.dialog.btn_getrecipes.clicked.connect(self.btn_getrecipe)
         self.dialog.btn_resetquery.clicked.connect(self.btn_resetquery)
+        self.dialog.btn_rate.clicked.connect(self.btn_rate)
         
         # Menu actions
         self.dialog.actionAbout.triggered.connect(self.about)
         self.dialog.actionLoad.triggered.connect(self.load_file)
+        
+        # Slider action
+        self.dialog.slider_evaluation.valueChanged.connect(self.slider_change)
         
         # Init CBR
         self.cbr = self.cbr = CBR(os.path.join(DATA_PATH, 'case_library.xml'), verbose=True)
@@ -74,6 +78,20 @@ class CocktailsApp():
         sys.stdout = OutLog(self.dialog.logText)
         sys.stderr = OutLog(self.dialog.logText, color=QtGui.QColor(255,0,0))
     
+    def slider_change(self):
+        """ When evaluation slider changes, update label.
+        """
+        self.dialog.label_rating.setText(str(self.dialog.slider_evaluation.value()))
+        
+    def btn_rate(self):
+        """ When button "Rate" is clicked, evalute adapted cocktail
+        """
+        evaluation = self.dialog.slider_evaluation.value()
+        
+        # TODO: evaluate cocktail
+        
+        self.dialog.btn_rate.setEnabled(False)
+        
     def btn_resetquery(self):
         """ When the button "Reset Query" is clicked, clear all the text boxes.
         """
@@ -182,6 +200,9 @@ class CocktailsApp():
         # Output original and adapte recipe
         self.dialog.or_recipe_text.setText(f'Ingredients:\n{or_ingr_str}\n\nPreparation:\n{or_prep_str}')
         self.dialog.ad_recipe_text.setText(f'Ingredients:\n{ad_ingr_str}\n\nPreparation:\n{ad_prep_str}')
+        
+        # Enable rating button
+        self.dialog.btn_rate.setEnabled(True)
      
     def about(self):
         about_text = """<b>Cocktails Recipes CBR</b>
@@ -195,6 +216,9 @@ class CocktailsApp():
                                                                                             platform.system())   
         dlg = loader.load(os.path.join(os.path.dirname(__file__), 'about.ui'), None) 
         dlg.label.setText(about_text)
+        # Set image
+        pixmap = QtGui.QPixmap(os.path.join(os.path.dirname(__file__), 'beers.png'))                                                                                                        
+        dlg.label_beers.setPixmap(pixmap)  
         dlg.exec_()
 
     def load_file(self):

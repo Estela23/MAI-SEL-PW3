@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>633</width>
-    <height>391</height>
+    <width>530</width>
+    <height>390</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -16,14 +16,30 @@
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>50</x>
-     <y>20</y>
-     <width>531</width>
+     <x>30</x>
+     <y>30</y>
+     <width>461</width>
      <height>141</height>
     </rect>
    </property>
    <property name="text">
     <string>TextLabel</string>
+   </property>
+   <property name="alignment">
+    <set>Qt::AlignCenter</set>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_beers">
+   <property name="geometry">
+    <rect>
+     <x>40</x>
+     <y>190</y>
+     <width>441</width>
+     <height>191</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
    </property>
    <property name="alignment">
     <set>Qt::AlignCenter</set>
