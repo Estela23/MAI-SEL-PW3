@@ -1,15 +1,18 @@
 import sys
+import PySide2
 from PySide2 import QtCore, QtGui, QtWidgets
 from PySide2.QtUiTools import QUiLoader
 from PySide2.QtWidgets import QApplication, QMainWindow
 from PySide2.QtCore import QFile
 import os
+import platform
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from cbr import CBR
 
-DATA_PATH = 'Data'
+DATA_PATH = os.path.join(os.path.dirname(__file__), '..', 'Data')
 
+loader = QUiLoader()
         
 class OutLog:
     def __init__(self, edit, out=None, color=None):
@@ -40,34 +43,42 @@ class OutLog:
 
         if self.out:
             self.out.write(m)
-        
+                
 class CocktailsApp():
-    def __init__(self, ui_filename):        
-        loader = QUiLoader()
+    """ Cocktails App
+    
+    Define and configure various functions used to detect button clicks and
+    retrieve text from input boxes.
+    """
+    def __init__(self, ui_filename):
+        # Load UI        
         self.dialog = loader.load(os.path.join(os.path.dirname(__file__), ui_filename), None) 
-        self.dialog.btn_getrecipes.clicked.connect(self.btn_click)
         self.dialog.show()
         
+        # Set title image
+        pixmap = QtGui.QPixmap(os.path.join(os.path.dirname(__file__), 'title.png'))                                                                                                        
+        self.dialog.label.setPixmap(pixmap)   
         
+        # Button actions
+        self.dialog.btn_getrecipes.clicked.connect(self.btn_getrecipe)
+
+        # Menu actions
+        self.dialog.actionAbout.triggered.connect(self.about)
+        
+        # Init CBR
         self.cbr = self.cbr = CBR(os.path.join(DATA_PATH, 'case_library.xml'), verbose=True)
-    
-        # self.dialog.scrollArea.setLayout(self.vbox)
-        
-        #Scroll Area Properties
-        # self.dialog.scrollArea.setVerticalScrollBarPolicy(Qt.ScrollBarAlwaysOn)
-        # self.dialog.scrollArea.setHorizontalScrollBarPolicy(Qt.ScrollBarAlwaysOff)
-        #self.dialog.scrollArea.setWidgetResizable(True)
-        #   self.dialog.scrollArea.setWidget(self.widget)
 
         # Redirect stdout and stderr
         sys.stdout = OutLog(self.dialog.logText)
         sys.stderr = OutLog(self.dialog.logText, color=QtGui.QColor(255,0,0))
-        
-    def btn_click(self):
+    
+    def btn_getrecipe(self):
+        """ When the button "Get Recipe" is clicked, retrieve inputs,
+        call CBR and display retrieved and adapted recipes.
+        """
         ingredients = self.dialog.text_ingredients.text().split(', ')
         if not ingredients[0]:
             ingredients = []
-            print('KDAJFLKDASJFLKJAKLDFJKLASDS')
             
         alc_types = self.dialog.text_alc_types.text().split(', ')
         if not alc_types[0]:
@@ -80,6 +91,14 @@ class CocktailsApp():
         exc_ingredients = self.dialog.text_exc_ingredients.text().split(', ')
         if not exc_ingredients[0]:
             exc_ingredients = []
+            
+        exc_alc_types= self.dialog.text_exc_alc_types.text().split(', ')
+        if not exc_alc_types[0]:
+            exc_alc_types = []
+            
+        exc_basic_tastes = self.dialog.text_exc_basic_tastes.text().split(', ')
+        if not exc_basic_tastes[0]:
+            exc_basic_tastes = []
             
         name = self.dialog.text_name.text()
         if not name:
@@ -106,7 +125,7 @@ class CocktailsApp():
         print('\nOriginal Preparation:')
         self.cbr._print_preparation(c)
 
-        adapted_cocktail = self.cbr._adaptation(constraints, c)
+        adapted_cocktail, n_changes = self.cbr._adaptation(constraints, c)
         print(f'\n{adapted_cocktail.find("name").text} cocktail adapted')
 
         print('\nAdapted Ingredients:')
@@ -123,8 +142,22 @@ class CocktailsApp():
             print('\nConstraints error:')
             print('\n'.join(eval_results))
             assert (evaluation)
-        
-        
+     
+    def about(self):
+        about_text = """<b>Cocktails Recipes CBR</b>
+                            <p>Copyright &copy; 2021. Some rights reserved.
+                            <p>This CBR application is part of the final project of SEL PW3 
+                            <p>(MAI - UPC) 
+                            <p>
+                            <p>Python {} - PySide version {} - Qt version {} on {}""".format(platform.python_version(),
+                                                                                            PySide2.__version__,
+                                                                                            QtCore.__version__,
+                                                                                            platform.system())   
+        dlg = loader.load(os.path.join(os.path.dirname(__file__), 'about.ui'), None) 
+        dlg.label.setText(about_text)
+        dlg.exec_()
+
+            
 if __name__ == "__main__":
     ui_filename = 'form.ui'
     app = QtWidgets.QApplication(sys.argv)
