@@ -307,8 +307,8 @@ class CBR:
             return adapted_case, self.cocktails
         # CHECK ADAPTED SOLUTION IS NOT A FAILURE
         if self._check_adapted_failure(adapted_case):
-            adapted_case.get('evaluation').text="Failure"
-            ev_score = 0    # Esto salta a learning directo?????????????????????????????
+            adapted_case.get('evaluation').text = "Failure"
+            ev_score = 0.0
             self._learning(retrieved_case, adapted_case, ev_score)
             return adapted_case, self.cocktails
         # EVALUATION PHASE
@@ -572,7 +572,7 @@ class CBR:
         # SELECTION PHASE
         # Compute similarity with each of the cocktails of the searching list
         sim_list = [self._compute_similarity(constraints, c) for c in searching_list]
-
+        # TODO:
         # Keep only the cases which are not failure nor parents of failures
         sim_list = [sim for sim in sim_list if searching_list[sim_list.index(sim)].find("evaluation").text != "Failure"
                     or searching_list[sim_list.index(sim)].find("name").text not in set(self.failure_parents)]
@@ -827,7 +827,7 @@ class CBR:
         self._print_preparation(adapted_cocktail)
         print("How good was the cocktail?")
         print("Please, introduce a score between 0 and 10 (You can use decimals)")
-        score=float(input())
+        score = float(input())
         if score >= self.threshold_eval:
             adapted_cocktail.find('evaluation').text = "Success"
         else:
