@@ -249,8 +249,11 @@ class CBR:
             # Use threshold to determine if adapted cocktail is a Success or Failure
             if score >= self.threshold_eval:
                 adapted_case.find('evaluation').text = "Success"
+                self.verboseprint(f'[CBR] Cocktail evaluation: Success')
+
             else:
                 adapted_case.find('evaluation').text = "Failure"
+                self.verboseprint(f'[CBR] Cocktail evaluation: Failure')
             
             # LEARNING PHASE
             self._learning(retrieved_case, adapted_case, score)
@@ -439,15 +442,8 @@ class CBR:
         adapted_case.find("utility").text = str(1.0 * ev_score)
 
         # Add new adapted_case to case library
+        self.verboseprint(f'[CBR] Update case library with new recipe')
         self._update_case_library(adapted_case)
-        self.cocktail_names.update(adapted_case.find('name').text)
-        
-        # Update case_history with the adapted case:
-        self.cases_history.update({adapted_case.find('name').text: [0, 0]})
-        
-        # Update library_by_category
-        self.library_by_category[adapted_case.find("category").text] =\
-            self.library_by_category[adapted_case.find("category").text].append(adapted_case)
 
     def _update_case_library(self, new_case):
         """ Update the case_library with a new case
@@ -455,12 +451,23 @@ class CBR:
         Args:
             new_case (Element): new cocktail element to be added to the case library
 
-        """
+        """        
+        # Update cocktail names
+        self.cocktail_names.update(new_case.find('name').text)
+
+        # Update case_history with the adapted case:
+        self.cases_history.update({new_case.find('name').text: [0, 0]})
+        
+        # Update library_by_category
+        self.library_by_category[adapted_case.find("category").text] =\
+            self.library_by_category[new_case.find("category").text].append(new_case)
+        
+        # Add new case to XML    
         index_to_insert = self.cocktails.index(self.library_by_category[new_case.find("category").text][-1])
         self.cocktails.insert(index_to_insert+1, new_case)
         et = etree.ElementTree(self.cocktails)
         et.write(self.cbl_filename, pretty_print=True, encoding="UTF-8")
-
+            
     def _compute_similarity(self, constraints, cocktail):
         """ Compute the similarity between a set of constraints and a particular cocktail.
 
@@ -633,6 +640,7 @@ class CBR:
         # SEARCHING PHASE
         # Filter elements that correspond to the category constraint
         # If category constraints is not empty
+        print(f'type constraints: {type(constraints)}')
         if constraints['category']:
             searching_list = list(itertools.chain.from_iterable([self.library_by_category[cat]
                                                                  for cat in constraints['category']]))
