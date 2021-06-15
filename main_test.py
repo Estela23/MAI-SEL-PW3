@@ -23,7 +23,7 @@ c = cocktails_cbr.retrieval(constraints)
 print(f'\n{c.find("name").text} cocktail retrieved')
 
 print('\nOriginal Ingredients:')
-cocktails_cbr._print_ingredients(c)
+cocktails_cbr.print_ingredients(c)
 print('\nOriginal Preparation:')
 cocktails_cbr.print_preparation(c)
 
