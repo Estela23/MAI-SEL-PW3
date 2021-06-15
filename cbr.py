@@ -676,7 +676,7 @@ class CBR:
 
         return ingr_element
 
-    def add_ingredient_by_type(self, cocktail, constraints, idx_ingr, ingr_type, type):
+    def _add_ingredient_by_type(self, cocktail, constraints, idx_ingr, ingr_type, type):
         """ Adds an ingredient from the database to a cocktail given its alc_type or basic_taste
 
         Args:
@@ -711,7 +711,7 @@ class CBR:
         step.text = "Add ingr" + str(idx_ingr) + " to the cocktail."
         cocktail.find("preparation").append(step)
 
-    def remove_ingredient(self, cocktail, ingredient):
+    def _remove_ingredient(self, cocktail, ingredient):
         """ Removes a concrete ingredient from a cocktail and
         adapts the corresponding steps of the solution (preparation).
 
@@ -775,7 +775,7 @@ class CBR:
         if len(constraints["exc_ingredients"]):
             for ingr in adapted_cocktail.find("ingredients"):
                 if ingr.text in constraints["exc_ingredients"]:
-                    self.remove_ingredient(cocktail=adapted_cocktail, ingredient=ingr)
+                    self._remove_ingredient(cocktail=adapted_cocktail, ingredient=ingr)
                     n_changes += 1
 
                     # Informing the user about what the CBR system is doing
@@ -786,7 +786,7 @@ class CBR:
         if len(constraints["exc_alc_type"]):
             for ingr in adapted_cocktail.find("ingredients"):
                 if ingr.get("alc_type") in constraints["exc_alc_type"]:
-                    self.remove_ingredient(cocktail=adapted_cocktail, ingredient=ingr)
+                    self._remove_ingredient(cocktail=adapted_cocktail, ingredient=ingr)
                     n_changes += 1
 
                     # Informing the user about what the CBR system is doing
@@ -797,7 +797,7 @@ class CBR:
         if len(constraints["exc_basic_taste"]):
             for ingr in adapted_cocktail.find("ingredients"):
                 if ingr.get("basic_taste") in constraints["exc_basic_taste"]:
-                    self.remove_ingredient(cocktail=adapted_cocktail, ingredient=ingr)
+                    self._remove_ingredient(cocktail=adapted_cocktail, ingredient=ingr)
                     n_changes += 1
 
                     # Informing the user about what the CBR system is doing
@@ -811,7 +811,7 @@ class CBR:
         for alcohol in constraints["alc_type"]:
             # If the desired alcohol type it is not in the recipe, add some ingredient from this type
             if alcohol not in [ingr.get("alc_type") for ingr in adapted_cocktail.find("ingredients")]:
-                self.add_ingredient_by_type(cocktail=adapted_cocktail, constraints=constraints, idx_ingr=idx_ingr,
+                self._add_ingredient_by_type(cocktail=adapted_cocktail, constraints=constraints, idx_ingr=idx_ingr,
                                             ingr_type=alcohol, type="alc_type")
                 idx_ingr += 1
                 n_changes += 1
@@ -819,7 +819,7 @@ class CBR:
         for taste in constraints["basic_taste"]:
             # If the desired basic taste it is not in the recipe, add some ingredient from this type
             if taste not in [ingr.get("basic_taste") for ingr in adapted_cocktail.find("ingredients")]:
-                self.add_ingredient_by_type(cocktail=adapted_cocktail, constraints=constraints, idx_ingr=idx_ingr,
+                self._add_ingredient_by_type(cocktail=adapted_cocktail, constraints=constraints, idx_ingr=idx_ingr,
                                             ingr_type=taste, type="basic_taste")
                 idx_ingr += 1
                 n_changes += 1
