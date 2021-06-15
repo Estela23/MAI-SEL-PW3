@@ -1,4 +1,5 @@
 import sys
+import json
 import PySide2
 from PySide2 import QtCore, QtGui, QtWidgets
 from PySide2.QtUiTools import QUiLoader
@@ -70,7 +71,9 @@ class CocktailsApp():
         
         # Menu actions
         self.dialog.actionAbout.triggered.connect(self.about)
-        self.dialog.actionLoad.triggered.connect(self.load_file)
+        self.dialog.actionConstraints.triggered.connect(self.load_constraints_file)
+        self.dialog.actionLibrary.triggered.connect(self.load_library_file)
+        self.dialog.actionExport.triggered.connect(self.export_constraints_file)
         self.dialog.actionUser_Manual.triggered.connect(self.open_user_manual)
         
         # Slider action
@@ -80,8 +83,8 @@ class CocktailsApp():
         self.cbr = CBR(os.path.join(DATA_PATH, 'case_library.xml'), verbose=True)
 
         # Redirect stdout and stderr
-        sys.stdout = OutLog(self.dialog.logText)
-        sys.stderr = OutLog(self.dialog.logText, color=QtGui.QColor(255,0,0))
+        # sys.stdout = OutLog(self.dialog.logText)
+        # sys.stderr = OutLog(self.dialog.logText, color=QtGui.QColor(255,0,0))
     
     def open_user_manual(self):
         """ Open Ueser Manual PDF
@@ -127,6 +130,28 @@ class CocktailsApp():
         """ When the button "Get Recipe" is clicked, retrieve inputs,
         call CBR and display retrieved and adapted recipes.
         """
+        # Get constraints from user input
+        constraints = self.get_constraints()   
+        
+        # Check if constraints contain any error
+        constraints_err = self.cbr.check_constraints(constraints)
+        if len(constraints_err):
+            # Prompt error message
+            button = QtWidgets.QMessageBox.critical(self.dialog, "Constraints error!",
+            "\n".join(constraints_err), buttons=QtWidgets.QMessageBox.Close,
+            defaultButton=QtWidgets.QMessageBox.Close)
+        else:
+            # Print constraints
+            print(f'constraints: {constraints}\n')   
+        
+            self.test_cbr(constraints)
+    
+    def get_constraints(self):
+        """ Get constraints from user input
+
+        Returns:
+            dict: constraints
+        """
         ingredients = self.dialog.text_ingredients.text().lower().split(', ')
         if not ingredients[0]:
             ingredients = []
@@ -164,21 +189,10 @@ class CocktailsApp():
 
         constraints = {'name': name, 'category': categories, 'glass_type': glass_types, 'ingredients': ingredients,
                     'alc_type': alc_types, 'basic_taste': basic_tastes, 'exc_ingredients': exc_ingredients,
-                    'exc_alc_type': exc_alc_types, 'exc_basic_taste': exc_basic_tastes}    
+                    'exc_alc_type': exc_alc_types, 'exc_basic_taste': exc_basic_tastes} 
         
-        # Check if constraints contain any error
-        constraints_err = self.cbr.check_constraints(constraints)
-        if len(constraints_err):
-            # Prompt error message
-            button = QtWidgets.QMessageBox.critical(self.dialog, "Constraints error!",
-            "\n".join(constraints_err), buttons=QtWidgets.QMessageBox.Close,
-            defaultButton=QtWidgets.QMessageBox.Close)
-        else:
-            # Print constraints
-            print(f'constraints: {constraints}\n')   
-        
-            self.test_cbr(constraints)
-        
+        return constraints
+    
     def test_cbr(self, constraints):
         """ Run CBR and obtain cocktail from constraints
 
@@ -229,8 +243,8 @@ class CocktailsApp():
         dlg.label_beers.setPixmap(pixmap)  
         dlg.exec_()
 
-    def load_file(self):
-        constraints_file, _ = QtWidgets.QFileDialog.getOpenFileName(self.dialog, "Open File", DATA_PATH,
+    def load_constraints_file(self):
+        constraints_file, _ = QtWidgets.QFileDialog.getOpenFileName(self.dialog, "Open Constraints", DATA_PATH,
                                                     'Json Files (*.json)')
         print(f'Load constraints from: {constraints_file} ...')
         
@@ -255,7 +269,28 @@ class CocktailsApp():
             else:
                 c.setChecked(False)
                 
-           
+    def load_library_file(self):
+        library_file, _ = QtWidgets.QFileDialog.getOpenFileName(self.dialog, "Open Library", DATA_PATH,
+                                                    'XML Files (*.xml)')
+        print(f'Load CBR library from: {library_file} ...')
+        
+        try:
+            # Init CBR
+            self.cbr = CBR(library_file, verbose=True)
+        except Exception as e:
+            # Prompt error message
+            button = QtWidgets.QMessageBox.critical(self.dialog, "Library error!",
+            f'Library error. Choose a valid case library.\nException:{str(e)}', buttons=QtWidgets.QMessageBox.Close,
+            defaultButton=QtWidgets.QMessageBox.Close)
+        
+    def export_constraints_file(self):
+        constraints_file, _ = QtWidgets.QFileDialog.getSaveFileName(self.dialog, "Save File", DATA_PATH,
+                                                    'Json Files (*.json)')
+        print(f'Save constraints to: {constraints_file} ...')
+        constraints = self.get_constraints()
+        with open(constraints_file, 'w') as f:
+            json.dump(constraints, f, indent=1)
+                    
 if __name__ == "__main__":
     ui_filename = 'form.ui'
     app = QtWidgets.QApplication(sys.argv)
