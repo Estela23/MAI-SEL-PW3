@@ -1,8 +1,11 @@
-from cbr import CBR
 import os
+import sys
+
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
+from cbr import CBR
 import utils
 
-DATA_PATH = 'Data'
+DATA_PATH = os.path.join(os.path.dirname(__file__), '..', 'Data')
 
 
 # constraints = {'name': 'SEL-cocktail', 'category': ['shot'], 'glass_type': ['old-fashioned glass'],
@@ -50,10 +53,4 @@ else:
     print('\n'.join(eval_results))
 
     assert evaluation
-
-
-# Evalutation
-
-# Learning
-# cocktails_cbr._learning(c, adapted_cocktail)
 
