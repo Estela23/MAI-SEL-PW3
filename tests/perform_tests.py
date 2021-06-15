@@ -138,7 +138,7 @@ def perform_tests(args):
         plt.plot(experiments, total_times, color="red", label="Total time")
         plt.plot(experiments, np.array(get_new_case_times), color="green", label="Retrieval and Adaptation")
         plt.plot(experiments, np.array(evaluated_learn_new_case_times), color="blue", label="Evaluation and Learning")
-        plt.title("Times needed for each phase for 100 experiments")
+        plt.title("Times needed in each phase for 100 experiments")
         plt.xlabel("Queries performed")
         plt.ylabel("Time in seconds")
         plt.legend(loc="upper left")
