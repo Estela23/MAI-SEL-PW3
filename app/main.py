@@ -150,7 +150,6 @@ class CocktailsApp():
         exc_alc_types= self.dialog.text_exc_alc_types.text().lower().split(', ')
         if not exc_alc_types[0]:
             exc_alc_types = []
-        print(f'exc_alc_types: {exc_alc_types}')
             
         exc_basic_tastes = self.dialog.text_exc_basic_tastes.text().lower().split(', ')
         if not exc_basic_tastes[0]:
@@ -165,10 +164,7 @@ class CocktailsApp():
 
         constraints = {'name': name, 'category': categories, 'glass_type': glass_types, 'ingredients': ingredients,
                     'alc_type': alc_types, 'basic_taste': basic_tastes, 'exc_ingredients': exc_ingredients,
-                    'exc_alc_type': exc_alc_types, 'exc_basic_taste': exc_basic_tastes}
-        
-        # Print constraints
-        print(f'constraints: {constraints}\n')        
+                    'exc_alc_type': exc_alc_types, 'exc_basic_taste': exc_basic_tastes}    
         
         # Check if constraints contain any error
         constraints_err = self.cbr.check_constraints(constraints)
@@ -182,10 +178,6 @@ class CocktailsApp():
             print(f'constraints: {constraints}\n')   
         
             self.test_cbr(constraints)
-        
-        print('CATEGORIES')
-        for cat in constraints['category']:
-            print(cat)
         
     def test_cbr(self, constraints):
         """ Run CBR and obtain cocktail from constraints
@@ -212,8 +204,8 @@ class CocktailsApp():
         ad_prep_str = self.cbr.print_preparation(self.adapted_cocktail)
 
         # Output original and adapte recipe
-        self.dialog.or_recipe_text.setText(f'Ingredients:\n{or_ingr_str}\n\nPreparation:\n{or_prep_str}')
-        self.dialog.ad_recipe_text.setText(f'Ingredients:\n{ad_ingr_str}\n\nPreparation:\n{ad_prep_str}')
+        self.dialog.or_recipe_text.setText(f'{or_name}\n\nIngredients:\n{or_ingr_str}\nPreparation:\n{or_prep_str}')
+        self.dialog.ad_recipe_text.setText(f'{ad_name}\n\nIngredients:\n{ad_ingr_str}\nPreparation:\n{ad_prep_str}')
         
         # Evaluate if cocktail is derivated (not original)
         if not original:
