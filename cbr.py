@@ -8,6 +8,7 @@ Authors:    Xavier Cucurull Salamero <xavier.cucurull@estudiantat.upc.edu>
             Fernando Vázquez Novoa <fernando.vazquez.novoa@estudiantat.upc.edu>
             Estela Vázquez-Monjardín Lorenzo <estela.vazquez-monjardin@estudiantat.upc.edu>
 """
+
 from lxml import etree
 import numpy as np
 import random
@@ -19,6 +20,7 @@ import re
 # Declare Ingredient namedtuple() 
 Ingredient = namedtuple('Ingredient', ['name', 'identifier', 'alc_type', 'basic_taste', 'measure', 'quantity', 'unit'])
 
+MAX_RETRIEVE_RETRIES = 10
 
 class CBR:
     """ Class that implements our Case Based Reasoning algorithm.
@@ -121,9 +123,6 @@ class CBR:
 
         Args:
             new_weights (list): list containing new similarity weights
-
-        Returns:
-
         """
         if len(new_weights) != len(self.similarity_weights_values):
             print("ERROR: You have to introduce a list of {} total similarity weights"
@@ -135,12 +134,12 @@ class CBR:
          for sim_case, sim_weight in zip(self.similarity_cases, new_weights)]
 
         self.similarity_weights.update(new_weights_dict)
-        return
 
     def get_similarity_weights(self):
         """ Method to obtain the current similarity weights
 
-        Returns: similarity_weights (list): current similarity weights
+        Returns:
+            similarity_weights (list): current similarity weights
 
         """
         print(self.similarity_weights)
@@ -178,6 +177,84 @@ class CBR:
             
         return prep_str
 
+    def get_new_case(self, constraints):
+        """ Retrieve and adapt a cocktail that fulfills the given constraints.
+
+        If the adapted cocktail is considered a failure, repeat the process.
+        
+        Args:
+            constraints (dict): constraints to be fulfilled
+            
+        Returns:
+            retrieved_case (Element): Element of the retrieved cocktail from the library
+            adapted_case (Element): Element of the adapted cocktail from the retrieved one
+            original (boolean): whether the retrieved cocktail is original or an adaptation
+        """
+        retrieve = True
+        max_iter = MAX_RETRIEVE_RETRIES
+        
+        while retrieve and max_iter:
+            # RETRIEVAL PHASE
+            retrieved_case = self._retrieval(constraints)
+            
+            # ADAPTATION PHASE
+            adapted_case, n_changes = self._adaptation(constraints, retrieved_case)
+                
+            if n_changes > 0:
+                # Learn from errors, avoid making a previously FAILED adaptation
+                if self._check_adapted_failure(adapted_case):
+                    adapted_case.get('evaluation').text = "Failure"
+                    ev_score = 0.0
+                    self._learning(retrieved_case, adapted_case, ev_score)
+                    
+                    self.verboseprint(f'[CBR] Error: adapted case is a failure. Getting new case...')
+                
+                # Adapted case is considered a success
+                else:
+                    retrieve = False
+                
+            # No changes are made, so adapted case is good to go
+            else:
+                retrieve = False
+                
+            # Check the fulfillment of the constraints
+            constraints_err = self._evaluate_constraints_fulfillment(constraints, adapted_case)
+            
+            # If not all constraints are fulfilled, retrieve a new cocktail
+            if len(constraints_err):
+                retrieve = True
+                
+                # Print errors
+                self.verboseprint(f'[CBR] Error: some constraints are not fulfilled. Getting new case...')
+                for err in constraints_err:
+                    self.verboseprint(f'[CBR] {err}')
+
+            max_iter -= 1
+            
+        original =  adapted_case.find('derivation').text.lower() != 'original'
+        
+        return retrieved_case, adapted_case, original
+    
+    def evaluate_new_case(self, retrieved_case, adapted_case, score):
+        """ Evaluate new cocktail using the score given by the user.
+        
+        The evaluation will affect the learning phase.
+
+        Args:
+            constraints (dict): constraints to be fulfilled
+        """
+        # Original cocktails are not evaluated
+        if adapted_case.find('derivation').text.lower() != 'original':
+            
+            # Use threshold to determine if adapted cocktail is a Success or Failure
+            if score >= self.threshold_eval:
+                adapted_case.find('evaluation').text = "Success"
+            else:
+                adapted_case.find('evaluation').text = "Failure"
+            
+            # LEARNING PHASE
+            self._learning(retrieved_case, adapted_case, score)
+            
     def _evaluate_constraints_fulfillment(self, constraints, cocktail):
         """ Check that a cocktail fulfills all the requiered constraints.
 
@@ -270,6 +347,17 @@ class CBR:
         return False not in evaluation, evaluation_results
 
     def _check_adapted_failure(self, adapted_case):
+        """ Check if adapted case can be considred a failure.
+        
+        Get most similar cocktail and if similarity is above a threshold
+        and its evaluation is Failure, evaluate the adapted_case as failure.
+        
+        Args:
+            adapted_case (Element): cocktail Element
+
+        Returns:
+            boolean: True if failure, false otherwise
+        """
         searching_list = list(itertools.chain.from_iterable([self.library_by_category[adapted_case.find('category').text]]))
         constraints = {'glass_type': [], 'basic_taste': [], 'ingredients': [], 'exc_ingredients': [], 'alc_type': [],
                        'category': adapted_case.find('category').text}
@@ -288,7 +376,8 @@ class CBR:
         
         # Retrieve case with higher similarity
         max_indices = np.argwhere(np.array(sim_list) == np.amax(np.array(sim_list))).flatten().tolist()
-        list_failures = [searching_list[max_indices[cocktail_idx]].find('evaluation').text for cocktail_idx in max_indices]
+        
+        list_failures = [searching_list[cocktail_idx].find('evaluation').text for cocktail_idx in max_indices]
         
         # If the adapted case is very similar to a previously failed one
         # it returns failure (True)
@@ -296,16 +385,14 @@ class CBR:
             return True
         return False
 
-    def learning(self, retrieved_case, adapted_case, ev_score):
+    def _learning(self, retrieved_case, adapted_case, ev_score):
         """ Learning phase in order to decide if the evaluated case is a success or a failure, and act consequently
 
         Args:
             retrieved_case (Element): case resulting from retrieval phase
             adapted_case (Element): case resulting from adaptation phase, which has been evaluated
-
-        Returns:
-
-        """
+            ev_score (float): evaluation score given by the user
+        """            
         # MANAGING UTILITY SCORE OF THE RETRIEVED CASE
         # Update the cases_history of the retrieved case based on the status
         # If the adapted case is a success, according to the human oracle
@@ -358,8 +445,6 @@ class CBR:
         self.library_by_category[adapted_case.find("category").text] =\
             self.library_by_category[adapted_case.find("category").text].append(adapted_case)
 
-        return
-
     def _update_case_library(self, new_case):
         """ Update the case_library with a new case
 
@@ -383,7 +468,7 @@ class CBR:
             cocktail (Element): cocktail Element
 
         Returns:
-            [type]: [description]
+            float: normalized similarity
         """
         # Start with cumulative similarity equal to 0
         sim = 0
@@ -527,7 +612,7 @@ class CBR:
 
         return normalized_sim * float(cocktail.find("utility").text)
 
-    def retrieval(self, constraints):
+    def _retrieval(self, constraints):
         """ Retrieve most appropriate cocktail given the provided constraints.
         
         It does a structured search by first filtering by the category.
@@ -565,6 +650,7 @@ class CBR:
         else:
             index_retrieved = max_indices[0]
         retrieved_case = searching_list[index_retrieved]
+        
         # Informing the user about what the CBR system is doing
         self.verboseprint(f"[CBR] Retrieved case: {retrieved_case.find('name').text}")
         
@@ -646,7 +732,7 @@ class CBR:
             elif ingredient.get('id') in step.text:
                 cocktail.find("preparation").remove(step)
 
-    def adaptation(self, constraints, retrieved_cocktail):
+    def _adaptation(self, constraints, retrieved_cocktail):
         """ Adapt the ingredients and steps of the preparation for the best retrieved case
         following the constraints fixed by the user
 
@@ -830,24 +916,6 @@ class CBR:
             adapted_cocktail.find("name").text = retrieved_cocktail.find("name").text
 
         return adapted_cocktail, n_changes
-      
-    def evaluation(self, adapted_cocktail, score):
-        """ Evaluate the ingredients and steps of the preparation by the user in order to determine if the
-         adapted case is a success or a failure
-
-        Args:
-            adapted_cocktail (Element): adapted cocktail element that needs to be evaluated
-            score (float): cocktail score assigned by the expert user
-
-        Returns:
-            adapted_cocktail (Element): adapted cocktail with
-        """
-        
-        if score >= self.threshold_eval:
-            adapted_cocktail.find('evaluation').text = "Success"
-        else:
-            adapted_cocktail.find('evaluation').text = "Failure"
-        return adapted_cocktail
 
     def check_constraints(self, constraints):
         """ Check that constraints contain valid values.

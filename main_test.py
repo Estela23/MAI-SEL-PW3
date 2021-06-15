@@ -5,11 +5,13 @@ import utils
 DATA_PATH = 'Data'
 
 
-constraints = {'name': 'SEL-cocktail', 'category': ['shot'], 'glass_type': ['old-fashioned glass'],
-               'ingredients': ['cranberry juice', 'malibu rum'], 'alc_type': ['sweet liqueur', 'vodka'],
-               'basic_taste': [], 'exc_ingredients': ['amaretto', 'pineapple juice'], 'exc_alc_type': ['cachaca'],
-               'exc_basic_taste': ['spicy']}
+# constraints = {'name': 'SEL-cocktail', 'category': ['shot'], 'glass_type': ['old-fashioned glass'],
+#                'ingredients': ['cranberry juice', 'malibu rum'], 'alc_type': ['sweet liqueur', 'vodka'],
+#                'basic_taste': [], 'exc_ingredients': ['amaretto', 'pineapple juice'], 'exc_alc_type': ['cachaca'],
+#                'exc_basic_taste': ['spicy']}
 
+# Load constraints from JSON
+constraints = utils.load_constraints(os.path.join(DATA_PATH, 'my_json.json'))
 
 # Create cocktails CBR
 cocktails_cbr = CBR(os.path.join(DATA_PATH, 'case_library.xml'), verbose=True)
@@ -19,16 +21,18 @@ print('\nConstraints:')
 print(constraints)
 
 # Retrive cocktail wight given constraints
-c = cocktails_cbr.retrieval(constraints)
+c = cocktails_cbr._retrieval(constraints)
 print(f'\n{c.find("name").text} cocktail retrieved')
-
 print('\nOriginal Ingredients:')
 cocktails_cbr.print_ingredients(c)
 print('\nOriginal Preparation:')
 cocktails_cbr.print_preparation(c)
 
-adapted_cocktail, n_changes = cocktails_cbr.adaptation(constraints, c)
+adapted_cocktail, n_changes = cocktails_cbr._adaptation(constraints, c)
 print(f'\n{adapted_cocktail.find("name").text} cocktail adapted after {n_changes} changes')
+
+# Check adapted failure
+adapted_failure = cocktails_cbr._check_adapted_failure(adapted_cocktail)
 
 print('\nAdapted Ingredients:')
 cocktails_cbr.print_ingredients(adapted_cocktail)
