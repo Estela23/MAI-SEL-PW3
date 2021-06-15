@@ -2,7 +2,7 @@ import sys
 import argparse
 
 from cbr import CBR
-from utils import load_constraints, interactive_menu
+from utils import load_constraints, interactive_menu, evaluation_menu
 
 
 
@@ -19,54 +19,33 @@ def process(self, constraints):
 
         """
         # RETRIEVAL PHASE
-        retrieved_case = self._retrieval(constraints)
+        retrieved_case = cbr.retrieval(constraints)
         
         # ADAPTATION PHASE
-        adapted_case, n_changes = self._adaptation(constraints, retrieved_case)
+        adapted_case, n_changes = cbr.adaptation(constraints, retrieved_case)
         
         # CHECK ADAPTED SOLUTION HAS AT LEAST A CHANGE
         if n_changes == 0:
             return adapted_case, self.cocktails
         
         # CHECK ADAPTED SOLUTION IS NOT A FAILURE
-        if self._check_adapted_failure(adapted_case):
+        if cbr.check_adapted_failure(adapted_case):
             adapted_case.get('evaluation').text = "Failure"
             ev_score = 0.0
-            self._learning(retrieved_case, adapted_case, ev_score)
+            cbr.learning(retrieved_case, adapted_case, ev_score)
             return adapted_case, self.cocktails
         
         # EVALUATION PHASE
         adapted_case, ev_score = self.evaluation(adapted_case)
         
         # LEARNING PHASE
-        self._learning(retrieved_case, adapted_case, ev_score)
+        cbr.learning(retrieved_case, adapted_case, ev_score)
 
         return adapted_case, self.cocktails
-    
-def main():
-    if len(sys.argv) > 1:
-        json = sys.argv[1]
-        constraints = load_constraints(json)
-        cbr = CBR('Data/case_library.xml')
-        print(constraints)
-        # constraints, retrieved_case = retrieval_step(constraints)
-        aaaaa = None
-        adapted_case = cbr.adaptation(constraints, aaaaa)
-        print(adapted_case.find("glasstype").text)
-        for ingre in adapted_case.find("ingredients"):
-            print(ingre.text)
-        for ingre in adapted_case.find("preparation"):
-            print(ingre.text)
 
-    else:
-        constraints = interactive_menu()
-        # constraints, retrieved_case = retrieval_step(constraints)
-        interactive_menu(constraints)
-
-
-if __name__ == "__main__":
-    #main()
-    
+def parse_arguments():
+    """ Define program input arguments and parse them.
+    """
     # Create the parser and add arguments
     parser = argparse.ArgumentParser()
     parser.add_argument(dest='caselibrary', type=str, help="Filepath of the XML case library")
@@ -76,9 +55,23 @@ if __name__ == "__main__":
     # Parse arguments
     args = parser.parse_args()
     
-    # Initialize CBR
-    cbr = CBR(args.caselibrary, verbose=args.verbosity)
+    return args
+
+def get_constraints(args, cbr):
+    """ Get user constraints.
     
+    Depending on the constraints arg, load from JSON or launch
+    interactive menu to manually inptut them by keyboard.
+    
+    If JSON constraints are invalid, exit system
+
+    Args:
+        args (argparse.Namespace): parsed arguments
+        cbr (CBR): initialized CBR system
+        
+    Return:
+        dict: constraints to be fulfilled.
+    """
     if args.constraints:
         # Load constraints from JSON
         constraints = load_constraints(args.constraints)
@@ -90,8 +83,58 @@ if __name__ == "__main__":
             print('Error: invalid constraints!')
             print('\n'.join(err))
             exit(1)
-
     else:
         # Launch interactive menu to manually input constraints
         constraints = interactive_menu(cbr)
         
+    # Print constraints
+    print('\nUser constraints:')
+    for k, v in constraints.items():
+        if len(v):
+            print(f'{k}: {v}')
+    print()
+            
+    return constraints
+        
+if __name__ == "__main__":
+        
+    # Input arguments
+    args = parse_arguments()
+    
+    # Initialize CBR
+    cbr = CBR(args.caselibrary, verbose=args.verbosity)
+    
+    # Get user constraints
+    constraints = get_constraints(args, cbr)   
+    
+    # RETRIEVAL PHASE
+    retrieved_case = cbr.retrieval(constraints)
+    
+    # ADAPTATION PHASE
+    adapted_case, n_changes = cbr.adaptation(constraints, retrieved_case)
+    
+    # CHECK ADAPTED SOLUTION HAS AT LEAST A CHANGE
+    if n_changes > 0:
+        # CHECK ADAPTED SOLUTION IS NOT A FAILURE
+        if cbr.check_adapted_failure(adapted_case):
+            adapted_case.get('evaluation').text = "Failure"
+            ev_score = 0.0
+            cbr.learning(retrieved_case, adapted_case, ev_score)
+        
+        # EVALUATION PHASE
+        ev_score = evaluation_menu(cbr, adapted_case)
+        
+        # LEARNING PHASE
+        cbr.learning(retrieved_case, adapted_case, ev_score)
+
+    adapted_case, cbr.cocktails
+    
+    
+    # Print retrieved case
+    # print(f'\nRetrieved cocktail: {retrieved_case.find("name").text}')
+    # print(f'\nIngredients:')
+    # cbr.print_ingredients(retrieved_case)
+    # print(f'\nPreparation:')
+    # cbr.print_preparation(retrieved_case)
+    # print()
+    

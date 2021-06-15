@@ -146,7 +146,7 @@ class CBR:
         print(self.similarity_weights)
         return self.similarity_weights
 
-    def _print_ingredients(self, cocktail):
+    def print_ingredients(self, cocktail):
         """ Print the ingredients (with measures) of the given cocktail.
 
         Args:
@@ -160,7 +160,7 @@ class CBR:
         
         return ingr_str
             
-    def _print_preparation(self, cocktail):
+    def print_preparation(self, cocktail):
         """ Print the preparation steps (with ingredient names) of the given cocktail.
 
         Args:
@@ -791,29 +791,23 @@ class CBR:
 
         return adapted_cocktail, n_changes
       
-    def evaluation(self, adapted_cocktail):
+    def evaluation(self, adapted_cocktail, score):
         """ Evaluate the ingredients and steps of the preparation by the user in order to determine if the
          adapted case is a success or a failure
 
         Args:
             adapted_cocktail (Element): adapted cocktail element that needs to be evaluated
+            score (float): cocktail score assigned by the expert user
 
         Returns:
             adapted_cocktail (Element): adapted cocktail with
-            score (float64): value of the score assigned by the expert user
         """
-        print("The cocktail to evaluate contains the following ingredients:")
-        self._print_ingredients(adapted_cocktail)
-        print("The preparation steps of the cocktail is the following one:")
-        self._print_preparation(adapted_cocktail)
-        print("How good was the cocktail?")
-        print("Please, introduce a score between 0 and 10 (You can use decimals)")
-        score = float(input())
+        
         if score >= self.threshold_eval:
             adapted_cocktail.find('evaluation').text = "Success"
         else:
             adapted_cocktail.find('evaluation').text = "Failure"
-        return adapted_cocktail, score
+        return adapted_cocktail
 
     def check_constraints(self, constraints):
         """ Check that constraints contain valid values.

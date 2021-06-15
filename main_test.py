@@ -1,5 +1,6 @@
 from cbr import CBR
 import os
+import utils
 
 DATA_PATH = 'Data'
 
@@ -24,15 +25,15 @@ print(f'\n{c.find("name").text} cocktail retrieved')
 print('\nOriginal Ingredients:')
 cocktails_cbr._print_ingredients(c)
 print('\nOriginal Preparation:')
-cocktails_cbr._print_preparation(c)
+cocktails_cbr.print_preparation(c)
 
 adapted_cocktail, n_changes = cocktails_cbr.adaptation(constraints, c)
 print(f'\n{adapted_cocktail.find("name").text} cocktail adapted after {n_changes} changes')
 
 print('\nAdapted Ingredients:')
-cocktails_cbr._print_ingredients(adapted_cocktail)
+cocktails_cbr.print_ingredients(adapted_cocktail)
 print('\nAdapted Preparation:')
-cocktails_cbr._print_preparation(adapted_cocktail)
+cocktails_cbr.print_preparation(adapted_cocktail)
 print("\nAdapted_case category: " + adapted_cocktail.find("category").text)
 
 # Evaluate constraints
@@ -51,3 +52,5 @@ else:
 
 # Learning
 #cocktails_cbr._learning(c, adapted_cocktail)
+
+constraints = utils.interactive_menu(cocktails_cbr)
