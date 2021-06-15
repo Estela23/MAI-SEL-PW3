@@ -98,6 +98,14 @@ if __name__ == "__main__":
     # Get new case
     retrieved_case, adapted_case, original = cbr.get_new_case(constraints)
     
+    # Print retrieved case
+    print('\n=====================================================================')
+    print(f'Retrieved cocktail: {retrieved_case.find("name").text}')
+    print('\nIngredients:')
+    cbr.print_ingredients(retrieved_case)
+    print('\nPreparation:')
+    cbr.print_preparation(retrieved_case) 
+    
     # Evaluate if cocktail is derivated (not original)
     if not original:
         ev_score = evaluation_menu(cbr, adapted_case)
