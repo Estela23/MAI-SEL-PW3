@@ -347,6 +347,17 @@ class CBR:
         return False not in evaluation, evaluation_results
 
     def _check_adapted_failure(self, adapted_case):
+        """ Check if adapted case can be considred a failure.
+        
+        Get most similar cocktail and if similarity is above a threshold
+        and its evaluation is Failure, evaluate the adapted_case as failure.
+        
+        Args:
+            adapted_case (Element): cocktail Element
+
+        Returns:
+            boolean: True if failure, false otherwise
+        """
         searching_list = list(itertools.chain.from_iterable([self.library_by_category[adapted_case.find('category').text]]))
         constraints = {'glass_type': [], 'basic_taste': [], 'ingredients': [], 'exc_ingredients': [], 'alc_type': [],
                        'category': adapted_case.find('category').text}
@@ -366,7 +377,7 @@ class CBR:
         # Retrieve case with higher similarity
         max_indices = np.argwhere(np.array(sim_list) == np.amax(np.array(sim_list))).flatten().tolist()
         
-        list_failures = [searching_list[max_indices[cocktail_idx]].find('evaluation').text for cocktail_idx in max_indices]
+        list_failures = [searching_list[cocktail_idx].find('evaluation').text for cocktail_idx in max_indices]
         
         # If the adapted case is very similar to a previously failed one
         # it returns failure (True)

@@ -23,7 +23,6 @@ print(constraints)
 # Retrive cocktail wight given constraints
 c = cocktails_cbr._retrieval(constraints)
 print(f'\n{c.find("name").text} cocktail retrieved')
-
 print('\nOriginal Ingredients:')
 cocktails_cbr.print_ingredients(c)
 print('\nOriginal Preparation:')
@@ -31,6 +30,9 @@ cocktails_cbr.print_preparation(c)
 
 adapted_cocktail, n_changes = cocktails_cbr._adaptation(constraints, c)
 print(f'\n{adapted_cocktail.find("name").text} cocktail adapted after {n_changes} changes')
+
+# Check adapted failure
+adapted_failure = cocktails_cbr._check_adapted_failure(adapted_cocktail)
 
 print('\nAdapted Ingredients:')
 cocktails_cbr.print_ingredients(adapted_cocktail)
