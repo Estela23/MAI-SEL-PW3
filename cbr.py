@@ -446,8 +446,7 @@ class CBR:
         self.cases_history.update({adapted_case.find('name').text: [0, 0]})
         
         # Update library_by_category
-        self.library_by_category[adapted_case.find("category").text] =\
-            self.library_by_category[adapted_case.find("category").text].append(adapted_case)
+        self.library_by_category[adapted_case.find("category").text].append(adapted_case)
 
     def _update_case_library(self, new_case):
         """ Update the case_library with a new case
