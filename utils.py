@@ -4,7 +4,7 @@ from matplotlib import pyplot as plt
 import numpy as np
 import json
 
-def load_json(filename):
+def load_constraints(filename):
     """ Parse JSON with constraints
 
     Args:
@@ -34,65 +34,68 @@ def interactive_menu(cbr):
         cbr (CBR): used to check validity of inputs
 
     Returns:
-        [type]: [description]
+         dict: containing the set of constraints
     """
-    constraints = {'glass_type': [], 'alc_type': [], 'basic_taste': [], 'ingredients': [],
+    constraints = {'glass_type': [], 'category': [], 'alc_type': [], 'basic_taste': [], 'ingredients': [],
                    'exc_ingredients': [], 'exc_alc_type': [], 'exc_basic_taste': []}
 
     while True:
-        print("What kind of drink do you wish? (Introduce number of category)")
+        print("\nWhat kinds of drink do you wish? (Introduce number of category)")
+        print("Introduce End to finish category selection.")
         for idx, cat in enumerate(cbr.categories):
             print(str(idx)+". "+cat)
         type_drink = input().lower()
-        if int(type_drink) < 0 or int(type_drink) >= len(cbr.categories):
+        if type_drink == "end":
+            break
+        elif int(type_drink) < 0 or int(type_drink) >= len(cbr.categories):
             print("Not valid type of drink, repeat selection.")
         else:
-            constraints['category'] = list(cbr.categories)[int(type_drink)]
-            break
+            constraints['category'].append(list(cbr.categories)[int(type_drink)])
         
     while True:
-        print("Introduce which glasses do you wish: (Introduce name of the glass)")
+        print("\nIntroduce which glasses do you wish: (Introduce name of the glass)")
         print("Introduce End to finish glass selection.")
         for idx, cat in enumerate(cbr.glass_types):
             print(str(idx)+". "+cat)
         type_glass = input().lower()
-        if type_glass == "End":
+        if type_glass == "end":
             break
-        elif type_glass not in cbr.glass_types:
+        elif int(type_glass) < 0 or int(type_glass) >= len(cbr.glass_types):
             print("Not valid type of glass, repeat selection.")
         else:
-            constraints['glass_type'].append(type_glass)
+            constraints['glass_type'].append(list(cbr.glass_types)[int(type_glass)])
+    
     while True:
-        print("Introduce types of alcohol you wish to use: (Introduce the name of the alcohol type)")
+        print("\nIntroduce types of alcohol you wish to use: (Introduce the name of the alcohol type)")
         print("Introduce End to finish alcohol selection.")
         for idx, cat in enumerate(cbr.alcohol_types):
             print(str(idx)+". "+cat)
         type_alcohol = input().lower()
-        if type_alcohol == "End":
+        if type_alcohol == "end":
             break
-        elif type_alcohol in cbr.alcohol_types:
-            constraints['alc_type'].append(type_alcohol)
-        else:
+        elif int(type_alcohol) < 0 or int(type_alcohol) >= len(cbr.alcohol_types):
             print("Not valid alcohol type.")
+        else:
+            constraints['alc_type'].append(list(cbr.alcohol_types)[int(type_alcohol)])
             
     while True:
-        print("Introduce tastes you wish to use: (Introduce the name of the basic taste)")
+        print("\nIntroduce tastes you wish to use: (Introduce the name of the basic taste)")
         print("Introduce End to finish taste selection.")
         for idx, cat in enumerate(cbr.basic_tastes):
             print(str(idx)+". "+cat)
         basic_taste = input().lower()
-        if basic_taste == "End":
+        if basic_taste == "end":
             break
-        elif basic_taste in cbr.basic_tastes:
-            constraints['basic_taste'].append(basic_taste)
+        elif int(basic_taste) < 0 or int(basic_taste) >= len(cbr.basic_tastes):
+            print("Not valid basic taste.")
         else:
-            print("Not valid taste selection.")
+            constraints['basic_taste'].append(list(cbr.basic_tastes)[int(basic_taste)])
             
     while True:
-        print("Introduce ingredients to the drink:")
+        print("\nIntroduce ingredients to the drink:")
         print("Introduce End to finish ingredients selection.")
         ingredients_inp = input().lower()
-        if ingredients_inp == "End":
+        if ingredients_inp == "end":
             break
         elif ingredients_inp in cbr.ingredient_names:
             constraints['exc_ingredients'].append(ingredients_inp)
@@ -100,10 +103,10 @@ def interactive_menu(cbr):
             print("Error, we do not have this ingredient.")
             
     while True:
-        print("Introduce which ingredients you do not wish on your drink:")
+        print("\nIntroduce which ingredients you do not wish on your drink:")
         print("Introduce End to finish the exclusion of ingredients.")
         excluded_ingredients = input().lower()
-        if excluded_ingredients == "End":
+        if excluded_ingredients == "end":
             break
         elif excluded_ingredients in cbr.ingredient_names:
             if excluded_ingredients in constraints['ingredients']:
@@ -114,30 +117,30 @@ def interactive_menu(cbr):
             print("Error, we do not have this ingredient.")
 
     while True:
-        print("Introduce types of alcohol you wish to avoid: (Introduce the name of the alcohol type)")
+        print("\nIntroduce types of alcohol you wish to avoid: (Introduce the name of the alcohol type)")
         print("Introduce End to finish alcohol selection.")
         for idx, cat in enumerate(cbr.alcohol_types):
             print(str(idx)+". "+cat)
         type_alcohol = input().lower()
-        if type_alcohol == "End":
+        if type_alcohol == "end":
             break
-        elif type_alcohol in cbr.alcohol_types:
-            constraints['exc_alc_type'].append(type_alcohol)
-        else:
+        elif int(type_alcohol) < 0 or int(type_alcohol) >= len(cbr.alcohol_types):
             print("Not valid alcohol type.")
+        else:
+            constraints['exc_alc_type'].append(list(cbr.alcohol_types)[int(type_alcohol)])
             
     while True:
-        print("Introduce tastes you wish to avoid: (Introduce the name of the basic taste)")
+        print("\nIntroduce tastes you wish to avoid: (Introduce the name of the basic taste)")
         print("Introduce End to finish taste selection.")
         for idx, cat in enumerate(cbr.basic_tastes):
             print(str(idx)+". "+cat)
         basic_taste = input().lower()
-        if basic_taste == "End":
+        if basic_taste == "end":
             break
-        elif basic_taste in cbr.basic_tastes:
-            constraints['exc_basic_taste'].append(basic_taste)
+        elif int(basic_taste) < 0 or int(basic_taste) >= len(cbr.basic_tastes):
+            print("Not valid basic taste.")
         else:
-            print("Not valid taste selection.")
+            constraints['exc_basic_taste'].append(list(cbr.basic_tastes)[int(basic_taste)])
             
     return constraints
 

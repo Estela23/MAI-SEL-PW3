@@ -295,40 +295,6 @@ class CBR:
             return True
         return False
 
-    def process(self, constraints):
-        """ CBR principal flow, where the different stages of the CBR will be called
-
-        Args:
-            constraints (dict): dictionary containing a set of constraints
-
-        Returns: adapted case and new database
-
-        """
-        # RETRIEVAL PHASE
-        retrieved_case = self._retrieval(constraints)
-        
-        # ADAPTATION PHASE
-        adapted_case, n_changes = self._adaptation(constraints, retrieved_case)
-        
-        # CHECK ADAPTED SOLUTION HAS AT LEAST A CHANGE
-        if n_changes == 0:
-            return adapted_case, self.cocktails
-        
-        # CHECK ADAPTED SOLUTION IS NOT A FAILURE
-        if self._check_adapted_failure(adapted_case):
-            adapted_case.get('evaluation').text = "Failure"
-            ev_score = 0.0
-            self._learning(retrieved_case, adapted_case, ev_score)
-            return adapted_case, self.cocktails
-        
-        # EVALUATION PHASE
-        adapted_case, ev_score = self.evaluation(adapted_case)
-        
-        # LEARNING PHASE
-        self._learning(retrieved_case, adapted_case, ev_score)
-
-        return adapted_case, self.cocktails
-
     def learning(self, retrieved_case, adapted_case, ev_score):
         """ Learning phase in order to decide if the evaluated case is a success or a failure, and act consequently
 
