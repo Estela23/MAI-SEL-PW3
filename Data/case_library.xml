@@ -2462,7 +2462,7 @@
     <preparation>
       <step>Shake and strain into a chilled cocktail glass</step>
     </preparation>
-    <utility>1.0</utility>
+    <utility>5.5</utility>
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
@@ -2498,6 +2498,22 @@
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>my-cocktail</name>
+    <category>cocktail</category>
+    <glasstype>beer glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="triple sec" basic_taste="" measure="1.5 cl" quantity="15.0" unit="ml">triple sec</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sour" measure="1.5 cl" quantity="15.0" unit="ml">lime juice</ingredient>
+      <ingredient id="ingr3" alc_type="rum" basic_taste="" measure="3 cl" quantity="30.0" unit="ml">white rum</ingredient>
+      <ingredient id="ingr4" alc_type="sweet liqueur" basic_taste="" measure="4 oz" quantity="120.0" unit="ml">amaretto</ingredient></ingredients>
+    <preparation>
+      <step>Shake and strain into a chilled cocktail glass</step>
+    </preparation>
+    <utility>10.0</utility>
+    <derivation>Yellow Bird</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
   <cocktail>

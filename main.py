@@ -1,3 +1,14 @@
+"""
+
+PW3 - SEL - 2021
+CBR for a cocktail recipe creator
+
+Authors:    Xavier Cucurull Salamero <xavier.cucurull@estudiantat.upc.edu>
+            Daniel Hinjos García <daniel.hinjos@estudiantat.upc.edu>
+            Fernando Vázquez Novoa <fernando.vazquez.novoa@estudiantat.upc.edu>
+            Estela Vázquez-Monjardín Lorenzo <estela.vazquez-monjardin@estudiantat.upc.edu>
+"""
+
 import sys
 import argparse
 
@@ -59,6 +70,22 @@ def get_constraints(args, cbr):
     return constraints
         
 if __name__ == "__main__":
+    """ Main program to get cocktails from the cocktails CBR
+    given a set of constraints provided by the user.
+    
+    usage: main.py [-h] [--verbosity VERBOSITY] [-c CONSTRAINTS] caselibrary
+
+    positional arguments:
+        caselibrary           Filepath of the XML case library
+
+        optional arguments:
+        -h, --help            show this help message and exit
+        --verbosity VERBOSITY
+                                Output verbosity level. Set to 1 to print debug
+                                messages.
+        -c CONSTRAINTS, --constraints CONSTRAINTS
+                                Filepath of the JSON constraints file
+    """
     # Input arguments
     args = parse_arguments()
     
