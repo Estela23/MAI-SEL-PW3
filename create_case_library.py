@@ -60,9 +60,10 @@ def add_preparation(preparation, cocktail_el, ingredients):
         for ingr_id, ingredient in enumerate(ingredients):
             ingr_pattern = r"\b({})\b".format(ingredient)
             s = re.sub(ingr_pattern, f"ingr{ingr_id+1}", s, flags=re.IGNORECASE)
-            
-        step = etree.SubElement(prep, "step")
-        step.text = s.capitalize()
+          
+        if len(s):      # don't add empty step
+            step = etree.SubElement(prep, "step")
+            step.text = s.capitalize()
 
 def create_xml_library(csv):
     # Read .CSV
