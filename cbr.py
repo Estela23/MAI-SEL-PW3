@@ -438,8 +438,8 @@ class CBR:
                     et.write(self.cbl_filename, pretty_print=True, encoding="UTF-8")
                     break
 
-        # Initialize utility of adapted_case to 1.0*evaluation_score
-        adapted_case.find("utility").text = str(1.0 * ev_score)
+        # Initialize utility of adapted_case to 0.1 * evaluation_score
+        adapted_case.find("utility").text = str(0.1 * ev_score)
 
         # Add new adapted_case to case library
         self._update_case_library(adapted_case)
@@ -613,10 +613,10 @@ class CBR:
                         matches = [i for i in cocktail.find("ingredients") if atype == i.attrib['alc_type']]
                         if len(matches) > 0:
                             sim += self.similarity_weights["exc_alc_type"]
-                            cumulative_normalization_score += self.similarity_weights["exc_alc_type"]
+                            cumulative_normalization_score += self.similarity_weights["ingr_match"]
                         # In case the constraint is not fulfilled we add the weight to the normalization score
                         else:
-                            cumulative_normalization_score += self.similarity_weights["exc_alc_type"]
+                            cumulative_normalization_score += self.similarity_weights["ingr_match"]
 
                 # If one of the excluded basic_tastes is found in the cocktail, similarity is reduced
                 elif key == "exc_basic_taste":
@@ -624,10 +624,10 @@ class CBR:
                         matches = [i for i in cocktail.find("ingredients") if atype == i.attrib['basic_taste']]
                         if len(matches) > 0:
                             sim += self.similarity_weights["exc_basic_taste"]
-                            cumulative_normalization_score += self.similarity_weights["exc_basic_taste"]
+                            cumulative_normalization_score += self.similarity_weights["ingr_match"]
                         # In case the constraint is not fulfilled we add the weight to the normalization score
                         else:
-                            cumulative_normalization_score += self.similarity_weights["exc_basic_taste"]
+                            cumulative_normalization_score += self.similarity_weights["ingr_match"]
 
         # Normalize the obtained similarity
         if cumulative_normalization_score == 0:
