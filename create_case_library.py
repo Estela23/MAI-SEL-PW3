@@ -67,7 +67,7 @@ def add_preparation(preparation, cocktail_el, ingredients):
 
 def create_xml_library(csv):
     # Read .CSV
-    dataset = pd.read_csv(csv_file, encoding='utf_8')
+    dataset = pd.read_csv(csv, encoding='utf_8')
     dataset = dataset.drop(dataset.columns[0], axis=1)
     dataset = dataset.drop(dataset.columns[-2:], axis=1)
 

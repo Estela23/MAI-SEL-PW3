@@ -608,7 +608,10 @@ class CBR:
                             cumulative_normalization_score += self.similarity_weights["exc_basic_taste"]
 
         # Normalize the obtained similarity
-        normalized_sim = sim / cumulative_normalization_score
+        if cumulative_normalization_score == 0:
+            normalized_sim = 1.0
+        else:
+            normalized_sim = sim / cumulative_normalization_score
 
         return normalized_sim * float(cocktail.find("utility").text)
 
@@ -688,26 +691,27 @@ class CBR:
         if type == "alc_type":
             possible_ingr = [ingredient_to_add for ingredient_to_add in self.ingredients_list if
                              ingredient_to_add.alc_type == ingr_type and
-                             ingredient_to_add.text not in constraints["exc_ingredients"]]
+                             ingredient_to_add.name not in constraints["exc_ingredients"]]
         elif type == "basic_taste":
             possible_ingr = [ingredient_to_add for ingredient_to_add in self.ingredients_list if
                              ingredient_to_add.basic_taste == ingr_type and
-                             ingredient_to_add.text not in constraints["exc_ingredients"]]
+                             ingredient_to_add.name not in constraints["exc_ingredients"]]
 
         # Choose a random ingredient with this ingredient_type from the database, excluding the non-desired ones
-        ingredient_to_add = random.choice(possible_ingr)
-        
-        # Add it to the recipe with a new index
-        to_add = self._create_ingr_element(ingredient_to_add, cocktail, "ingr" + str(idx_ingr))
-        cocktail.find("ingredients").append(to_add)
+        if len(possible_ingr)>0:
+            ingredient_to_add = random.choice(possible_ingr)
 
-        # Informing the user about what the CBR system is doing
-        self.verboseprint(f'[CBR] I added {to_add.text} to the recipe to fulfil your {ingr_type} positive constraint\n')
-        
-        # New step to the recipe in which we include the added ingredient to the cocktail
-        step = etree.SubElement(cocktail.find("preparation"), "step")
-        step.text = "Add ingr" + str(idx_ingr) + " to the cocktail."
-        cocktail.find("preparation").append(step)
+            # Add it to the recipe with a new index
+            to_add = self._create_ingr_element(ingredient_to_add, cocktail, "ingr" + str(idx_ingr))
+            cocktail.find("ingredients").append(to_add)
+
+            # Informing the user about what the CBR system is doing
+            self.verboseprint(f'[CBR] I added {to_add.text} to the recipe to fulfil your {ingr_type} positive constraint\n')
+
+            # New step to the recipe in which we include the added ingredient to the cocktail
+            step = etree.SubElement(cocktail.find("preparation"), "step")
+            step.text = "Add ingr" + str(idx_ingr) + " to the cocktail."
+            cocktail.find("preparation").append(step)
 
     def remove_ingredient(self, cocktail, ingredient):
         """ Removes a concrete ingredient from a cocktail and
