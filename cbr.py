@@ -231,7 +231,7 @@ class CBR:
 
             max_iter -= 1
             
-        original =  adapted_case.find('derivation').text.lower() != 'original'
+        original =  adapted_case.find('derivation').text.lower() == 'original'
         
         return retrieved_case, adapted_case, original
     
