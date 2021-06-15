@@ -75,5 +75,5 @@ for i in range(n_tests):
     all_tests[f"constraints_{i}"] = my_dict
 
 # Save all the tests' constraints to a json file
-with open('tests_constraints.json', 'w') as tests_file:
-    json.dump(all_tests, tests_file, indent=1)
+with open('1000_tests_constraints.json', 'w') as tests_file:
+    json.dump(all_tests, tests_file)
