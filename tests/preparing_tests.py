@@ -11,7 +11,7 @@ DATA_PATH = '../Data'
 # Create cocktails CBR
 cocktails_cbr = CBR(os.path.join(DATA_PATH, 'case_library.xml'), verbose=True)
 
-number_of_tests = [100, 1000, 10000]
+number_of_tests = [100, 500, 1000]
 
 n_constraints = 8
 
