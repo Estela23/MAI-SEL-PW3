@@ -5,6 +5,8 @@
 A CBR prototype for a synthetic task: planning / design / configuration in a concrete domain.
 
 ## Cocktail generator
+![Cocktail CBR](https://github.com/Estela23/MAI-SEL-PW3/blob/main/app/title.png)
+
 Inspired by the Mixology challenge from the Computer Cooking Contest 2017 [1] we propose a CBR system
 capable of making real cocktails based on the user preferences using the Cocktails dataset [2].
 
