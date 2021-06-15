@@ -547,13 +547,12 @@ class CBR:
 
                 # Increase similarity if glasstype is a match. Glasstype is not very relevant for the case
                 elif key == "glasstype":
-                    for glass in constraints[key]:
-                        if glass == cocktail.find(key).text:
-                            sim += self.similarity_weights["glasstype_match"]
-                            cumulative_normalization_score += self.similarity_weights["glasstype_match"]
-                        # In case the constraint is not fulfilled we add the weight to the normalization score
-                        else:
-                            cumulative_normalization_score += self.similarity_weights["glasstype_match"]
+                    if cocktail.find(key).text in constraints[key]:
+                        sim += self.similarity_weights["glasstype_match"]
+                        cumulative_normalization_score += self.similarity_weights["glasstype_match"]
+                    # In case the constraint is not fulfilled we add the weight to the normalization score
+                    else:
+                        cumulative_normalization_score += self.similarity_weights["glasstype_match"]
 
                 # If one of the excluded elements in the constraint is found in the cocktail, similarity is reduced
                 elif key == "exc_ingredients":
