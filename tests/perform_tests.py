@@ -17,6 +17,7 @@ def parse_arguments():
     """
     # Create the parser and add arguments
     parser = argparse.ArgumentParser()
+    parser.add_argument(dest='path', type=str, help="path where the csv dataset file is")
     parser.add_argument(dest='tests', type=str, help="path where the json test file is")
 
     # Parse arguments
@@ -26,7 +27,11 @@ def parse_arguments():
 
 
 def perform_tests(args):
-    cbr = CBR(os.path.join(DATA_PATH, 'case_library.xml'))
+    # Convert CSV to xml to make sure that case_library.xml only contains original recipes
+    xml_file = os.path.join(DATA_PATH, 'case_library.xml')
+    create_xml_library(args.path, xml_file)
+    
+    cbr = CBR(xml_file)
     get_new_case_times = []
     evaluated_learn_new_case_times = []
     with open(args.tests) as json_file:
