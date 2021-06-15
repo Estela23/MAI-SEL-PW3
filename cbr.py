@@ -173,6 +173,7 @@ class CBR:
             for i in cocktail.findall('ingredients/ingredient'):
                 ingr_pattern = r"\b({})\b".format(i.get('id'))
                 step = re.sub(ingr_pattern, i.text, step)
+            prep_str += f'{step}\n'
             print(step)
             
         return prep_str
@@ -350,11 +351,10 @@ class CBR:
             self.failure_parents.append(adapted_case.find("name").text)
 
         # Compute utility score for retrieved_case
-        utility_score = (self.cases_history[retrieved_case.find("name").text][0] - \
-                        self.cases_history[retrieved_case.find("name").text][1] + 1) / 2
+        utility_score = (self.cases_history[retrieved_case.find("name").text][0] -
+                         self.cases_history[retrieved_case.find("name").text][1] + 1) / 2
 
-
-        # If utility score is 0.0, set retrieved case as Failurre
+        # If utility score is 0.0, set retrieved case as Failure
         if utility_score == 0.0:
             for c in self.cocktails:
                 if c.find("name").text == retrieved_case.find("name").text:
@@ -389,10 +389,8 @@ class CBR:
         self.cases_history.update({adapted_case.find('name').text: [0, 0]})
         
         # Update library_by_category
-        self.library_by_category[adapted_case.find("category").text] = \
+        self.library_by_category[adapted_case.find("category").text] =\
             self.library_by_category[adapted_case.find("category").text].append(adapted_case)
-
-
 
         return
 
