@@ -1,72 +1,18 @@
-import pandas as pd
-import numpy as np
+import argparse
+import json
 import os
-import re
+import time
+import numpy as np
+import matplotlib.pyplot as plt
+import pandas as pd
 from lxml import etree
+from create_case_library import insert_ingredient, add_preparation
 
-DATA_PATH = 'Data'
-
-
-# Method to insert ingredient
-def insert_ingredient(ingr_id, instance, ingredients):
-    """ Insert an ingredient to the ingredients parent element.
-
-    Args:
-        ingr_id (int): ingredient identifier
-        instance (list): row of data from the dataset
-        ingredients (Element): parent element
-    """
-    alc_type = ""
-    if isinstance(instance[4], str):
-        alc_type = instance[4].lower()
-    basic_taste = ""
-    if isinstance(instance[5], str):
-        basic_taste = instance[5].lower()
-    measure = ""
-    if isinstance(instance[-3], str):
-        measure = instance[-3]
-    if np.isnan(instance[-1]) and np.isnan(instance[-2]):
-        quantity = ""
-        unit = ""
-    elif np.isnan(instance[-1]):
-        quantity = instance[-2]
-        unit = "ml"
-    else:
-        quantity = instance[-1]
-        unit = "gr"
-
-    ingr = etree.SubElement(ingredients, "ingredient", id=f"ingr{ingr_id+1}",
-                            alc_type=str(alc_type), basic_taste=basic_taste, measure=str(measure),
-                            quantity=str(quantity), unit=str(unit))
-
-    ingr.text = str(instance[3]).lower()
+from cbr import CBR
+from create_case_library import create_xml_library
 
 
-def add_preparation(preparation, cocktail_el, ingredients):
-    """ Add preparation steps to the cocktail element
-
-    Args:
-        preparation (string): string containing the preparation steps
-        cocktail_el (Element): cocktail element
-        ingredients (list): containing the cocktail ingredients name
-    """
-    prep = etree.SubElement(cocktail_el, "preparation")
-    
-    # Divide preparation steps and add them individually
-    steps = str(preparation).split(". ")
-    
-    for s in steps:
-        # Replace ingredient in steps
-        for ingr_id, ingredient in enumerate(ingredients):
-            ingr_pattern = r"\b({})\b".format(ingredient)
-            s = re.sub(ingr_pattern, f"ingr{ingr_id+1}", s, flags=re.IGNORECASE)
-          
-        if len(s):      # don't add empty step
-            step = etree.SubElement(prep, "step")
-            step.text = s.capitalize()
-
-
-def create_xml_library(csv):
+def create_xml_library_tests(csv):
     # Read .CSV
     dataset = pd.read_csv(csv, encoding='utf_8')
     dataset = dataset.drop(dataset.columns[0], axis=1)
@@ -139,9 +85,73 @@ def create_xml_library(csv):
 
     # Write in file
     et = etree.ElementTree(new_cocktails)
-    et.write(os.path.join(DATA_PATH, 'case_library.xml'), pretty_print=True, encoding="UTF-8")
+    et.write('../Data/case_library.xml', pretty_print=True, encoding="UTF-8")
+
+
+def parse_arguments():
+    """ Define program input arguments and parse them.
+    """
+    # Create the parser and add arguments
+    parser = argparse.ArgumentParser()
+    parser.add_argument(dest='path', type=str, help="path where the csv file is")
+    parser.add_argument(dest='tests', type=str, help="path where the json test file is")
+
+    # Parse arguments
+    args = parser.parse_args()
+
+    return args
+
+
+def perform_tests(args):
+    create_xml_library_tests(args.path)
+    cbr = CBR("../Data/case_library.xml")
+    get_new_case_times = []
+    evaluated_learn_new_case_times = []
+    with open(args.tests) as json_file:
+        data = json.load(json_file)
+        for key, value in data.items():
+            # Get test constraints of each case
+            constraints = value
+            # Get new case
+            start_ra = time.time()
+            retrieved_case, adapted_case, original = cbr.get_new_case(constraints)
+            end_ra = time.time()
+            get_new_case_times.append(end_ra - start_ra)
+
+            # Evaluate if cocktail is derived (not original)
+            start_el = time.time()
+            if not original:
+                cbr.evaluate_new_case(retrieved_case, adapted_case, 8.0)
+            end_el = time.time()
+            evaluated_learn_new_case_times.append(end_el - start_el)
+
+            total_times = np.array(get_new_case_times) + np.array(evaluated_learn_new_case_times)
+
+        mean_ra_time = np.mean(np.array(get_new_case_times))
+        mean_el_time = np.mean(np.array(evaluated_learn_new_case_times))
+        mean_total_time = np.mean(total_times)
+        print(f"The average time needed for retrieval and adaptation steps is : {mean_ra_time}")
+        print(f"The average time needed for evaluation and adaptation steps is: {mean_el_time}")
+        print(f"The average total time for the complete CBR cycle over a new case is : {mean_total_time}")
+
+        experiments = [i for i in range(len(total_times))]
+        plt.plot(experiments, total_times, color="red", label="Total time")
+        plt.plot(experiments, np.array(get_new_case_times), color="green", label="Retrieval and Adaptation")
+        plt.plot(experiments, np.array(evaluated_learn_new_case_times), color="blue", label="Evaluation and Learning")
+        plt.title("Times needed for each phase for 100 experiments")
+        plt.xlabel("Queries performed")
+        plt.ylabel("Time in seconds")
+        plt.legend(loc="upper left")
+        plt.show()
+
+    with open("results.txt", 'w') as output:
+        print(get_new_case_times, file=output)
+        print(evaluated_learn_new_case_times, file=output)
 
 
 if __name__ == "__main__":
-    csv_file = os.path.join(DATA_PATH, 'data_cocktails.csv')
-    create_xml_library(csv_file)
+    # Input arguments
+    args = parse_arguments()
+
+    # tests
+    perform_tests(args)
