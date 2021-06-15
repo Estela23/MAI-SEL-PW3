@@ -11,7 +11,7 @@ import webbrowser as wb
 
 sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from cbr import CBR
-from utils import load_json
+from utils import load_constraints
 
 DATA_PATH = os.path.join(os.path.dirname(__file__), '..', 'Data')
 USER_MANUAL = 'User_Manual.pdf'
@@ -77,7 +77,7 @@ class CocktailsApp():
         self.dialog.slider_evaluation.valueChanged.connect(self.slider_change)
         
         # Init CBR
-        self.cbr = self.cbr = CBR(os.path.join(DATA_PATH, 'case_library.xml'), verbose=True)
+        self.cbr = CBR(os.path.join(DATA_PATH, 'case_library.xml'), verbose=True)
 
         # Redirect stdout and stderr
         sys.stdout = OutLog(self.dialog.logText)
@@ -99,10 +99,8 @@ class CocktailsApp():
     def btn_rate(self):
         """ When button "Rate" is clicked, evalute adapted cocktail
         """
-        evaluation = self.dialog.slider_evaluation.value()
-        
-        # TODO: evaluate cocktail
-        
+        evaluation = self.dialog.slider_evaluation.value()        
+        self.cbr.evaluate_new_case(self.retrieved_cocktail, self.adapted_cocktail, evaluation)
         self.dialog.btn_rate.setEnabled(False)
         
     def btn_resetquery(self):
@@ -122,37 +120,39 @@ class CocktailsApp():
         cat_checkboxes = self.dialog.categoriesBox.findChildren(QtWidgets.QCheckBox)
         for c in cat_checkboxes:
             c.setChecked(False)
-        
+            
+        self.dialog.btn_rate.setEnabled(True)     
+   
     def btn_getrecipe(self):
         """ When the button "Get Recipe" is clicked, retrieve inputs,
         call CBR and display retrieved and adapted recipes.
         """
-        ingredients = self.dialog.text_ingredients.text().split(', ')
+        ingredients = self.dialog.text_ingredients.text().lower().split(', ')
         if not ingredients[0]:
             ingredients = []
             
-        alc_types = self.dialog.text_alc_types.text().split(', ')
+        alc_types = self.dialog.text_alc_types.text().lower().split(', ')
         if not alc_types[0]:
             alc_types = []
             
-        basic_tastes = self.dialog.text_basic_tastes.text().split(', ')
+        basic_tastes = self.dialog.text_basic_tastes.text().lower().split(', ')
         if not basic_tastes[0]:
             basic_tastes = []
             
-        glass_types = self.dialog.text_glass_types.text().split(', ')
+        glass_types = self.dialog.text_glass_types.text().lower().split(', ')
         if not glass_types[0]:
             glass_types = []
 
-        exc_ingredients = self.dialog.text_exc_ingredients.text().split(', ')
+        exc_ingredients = self.dialog.text_exc_ingredients.text().lower().split(', ')
         if not exc_ingredients[0]:
             exc_ingredients = []
             
-        exc_alc_types= self.dialog.text_exc_alc_types.text().split(', ')
+        exc_alc_types= self.dialog.text_exc_alc_types.text().lower().split(', ')
         if not exc_alc_types[0]:
             exc_alc_types = []
         print(f'exc_alc_types: {exc_alc_types}')
             
-        exc_basic_tastes = self.dialog.text_exc_basic_tastes.text().split(', ')
+        exc_basic_tastes = self.dialog.text_exc_basic_tastes.text().lower().split(', ')
         if not exc_basic_tastes[0]:
             exc_basic_tastes = []
             
@@ -167,17 +167,25 @@ class CocktailsApp():
                     'alc_type': alc_types, 'basic_taste': basic_tastes, 'exc_ingredients': exc_ingredients,
                     'exc_alc_type': exc_alc_types, 'exc_basic_taste': exc_basic_tastes}
         
+        # Print constraints
         print(f'constraints: {constraints}\n')        
-
+        
+        # Check if constraints contain any error
         constraints_err = self.cbr.check_constraints(constraints)
         if len(constraints_err):
-            # Prompt error message= 
+            # Prompt error message
             button = QtWidgets.QMessageBox.critical(self.dialog, "Constraints error!",
             "\n".join(constraints_err), buttons=QtWidgets.QMessageBox.Close,
-            defaultButton=QtWidgets.QMessageBox.Close,
-        )
+            defaultButton=QtWidgets.QMessageBox.Close)
         else:
+            # Print constraints
+            print(f'constraints: {constraints}\n')   
+        
             self.test_cbr(constraints)
+        
+        print('CATEGORIES')
+        for cat in constraints['category']:
+            print(cat)
         
     def test_cbr(self, constraints):
         """ Run CBR and obtain cocktail from constraints
@@ -185,38 +193,32 @@ class CocktailsApp():
         Args:
             constraints (dict): constraints to fulfill
         """
-        # Retrive cocktail wight given constraints
-        c = self.cbr.retrieval(constraints)
-        print(f'\n{c.find("name").text} cocktail retrieved')
-
+        # Get new case
+        self.retrieved_cocktail, self.adapted_cocktail, original = self.cbr.get_new_case(constraints)
+            
+        # Get info about retrieved and adapted cocktails
+        or_name = self.retrieved_cocktail.find("name").text
+        print(f'\nRetrieved cocktail: {or_name}')
         print('\nOriginal Ingredients:')
-        or_ingr_str = self.cbr._print_ingredients(c)
+        or_ingr_str = self.cbr.print_ingredients(self.retrieved_cocktail)
         print('\nOriginal Preparation:')
-        or_prep_str = self.cbr._print_preparation(c)
+        or_prep_str = self.cbr.print_preparation(self.retrieved_cocktail)
 
-        adapted_cocktail, n_changes = self.cbr.adaptation(constraints, c)
-        print(f'\n{adapted_cocktail.find("name").text} cocktail adapted')
-
+        ad_name = self.adapted_cocktail.find("name").text
+        print(f'\nAdapted cocktail: {ad_name}')
         print('\nAdapted Ingredients:')
-        ad_ingr_str = self.cbr._print_ingredients(adapted_cocktail)
+        ad_ingr_str = self.cbr.print_ingredients(self.adapted_cocktail)
         print('\nAdapted Preparation:')
-        ad_prep_str = self.cbr._print_preparation(adapted_cocktail)
+        ad_prep_str = self.cbr.print_preparation(self.adapted_cocktail)
 
-        # Evaluate constraints
-        evaluation, eval_results = self.cbr._evaluate_constraints_fulfillment(constraints, adapted_cocktail)
-
-        if evaluation:
-            print('\nAll contstraints fullfilled!')
-        else:
-            print('\nConstraints error:')
-            print('\n'.join(eval_results))
-        
         # Output original and adapte recipe
         self.dialog.or_recipe_text.setText(f'Ingredients:\n{or_ingr_str}\n\nPreparation:\n{or_prep_str}')
         self.dialog.ad_recipe_text.setText(f'Ingredients:\n{ad_ingr_str}\n\nPreparation:\n{ad_prep_str}')
         
-        # Enable rating button
-        self.dialog.btn_rate.setEnabled(True)
+        # Evaluate if cocktail is derivated (not original)
+        if not original:
+            # Enable rating button
+            self.dialog.btn_rate.setEnabled(True)        
      
     def about(self):
         about_text = """<b>Cocktails Recipes CBR</b>
@@ -241,7 +243,7 @@ class CocktailsApp():
         print(f'Load constraints from: {constraints_file} ...')
         
         # Load constraints
-        constraints = load_json(constraints_file)
+        constraints = load_constraints(constraints_file)
         
         # Set constraints
         self.dialog.text_ingredients.setText(', '.join(constraints['ingredients']))
