@@ -52,5 +52,3 @@ else:
 
 # Learning
 #cocktails_cbr._learning(c, adapted_cocktail)
-
-constraints = utils.interactive_menu(cocktails_cbr)
