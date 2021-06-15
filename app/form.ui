@@ -7,7 +7,7 @@
     <x>0</x>
     <y>0</y>
     <width>1052</width>
-    <height>852</height>
+    <height>627</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -294,16 +294,6 @@
      </property>
     </widget>
    </widget>
-   <widget class="QTextBrowser" name="logText">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>630</y>
-      <width>881</width>
-      <height>161</height>
-     </rect>
-    </property>
-   </widget>
    <widget class="QLabel" name="label">
     <property name="geometry">
      <rect>
@@ -324,19 +314,6 @@
     </property>
     <property name="text">
      <string/>
-    </property>
-   </widget>
-   <widget class="QLabel" name="label_7">
-    <property name="geometry">
-     <rect>
-      <x>80</x>
-      <y>610</y>
-      <width>59</width>
-      <height>16</height>
-     </rect>
-    </property>
-    <property name="text">
-     <string>Log</string>
     </property>
    </widget>
    <widget class="QGroupBox" name="groupBox_3">
@@ -572,7 +549,14 @@
     <property name="title">
      <string>File</string>
     </property>
-    <addaction name="actionLoad"/>
+    <widget class="QMenu" name="menuLoad">
+     <property name="title">
+      <string>Load</string>
+     </property>
+     <addaction name="actionLibrary"/>
+     <addaction name="actionConstraints"/>
+    </widget>
+    <addaction name="menuLoad"/>
     <addaction name="actionExport"/>
    </widget>
    <widget class="QMenu" name="menuHelp">
@@ -586,14 +570,9 @@
    <addaction name="menuHelp"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionLoad">
-   <property name="text">
-    <string>Load constraints...</string>
-   </property>
-  </action>
   <action name="actionExport">
    <property name="text">
-    <string>Export..</string>
+    <string>Export constraints..</string>
    </property>
   </action>
   <action name="actionUser_Manual">
@@ -604,6 +583,16 @@
   <action name="actionAbout">
    <property name="text">
     <string>About</string>
+   </property>
+  </action>
+  <action name="actionLibrary">
+   <property name="text">
+    <string>Library...</string>
+   </property>
+  </action>
+  <action name="actionConstraints">
+   <property name="text">
+    <string>Constraints...</string>
    </property>
   </action>
  </widget>
