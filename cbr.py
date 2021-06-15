@@ -249,8 +249,11 @@ class CBR:
             # Use threshold to determine if adapted cocktail is a Success or Failure
             if score >= self.threshold_eval:
                 adapted_case.find('evaluation').text = "Success"
+                self.verboseprint(f'[CBR] Cocktail evaluation: Success')
+
             else:
                 adapted_case.find('evaluation').text = "Failure"
+                self.verboseprint(f'[CBR] Cocktail evaluation: Failure')
             
             # LEARNING PHASE
             self._learning(retrieved_case, adapted_case, score)
@@ -440,13 +443,6 @@ class CBR:
 
         # Add new adapted_case to case library
         self._update_case_library(adapted_case)
-        self.cocktail_names.update(adapted_case.find('name').text)
-        
-        # Update case_history with the adapted case:
-        self.cases_history.update({adapted_case.find('name').text: [0, 0]})
-        
-        # Update library_by_category
-        self.library_by_category[adapted_case.find("category").text].append(adapted_case)
 
     def _update_case_library(self, new_case):
         """ Update the case_library with a new case
@@ -454,12 +450,36 @@ class CBR:
         Args:
             new_case (Element): new cocktail element to be added to the case library
 
-        """
-        index_to_insert = self.cocktails.index(self.library_by_category[new_case.find("category").text][-1])
-        self.cocktails.insert(index_to_insert+1, new_case)
-        et = etree.ElementTree(self.cocktails)
-        et.write(self.cbl_filename, pretty_print=True, encoding="UTF-8")
+        """        
+        self.verboseprint(f"[CBR] Update case library with new recipe")
 
+        # If cocktail already in library, just update utility measure
+        if new_case.find('name').text in self.cocktail_names:
+            for c in self.cocktail:
+                if c.find('name').text == new_case.find('name'):
+                    break
+                
+            c.find("utility").text = new_case.find("utility").text
+            self.verboseprint(f"[CBR] update utility of {new_case.find('name')}")
+            
+        else:
+            # Add new case to XML    
+            index_to_insert = self.cocktails.index(self.library_by_category[new_case.find("category").text][-1])
+            self.cocktails.insert(index_to_insert+1, new_case)
+            et = etree.ElementTree(self.cocktails)
+            et.write(self.cbl_filename, pretty_print=True, encoding="UTF-8")
+
+            # Add new cocktail name
+            self.cocktail_names.add(new_case.find('name').text)
+            
+            # Update case_history with the adapted case:
+            self.cases_history.update({new_case.find('name').text: [0, 0]})
+            
+            # Update library_by_category
+            self.library_by_category[new_case.find("category").text].append(new_case)
+            
+            self.verboseprint(f"[CBR] {new_case.find('name').text} added to case library ")
+            
     def _compute_similarity(self, constraints, cocktail):
         """ Compute the similarity between a set of constraints and a particular cocktail.
 
@@ -632,6 +652,7 @@ class CBR:
         # SEARCHING PHASE
         # Filter elements that correspond to the category constraint
         # If category constraints is not empty
+        print(f'type constraints: {type(constraints)}')
         if constraints['category']:
             searching_list = list(itertools.chain.from_iterable([self.library_by_category[cat]
                                                                  for cat in constraints['category']]))
@@ -679,7 +700,7 @@ class CBR:
 
         return ingr_element
 
-    def add_ingredient_by_type(self, cocktail, constraints, idx_ingr, ingr_type, type):
+    def _add_ingredient_by_type(self, cocktail, constraints, idx_ingr, ingr_type, type):
         """ Adds an ingredient from the database to a cocktail given its alc_type or basic_taste
 
         Args:
@@ -715,7 +736,7 @@ class CBR:
             step.text = "Add ingr" + str(idx_ingr) + " to the cocktail."
             cocktail.find("preparation").append(step)
 
-    def remove_ingredient(self, cocktail, ingredient):
+    def _remove_ingredient(self, cocktail, ingredient):
         """ Removes a concrete ingredient from a cocktail and
         adapts the corresponding steps of the solution (preparation).
 
@@ -779,7 +800,7 @@ class CBR:
         if len(constraints["exc_ingredients"]):
             for ingr in adapted_cocktail.find("ingredients"):
                 if ingr.text in constraints["exc_ingredients"]:
-                    self.remove_ingredient(cocktail=adapted_cocktail, ingredient=ingr)
+                    self._remove_ingredient(cocktail=adapted_cocktail, ingredient=ingr)
                     n_changes += 1
 
                     # Informing the user about what the CBR system is doing
@@ -790,7 +811,7 @@ class CBR:
         if len(constraints["exc_alc_type"]):
             for ingr in adapted_cocktail.find("ingredients"):
                 if ingr.get("alc_type") in constraints["exc_alc_type"]:
-                    self.remove_ingredient(cocktail=adapted_cocktail, ingredient=ingr)
+                    self._remove_ingredient(cocktail=adapted_cocktail, ingredient=ingr)
                     n_changes += 1
 
                     # Informing the user about what the CBR system is doing
@@ -801,7 +822,7 @@ class CBR:
         if len(constraints["exc_basic_taste"]):
             for ingr in adapted_cocktail.find("ingredients"):
                 if ingr.get("basic_taste") in constraints["exc_basic_taste"]:
-                    self.remove_ingredient(cocktail=adapted_cocktail, ingredient=ingr)
+                    self._remove_ingredient(cocktail=adapted_cocktail, ingredient=ingr)
                     n_changes += 1
 
                     # Informing the user about what the CBR system is doing
@@ -815,7 +836,7 @@ class CBR:
         for alcohol in constraints["alc_type"]:
             # If the desired alcohol type it is not in the recipe, add some ingredient from this type
             if alcohol not in [ingr.get("alc_type") for ingr in adapted_cocktail.find("ingredients")]:
-                self.add_ingredient_by_type(cocktail=adapted_cocktail, constraints=constraints, idx_ingr=idx_ingr,
+                self._add_ingredient_by_type(cocktail=adapted_cocktail, constraints=constraints, idx_ingr=idx_ingr,
                                             ingr_type=alcohol, type="alc_type")
                 idx_ingr += 1
                 n_changes += 1
@@ -823,7 +844,7 @@ class CBR:
         for taste in constraints["basic_taste"]:
             # If the desired basic taste it is not in the recipe, add some ingredient from this type
             if taste not in [ingr.get("basic_taste") for ingr in adapted_cocktail.find("ingredients")]:
-                self.add_ingredient_by_type(cocktail=adapted_cocktail, constraints=constraints, idx_ingr=idx_ingr,
+                self._add_ingredient_by_type(cocktail=adapted_cocktail, constraints=constraints, idx_ingr=idx_ingr,
                                             ingr_type=taste, type="basic_taste")
                 idx_ingr += 1
                 n_changes += 1

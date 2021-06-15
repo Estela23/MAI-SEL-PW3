@@ -163,11 +163,16 @@ def evaluation_menu(cbr, adapted_cocktail):
     Returns:
         float: score
     """
-    print("The cocktail to evaluate contains the following ingredients:")
+    # Print adapted case
+    print('\n=====================================================================')
+    print(f'Adapted cocktail: {adapted_cocktail.find("name").text}')
+    print('\nIngredients:')
     cbr.print_ingredients(adapted_cocktail)
-    print("The preparation steps of the cocktail is the following one:")
-    cbr.print_preparation(adapted_cocktail)
-    print("How good was the cocktail?")
+    print('\nPreparation:')
+    cbr.print_preparation(adapted_cocktail) 
+
+    # Ask user for evaluation
+    print("\nHow good was the cocktail?")
     print("Please, introduce a score between 0 and 10 (You can use decimals)")
     score = float(input())
     
