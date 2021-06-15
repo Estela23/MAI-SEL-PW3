@@ -354,26 +354,30 @@ class CBR:
         utility_score = (self.cases_history[retrieved_case.find("name").text][0] - \
                         self.cases_history[retrieved_case.find("name").text][1] + 1) / 2
 
-        for c in self.cocktails:
-            if c.find("name").text == retrieved_case.find("name").text:
-                c.find("utility").text = str(utility_score)
-                break
-        '''
-        # If utility score is 0.0, remove retrieved_case from case library, from cases_history and from library_by_category
+
+        # If utility score is 0.0, set retrieved case as Failurre
         if utility_score == 0.0:
+            for c in self.cocktails:
+                if c.find("name").text == retrieved_case.find("name").text:
+                    c.find("evaluation").text = "Failure"
+                    et = etree.ElementTree(self.cocktails)
+                    et.write(self.cbl_filename, pretty_print=True, encoding="UTF-8")
+                    break
+            '''
             self.cocktails.remove(retrieved_case)
             rem = self.cases_history.pop([retrieved_case.find("name").text], None)
             if rem == None:
                 print("ERROR: You are trying to delete a cocktail that doesn't exist in the cases_history structure")
             self.library_by_category[retrieved_case.find("category").text] = self.library_by_category[retrieved_case.find("category").text].remove(retrieved_case)
-        
+            '''
         # Otherwise, update retrieved case utility score if the computed utility score has changed
         elif str(utility_score) != retrieved_case.find("utility").text:
             for c in self.cocktails:
                 if c.find("name").text == retrieved_case.find("name").text:
                     c.find("utility").text = str(utility_score)
+                    et = etree.ElementTree(self.cocktails)
+                    et.write(self.cbl_filename, pretty_print=True, encoding="UTF-8")
                     break
-        '''
 
         # Initialize utility of adapted_case to 1.0*evaluation_score
         adapted_case.find("utility").text = str(1.0 * ev_score)
