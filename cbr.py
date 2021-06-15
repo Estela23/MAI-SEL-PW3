@@ -547,13 +547,12 @@ class CBR:
 
                 # Increase similarity if glasstype is a match. Glasstype is not very relevant for the case
                 elif key == "glasstype":
-                    for glass in constraints[key]:
-                        if glass == cocktail.find(key).text:
-                            sim += self.similarity_weights["glasstype_match"]
-                            cumulative_normalization_score += self.similarity_weights["glasstype_match"]
-                        # In case the constraint is not fulfilled we add the weight to the normalization score
-                        else:
-                            cumulative_normalization_score += self.similarity_weights["glasstype_match"]
+                    if cocktail.find(key).text in constraints[key]:
+                        sim += self.similarity_weights["glasstype_match"]
+                        cumulative_normalization_score += self.similarity_weights["glasstype_match"]
+                    # In case the constraint is not fulfilled we add the weight to the normalization score
+                    else:
+                        cumulative_normalization_score += self.similarity_weights["glasstype_match"]
 
                 # If one of the excluded elements in the constraint is found in the cocktail, similarity is reduced
                 elif key == "exc_ingredients":
@@ -612,7 +611,10 @@ class CBR:
                             cumulative_normalization_score += self.similarity_weights["exc_basic_taste"]
 
         # Normalize the obtained similarity
-        normalized_sim = sim / cumulative_normalization_score
+        if cumulative_normalization_score == 0:
+            normalized_sim = 1.0
+        else:
+            normalized_sim = sim / cumulative_normalization_score
 
         return normalized_sim * float(cocktail.find("utility").text)
 
@@ -637,13 +639,13 @@ class CBR:
         else:
             searching_list = [child for child in self.cocktails]
 
+        # Keep only the cases which are not failure nor parents of failures
+        searching_list = [c for c in searching_list if searching_list[searching_list.index(c)].find("evaluation").text != "Failure"
+                    or searching_list[searching_list.index(c)].find("name").text not in set(self.failure_parents)]
+
         # SELECTION PHASE
         # Compute similarity with each of the cocktails of the searching list
         sim_list = [self._compute_similarity(constraints, c) for c in searching_list]
-
-        # Keep only the cases which are not failure nor parents of failures
-        sim_list = [sim for sim in sim_list if searching_list[sim_list.index(sim)].find("evaluation").text != "Failure"
-                    or searching_list[sim_list.index(sim)].find("name").text not in set(self.failure_parents)]
 
         # Retrieve case with higher similarity
         max_indices = np.argwhere(np.array(sim_list) == np.amax(np.array(sim_list))).flatten().tolist()
@@ -654,9 +656,11 @@ class CBR:
         else:
             index_retrieved = max_indices[0]
         retrieved_case = searching_list[index_retrieved]
-        
+
         # Informing the user about what the CBR system is doing
         self.verboseprint(f"[CBR] Retrieved case: {retrieved_case.find('name').text}")
+        # Informing the user about the similarity of the retrieved case
+        self.verboseprint(f"[CBR] Similarity between constraints and retrieved case: {sim_list[index_retrieved]}")
         
         return retrieved_case
 
@@ -690,26 +694,27 @@ class CBR:
         if type == "alc_type":
             possible_ingr = [ingredient_to_add for ingredient_to_add in self.ingredients_list if
                              ingredient_to_add.alc_type == ingr_type and
-                             ingredient_to_add.text not in constraints["exc_ingredients"]]
+                             ingredient_to_add.name not in constraints["exc_ingredients"]]
         elif type == "basic_taste":
             possible_ingr = [ingredient_to_add for ingredient_to_add in self.ingredients_list if
                              ingredient_to_add.basic_taste == ingr_type and
-                             ingredient_to_add.text not in constraints["exc_ingredients"]]
+                             ingredient_to_add.name not in constraints["exc_ingredients"]]
 
         # Choose a random ingredient with this ingredient_type from the database, excluding the non-desired ones
-        ingredient_to_add = random.choice(possible_ingr)
-        
-        # Add it to the recipe with a new index
-        to_add = self._create_ingr_element(ingredient_to_add, cocktail, "ingr" + str(idx_ingr))
-        cocktail.find("ingredients").append(to_add)
+        if len(possible_ingr)>0:
+            ingredient_to_add = random.choice(possible_ingr)
 
-        # Informing the user about what the CBR system is doing
-        self.verboseprint(f'[CBR] I added {to_add.text} to the recipe to fulfil your {ingr_type} positive constraint\n')
-        
-        # New step to the recipe in which we include the added ingredient to the cocktail
-        step = etree.SubElement(cocktail.find("preparation"), "step")
-        step.text = "Add ingr" + str(idx_ingr) + " to the cocktail."
-        cocktail.find("preparation").append(step)
+            # Add it to the recipe with a new index
+            to_add = self._create_ingr_element(ingredient_to_add, cocktail, "ingr" + str(idx_ingr))
+            cocktail.find("ingredients").append(to_add)
+
+            # Informing the user about what the CBR system is doing
+            self.verboseprint(f'[CBR] I added {to_add.text} to the recipe to fulfil your {ingr_type} positive constraint\n')
+
+            # New step to the recipe in which we include the added ingredient to the cocktail
+            step = etree.SubElement(cocktail.find("preparation"), "step")
+            step.text = "Add ingr" + str(idx_ingr) + " to the cocktail."
+            cocktail.find("preparation").append(step)
 
     def _remove_ingredient(self, cocktail, ingredient):
         """ Removes a concrete ingredient from a cocktail and
