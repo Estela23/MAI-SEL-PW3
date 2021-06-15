@@ -2,17 +2,19 @@ import argparse
 import json
 import os
 import time
+import sys
 
+sys.path.append(os.path.join(os.path.dirname(__file__), '..'))
 from cbr import CBR
 from create_case_library import create_xml_library
 
+DATA_PATH = '../DATA'
 
 def parse_arguments():
     """ Define program input arguments and parse them.
     """
     # Create the parser and add arguments
     parser = argparse.ArgumentParser()
-    parser.add_argument(dest='path', type=str, help="path where the csv file is")
     parser.add_argument(dest='tests', type=str, help="path where the json test file is")
 
     # Parse arguments
@@ -22,8 +24,7 @@ def parse_arguments():
 
 
 def perform_tests(args):
-    create_xml_library(args.path)
-    cbr = CBR("Data/case_library.xml")
+    cbr = CBR(os.path.join(DATA_PATH, 'case_library.xml'))
     get_new_case_times = []
     evaluated_learn_new_case = []
     with open(args.tests) as json_file:
@@ -44,7 +45,7 @@ def perform_tests(args):
             end = time.time()
             evaluated_learn_new_case.append(end - start)
 
-    with open("tests/results.txt", 'w') as output:
+    with open("./results.txt", 'w') as output:
         print(get_new_case_times, file=output)
         print(evaluated_learn_new_case, file=output)
 

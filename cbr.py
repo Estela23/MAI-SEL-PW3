@@ -455,7 +455,7 @@ class CBR:
 
         # If cocktail already in library, just update utility measure
         if new_case.find('name').text in self.cocktail_names:
-            for c in self.cocktail:
+            for c in self.cocktails:
                 if c.find('name').text == new_case.find('name'):
                     break
                 
