@@ -218,10 +218,10 @@ class CBR:
                 retrieve = False
                 
             # Check the fulfillment of the constraints
-            constraints_err = self._evaluate_constraints_fulfillment(constraints, adapted_case)
+            constraints_ok, constraints_err = self._evaluate_constraints_fulfillment(constraints, adapted_case)
             
             # If not all constraints are fulfilled, retrieve a new cocktail
-            if len(constraints_err):
+            if not constraints_ok:
                 retrieve = True
                 
                 # Print errors
@@ -261,6 +261,10 @@ class CBR:
         Args:
             constraints (dict): constraints to fulfill
             cocktail (Element): cocktail Element to evaluate
+            
+        Returns:
+            (boolean): True if no errors found
+            (list): list of the found errors (if any)
         """
         ckt_category = cocktail.find('category').text
         ckt_glass = cocktail.find('glasstype').text
@@ -855,7 +859,7 @@ class CBR:
 
                         # Informing the user about what the CBR system is doing
                         self.verboseprint(f'[CBR] I substituted {ingr.text} by {to_add.text} because they are from the '
-                                          f'same type {ingredient_to_add.basic_taste}, to fulfill your positive'
+                                          f'same type {ingredient_to_add.basic_taste}, to fulfill your positive '
                                           f'constraint')
 
                     else:
@@ -891,7 +895,7 @@ class CBR:
 
                         # Informing the user about what the CBR system is doing
                         self.verboseprint(f'[CBR] I substituted {ingr.text} by {to_add.text} because they are from '
-                                          f'the same type {ingredient_to_add.alc_type}, to fulfill your positive'
+                                          f'the same type {ingredient_to_add.alc_type}, to fulfill your positive '
                                           f'constraint')
 
                     else:
