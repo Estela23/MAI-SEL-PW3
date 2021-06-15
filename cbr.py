@@ -584,13 +584,13 @@ class CBR:
         else:
             searching_list = [child for child in self.cocktails]
 
+        # Keep only the cases which are not failure nor parents of failures
+        searching_list = [c for c in searching_list if searching_list[searching_list.index(c)].find("evaluation").text != "Failure"
+                    or searching_list[searching_list.index(c)].find("name").text not in set(self.failure_parents)]
+
         # SELECTION PHASE
         # Compute similarity with each of the cocktails of the searching list
         sim_list = [self._compute_similarity(constraints, c) for c in searching_list]
-        # TODO:
-        # Keep only the cases which are not failure nor parents of failures
-        sim_list = [sim for sim in sim_list if searching_list[sim_list.index(sim)].find("evaluation").text != "Failure"
-                    or searching_list[sim_list.index(sim)].find("name").text not in set(self.failure_parents)]
 
         # Retrieve case with higher similarity
         max_indices = np.argwhere(np.array(sim_list) == np.amax(np.array(sim_list))).flatten().tolist()
@@ -601,7 +601,12 @@ class CBR:
         else:
             index_retrieved = max_indices[0]
         retrieved_case = searching_list[index_retrieved]
+
+
+        # Informing the user about what the CBR system is doing
         self.verboseprint(f"[CBR] Retrieved case: {retrieved_case.find('name').text}")
+        # Informing the user about the similarity of the retrieved case
+        self.verboseprint(f"[CBR] Similarity between constraints and retrieved case: {sim_list[index_retrieved]}")
         
         return retrieved_case
 
