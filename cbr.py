@@ -442,7 +442,6 @@ class CBR:
         adapted_case.find("utility").text = str(1.0 * ev_score)
 
         # Add new adapted_case to case library
-        self.verboseprint(f'[CBR] Update case library with new recipe')
         self._update_case_library(adapted_case)
 
     def _update_case_library(self, new_case):
@@ -452,21 +451,24 @@ class CBR:
             new_case (Element): new cocktail element to be added to the case library
 
         """        
-        # Update cocktail names
-        self.cocktail_names.update(new_case.find('name').text)
+        self.verboseprint(f"[CBR] Update case library with new recipe")
 
-        # Update case_history with the adapted case:
-        self.cases_history.update({new_case.find('name').text: [0, 0]})
-        
-        # Update library_by_category
-        self.library_by_category[adapted_case.find("category").text] =\
-            self.library_by_category[new_case.find("category").text].append(new_case)
-        
         # Add new case to XML    
         index_to_insert = self.cocktails.index(self.library_by_category[new_case.find("category").text][-1])
         self.cocktails.insert(index_to_insert+1, new_case)
         et = etree.ElementTree(self.cocktails)
         et.write(self.cbl_filename, pretty_print=True, encoding="UTF-8")
+
+        # Add new cocktail name
+        self.cocktail_names.add(new_case.find('name').text)
+        
+        # Update case_history with the adapted case:
+        self.cases_history.update({new_case.find('name').text: [0, 0]})
+        
+        # Update library_by_category
+        self.library_by_category[new_case.find("category").text].append(new_case)
+        
+        self.verboseprint(f"[CBR] {new_case.find('name').text} added to case library ")
             
     def _compute_similarity(self, constraints, cocktail):
         """ Compute the similarity between a set of constraints and a particular cocktail.
