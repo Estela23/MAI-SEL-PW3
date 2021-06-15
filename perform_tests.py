@@ -20,11 +20,12 @@ def parse_arguments():
 
     return args
 
+
 def perform_tests(args):
     create_xml_library(args.path)
     cbr = CBR("Data/case_library.xml")
-    get_new_case_times=[]
-    evaluated_learn_new_case=[]
+    get_new_case_times = []
+    evaluated_learn_new_case = []
     with open(args.tests) as json_file:
         data = json.load(json_file)
         for key, value in data.items():
@@ -36,19 +37,21 @@ def perform_tests(args):
             end = time.time()
             get_new_case_times.append(end - start)
 
-            # Evaluate if cocktail is derivated (not original)
+            # Evaluate if cocktail is derived (not original)
             start = time.time()
             if not original:
                 cbr.evaluate_new_case(retrieved_case, adapted_case, 8.0)
             end = time.time()
-            evaluated_learn_new_case.append(end-start)
+            evaluated_learn_new_case.append(end - start)
+
     with open("tests/results.txt", 'w') as output:
         print(get_new_case_times, file=output)
         print(evaluated_learn_new_case, file=output)
+
 
 if __name__ == "__main__":
     # Input arguments
     args = parse_arguments()
 
-    #tests
+    # tests
     perform_tests(args)
