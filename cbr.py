@@ -652,7 +652,6 @@ class CBR:
         # SEARCHING PHASE
         # Filter elements that correspond to the category constraint
         # If category constraints is not empty
-        print(f'type constraints: {type(constraints)}')
         if constraints['category']:
             searching_list = list(itertools.chain.from_iterable([self.library_by_category[cat]
                                                                  for cat in constraints['category']]))
