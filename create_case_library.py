@@ -65,7 +65,7 @@ def add_preparation(preparation, cocktail_el, ingredients):
             step = etree.SubElement(prep, "step")
             step.text = s.capitalize()
 
-def create_xml_library(csv):
+def create_xml_library(csv, xml_file):
     # Read .CSV
     dataset = pd.read_csv(csv, encoding='utf_8')
     dataset = dataset.drop(dataset.columns[0], axis=1)
@@ -138,9 +138,10 @@ def create_xml_library(csv):
 
     # Write in file
     et = etree.ElementTree(new_cocktails)
-    et.write(os.path.join(DATA_PATH, 'case_library.xml'), pretty_print=True, encoding="UTF-8")
+    et.write(xml_file, pretty_print=True, encoding="UTF-8")
 
 
 if __name__ == "__main__":
     csv_file = os.path.join(DATA_PATH, 'data_cocktails.csv')
-    create_xml_library(csv_file)
+    xml_file = os.path.join(DATA_PATH, 'case_library.xml')
+    create_xml_library(csv_file, xml_file)
