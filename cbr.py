@@ -248,9 +248,9 @@ class CBR:
             
             # Use threshold to determine if adapted cocktail is a Success or Failure
             if score >= self.threshold_eval:
-                adapted_cocktail.find('evaluation').text = "Success"
+                adapted_case.find('evaluation').text = "Success"
             else:
-                adapted_cocktail.find('evaluation').text = "Failure"
+                adapted_case.find('evaluation').text = "Failure"
             
             # LEARNING PHASE
             self._learning(retrieved_case, adapted_case, score)
