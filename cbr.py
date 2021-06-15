@@ -8,6 +8,7 @@ Authors:    Xavier Cucurull Salamero <xavier.cucurull@estudiantat.upc.edu>
             Fernando Vázquez Novoa <fernando.vazquez.novoa@estudiantat.upc.edu>
             Estela Vázquez-Monjardín Lorenzo <estela.vazquez-monjardin@estudiantat.upc.edu>
 """
+
 from lxml import etree
 import numpy as np
 import random
@@ -177,6 +178,45 @@ class CBR:
             
         return prep_str
 
+    def get_new_case(self, constraints):
+        """ Retrieve and adapt a cocktail that fulfills the given constraints.
+
+        Args:
+            constraints ([type]): [description]
+        """
+        # RETRIEVAL PHASE
+        retrieved_case = self._retrieval(constraints)
+        
+        # ADAPTATION PHASE
+        adapted_case, n_changes = self._adaptation(constraints, retrieved_case)
+        
+        # Learn from errors, avoid making a previously FAILED adaptation
+        if n_changes > 0 and self._check_adapted_failure(adapted_case):
+            adapted_case.get('evaluation').text = "Failure"
+            ev_score = 0.0
+            self._learning(retrieved_case, adapted_case, ev_score)
+        else:
+            failure = False
+
+        
+        return retrieved_case, adapted_case, n_changes
+    
+    def evaluate_new_case(self, retrieved_case, adapted_case, score):
+        """ Evaluate new cocktail using the score given by the user.
+        
+        The evaluation will affect the learning phase.
+
+        Args:
+            cocktail ([type]): [description]
+        """
+        # Original cocktails are not evaluated
+        if adapted_case.find('derivation').text.lower() != 'original':
+            
+            # LEARNING PHASE
+            self._learning(retrieved_case, adapted_case, score)
+        
+        return
+    
     def _evaluate_constraints_fulfillment(self, constraints, cocktail):
         """ Check that a cocktail fulfills all the requiered constraints.
 
@@ -295,7 +335,7 @@ class CBR:
             return True
         return False
 
-    def learning(self, retrieved_case, adapted_case, ev_score):
+    def _learning(self, retrieved_case, adapted_case, ev_score):
         """ Learning phase in order to decide if the evaluated case is a success or a failure, and act consequently
 
         Args:
@@ -357,8 +397,6 @@ class CBR:
         # Update library_by_category
         self.library_by_category[adapted_case.find("category").text] = \
             self.library_by_category[adapted_case.find("category").text].append(adapted_case)
-
-
 
         return
 
@@ -529,7 +567,7 @@ class CBR:
 
         return normalized_sim * float(cocktail.find("utility").text)
 
-    def retrieval(self, constraints):
+    def _retrieval(self, constraints):
         """ Retrieve most appropriate cocktail given the provided constraints.
         
         It does a structured search by first filtering by the category.
@@ -644,7 +682,7 @@ class CBR:
             elif ingredient.get('id') in step.text:
                 cocktail.find("preparation").remove(step)
 
-    def adaptation(self, constraints, retrieved_cocktail):
+    def _adaptation(self, constraints, retrieved_cocktail):
         """ Adapt the ingredients and steps of the preparation for the best retrieved case
         following the constraints fixed by the user
 
@@ -791,7 +829,7 @@ class CBR:
 
         return adapted_cocktail, n_changes
       
-    def evaluation(self, adapted_cocktail, score):
+    def _evaluation(self, adapted_cocktail, score):
         """ Evaluate the ingredients and steps of the preparation by the user in order to determine if the
          adapted case is a success or a failure
 
