@@ -144,7 +144,7 @@ def perform_tests(args):
         plt.legend(loc="upper left")
         plt.show()
 
-    with open("results.txt", 'w') as output:
+    with open("results_100.txt", 'w') as output:
         print(get_new_case_times, file=output)
         print(evaluated_learn_new_case_times, file=output)
 
