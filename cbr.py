@@ -75,7 +75,7 @@ class CBR:
             [i.attrib['basic_taste'] for i in self.cocktails.findall('cocktail/ingredients/ingredient')])
         self.basic_tastes.remove('')  # remove empty type
         
-        # Get dicts of alcohol types and basic tastes
+        # Get dicts of alcohol types and basic tastes
         self.alcohol_dict = {atype: set() for atype in self.alcohol_types}
         self.basic_dict = {btype: set() for btype in self.basic_tastes}
 
@@ -625,7 +625,7 @@ class CBR:
         # SELECTION PHASE
         # Compute similarity with each of the cocktails of the searching list
         sim_list = [self._compute_similarity(constraints, c) for c in searching_list]
-        # TODO:
+
         # Keep only the cases which are not failure nor parents of failures
         sim_list = [sim for sim in sim_list if searching_list[sim_list.index(sim)].find("evaluation").text != "Failure"
                     or searching_list[sim_list.index(sim)].find("name").text not in set(self.failure_parents)]
@@ -640,6 +640,7 @@ class CBR:
             index_retrieved = max_indices[0]
         retrieved_case = searching_list[index_retrieved]
         
+        # Informing the user about what the CBR system is doing
         self.verboseprint(f"[CBR] Retrieved case: {retrieved_case.find('name').text}")
         
         return retrieved_case
@@ -686,6 +687,9 @@ class CBR:
         # Add it to the recipe with a new index
         to_add = self._create_ingr_element(ingredient_to_add, cocktail, "ingr" + str(idx_ingr))
         cocktail.find("ingredients").append(to_add)
+
+        # Informing the user about what the CBR system is doing
+        self.verboseprint(f'[CBR] I added {to_add.text} to the recipe to fulfil your {ingr_type} positive constraint\n')
         
         # New step to the recipe in which we include the added ingredient to the cocktail
         step = etree.SubElement(cocktail.find("preparation"), "step")
@@ -745,15 +749,23 @@ class CBR:
         # If glass does not fulfill constraint, change it
         if len(constraints["glass_type"]):
             if adapted_cocktail.find("glasstype").text not in constraints["glass_type"]:
-                adapted_cocktail.find("glasstype").text = random.choice(constraints["glass_type"])
+                this_glass = random.choice(constraints["glass_type"])
+                adapted_cocktail.find("glasstype").text = this_glass
                 n_changes += 1
-            
+
+                # Informing the user about what the CBR system is doing
+                self.verboseprint(f'\n[CBR] I served your cocktail in a {this_glass} to fulfill your constraint')
+
         # REMOVE ingredients that are in the exclude ingredients constraint
         if len(constraints["exc_ingredients"]):
             for ingr in adapted_cocktail.find("ingredients"):
                 if ingr.text in constraints["exc_ingredients"]:
                     self.remove_ingredient(cocktail=adapted_cocktail, ingredient=ingr)
                     n_changes += 1
+
+                    # Informing the user about what the CBR system is doing
+                    self.verboseprint(f'[CBR] I removed {ingr.text} from the recipe to fulfil your '
+                                      f'negative constraint\n')
 
         # REMOVE alcohol types that are in the exclude alcohol types constraint
         if len(constraints["exc_alc_type"]):
@@ -762,12 +774,20 @@ class CBR:
                     self.remove_ingredient(cocktail=adapted_cocktail, ingredient=ingr)
                     n_changes += 1
 
+                    # Informing the user about what the CBR system is doing
+                    self.verboseprint(f'[CBR] I removed {ingr.text} from the recipe to fulfil your '
+                                      f'{ingr.get("alc_type")} negative constraint\n')
+
         # REMOVE basic tastes that are in the exclude basic tastes constraint
         if len(constraints["exc_basic_taste"]):
             for ingr in adapted_cocktail.find("ingredients"):
                 if ingr.get("basic_taste") in constraints["exc_basic_taste"]:
                     self.remove_ingredient(cocktail=adapted_cocktail, ingredient=ingr)
                     n_changes += 1
+
+                    # Informing the user about what the CBR system is doing
+                    self.verboseprint(f'[CBR] I removed {ingr.text} from the recipe to fulfil your '
+                                      f'negative {ingr.get("basic_taste")} constraint\n')
 
         # Define an index for the ingredients in order to avoid repetitions in the indexes when adding new ingredients
         idx_ingr = 2*len(adapted_cocktail.find("ingredients"))
@@ -794,6 +814,8 @@ class CBR:
         for ingre in constraints["ingredients"]:
             # If the desired ingredient is already in the cocktail we skip this constraint and check the following one
             if ingre in [ingr.text for ingr in adapted_cocktail.find("ingredients")]:
+                # Informing the user about what the CBR system is doing
+                self.verboseprint(f'[CBR] Ingredient {ingre} is already in the recipe, no changes needed')
                 continue
 
             # Otherwise, we try to substitute some ingredient of the same type or add it directly
@@ -819,6 +841,12 @@ class CBR:
                         adapted_cocktail.find("ingredients").append(to_add)
 
                         n_changes += 1
+
+                        # Informing the user about what the CBR system is doing
+                        self.verboseprint(f'[CBR] I substituted {ingr.text} by {to_add.text} because they are from the '
+                                          f'same type {ingredient_to_add.basic_taste}, to fulfill your positive'
+                                          f'constraint')
+
                     else:
                         # If there is none ingredient of that basic taste we directly ADD the desired one
                         to_add = self._create_ingr_element(ingredient_to_add, adapted_cocktail, "ingr" + str(idx_ingr))
@@ -829,6 +857,10 @@ class CBR:
 
                         idx_ingr += 1
                         n_changes += 1
+
+                        # Informing the user about what the CBR system is doing
+                        self.verboseprint(f'[CBR] I added {ingredient_to_add.name} to the recipe to fulfill your '
+                                          f'positive constraint')
 
                 # If we are including an alcoholic ingredient
                 else:
@@ -845,6 +877,12 @@ class CBR:
                         to_add = self._create_ingr_element(ingredient_to_add, adapted_cocktail, ingr.get('id'))
                         adapted_cocktail.find("ingredients").append(to_add)
                         n_changes += 1
+
+                        # Informing the user about what the CBR system is doing
+                        self.verboseprint(f'[CBR] I substituted {ingr.text} by {to_add.text} because they are from '
+                                          f'the same type {ingredient_to_add.alc_type}, to fulfill your positive'
+                                          f'constraint')
+
                     else:
                         # If there is none ingredient of that alcohol type we directly ADD the desired one
                         to_add = self._create_ingr_element(ingredient_to_add, adapted_cocktail, "ingr" + str(idx_ingr))
@@ -857,6 +895,10 @@ class CBR:
 
                         idx_ingr += 1
                         n_changes += 1
+
+                        # Informing the user about what the CBR system is doing
+                        self.verboseprint(f'[CBR] I added {ingredient_to_add.name} to the recipe to fulfill your '
+                                          f'positive constraint')
 
         # If there were no changes and we are giving the user the original cocktail, give the original name
         if n_changes == 0:
