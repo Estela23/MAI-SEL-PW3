@@ -455,7 +455,7 @@ class CBR:
 
         # If cocktail already in library, just update utility measure
         if new_case.find('name').text in self.cocktail_names:
-            for c in self.cocktail:
+            for c in self.cocktails:
                 if c.find('name').text == new_case.find('name'):
                     break
                 
@@ -652,7 +652,6 @@ class CBR:
         # SEARCHING PHASE
         # Filter elements that correspond to the category constraint
         # If category constraints is not empty
-        print(f'type constraints: {type(constraints)}')
         if constraints['category']:
             searching_list = list(itertools.chain.from_iterable([self.library_by_category[cat]
                                                                  for cat in constraints['category']]))
