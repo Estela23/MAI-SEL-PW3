@@ -415,7 +415,7 @@ class CBR:
                          self.cases_history[retrieved_case.find("name").text][1] + 1) / 2
 
         # If utility score is 0.0, set retrieved case as Failure
-        if utility_score == 0.0:
+        if utility_score == 0.0 and retrieved_case.find("evaluation").text == "Success":
             for c in self.cocktails:
                 if c.find("name").text == retrieved_case.find("name").text:
                     c.find("evaluation").text = "Failure"
