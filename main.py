@@ -11,7 +11,7 @@ def parse_arguments():
     # Create the parser and add arguments
     parser = argparse.ArgumentParser()
     parser.add_argument(dest='caselibrary', type=str, help="Filepath of the XML case library")
-    parser.add_argument("--verbosity", type=int, help="Output verbosity", default=0)
+    parser.add_argument("--verbosity", type=int, help="Output verbosity level. Set to 1 to print debug messages.", default=0)
     parser.add_argument('-c', '--constraints', type=str, help="Filepath of the JSON constraints file")
 
     # Parse arguments
