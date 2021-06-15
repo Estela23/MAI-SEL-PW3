@@ -1,5 +1,820 @@
 <cocktails>
   <cocktail>
+    <name>Bailey's Dream Shake</name>
+    <category>soft drink / soda</category>
+    <glasstype>collins glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">bailey's irish cream</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="cream" measure="2 scoops" quantity="120.0" unit="ml">vanilla ice-cream</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="cream" measure="" quantity="" unit="">cream</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Blend ingredients for 30 seconds</step>
+      <step>Definitely refreshing for a hot summer's day !</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Belgian Blue</name>
+    <category>soft drink / soda</category>
+    <glasstype>highball glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1 cl" quantity="10.0" unit="ml">coconut liqueur</ingredient>
+      <ingredient id="ingr2" alc_type="vodka" basic_taste="" measure="2 cl" quantity="20.0" unit="ml">vodka</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="fill with" quantity="" unit="">sprite</ingredient>
+      <ingredient id="ingr4" alc_type="triple sec" basic_taste="" measure="1 cl" quantity="10.0" unit="ml">blue curacao</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Just pour all ingredients in the glass and stir...</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Bleeding Surgeon</name>
+    <category>soft drink / soda</category>
+    <glasstype>collins glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="rum" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">dark rum</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 slice" quantity="" unit="">orange</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1/2 glass" quantity="175.0" unit="ml">surge</ingredient>
+      <ingredient id="ingr4" alc_type="" basic_taste="sour" measure="1/2 glass" quantity="175.0" unit="ml">cranberry juice</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Pour shot of rum over slice of ingr2</step>
+      <step>Fill the remaining space in glass half way full of ingr3 or similar drink</step>
+      <step>Finish off glass with ingr4</step>
+      <step>Be carefull, warm ingr3 may foam over the glass.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Brandon and Will's Coke Float</name>
+    <category>soft drink / soda</category>
+    <glasstype>beer mug</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="cream" measure="2 scoops" quantity="120.0" unit="ml">vanilla ice-cream</ingredient>
+      <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">bourbon</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1 can" quantity="330.0" unit="ml">coca-cola</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Scoop two large scoops of ingr1 into frosted beer mug</step>
+      <step>Next, add 2 ounces maker's mark</step>
+      <step>Then, pour in coke</step>
+      <step>Gently stir and enjoy.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>California Root Beer</name>
+    <category>soft drink / soda</category>
+    <glasstype>highball glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="fill with" quantity="" unit="">soda water</ingredient>
+      <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">galliano</ingredient>
+      <ingredient id="ingr3" alc_type="creamy liqueur" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">kahlua</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Put ingr3 and ingr2 in highball glass fill with soda</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Citrus Coke</name>
+    <category>soft drink / soda</category>
+    <glasstype>highball glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="rum" basic_taste="" measure="1 part" quantity="30.0" unit="ml">bacardi limon</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="2 parts" quantity="60.0" unit="ml">coca-cola</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Pour half of coke in a glass</step>
+      <step>Then add bacardi and top it off with the remaining coke</step>
+      <step>Stir and drink up!</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Darkwood Sling</name>
+    <category>soft drink / soda</category>
+    <glasstype>cocktail glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="1 part" quantity="30.0" unit="ml">orange juice</ingredient>
+      <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="1 part" quantity="30.0" unit="ml">cherry heering</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1 part" quantity="30.0" unit="ml">soda water</ingredient>
+    </ingredients>
+    <preparation>
+      <step>There are many good cherry liqueurs you can use, but i prefere heering</step>
+      <step>Add one share of the liqueur</step>
+      <step>Then you add one share of soda</step>
+      <step>For a sour sling use tonic (most people prefer the drink without tonic)</step>
+      <step>Afterwards you fill the glass with ingr1 and ice cubes.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Zambeer</name>
+    <category>soft drink / soda</category>
+    <glasstype>collins glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="add 10 oz" quantity="300.0" unit="ml">root beer</ingredient>
+      <ingredient id="ingr2" alc_type="sambuca" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml">sambuca</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Mix ingr2 with rootbeer and stir</step>
+      <step>Add ice</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Zinger</name>
+    <category>soft drink / soda</category>
+    <glasstype>highball glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="4 shots" quantity="100.0" unit="ml">surge</ingredient>
+      <ingredient id="ingr2" alc_type="schnapps" basic_taste="" measure="4 shots" quantity="100.0" unit="ml">peachtree schnapps</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Get a shot glass and pour in three shots of the schnapps</step>
+      <step>Do the same with the ingr1 cola</step>
+      <step>Then down it like scheetz would.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>A Piece of Ass</name>
+    <category>other/unknown</category>
+    <glasstype>highball glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="sour" measure="" quantity="" unit="">sour mix</ingredient>
+      <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">amaretto</ingredient>
+      <ingredient id="ingr3" alc_type="whisky" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">southern comfort</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Put ice in glass</step>
+      <step>Pour in shots</step>
+      <step>Fill with ingr1.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Absolut Evergreen</name>
+    <category>other/unknown</category>
+    <glasstype>collins glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1/3 part" quantity="10.0" unit="ml">pisang ambon</ingredient>
+      <ingredient id="ingr2" alc_type="bitters" basic_taste="" measure="" quantity="" unit="">bitter lemon</ingredient>
+      <ingredient id="ingr3" alc_type="vodka" basic_taste="" measure="2/3 part" quantity="20.0" unit="ml">absolut citron</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Mix, pour over ice and top up with ingr2.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Absolut limousine</name>
+    <category>other/unknown</category>
+    <glasstype>collins glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="sour" measure="1/3" quantity="10.0" unit="ml">lime juice</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="water" measure="top it up with" quantity="" unit="">tonic water</ingredient>
+      <ingredient id="ingr3" alc_type="vodka" basic_taste="" measure="2/3" quantity="20.0" unit="ml">absolut citron</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Fill absolut into a glass</step>
+      <step>Add ingr1</step>
+      <step>Add ice and lime wedges.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Amaretto Stone Sour</name>
+    <category>other/unknown</category>
+    <glasstype>collins glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="1 part" quantity="30.0" unit="ml">orange juice</ingredient>
+      <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="1 part" quantity="30.0" unit="ml">amaretto</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="sour" measure="1 part" quantity="30.0" unit="ml">sour mix</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Shake and serve over ice</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Amaretto Stone Sour #3</name>
+    <category>other/unknown</category>
+    <glasstype>highball glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">amaretto</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="add splash" quantity="6.0" unit="ml">orange juice</ingredient>
+      <ingredient id="ingr3" alc_type="tequila" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">tequila</ingredient>
+      <ingredient id="ingr4" alc_type="" basic_taste="sour" measure="2 oz" quantity="60.0" unit="ml">sour mix</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Shake ingr4, ingr3 and ingr1 with ice</step>
+      <step>Strain into highball glass</step>
+      <step>Add a splash of oj</step>
+      <step>Garnish with orange slice and a cherry.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Apple Pie with A Crust</name>
+    <category>other/unknown</category>
+    <glasstype>collins glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="rum" basic_taste="" measure="1 part" quantity="30.0" unit="ml">malibu rum</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="spicy" measure="3 dashes" quantity="3.0" unit="ml">cinnamon</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="3 parts" quantity="90.0" unit="ml">apple juice</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Just mix the two liquids and sprinkle in the ingr2</step>
+      <step>Serve either cold or heated.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Bible Belt</name>
+    <category>other/unknown</category>
+    <glasstype>highball glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="sour" measure="2 oz" quantity="60.0" unit="ml">sour mix</ingredient>
+      <ingredient id="ingr2" alc_type="triple sec" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">triple sec</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="sour" measure="2 wedges" quantity="60.0" unit="ml">lime</ingredient>
+      <ingredient id="ingr4" alc_type="whisky" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">southern comfort</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Mix all ingredients, and pour over ice.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Jack's Vanilla Coke</name>
+    <category>other/unknown</category>
+    <glasstype>old-fashioned glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="whisky" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">tennessee whiskey</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 tsp" quantity="4.0" unit="gr">vanilla extract</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="10-12 oz" quantity="330.0" unit="ml">coca-cola</ingredient>
+    </ingredients>
+    <preparation>
+      <step>After pouring in your ingredients, and adding 3-5 ice cubes, according to taste</step>
+      <step>Stir the drink with a stirrer to get the vanilla off the bottom.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Orange Whip</name>
+    <category>other/unknown</category>
+    <glasstype>collins glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="rum" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">rum</ingredient>
+      <ingredient id="ingr2" alc_type="vodka" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">vodka</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="4 oz" quantity="120.0" unit="ml">orange juice</ingredient>
+      <ingredient id="ingr4" alc_type="" basic_taste="cream" measure="1 package" quantity="60.0" unit="ml">cream</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Pour ingredients over ice and stir.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Raspberry Cooler</name>
+    <category>other/unknown</category>
+    <glasstype>highball glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="vodka" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">raspberry vodka</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="4 oz" quantity="120.0" unit="ml">lemon-lime soda</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Pour the ingr1 and soda into a highball glass almost filled with ice cubes</step>
+      <step>Stir well.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Vodka Fizz</name>
+    <category>other/unknown</category>
+    <glasstype>white wine glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="cream" measure="2 oz" quantity="60.0" unit="ml">half-and-half</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sour" measure="2 oz" quantity="60.0" unit="ml">limeade</ingredient>
+      <ingredient id="ingr3" alc_type="vodka" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">vodka</ingredient>
+      <ingredient id="ingr4" alc_type="" basic_taste="spicy" measure="" quantity="" unit="">nutmeg</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Blend all ingredients, save ingr4</step>
+      <step>Pour into large white wine glass and sprinkle ingr4 on top.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Whitecap Margarita</name>
+    <category>other/unknown</category>
+    <glasstype>margarita/coupette glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="sour" measure="3 tblsp fresh" quantity="45.0" unit="ml">lime juice fresh</ingredient>
+      <ingredient id="ingr2" alc_type="tequila" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">tequila</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="cream" measure="1/4 cup" quantity="32.0" unit="gr">cream of coconut</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Place all ingredients in a blender and blend until smooth</step>
+      <step>This makes one drink.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>151 Florida Bushwacker</name>
+    <category>milk / float / shake</category>
+    <glasstype>beer mug</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">dark creme de cacao</ingredient>
+      <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">coconut liqueur</ingredient>
+      <ingredient id="ingr3" alc_type="rum" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">light rum</ingredient>
+      <ingredient id="ingr4" alc_type="" basic_taste="cream" measure="3 oz" quantity="90.0" unit="ml">milk</ingredient>
+      <ingredient id="ingr5" alc_type="triple sec" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">cointreau</ingredient>
+      <ingredient id="ingr6" alc_type="rum" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">malibu rum</ingredient>
+      <ingredient id="ingr7" alc_type="" basic_taste="cream" measure="1 cup" quantity="128.0" unit="gr">vanilla ice-cream</ingredient>
+      <ingredient id="ingr8" alc_type="rum" basic_taste="" measure="1/2 oz bacardi" quantity="15.0" unit="ml">151 proof rum</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Combine all ingredients</step>
+      <step>Blend until smooth</step>
+      <step>Garnish with chocolate shavings if desired.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Avalanche</name>
+    <category>milk / float / shake</category>
+    <glasstype>highball glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="cream" measure="fill with" quantity="" unit="">cream</ingredient>
+      <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">crown royal</ingredient>
+      <ingredient id="ingr3" alc_type="creamy liqueur" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">kahlua</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Mix in highball glass over ice, shake well.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Baby Eskimo</name>
+    <category>milk / float / shake</category>
+    <glasstype>collins glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="cream" measure="2 scoops" quantity="120.0" unit="ml">vanilla ice-cream</ingredient>
+      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">kahlua</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="cream" measure="8 oz" quantity="240.0" unit="ml">milk</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Leave ice-cream out for about 10 minutes</step>
+      <step>Add ingredients in order, stir with chopstick (butter knife or spoon works too)</step>
+      <step>Consume immediately and often</step>
+      <step>Nice and light, great for following a heavy drink.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Black Forest Shake</name>
+    <category>milk / float / shake</category>
+    <glasstype>collins glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="cream" measure="" quantity="" unit="">milk</ingredient>
+      <ingredient id="ingr2" alc_type="brandy" basic_taste="" measure="" quantity="" unit="">cherry brandy</ingredient>
+      <ingredient id="ingr3" alc_type="vodka" basic_taste="" measure="" quantity="" unit="">vodka</ingredient>
+      <ingredient id="ingr4" alc_type="" basic_taste="sweet" measure="" quantity="" unit="">chocolate syrup</ingredient>
+    </ingredients>
+    <preparation>
+      <step>In a blender put ice cubes, ingr4, ingr2, ingr3, and ingr1</step>
+      <step>Blend very well.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Blind Russian</name>
+    <category>milk / float / shake</category>
+    <glasstype>collins glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">bailey's irish cream</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="cream" measure="to fill" quantity="" unit="">milk</ingredient>
+      <ingredient id="ingr3" alc_type="schnapps" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">butterscotch schnapps</ingredient>
+      <ingredient id="ingr4" alc_type="creamy liqueur" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">kahlua</ingredient>
+      <ingredient id="ingr5" alc_type="creamy liqueur" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">godiva liqueur</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Fill glass with ice</step>
+      <step>Add all liquers</step>
+      <step>Add ingr2</step>
+      <step>Shake.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Boozy Snickers Milkshake</name>
+    <category>milk / float / shake</category>
+    <glasstype>mason jar</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="4 tablespoons" quantity="60.0" unit="ml">caramel sauce</ingredient>
+      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="1/2 cup" quantity="64.0" unit="gr">godiva liqueur</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="15" quantity="450.0" unit="ml">mini-snickers bars</ingredient>
+      <ingredient id="ingr4" alc_type="" basic_taste="cream" measure="3 cups" quantity="711.0" unit="ml">vanilla ice-cream</ingredient>
+      <ingredient id="ingr5" alc_type="" basic_taste="cream" measure="1 cup" quantity="128.0" unit="gr">milk</ingredient>
+      <ingredient id="ingr6" alc_type="" basic_taste="sweet" measure="4 tablespoons" quantity="60.0" unit="ml">chocolate sauce</ingredient>
+      <ingredient id="ingr7" alc_type="" basic_taste="cream" measure="for topping" quantity="" unit="">whipped cream</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Place the snickers bars in a plastic bag and roll over them with a rolling pin until crushed</step>
+      <step>Add crushed snickers pieces, ice cream, ingr5, ingr1, ingr6, and chocolate liquor to a blender</step>
+      <step>Blend until shake is thick and frothy</step>
+      <step>Pour into glasses and top with chocolate liquor and whip cream.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Butter Baby</name>
+    <category>milk / float / shake</category>
+    <glasstype>beer mug</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="schnapps" basic_taste="" measure="1 part" quantity="30.0" unit="ml">butterscotch schnapps</ingredient>
+      <ingredient id="ingr2" alc_type="vodka" basic_taste="" measure="2 parts" quantity="60.0" unit="ml">vodka</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="cream" measure="full glass" quantity="300.0" unit="ml">milk</ingredient>
+      <ingredient id="ingr4" alc_type="" basic_taste="cream" measure="2 scoops" quantity="120.0" unit="ml">vanilla ice-cream</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Blend together in a blender</step>
+      <step>Serve in a chilled beer mug with fresh blueberries and caramel for topping.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Chocolate Monkey</name>
+    <category>milk / float / shake</category>
+    <glasstype>parfait glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="cream" measure="2 scoops" quantity="120.0" unit="ml">chocolate ice-cream</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 oz" quantity="30.0" unit="ml">chocolate syrup</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1 piece" quantity="120.0" unit="gr">banana</ingredient>
+      <ingredient id="ingr4" alc_type="" basic_taste="cream" measure="4 oz" quantity="120.0" unit="ml">chocolate milk</ingredient>
+      <ingredient id="ingr5" alc_type="sweet liqueur" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">banana liqueur</ingredient>
+      <ingredient id="ingr6" alc_type="" basic_taste="cream" measure="1" quantity="" unit="">whipped cream</ingredient>
+      <ingredient id="ingr7" alc_type="" basic_taste="sweet" measure="1" quantity="" unit="">cherry</ingredient>
+      <ingredient id="ingr8" alc_type="creamy liqueur" basic_taste="" measure="2 shots" quantity="50.0" unit="ml">creme de cacao</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Blend liqeuors with ice-cream, milk and syrup</step>
+      <step>Pour into parfait glass, top with ingr6 and garnish with ingr3 and ingr7.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Jamaica Kiss</name>
+    <category>milk / float / shake</category>
+    <glasstype>hurricane glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="rum" basic_taste="" measure="1 shot jamaican" quantity="25.0" unit="ml">light rum jamaican</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="cream" measure="" quantity="" unit="">milk</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="bitter" measure="1 shot" quantity="25.0" unit="ml">coffee liqueur</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Fill a tumbler with ice cubes</step>
+      <step>Add a shot of tia maria and a shot of jamaican light rum</step>
+      <step>Fill the tumbler with ingr2</step>
+      <step>Blend until smooth and serve immediately.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Nutty Irishman</name>
+    <category>milk / float / shake</category>
+    <glasstype>highball glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="cream" measure="1 part" quantity="30.0" unit="ml">milk</ingredient>
+      <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="1 part" quantity="30.0" unit="ml">frangelico</ingredient>
+      <ingredient id="ingr3" alc_type="creamy liqueur" basic_taste="" measure="1 part" quantity="30.0" unit="ml">bailey's irish cream</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Serve over ice</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Sweet Tooth</name>
+    <category>milk / float / shake</category>
+    <glasstype>highball glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="2 shots" quantity="50.0" unit="ml">godiva liqueur</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="cream" measure="" quantity="" unit="">milk</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Put 2 shots godiva liquour into a glass, add as much or as little ingr2 as you would like.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Texas Sling</name>
+    <category>milk / float / shake</category>
+    <glasstype>wine glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">amaretto</ingredient>
+      <ingredient id="ingr2" alc_type="rum" basic_taste="" measure="1/2 oz bacardi" quantity="15.0" unit="ml">151 proof rum</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="cream" measure="1 oz" quantity="30.0" unit="ml">cream</ingredient>
+      <ingredient id="ingr4" alc_type="creamy liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">irish cream</ingredient>
+      <ingredient id="ingr5" alc_type="creamy liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">kahlua</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Blend with ice until smooth</step>
+      <step>Serve in a tulip glass, top with whip ingr3.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>110 in the shade</name>
+    <category>beer</category>
+    <glasstype>beer glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="tequila" basic_taste="" measure="1.5 oz" quantity="45.0" unit="ml">tequila</ingredient>
+      <ingredient id="ingr2" alc_type="beer" basic_taste="" measure="16 oz" quantity="480.0" unit="ml">lager</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Drop shooter in glass</step>
+      <step>Fill with beer</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Black &amp; Tan</name>
+    <category>beer</category>
+    <glasstype>pint glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="beer" basic_taste="" measure="1 part bass pale" quantity="30.0" unit="ml">ale</ingredient>
+      <ingredient id="ingr2" alc_type="beer" basic_taste="" measure="1 part" quantity="30.0" unit="ml">guinness stout</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Fill pint glass half full with bass</step>
+      <step>Next pour guiness over a spoon slowly until glass is full</step>
+      <step>If done correctly the guiness will stay on top and the bass on bottom hence the name black &amp; tan.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Black and Brown</name>
+    <category>beer</category>
+    <glasstype>beer pilsner</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="beer" basic_taste="" measure="1/2" quantity="15.0" unit="ml">guinness stout</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1/2" quantity="15.0" unit="ml">root beer</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Carefully to avoid explosive head formation: pour beer glass half full of favorite rootbeer and top off with guinness.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Buccaneer</name>
+    <category>beer</category>
+    <glasstype>beer pilsner</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="beer" basic_taste="" measure="1" quantity="30.0" unit="ml">corona</ingredient>
+      <ingredient id="ingr2" alc_type="rum" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">bacardi limon</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Pour the ingr1 into an 18oz beer glass pour the ingr2 into the beer stir very gently</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Campari Beer</name>
+    <category>beer</category>
+    <glasstype>beer mug</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="campari" basic_taste="" measure="1 1/2 cl" quantity="15.0" unit="ml">campari</ingredient>
+      <ingredient id="ingr2" alc_type="beer" basic_taste="" measure="1 bottle" quantity="330.0" unit="ml">lager</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Use a 15 oz glass</step>
+      <step>Add ingr1 first</step>
+      <step>Fill with beer.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Caribbean Boilermaker</name>
+    <category>beer</category>
+    <glasstype>beer pilsner</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="rum" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">light rum</ingredient>
+      <ingredient id="ingr2" alc_type="beer" basic_taste="" measure="1 bottle" quantity="330.0" unit="ml">corona</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Pour the ingr2 into an 18oz beer glass pour the rum into the beer.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Diesel</name>
+    <category>beer</category>
+    <glasstype>pint glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="beer" basic_taste="" measure="1/2 pint" quantity="236.5" unit="ml">lager</ingredient>
+      <ingredient id="ingr2" alc_type="cider" basic_taste="" measure="1/2 pint" quantity="236.5" unit="ml">cider</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1 dash" quantity="1.0" unit="ml">blackcurrant cordial</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Pour the ingr1 first then add the ingr3</step>
+      <step>Top up with the ingr2</step>
+      <step>The colour sholud be very dark approaching the colour of guiness.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Green Goblin</name>
+    <category>beer</category>
+    <glasstype>pint glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="triple sec" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">blue curacao</ingredient>
+      <ingredient id="ingr2" alc_type="cider" basic_taste="" measure="1/2 pint hard" quantity="236.5" unit="ml">cider hard</ingredient>
+      <ingredient id="ingr3" alc_type="beer" basic_taste="" measure="1/2 pint" quantity="236.5" unit="ml">lager</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Cider first, ingr3 then curacao</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Irish Russian</name>
+    <category>beer</category>
+    <glasstype>highball glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">kahlua</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 dash" quantity="1.0" unit="ml">coca-cola</ingredient>
+      <ingredient id="ingr3" alc_type="vodka" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">vodka</ingredient>
+      <ingredient id="ingr4" alc_type="beer" basic_taste="" measure="fill with" quantity="" unit="">guinness stout</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Add the ingredients in the order listed in the recipe</step>
+      <step>Care must be taken when adding the guinness to prevent an excess of foam</step>
+      <step>Do not add ice.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Limona Corona</name>
+    <category>beer</category>
+    <glasstype>beer glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="beer" basic_taste="" measure="1 bottle" quantity="330.0" unit="ml">corona</ingredient>
+      <ingredient id="ingr2" alc_type="rum" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">bacardi limon</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Open the ingr1</step>
+      <step>Fill the empty space in the neck in the bottle with the rum</step>
+      <step>The bottle should be filled to the top</step>
+      <step>Plug the bottle with your thumb or the palm of your hand</step>
+      <step>Turn the bottle upside-down so the rum and beer mix</step>
+      <step>Turn the bottle rightside-up, unplug, and drink.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Lunch Box</name>
+    <category>beer</category>
+    <glasstype>pint glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">amaretto</ingredient>
+      <ingredient id="ingr2" alc_type="beer" basic_taste="" measure="3/4 bottle" quantity="330.0" unit="ml">beer</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1 oz" quantity="30.0" unit="ml">orange juice</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Fill a pint glass almost full with ingr2</step>
+      <step>Then fill the rest with ingr3 (careful not to fill it to the top)</step>
+      <step>Then take the shot of ingr1 and drop it in.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Snake Bite (UK)</name>
+    <category>beer</category>
+    <glasstype>pint glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="beer" basic_taste="" measure="1/2 pint" quantity="236.5" unit="ml">lager</ingredient>
+      <ingredient id="ingr2" alc_type="wine" basic_taste="" measure="1/2 pint sweet or dry" quantity="60.0" unit="ml">white or red wine</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Pour ingredients into a pint glass</step>
+      <step>Drink</step>
+      <step>Fall over.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Snakebite and Black</name>
+    <category>beer</category>
+    <glasstype>pint glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="a little bit of" quantity="5.0" unit="ml">blackcurrant squash</ingredient>
+      <ingredient id="ingr2" alc_type="cider" basic_taste="" measure="1/2 pint" quantity="236.5" unit="ml">cider</ingredient>
+      <ingredient id="ingr3" alc_type="beer" basic_taste="" measure="1/2 pint" quantity="236.5" unit="ml">lager</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Put ingr1 in first up to about 1cm in glass</step>
+      <step>Then add the larger and ingr2 one after another.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
     <name>Adam Bomb</name>
     <category>punch / party drink</category>
     <glasstype>margarita/coupette glass</glasstype>
@@ -868,7 +1683,6 @@
     <preparation>
       <step>Mix both the vermouth's in a shaker and strain into a cold glass</step>
       <step>Top up with a squirt of ingr2</step>
-      <step></step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -1681,1589 +2495,6 @@
     <preparation>
       <step>Prepare like a martini</step>
       <step>Garnish with a green olive.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>1-900-FUK-MEUP</name>
-    <category>shot</category>
-    <glasstype>old-fashioned glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="triple sec" basic_taste="" measure="1/4 oz" quantity="7.5" unit="ml">grand marnier</ingredient>
-      <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="1/4 oz" quantity="7.5" unit="ml">midori melon liqueur</ingredient>
-      <ingredient id="ingr3" alc_type="rum" basic_taste="" measure="1/4 oz" quantity="7.5" unit="ml">malibu rum</ingredient>
-      <ingredient id="ingr4" alc_type="sweet liqueur" basic_taste="" measure="1/4 oz" quantity="7.5" unit="ml">amaretto</ingredient>
-      <ingredient id="ingr5" alc_type="" basic_taste="sour" measure="1/2 oz" quantity="15.0" unit="ml">cranberry juice</ingredient>
-      <ingredient id="ingr6" alc_type="" basic_taste="sweet" measure="1/4 oz" quantity="7.5" unit="ml">pineapple juice</ingredient>
-      <ingredient id="ingr7" alc_type="sweet liqueur" basic_taste="" measure="1/4 oz" quantity="7.5" unit="ml">chambord raspberry liqueur</ingredient>
-      <ingredient id="ingr8" alc_type="vodka" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">absolut kurant</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Shake ingredients in a mixing tin filled with ice cubes</step>
-      <step>Strain into a rocks glass.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>24k nightmare</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="bitters" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">jägermeister</ingredient>
-      <ingredient id="ingr2" alc_type="schnapps" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">goldschlager</ingredient>
-      <ingredient id="ingr3" alc_type="rum" basic_taste="" measure="1/2 oz bacardi" quantity="15.0" unit="ml">151 proof rum</ingredient>
-      <ingredient id="ingr4" alc_type="rum" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">rumple minze</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Add over ice,shake and pour.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>252</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="whisky" basic_taste="" measure="1/2 shot" quantity="12.5" unit="ml">wild turkey</ingredient>
-      <ingredient id="ingr2" alc_type="rum" basic_taste="" measure="1/2 shot bacardi" quantity="12.5" unit="ml">151 proof rum</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Add both ingredients to shot glass, shoot, and get drunk quick</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>3 Wise Men</name>
-    <category>shot</category>
-    <glasstype>collins glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="whisky" basic_taste="" measure="1/3 oz" quantity="10.0" unit="ml">jim beam</ingredient>
-      <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="1/3 oz" quantity="10.0" unit="ml">johnnie walker</ingredient>
-      <ingredient id="ingr3" alc_type="whisky" basic_taste="" measure="1/3 oz" quantity="10.0" unit="ml">jack daniels</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Put them them in a glass..</step>
-      <step>And slam it to tha head.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>747</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="1/3 part" quantity="10.0" unit="ml">bailey's irish cream</ingredient>
-      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="1/3 part" quantity="10.0" unit="ml">kahlua</ingredient>
-      <ingredient id="ingr3" alc_type="sweet liqueur" basic_taste="" measure="1/3 part" quantity="10.0" unit="ml">frangelico</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Pour kaluha, then baileys, then ingr3 not chilled and not layered -- serve!!!</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>A Splash of Nash</name>
-    <category>shot</category>
-    <glasstype>highball glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="0.5 oz" quantity="15.0" unit="ml">creme de banane</ingredient>
-      <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="0.5 oz" quantity="15.0" unit="ml">midori melon liqueur</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="2 oz" quantity="60.0" unit="ml">soda water</ingredient>
-      <ingredient id="ingr4" alc_type="" basic_taste="sour" measure="2 oz" quantity="60.0" unit="ml">cranberry juice</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Drop shot glass with banana &amp; melon liquers into a 9 oz hi- ball glass containing ingr3 and ingr4</step>
-      <step>Drink in one shot.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>ABC</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1/3" quantity="10.0" unit="ml">amaretto</ingredient>
-      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="1/3" quantity="10.0" unit="ml">bailey's irish cream</ingredient>
-      <ingredient id="ingr3" alc_type="brandy" basic_taste="" measure="1/3" quantity="10.0" unit="ml">cognac</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Layered in a shot glass.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>ACID</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="rum" basic_taste="" measure="1 oz bacardi" quantity="30.0" unit="ml">151 proof rum</ingredient>
-      <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">wild turkey</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Poor in the 151 first followed by the 101 served with a coke or dr pepper chaser.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Absolut Sex</name>
-    <category>shot</category>
-    <glasstype>old-fashioned glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">midori melon liqueur</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 splash" quantity="6.0" unit="ml">sprite</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="sour" measure="1 oz" quantity="30.0" unit="ml">cranberry juice</ingredient>
-      <ingredient id="ingr4" alc_type="vodka" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">absolut kurant</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Shake ingr4, midori, and ingr3 in shaker with ice: strain into rocks glass: splash of seven on top.absolut sex.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>After Five</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="" quantity="" unit="">kahlua</ingredient>
-      <ingredient id="ingr2" alc_type="schnapps" basic_taste="" measure="" quantity="" unit="">peppermint schnapps</ingredient>
-      <ingredient id="ingr3" alc_type="creamy liqueur" basic_taste="" measure="" quantity="" unit="">bailey's irish cream</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Pour ingr1 into shot glass to about 1/2 full</step>
-      <step>Using a spoon(inverted), slowly pour in the ingr2 until glass is about 3/4 full</step>
-      <step>Done correctly, the schnapps will flow under the ingr1 for a clear layer</step>
-      <step>Again using a spoon, but this time right side up, slowly top off the glass with a layer of bailey's</step>
-      <step>Be careful to place the spoon right at the top of the ingr1 layer and to raise it as the glass fills up</step>
-      <step>Done correctly, this will provide a layer of bailey's floating over the ingr1</step>
-      <step>Toss it down all at once for something like a peppermint pattie, with a bang!!! note: best if all ingredients are chilled</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Apple Slammer</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="schnapps" basic_taste="" measure="1 part" quantity="30.0" unit="ml">apple schnapps</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 part" quantity="30.0" unit="ml">7-up</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Pour into a shot glass and present to consumer, they are expected to cover the top of the shotglass with thier palm, raise the glass, slam it on the bar and the swallow quickly.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Arizona Antifreeze</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="vodka" basic_taste="" measure="1/3 oz" quantity="10.0" unit="ml">vodka</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1/3 oz" quantity="10.0" unit="ml">sweet and sour</ingredient>
-      <ingredient id="ingr3" alc_type="sweet liqueur" basic_taste="" measure="1/3 oz" quantity="10.0" unit="ml">midori melon liqueur</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Pour all ingredients into shot glass and slam !!!!</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Auburn Headbanger</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="schnapps" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">goldschlager</ingredient>
-      <ingredient id="ingr2" alc_type="bitters" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">jägermeister</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Mix in spread glass over ice</step>
-      <step>Strain and pour in shot glass</step>
-      <step>Sit down before shotting</step>
-      <step>Enjoy!!</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>B-52</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="1/4" quantity="7.5" unit="ml">kahlua</ingredient>
-      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="1/3" quantity="10.0" unit="ml">bailey's irish cream</ingredient>
-      <ingredient id="ingr3" alc_type="triple sec" basic_taste="" measure="1/3" quantity="10.0" unit="ml">grand marnier</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Layer ingredients into a shot glass</step>
-      <step>Serve with a stirrer.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>B-53</name>
-    <category>shot</category>
-    <glasstype>collins glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="triple sec" basic_taste="" measure="1/3 shot" quantity="8.333333333333332" unit="ml">grand marnier</ingredient>
-      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="1/3 shot" quantity="8.333333333333332" unit="ml">kahlua</ingredient>
-      <ingredient id="ingr3" alc_type="sambuca" basic_taste="" measure="1/3 shot" quantity="8.333333333333332" unit="ml">sambuca</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Layer the ingr2, sambucca and ingr1 into a shot glas in that order</step>
-      <step>Better than b-52</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Baby Guinness</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">bailey's irish cream</ingredient>
-      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="2 1/2 oz" quantity="75.0" unit="ml">kahlua</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Pour ingr2, almost filling shot glass</step>
-      <step>Then, carefully pour baileys, using wall of shot glass</step>
-      <step>This will give the "guinness" its "head".</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Big Red</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">irish cream</ingredient>
-      <ingredient id="ingr2" alc_type="schnapps" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">goldschlager</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Pour ingredients into 1 ounce shot glass</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Bob Marley</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="schnapps" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">goldschlager</ingredient>
-      <ingredient id="ingr2" alc_type="bitters" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">jägermeister</ingredient>
-      <ingredient id="ingr3" alc_type="sweet liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">midori melon liqueur</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Layer in a 2 oz shot glass or pony glass</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Brainteaser</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="cream" measure="30 ml" quantity="30.0" unit="ml">erin cream</ingredient>
-      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="5 ml" quantity="5.0" unit="ml">advocaat</ingredient>
-      <ingredient id="ingr3" alc_type="sambuca" basic_taste="" measure="30 ml white" quantity="30.0" unit="ml">sambuca white</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Layered erin first, then sambuca and then avocart(should sit in middle of other two</step>
-      <step>To drink: use a straw to suck up avocart then shot the rest and then suck fumes up through straw.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Brave Bull Shooter</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="spicy" measure="1/2 oz" quantity="15.0" unit="ml">tabasco sauce</ingredient>
-      <ingredient id="ingr2" alc_type="tequila" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">tequila</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Pour tabasco into bottom of shot glass and fill with ingr2.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Bruce's Puce</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="" quantity="" unit="">kahlua</ingredient>
-      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="" quantity="" unit="">bailey's irish cream</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="" quantity="" unit="">grenadine</ingredient>
-    </ingredients>
-    <preparation>
-      <step>In a regular-sized shot glass, layer, with a spoon or cherry, the ingr3 , the ingr1 , then the ingr2 in equal portions</step>
-      <step>It goes down really smooth ,and you don't even need a chaser</step>
-      <step>It tastes just like chocolate milk.(really!)</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Bruised Heart</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="vodka" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">vodka</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="sour" measure="1/2 oz" quantity="15.0" unit="ml">cranberry juice</ingredient>
-      <ingredient id="ingr3" alc_type="sweet liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">chambord raspberry liqueur</ingredient>
-      <ingredient id="ingr4" alc_type="schnapps" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">peachtree schnapps</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Pour all ingredients in a mixing tin over ice, stir, and strain into shot glass</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Bubble Gum</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="vodka" basic_taste="" measure="1/4" quantity="7.5" unit="ml">vodka</ingredient>
-      <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="1/4" quantity="7.5" unit="ml">banana liqueur</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1/4" quantity="7.5" unit="ml">orange juice</ingredient>
-      <ingredient id="ingr4" alc_type="schnapps" basic_taste="" measure="1/4" quantity="7.5" unit="ml">peach schnapps</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Layer in order into a shot glass.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Bumble Bee #1</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="1/3 oz" quantity="10.0" unit="ml">bailey's irish cream</ingredient>
-      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="1/3 oz" quantity="10.0" unit="ml">kahlua</ingredient>
-      <ingredient id="ingr3" alc_type="sambuca" basic_taste="" measure="1/3 oz" quantity="10.0" unit="ml">sambuca</ingredient>
-    </ingredients>
-    <preparation>
-      <step>This is a layered shot</step>
-      <step>First pour the bailey's into the shot glass</step>
-      <step>Then take an upside down spoon and touch it to the inside wall of the glass</step>
-      <step>Carefully add the ingr2</step>
-      <step>Repeat this process for the ingr3</step>
-      <step>If done properly, the alcohol will stay separated and resemble a bumble bee</step>
-      <step>Enjoy!!!</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Chocolate Milk</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="cream" measure="1/2 shot" quantity="12.5" unit="ml">milk</ingredient>
-      <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="1 dash" quantity="1.0" unit="ml">amaretto</ingredient>
-      <ingredient id="ingr3" alc_type="creamy liqueur" basic_taste="" measure="1/2 shot" quantity="12.5" unit="ml">chocolate liqueur</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Put the ingr1 in the bottom, pour the liquer on top and add the dash of ingr2</step>
-      <step>Do not mix</step>
-      <step>Slam it!</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Damned if you do</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="schnapps" basic_taste="" measure="0.25 oz" quantity="7.5" unit="ml">hot damn</ingredient>
-      <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="0.75 oz" quantity="22.5" unit="ml">whiskey</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Pour into shot glass</step>
-      <step>Put in mouth</step>
-      <step>Repeat as deemed necessary.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Dirty Nipple</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="sambuca" basic_taste="" measure="" quantity="" unit="">sambuca</ingredient>
-      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="" quantity="" unit="">kahlua</ingredient>
-      <ingredient id="ingr3" alc_type="creamy liqueur" basic_taste="" measure="" quantity="" unit="">bailey's irish cream</ingredient>
-    </ingredients>
-    <preparation>
-      <step>This is a layered shot - the bailey's must be on top</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Fahrenheit 5000</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="vodka" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">firewater</ingredient>
-      <ingredient id="ingr2" alc_type="vodka" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">absolut peppar</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="spicy" measure="1 dash" quantity="1.0" unit="ml">tabasco sauce</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Cover bottom of shot glass with ingr3 and then fill with half ingr1 and half ingr2.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Flaming Dr. Pepper</name>
-    <category>shot</category>
-    <glasstype>collins glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">amaretto</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="spicy" measure="1 oz" quantity="30.0" unit="ml">dr. pepper</ingredient>
-      <ingredient id="ingr3" alc_type="beer" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">beer</ingredient>
-      <ingredient id="ingr4" alc_type="rum" basic_taste="" measure="1 oz bacardi" quantity="30.0" unit="ml">151 proof rum</ingredient>
-      <ingredient id="ingr5" alc_type="vodka" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">vodka</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Add ingr1, bacardi, and ingr5</step>
-      <step>Mix in the dr</step>
-      <step>Pepper and ingr3</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Freddy Kruger</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="vodka" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">vodka</ingredient>
-      <ingredient id="ingr2" alc_type="bitters" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">jägermeister</ingredient>
-      <ingredient id="ingr3" alc_type="sambuca" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">sambuca</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Make it an ample size shot!!</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Jam Donut</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1/3 oz" quantity="10.0" unit="ml">chambord raspberry liqueur</ingredient>
-      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="2/3 oz" quantity="20.0" unit="ml">baileys irish cream</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1 tsp" quantity="4.0" unit="gr">sugar syrup</ingredient>
-      <ingredient id="ingr4" alc_type="" basic_taste="sweet" measure="2 pinches" quantity="0.72" unit="gr">sugar</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Coat the rim of a shot glass with ingr4 using ingr3 to stick</step>
-      <step>Add the ingr1 to the shot glass, and carefully layer the ingr2 on top</step>
-      <step>Serve.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Jello shots</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="vodka" basic_taste="" measure="2 cups" quantity="474.0" unit="ml">vodka</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="3 packages" quantity="270.0" unit="gr">jello</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="water" measure="3 cups" quantity="711.0" unit="ml">water</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Boil 3 cups of ingr3 then add ingr2</step>
-      <step>Mix ingr2 and ingr3 until ingr2 is completely disolved</step>
-      <step>Add the two cups of ingr1 and mix together</step>
-      <step>Pour mixture into plastic shot glasses and chill until firm</step>
-      <step>Then, eat away...</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Jelly Bean</name>
-    <category>shot</category>
-    <glasstype>cordial glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="brandy" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">blackberry brandy</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="spicy" measure="1 oz" quantity="30.0" unit="ml">anis</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Mix equal parts in pony glass-tastes just like a jelly bean!</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Kool First Aid</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="1/2 tsp tropical" quantity="2.5" unit="ml">kool-aid tropical</ingredient>
-      <ingredient id="ingr2" alc_type="rum" basic_taste="" measure="2 oz light" quantity="60.0" unit="ml">151 proof rum light</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Add kool aid to a double shot glass, and top with rum</step>
-      <step>Slam and shoot.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Kool-Aid Shot</name>
-    <category>shot</category>
-    <glasstype>old-fashioned glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="sour" measure="" quantity="" unit="">cranberry juice</ingredient>
-      <ingredient id="ingr2" alc_type="vodka" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">vodka</ingredient>
-      <ingredient id="ingr3" alc_type="triple sec" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">triple sec</ingredient>
-      <ingredient id="ingr4" alc_type="gin" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">sloe gin</ingredient>
-      <ingredient id="ingr5" alc_type="sweet liqueur" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">amaretto</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Pour into a large glass with ice and stir</step>
-      <step>Add a little ingr1 to taste.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Kool-Aid Slammer</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="vodka" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">vodka</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1/2 oz grape" quantity="15.0" unit="ml">kool-aid grape</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Fill half the shot glass with the kool-aid first</step>
-      <step>Then put a paper towel over the top of the glass and slowly pour in the ingr1</step>
-      <step>If you do it right, you should be able to see that the two liquids are separated, with the ingr1 on top</step>
-      <step>Now slam it! the last thing you'll taste is the kool-aid.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Lemon Shot</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="bacardi" quantity="" unit="">sugar</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="sour" measure="wedge" quantity="" unit="">lemon</ingredient>
-      <ingredient id="ingr3" alc_type="rum" basic_taste="" measure="" quantity="" unit="">151 proof rum</ingredient>
-      <ingredient id="ingr4" alc_type="sweet liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">galliano</ingredient>
-      <ingredient id="ingr5" alc_type="vodka" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">absolut citron</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Mix ingr4 and ingr5 in a shot glass, lay ingr2 wedge sprinkled with ingr1 over glass and pour a rum over wedge and glass</step>
-      <step>Light rum with a lighter and let burn for a second</step>
-      <step>Do shot quickly and suck on ingr2</step>
-      <step>If it is done correctly, this will taste like a shot of sweet lemonade.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Moranguito</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="absinthe" basic_taste="" measure="2/5" quantity="12.0" unit="ml">absinthe</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1/5" quantity="6.0" unit="ml">grenadine</ingredient>
-      <ingredient id="ingr3" alc_type="tequila" basic_taste="" measure="2/5" quantity="12.0" unit="ml">tequila</ingredient>
-    </ingredients>
-    <preparation>
-      <step>First you put rhe ingr1, then put ingr3, then put the granadine syrup.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Mother's Milk</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="cream" measure="1 oz" quantity="30.0" unit="ml">milk</ingredient>
-      <ingredient id="ingr2" alc_type="schnapps" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">butterscotch schnapps</ingredient>
-      <ingredient id="ingr3" alc_type="schnapps" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">goldschlager</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Shake over ice, strain</step>
-      <step>Serves two.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Orange Crush</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="triple sec" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">triple sec</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 oz" quantity="30.0" unit="ml">orange juice</ingredient>
-      <ingredient id="ingr3" alc_type="vodka" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">vodka</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Add all ingredients to tumbler-pour as shot</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Quick F**K</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="1 part" quantity="30.0" unit="ml">kahlua</ingredient>
-      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="1 part" quantity="30.0" unit="ml">bailey's irish cream</ingredient>
-      <ingredient id="ingr3" alc_type="sweet liqueur" basic_taste="" measure="1 part" quantity="30.0" unit="ml">midori melon liqueur</ingredient>
-    </ingredients>
-    <preparation>
-      <step>In a shot glass add 1/3 ingr1 first</step>
-      <step>Then 1/3 miduri, topping it off with a 1/3 ingr2</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Red Snapper</name>
-    <category>shot</category>
-    <glasstype>old-fashioned glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">amaretto</ingredient>
-      <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">crown royal</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="sour" measure="1 shot" quantity="25.0" unit="ml">cranberry juice</ingredient>
-    </ingredients>
-    <preparation>
-      <step>One shot each, shake n shoot</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Royal Bitch</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1 part" quantity="30.0" unit="ml">frangelico</ingredient>
-      <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="1 part" quantity="30.0" unit="ml">crown royal</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Into a shot glass layer the ingr2 on top of the ingr1.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Royal Flush</name>
-    <category>shot</category>
-    <glasstype>old-fashioned glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">chambord raspberry liqueur</ingredient>
-      <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml">crown royal</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="sour" measure="1 oz" quantity="30.0" unit="ml">cranberry juice</ingredient>
-      <ingredient id="ingr4" alc_type="schnapps" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">peach schnapps</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Pour all the ingredients into tumbler over ice</step>
-      <step>Strain into glass.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Shot-gun</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="whisky" basic_taste="" measure="1 part" quantity="30.0" unit="ml">jack daniels</ingredient>
-      <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">wild turkey</ingredient>
-      <ingredient id="ingr3" alc_type="whisky" basic_taste="" measure="1 part" quantity="30.0" unit="ml">jim beam</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Pour one part jack daneils and one part ingr3 into shot glass then float ingr2 on top.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Tequila Surprise</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="tequila" basic_taste="" measure="full glass" quantity="44.0" unit="ml">tequila</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="spicy" measure="about 8 drops" quantity="8.0" unit="ml">tabasco sauce</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Fill shot glass with ingr1</step>
-      <step>Add drops of tobasco sauce.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Texas Rattlesnake</name>
-    <category>shot</category>
-    <glasstype>highball glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1 part" quantity="30.0" unit="ml">yukon jack</ingredient>
-      <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="1 part" quantity="30.0" unit="ml">southern comfort</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1 splash" quantity="6.0" unit="ml">sweet and sour</ingredient>
-      <ingredient id="ingr4" alc_type="brandy" basic_taste="" measure="1/2 part" quantity="15.0" unit="ml">cherry brandy</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Mix all ingredients and shake well</step>
-      <step>Sweet at first, with a bite at the end...</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Turkeyball</name>
-    <category>shot</category>
-    <glasstype>shot glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">amaretto</ingredient>
-      <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">wild turkey</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1 splash" quantity="6.0" unit="ml">pineapple juice</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Shake with ice and strain into a shot glass.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Zipperhead</name>
-    <category>shot</category>
-    <glasstype>whiskey sour glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">chambord raspberry liqueur</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="fill with" quantity="" unit="">soda water</ingredient>
-      <ingredient id="ingr3" alc_type="vodka" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">vodka</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Fill glass with rocks, add straw before putting in liquor</step>
-      <step>Then add the ingredients in order, trying to keep layered as much as possible (i.e</step>
-      <step>Chambord on bottom, then ingr3, then soda on top).</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>110 in the shade</name>
-    <category>beer</category>
-    <glasstype>beer glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="tequila" basic_taste="" measure="1.5 oz" quantity="45.0" unit="ml">tequila</ingredient>
-      <ingredient id="ingr2" alc_type="beer" basic_taste="" measure="16 oz" quantity="480.0" unit="ml">lager</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Drop shooter in glass</step>
-      <step>Fill with beer</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Black &amp; Tan</name>
-    <category>beer</category>
-    <glasstype>pint glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="beer" basic_taste="" measure="1 part bass pale" quantity="30.0" unit="ml">ale</ingredient>
-      <ingredient id="ingr2" alc_type="beer" basic_taste="" measure="1 part" quantity="30.0" unit="ml">guinness stout</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Fill pint glass half full with bass</step>
-      <step>Next pour guiness over a spoon slowly until glass is full</step>
-      <step>If done correctly the guiness will stay on top and the bass on bottom hence the name black &amp; tan.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Black and Brown</name>
-    <category>beer</category>
-    <glasstype>beer pilsner</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="beer" basic_taste="" measure="1/2" quantity="15.0" unit="ml">guinness stout</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1/2" quantity="15.0" unit="ml">root beer</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Carefully to avoid explosive head formation: pour beer glass half full of favorite rootbeer and top off with guinness.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Buccaneer</name>
-    <category>beer</category>
-    <glasstype>beer pilsner</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="beer" basic_taste="" measure="1" quantity="30.0" unit="ml">corona</ingredient>
-      <ingredient id="ingr2" alc_type="rum" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">bacardi limon</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Pour the ingr1 into an 18oz beer glass pour the ingr2 into the beer stir very gently</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Campari Beer</name>
-    <category>beer</category>
-    <glasstype>beer mug</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="campari" basic_taste="" measure="1 1/2 cl" quantity="15.0" unit="ml">campari</ingredient>
-      <ingredient id="ingr2" alc_type="beer" basic_taste="" measure="1 bottle" quantity="330.0" unit="ml">lager</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Use a 15 oz glass</step>
-      <step>Add ingr1 first</step>
-      <step>Fill with beer.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Caribbean Boilermaker</name>
-    <category>beer</category>
-    <glasstype>beer pilsner</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="rum" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">light rum</ingredient>
-      <ingredient id="ingr2" alc_type="beer" basic_taste="" measure="1 bottle" quantity="330.0" unit="ml">corona</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Pour the ingr2 into an 18oz beer glass pour the rum into the beer.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Diesel</name>
-    <category>beer</category>
-    <glasstype>pint glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="beer" basic_taste="" measure="1/2 pint" quantity="236.5" unit="ml">lager</ingredient>
-      <ingredient id="ingr2" alc_type="cider" basic_taste="" measure="1/2 pint" quantity="236.5" unit="ml">cider</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1 dash" quantity="1.0" unit="ml">blackcurrant cordial</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Pour the ingr1 first then add the ingr3</step>
-      <step>Top up with the ingr2</step>
-      <step>The colour sholud be very dark approaching the colour of guiness.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Green Goblin</name>
-    <category>beer</category>
-    <glasstype>pint glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="triple sec" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">blue curacao</ingredient>
-      <ingredient id="ingr2" alc_type="cider" basic_taste="" measure="1/2 pint hard" quantity="236.5" unit="ml">cider hard</ingredient>
-      <ingredient id="ingr3" alc_type="beer" basic_taste="" measure="1/2 pint" quantity="236.5" unit="ml">lager</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Cider first, ingr3 then curacao</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Irish Russian</name>
-    <category>beer</category>
-    <glasstype>highball glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">kahlua</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 dash" quantity="1.0" unit="ml">coca-cola</ingredient>
-      <ingredient id="ingr3" alc_type="vodka" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">vodka</ingredient>
-      <ingredient id="ingr4" alc_type="beer" basic_taste="" measure="fill with" quantity="" unit="">guinness stout</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Add the ingredients in the order listed in the recipe</step>
-      <step>Care must be taken when adding the guinness to prevent an excess of foam</step>
-      <step>Do not add ice.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Limona Corona</name>
-    <category>beer</category>
-    <glasstype>beer glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="beer" basic_taste="" measure="1 bottle" quantity="330.0" unit="ml">corona</ingredient>
-      <ingredient id="ingr2" alc_type="rum" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">bacardi limon</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Open the ingr1</step>
-      <step>Fill the empty space in the neck in the bottle with the rum</step>
-      <step>The bottle should be filled to the top</step>
-      <step>Plug the bottle with your thumb or the palm of your hand</step>
-      <step>Turn the bottle upside-down so the rum and beer mix</step>
-      <step>Turn the bottle rightside-up, unplug, and drink.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Lunch Box</name>
-    <category>beer</category>
-    <glasstype>pint glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">amaretto</ingredient>
-      <ingredient id="ingr2" alc_type="beer" basic_taste="" measure="3/4 bottle" quantity="330.0" unit="ml">beer</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1 oz" quantity="30.0" unit="ml">orange juice</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Fill a pint glass almost full with ingr2</step>
-      <step>Then fill the rest with ingr3 (careful not to fill it to the top)</step>
-      <step>Then take the shot of ingr1 and drop it in.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Snake Bite (UK)</name>
-    <category>beer</category>
-    <glasstype>pint glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="beer" basic_taste="" measure="1/2 pint" quantity="236.5" unit="ml">lager</ingredient>
-      <ingredient id="ingr2" alc_type="wine" basic_taste="" measure="1/2 pint sweet or dry" quantity="60.0" unit="ml">white or red wine</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Pour ingredients into a pint glass</step>
-      <step>Drink</step>
-      <step>Fall over.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Snakebite and Black</name>
-    <category>beer</category>
-    <glasstype>pint glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="a little bit of" quantity="5.0" unit="ml">blackcurrant squash</ingredient>
-      <ingredient id="ingr2" alc_type="cider" basic_taste="" measure="1/2 pint" quantity="236.5" unit="ml">cider</ingredient>
-      <ingredient id="ingr3" alc_type="beer" basic_taste="" measure="1/2 pint" quantity="236.5" unit="ml">lager</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Put ingr1 in first up to about 1cm in glass</step>
-      <step>Then add the larger and ingr2 one after another.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Afternoon</name>
-    <category>coffee / tea</category>
-    <glasstype>collins glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="1 cl" quantity="10.0" unit="ml">kahlua</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="cream" measure="" quantity="" unit="">cream</ingredient>
-      <ingredient id="ingr3" alc_type="sweet liqueur" basic_taste="" measure="1 1/2" quantity="37.5" unit="ml">frangelico</ingredient>
-      <ingredient id="ingr4" alc_type="" basic_taste="bitter" measure="4 cl hot" quantity="40.0" unit="ml">coffee hot</ingredient>
-      <ingredient id="ingr5" alc_type="creamy liqueur" basic_taste="" measure="1 cl" quantity="10.0" unit="ml">bailey's irish cream</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Build into a suiting glass, with no ice</step>
-      <step>Ingr2 on top if wanted</step>
-      <step>Served directly.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Cafe Savoy</name>
-    <category>coffee / tea</category>
-    <glasstype>coffee mug</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="triple sec" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">triple sec</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="bitter" measure="" quantity="" unit="">coffee</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="cream" measure="1/2 oz" quantity="15.0" unit="ml">milk</ingredient>
-      <ingredient id="ingr4" alc_type="brandy" basic_taste="" measure="" quantity="" unit="">brandy</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Fill mug almost to top with ingr2.add ingr3, ingr1 and ingr4</step>
-      <step>Stir.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Danbooka</name>
-    <category>coffee / tea</category>
-    <glasstype>coffee mug</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="vodka" basic_taste="" measure="1 part" quantity="30.0" unit="ml">everclear</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="bitter" measure="3 parts" quantity="90.0" unit="ml">coffee</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Pour it in and mix it.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Fuzzy Asshole</name>
-    <category>coffee / tea</category>
-    <glasstype>coffee mug</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="schnapps" basic_taste="" measure="1/2" quantity="15.0" unit="ml">peach schnapps</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="bitter" measure="1/2" quantity="15.0" unit="ml">coffee</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Fill coffe mug half full of ingr2</step>
-      <step>Fill the other half full of ingr1</step>
-      <step>Stir and drink while hot.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>H.D.</name>
-    <category>coffee / tea</category>
-    <glasstype>beer mug</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="8 cl" quantity="80.0" unit="ml">bailey's irish cream</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="bitter" measure="" quantity="" unit="">coffee</ingredient>
-      <ingredient id="ingr3" alc_type="whisky" basic_taste="" measure="4 cl" quantity="40.0" unit="ml">whisky</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Mix the ingr3 and baileys cream in a beer-glass (at least 50 cl)</step>
-      <step>Fill the rest of the glass with ingr2.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Herbal flame</name>
-    <category>coffee / tea</category>
-    <glasstype>mason jar</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="schnapps" basic_taste="" measure="5 shots" quantity="125.0" unit="ml">hot damn</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="bitter" measure="very sweet" quantity="" unit="">very sweet tea</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Pour ingr1 100 in bottom of a jar or regular glass</step>
-      <step>Fill the rest of the glass with sweet tea</step>
-      <step>Stir with spoon, straw, or better yet a cinnamon stick and leave it in.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Hot Creamy Bush</name>
-    <category>coffee / tea</category>
-    <glasstype>irish coffee cup</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="3/4 shot" quantity="18.75" unit="ml">bailey's irish cream</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="bitter" measure="6 oz hot" quantity="180.0" unit="ml">coffee hot</ingredient>
-      <ingredient id="ingr3" alc_type="whisky" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">irish whiskey</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Combine all ingredients in glass</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Iced Coffee Fillip</name>
-    <category>coffee / tea</category>
-    <glasstype>coffee mug</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="bitter" measure="strong cold" quantity="" unit="">coffee cold</ingredient>
-      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="2 tsp" quantity="8.0" unit="gr">kahlua</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Mix together in a coffee mug and chill before serving.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Irish Coffee</name>
-    <category>coffee / tea</category>
-    <glasstype>irish coffee cup</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="cream" measure="1 tblsp" quantity="" unit="">whipped cream</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 tsp" quantity="4.0" unit="gr">sugar</ingredient>
-      <ingredient id="ingr3" alc_type="whisky" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml">irish whiskey</ingredient>
-      <ingredient id="ingr4" alc_type="" basic_taste="bitter" measure="8 oz" quantity="240.0" unit="ml">coffee</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Heat the ingr4, whiskey and ingr2; do not boil</step>
-      <step>Pour into glass and top with cream; serve hot.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Jamaican Coffee</name>
-    <category>coffee / tea</category>
-    <glasstype>champagne flute</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="rum" basic_taste="" measure="1/6 glass" quantity="30.0" unit="ml">rum</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="bitter" measure="1/6 glass strong black" quantity="58.33333333333333" unit="ml">coffee</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="water" measure="1/2 glass cold" quantity="175.0" unit="ml">water cold</ingredient>
-      <ingredient id="ingr4" alc_type="" basic_taste="cream" measure="" quantity="" unit="">whipped cream</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Stir the ingr1, ingr2 and water together</step>
-      <step>Top with the ingr4</step>
-      <step>Sprinkle with a pinch of well ground ingr2 and drink with a straw.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Kioki Coffee</name>
-    <category>coffee / tea</category>
-    <glasstype>coffee mug</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="brandy" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">brandy</ingredient>
-      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">kahlua</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="bitter" measure="" quantity="" unit="">coffee</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Stir</step>
-      <step>Add whipped cream to the top.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Kurant Tea</name>
-    <category>coffee / tea</category>
-    <glasstype>champagne flute</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="turkish apple" quantity="237.0" unit="ml">turkish apple tea</ingredient>
-      <ingredient id="ingr2" alc_type="vodka" basic_taste="" measure="4 cl" quantity="40.0" unit="ml">absolut kurant</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Pour ingr2 into a comfortably big tea-cup</step>
-      <step>Add the not too hot(!) apple tea and, if you like, some sugar</step>
-      <step>Enjoy!</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Mocha-Berry</name>
-    <category>coffee / tea</category>
-    <glasstype>irish coffee cup</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="bitter" measure="6 oz" quantity="180.0" unit="ml">coffee</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="2 tblsp" quantity="28.0" unit="gr">cocoa powder</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="cream" measure="" quantity="" unit="">whipped cream</ingredient>
-      <ingredient id="ingr4" alc_type="sweet liqueur" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">chambord raspberry liqueur</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Pour 6 oz</step>
-      <step>Of ingr1 in a mug or irish ingr1 cup</step>
-      <step>Add coca mix and chambord, mix well and top off with ingr3.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Swedish Coffee</name>
-    <category>coffee / tea</category>
-    <glasstype>coffee mug</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="vodka" basic_taste="" measure="4 cl" quantity="40.0" unit="ml">aquavit</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="bitter" measure="1 cup" quantity="128.0" unit="gr">coffee</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Pour the ingr2 in an ordinary ingr2 cup</step>
-      <step>Add the ingr1</step>
-      <step>Add sugar by taste</step>
-      <step>Stir and have a nice evening (morning)</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Talos Coffee</name>
-    <category>coffee / tea</category>
-    <glasstype>brandy snifter</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="triple sec" basic_taste="" measure="3 parts" quantity="90.0" unit="ml">grand marnier</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="bitter" measure="1 part" quantity="30.0" unit="ml">coffee</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Add your gm and then add your ingr2.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Tennesee Mud</name>
-    <category>coffee / tea</category>
-    <glasstype>coffee mug</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="whisky" basic_taste="" measure="4 oz" quantity="120.0" unit="ml">jack daniels</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="cream" measure="" quantity="" unit="">whipped cream</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="bitter" measure="8 oz" quantity="240.0" unit="ml">coffee</ingredient>
-      <ingredient id="ingr4" alc_type="sweet liqueur" basic_taste="" measure="4 oz" quantity="120.0" unit="ml">amaretto</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Mix ingr3, ingr1 and ingr4</step>
-      <step>Add cream on top.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Zorro</name>
-    <category>coffee / tea</category>
-    <glasstype>coffee mug</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="sambuca" basic_taste="" measure="2 cl" quantity="20.0" unit="ml">sambuca</ingredient>
-      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="2 cl" quantity="20.0" unit="ml">bailey's irish cream</ingredient>
-      <ingredient id="ingr3" alc_type="sweet liqueur" basic_taste="" measure="2 cl" quantity="20.0" unit="ml">white creme de menthe</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Add all and pour black coffee and add whipped cream on top.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>151 Florida Bushwacker</name>
-    <category>milk / float / shake</category>
-    <glasstype>beer mug</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">dark creme de cacao</ingredient>
-      <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">coconut liqueur</ingredient>
-      <ingredient id="ingr3" alc_type="rum" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">light rum</ingredient>
-      <ingredient id="ingr4" alc_type="" basic_taste="cream" measure="3 oz" quantity="90.0" unit="ml">milk</ingredient>
-      <ingredient id="ingr5" alc_type="triple sec" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">cointreau</ingredient>
-      <ingredient id="ingr6" alc_type="rum" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">malibu rum</ingredient>
-      <ingredient id="ingr7" alc_type="" basic_taste="cream" measure="1 cup" quantity="128.0" unit="gr">vanilla ice-cream</ingredient>
-      <ingredient id="ingr8" alc_type="rum" basic_taste="" measure="1/2 oz bacardi" quantity="15.0" unit="ml">151 proof rum</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Combine all ingredients</step>
-      <step>Blend until smooth</step>
-      <step>Garnish with chocolate shavings if desired.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Avalanche</name>
-    <category>milk / float / shake</category>
-    <glasstype>highball glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="cream" measure="fill with" quantity="" unit="">cream</ingredient>
-      <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">crown royal</ingredient>
-      <ingredient id="ingr3" alc_type="creamy liqueur" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">kahlua</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Mix in highball glass over ice, shake well.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Baby Eskimo</name>
-    <category>milk / float / shake</category>
-    <glasstype>collins glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="cream" measure="2 scoops" quantity="120.0" unit="ml">vanilla ice-cream</ingredient>
-      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">kahlua</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="cream" measure="8 oz" quantity="240.0" unit="ml">milk</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Leave ice-cream out for about 10 minutes</step>
-      <step>Add ingredients in order, stir with chopstick (butter knife or spoon works too)</step>
-      <step>Consume immediately and often</step>
-      <step>Nice and light, great for following a heavy drink.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Black Forest Shake</name>
-    <category>milk / float / shake</category>
-    <glasstype>collins glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="cream" measure="" quantity="" unit="">milk</ingredient>
-      <ingredient id="ingr2" alc_type="brandy" basic_taste="" measure="" quantity="" unit="">cherry brandy</ingredient>
-      <ingredient id="ingr3" alc_type="vodka" basic_taste="" measure="" quantity="" unit="">vodka</ingredient>
-      <ingredient id="ingr4" alc_type="" basic_taste="sweet" measure="" quantity="" unit="">chocolate syrup</ingredient>
-    </ingredients>
-    <preparation>
-      <step>In a blender put ice cubes, ingr4, ingr2, ingr3, and ingr1</step>
-      <step>Blend very well.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Blind Russian</name>
-    <category>milk / float / shake</category>
-    <glasstype>collins glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">bailey's irish cream</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="cream" measure="to fill" quantity="" unit="">milk</ingredient>
-      <ingredient id="ingr3" alc_type="schnapps" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">butterscotch schnapps</ingredient>
-      <ingredient id="ingr4" alc_type="creamy liqueur" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">kahlua</ingredient>
-      <ingredient id="ingr5" alc_type="creamy liqueur" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">godiva liqueur</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Fill glass with ice</step>
-      <step>Add all liquers</step>
-      <step>Add ingr2</step>
-      <step>Shake.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Boozy Snickers Milkshake</name>
-    <category>milk / float / shake</category>
-    <glasstype>mason jar</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="4 tablespoons" quantity="60.0" unit="ml">caramel sauce</ingredient>
-      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="1/2 cup" quantity="64.0" unit="gr">godiva liqueur</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="15" quantity="450.0" unit="ml">mini-snickers bars</ingredient>
-      <ingredient id="ingr4" alc_type="" basic_taste="cream" measure="3 cups" quantity="711.0" unit="ml">vanilla ice-cream</ingredient>
-      <ingredient id="ingr5" alc_type="" basic_taste="cream" measure="1 cup" quantity="128.0" unit="gr">milk</ingredient>
-      <ingredient id="ingr6" alc_type="" basic_taste="sweet" measure="4 tablespoons" quantity="60.0" unit="ml">chocolate sauce</ingredient>
-      <ingredient id="ingr7" alc_type="" basic_taste="cream" measure="for topping" quantity="" unit="">whipped cream</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Place the snickers bars in a plastic bag and roll over them with a rolling pin until crushed</step>
-      <step>Add crushed snickers pieces, ice cream, ingr5, ingr1, ingr6, and chocolate liquor to a blender</step>
-      <step>Blend until shake is thick and frothy</step>
-      <step>Pour into glasses and top with chocolate liquor and whip cream.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Butter Baby</name>
-    <category>milk / float / shake</category>
-    <glasstype>beer mug</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="schnapps" basic_taste="" measure="1 part" quantity="30.0" unit="ml">butterscotch schnapps</ingredient>
-      <ingredient id="ingr2" alc_type="vodka" basic_taste="" measure="2 parts" quantity="60.0" unit="ml">vodka</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="cream" measure="full glass" quantity="300.0" unit="ml">milk</ingredient>
-      <ingredient id="ingr4" alc_type="" basic_taste="cream" measure="2 scoops" quantity="120.0" unit="ml">vanilla ice-cream</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Blend together in a blender</step>
-      <step>Serve in a chilled beer mug with fresh blueberries and caramel for topping.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Chocolate Monkey</name>
-    <category>milk / float / shake</category>
-    <glasstype>parfait glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="cream" measure="2 scoops" quantity="120.0" unit="ml">chocolate ice-cream</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 oz" quantity="30.0" unit="ml">chocolate syrup</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1 piece" quantity="120.0" unit="gr">banana</ingredient>
-      <ingredient id="ingr4" alc_type="" basic_taste="cream" measure="4 oz" quantity="120.0" unit="ml">chocolate milk</ingredient>
-      <ingredient id="ingr5" alc_type="sweet liqueur" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">banana liqueur</ingredient>
-      <ingredient id="ingr6" alc_type="" basic_taste="cream" measure="1" quantity="" unit="">whipped cream</ingredient>
-      <ingredient id="ingr7" alc_type="" basic_taste="sweet" measure="1" quantity="" unit="">cherry</ingredient>
-      <ingredient id="ingr8" alc_type="creamy liqueur" basic_taste="" measure="2 shots" quantity="50.0" unit="ml">creme de cacao</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Blend liqeuors with ice-cream, milk and syrup</step>
-      <step>Pour into parfait glass, top with ingr6 and garnish with ingr3 and ingr7.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Jamaica Kiss</name>
-    <category>milk / float / shake</category>
-    <glasstype>hurricane glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="rum" basic_taste="" measure="1 shot jamaican" quantity="25.0" unit="ml">light rum jamaican</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="cream" measure="" quantity="" unit="">milk</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="bitter" measure="1 shot" quantity="25.0" unit="ml">coffee liqueur</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Fill a tumbler with ice cubes</step>
-      <step>Add a shot of tia maria and a shot of jamaican light rum</step>
-      <step>Fill the tumbler with ingr2</step>
-      <step>Blend until smooth and serve immediately.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Nutty Irishman</name>
-    <category>milk / float / shake</category>
-    <glasstype>highball glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="cream" measure="1 part" quantity="30.0" unit="ml">milk</ingredient>
-      <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="1 part" quantity="30.0" unit="ml">frangelico</ingredient>
-      <ingredient id="ingr3" alc_type="creamy liqueur" basic_taste="" measure="1 part" quantity="30.0" unit="ml">bailey's irish cream</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Serve over ice</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Sweet Tooth</name>
-    <category>milk / float / shake</category>
-    <glasstype>highball glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="2 shots" quantity="50.0" unit="ml">godiva liqueur</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="cream" measure="" quantity="" unit="">milk</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Put 2 shots godiva liquour into a glass, add as much or as little ingr2 as you would like.</step>
-    </preparation>
-    <utility>1.0</utility>
-    <derivation>Original</derivation>
-    <evaluation>Success</evaluation>
-  </cocktail>
-  <cocktail>
-    <name>Texas Sling</name>
-    <category>milk / float / shake</category>
-    <glasstype>wine glass</glasstype>
-    <ingredients>
-      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">amaretto</ingredient>
-      <ingredient id="ingr2" alc_type="rum" basic_taste="" measure="1/2 oz bacardi" quantity="15.0" unit="ml">151 proof rum</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="cream" measure="1 oz" quantity="30.0" unit="ml">cream</ingredient>
-      <ingredient id="ingr4" alc_type="creamy liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">irish cream</ingredient>
-      <ingredient id="ingr5" alc_type="creamy liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">kahlua</ingredient>
-    </ingredients>
-    <preparation>
-      <step>Blend with ice until smooth</step>
-      <step>Serve in a tulip glass, top with whip ingr3.</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
@@ -8214,366 +7445,1134 @@
     <evaluation>Success</evaluation>
   </cocktail>
   <cocktail>
-    <name>Bailey's Dream Shake</name>
-    <category>soft drink / soda</category>
+    <name>Afternoon</name>
+    <category>coffee / tea</category>
     <glasstype>collins glass</glasstype>
     <ingredients>
-      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">bailey's irish cream</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="cream" measure="2 scoops" quantity="120.0" unit="ml">vanilla ice-cream</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="cream" measure="" quantity="" unit="">cream</ingredient>
+      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="1 cl" quantity="10.0" unit="ml">kahlua</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="cream" measure="" quantity="" unit="">cream</ingredient>
+      <ingredient id="ingr3" alc_type="sweet liqueur" basic_taste="" measure="1 1/2" quantity="37.5" unit="ml">frangelico</ingredient>
+      <ingredient id="ingr4" alc_type="" basic_taste="bitter" measure="4 cl hot" quantity="40.0" unit="ml">coffee hot</ingredient>
+      <ingredient id="ingr5" alc_type="creamy liqueur" basic_taste="" measure="1 cl" quantity="10.0" unit="ml">bailey's irish cream</ingredient>
     </ingredients>
     <preparation>
-      <step>Blend ingredients for 30 seconds</step>
-      <step>Definitely refreshing for a hot summer's day !</step>
+      <step>Build into a suiting glass, with no ice</step>
+      <step>Ingr2 on top if wanted</step>
+      <step>Served directly.</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
   <cocktail>
-    <name>Belgian Blue</name>
-    <category>soft drink / soda</category>
-    <glasstype>highball glass</glasstype>
+    <name>Cafe Savoy</name>
+    <category>coffee / tea</category>
+    <glasstype>coffee mug</glasstype>
     <ingredients>
-      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1 cl" quantity="10.0" unit="ml">coconut liqueur</ingredient>
-      <ingredient id="ingr2" alc_type="vodka" basic_taste="" measure="2 cl" quantity="20.0" unit="ml">vodka</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="fill with" quantity="" unit="">sprite</ingredient>
-      <ingredient id="ingr4" alc_type="triple sec" basic_taste="" measure="1 cl" quantity="10.0" unit="ml">blue curacao</ingredient>
+      <ingredient id="ingr1" alc_type="triple sec" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">triple sec</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="bitter" measure="" quantity="" unit="">coffee</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="cream" measure="1/2 oz" quantity="15.0" unit="ml">milk</ingredient>
+      <ingredient id="ingr4" alc_type="brandy" basic_taste="" measure="" quantity="" unit="">brandy</ingredient>
     </ingredients>
     <preparation>
-      <step>Just pour all ingredients in the glass and stir...</step>
+      <step>Fill mug almost to top with ingr2.add ingr3, ingr1 and ingr4</step>
+      <step>Stir.</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
   <cocktail>
-    <name>Bleeding Surgeon</name>
-    <category>soft drink / soda</category>
-    <glasstype>collins glass</glasstype>
+    <name>Danbooka</name>
+    <category>coffee / tea</category>
+    <glasstype>coffee mug</glasstype>
     <ingredients>
-      <ingredient id="ingr1" alc_type="rum" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">dark rum</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 slice" quantity="" unit="">orange</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1/2 glass" quantity="175.0" unit="ml">surge</ingredient>
-      <ingredient id="ingr4" alc_type="" basic_taste="sour" measure="1/2 glass" quantity="175.0" unit="ml">cranberry juice</ingredient>
+      <ingredient id="ingr1" alc_type="vodka" basic_taste="" measure="1 part" quantity="30.0" unit="ml">everclear</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="bitter" measure="3 parts" quantity="90.0" unit="ml">coffee</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour shot of rum over slice of ingr2</step>
-      <step>Fill the remaining space in glass half way full of ingr3 or similar drink</step>
-      <step>Finish off glass with ingr4</step>
-      <step>Be carefull, warm ingr3 may foam over the glass.</step>
+      <step>Pour it in and mix it.</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
   <cocktail>
-    <name>Brandon and Will's Coke Float</name>
-    <category>soft drink / soda</category>
+    <name>Fuzzy Asshole</name>
+    <category>coffee / tea</category>
+    <glasstype>coffee mug</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="schnapps" basic_taste="" measure="1/2" quantity="15.0" unit="ml">peach schnapps</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="bitter" measure="1/2" quantity="15.0" unit="ml">coffee</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Fill coffe mug half full of ingr2</step>
+      <step>Fill the other half full of ingr1</step>
+      <step>Stir and drink while hot.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>H.D.</name>
+    <category>coffee / tea</category>
     <glasstype>beer mug</glasstype>
     <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="cream" measure="2 scoops" quantity="120.0" unit="ml">vanilla ice-cream</ingredient>
-      <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">bourbon</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1 can" quantity="330.0" unit="ml">coca-cola</ingredient>
+      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="8 cl" quantity="80.0" unit="ml">bailey's irish cream</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="bitter" measure="" quantity="" unit="">coffee</ingredient>
+      <ingredient id="ingr3" alc_type="whisky" basic_taste="" measure="4 cl" quantity="40.0" unit="ml">whisky</ingredient>
     </ingredients>
     <preparation>
-      <step>Scoop two large scoops of ingr1 into frosted beer mug</step>
-      <step>Next, add 2 ounces maker's mark</step>
-      <step>Then, pour in coke</step>
-      <step>Gently stir and enjoy.</step>
+      <step>Mix the ingr3 and baileys cream in a beer-glass (at least 50 cl)</step>
+      <step>Fill the rest of the glass with ingr2.</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
   <cocktail>
-    <name>California Root Beer</name>
-    <category>soft drink / soda</category>
-    <glasstype>highball glass</glasstype>
+    <name>Herbal flame</name>
+    <category>coffee / tea</category>
+    <glasstype>mason jar</glasstype>
     <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="fill with" quantity="" unit="">soda water</ingredient>
-      <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">galliano</ingredient>
-      <ingredient id="ingr3" alc_type="creamy liqueur" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">kahlua</ingredient>
+      <ingredient id="ingr1" alc_type="schnapps" basic_taste="" measure="5 shots" quantity="125.0" unit="ml">hot damn</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="bitter" measure="very sweet" quantity="" unit="">very sweet tea</ingredient>
     </ingredients>
     <preparation>
-      <step>Put ingr3 and ingr2 in highball glass fill with soda</step>
+      <step>Pour ingr1 100 in bottom of a jar or regular glass</step>
+      <step>Fill the rest of the glass with sweet tea</step>
+      <step>Stir with spoon, straw, or better yet a cinnamon stick and leave it in.</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
   <cocktail>
-    <name>Citrus Coke</name>
-    <category>soft drink / soda</category>
-    <glasstype>highball glass</glasstype>
+    <name>Hot Creamy Bush</name>
+    <category>coffee / tea</category>
+    <glasstype>irish coffee cup</glasstype>
     <ingredients>
-      <ingredient id="ingr1" alc_type="rum" basic_taste="" measure="1 part" quantity="30.0" unit="ml">bacardi limon</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="2 parts" quantity="60.0" unit="ml">coca-cola</ingredient>
+      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="3/4 shot" quantity="18.75" unit="ml">bailey's irish cream</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="bitter" measure="6 oz hot" quantity="180.0" unit="ml">coffee hot</ingredient>
+      <ingredient id="ingr3" alc_type="whisky" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">irish whiskey</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour half of coke in a glass</step>
-      <step>Then add bacardi and top it off with the remaining coke</step>
-      <step>Stir and drink up!</step>
+      <step>Combine all ingredients in glass</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
   <cocktail>
-    <name>Darkwood Sling</name>
-    <category>soft drink / soda</category>
-    <glasstype>cocktail glass</glasstype>
+    <name>Iced Coffee Fillip</name>
+    <category>coffee / tea</category>
+    <glasstype>coffee mug</glasstype>
     <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="1 part" quantity="30.0" unit="ml">orange juice</ingredient>
-      <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="1 part" quantity="30.0" unit="ml">cherry heering</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1 part" quantity="30.0" unit="ml">soda water</ingredient>
+      <ingredient id="ingr1" alc_type="" basic_taste="bitter" measure="strong cold" quantity="" unit="">coffee cold</ingredient>
+      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="2 tsp" quantity="8.0" unit="gr">kahlua</ingredient>
     </ingredients>
     <preparation>
-      <step>There are many good cherry liqueurs you can use, but i prefere heering</step>
-      <step>Add one share of the liqueur</step>
-      <step>Then you add one share of soda</step>
-      <step>For a sour sling use tonic (most people prefer the drink without tonic)</step>
-      <step>Afterwards you fill the glass with ingr1 and ice cubes.</step>
+      <step>Mix together in a coffee mug and chill before serving.</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
   <cocktail>
-    <name>Zambeer</name>
-    <category>soft drink / soda</category>
-    <glasstype>collins glass</glasstype>
+    <name>Irish Coffee</name>
+    <category>coffee / tea</category>
+    <glasstype>irish coffee cup</glasstype>
     <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="add 10 oz" quantity="300.0" unit="ml">root beer</ingredient>
-      <ingredient id="ingr2" alc_type="sambuca" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml">sambuca</ingredient>
+      <ingredient id="ingr1" alc_type="" basic_taste="cream" measure="1 tblsp" quantity="" unit="">whipped cream</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 tsp" quantity="4.0" unit="gr">sugar</ingredient>
+      <ingredient id="ingr3" alc_type="whisky" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml">irish whiskey</ingredient>
+      <ingredient id="ingr4" alc_type="" basic_taste="bitter" measure="8 oz" quantity="240.0" unit="ml">coffee</ingredient>
     </ingredients>
     <preparation>
-      <step>Mix ingr2 with rootbeer and stir</step>
-      <step>Add ice</step>
+      <step>Heat the ingr4, whiskey and ingr2; do not boil</step>
+      <step>Pour into glass and top with cream; serve hot.</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
   <cocktail>
-    <name>Zinger</name>
-    <category>soft drink / soda</category>
-    <glasstype>highball glass</glasstype>
+    <name>Jamaican Coffee</name>
+    <category>coffee / tea</category>
+    <glasstype>champagne flute</glasstype>
     <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="4 shots" quantity="100.0" unit="ml">surge</ingredient>
-      <ingredient id="ingr2" alc_type="schnapps" basic_taste="" measure="4 shots" quantity="100.0" unit="ml">peachtree schnapps</ingredient>
+      <ingredient id="ingr1" alc_type="rum" basic_taste="" measure="1/6 glass" quantity="30.0" unit="ml">rum</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="bitter" measure="1/6 glass strong black" quantity="58.33333333333333" unit="ml">coffee</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="water" measure="1/2 glass cold" quantity="175.0" unit="ml">water cold</ingredient>
+      <ingredient id="ingr4" alc_type="" basic_taste="cream" measure="" quantity="" unit="">whipped cream</ingredient>
     </ingredients>
     <preparation>
-      <step>Get a shot glass and pour in three shots of the schnapps</step>
-      <step>Do the same with the ingr1 cola</step>
-      <step>Then down it like scheetz would.</step>
+      <step>Stir the ingr1, ingr2 and water together</step>
+      <step>Top with the ingr4</step>
+      <step>Sprinkle with a pinch of well ground ingr2 and drink with a straw.</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
   <cocktail>
-    <name>A Piece of Ass</name>
-    <category>other/unknown</category>
-    <glasstype>highball glass</glasstype>
+    <name>Kioki Coffee</name>
+    <category>coffee / tea</category>
+    <glasstype>coffee mug</glasstype>
     <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="sour" measure="" quantity="" unit="">sour mix</ingredient>
-      <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">amaretto</ingredient>
-      <ingredient id="ingr3" alc_type="whisky" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">southern comfort</ingredient>
+      <ingredient id="ingr1" alc_type="brandy" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">brandy</ingredient>
+      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">kahlua</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="bitter" measure="" quantity="" unit="">coffee</ingredient>
     </ingredients>
     <preparation>
-      <step>Put ice in glass</step>
-      <step>Pour in shots</step>
-      <step>Fill with ingr1.</step>
+      <step>Stir</step>
+      <step>Add whipped cream to the top.</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
   <cocktail>
-    <name>Absolut Evergreen</name>
-    <category>other/unknown</category>
-    <glasstype>collins glass</glasstype>
+    <name>Kurant Tea</name>
+    <category>coffee / tea</category>
+    <glasstype>champagne flute</glasstype>
     <ingredients>
-      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1/3 part" quantity="10.0" unit="ml">pisang ambon</ingredient>
-      <ingredient id="ingr2" alc_type="bitters" basic_taste="" measure="" quantity="" unit="">bitter lemon</ingredient>
-      <ingredient id="ingr3" alc_type="vodka" basic_taste="" measure="2/3 part" quantity="20.0" unit="ml">absolut citron</ingredient>
+      <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="turkish apple" quantity="237.0" unit="ml">turkish apple tea</ingredient>
+      <ingredient id="ingr2" alc_type="vodka" basic_taste="" measure="4 cl" quantity="40.0" unit="ml">absolut kurant</ingredient>
     </ingredients>
     <preparation>
-      <step>Mix, pour over ice and top up with ingr2.</step>
+      <step>Pour ingr2 into a comfortably big tea-cup</step>
+      <step>Add the not too hot(!) apple tea and, if you like, some sugar</step>
+      <step>Enjoy!</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
   <cocktail>
-    <name>Absolut limousine</name>
-    <category>other/unknown</category>
-    <glasstype>collins glass</glasstype>
+    <name>Mocha-Berry</name>
+    <category>coffee / tea</category>
+    <glasstype>irish coffee cup</glasstype>
     <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="sour" measure="1/3" quantity="10.0" unit="ml">lime juice</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="water" measure="top it up with" quantity="" unit="">tonic water</ingredient>
-      <ingredient id="ingr3" alc_type="vodka" basic_taste="" measure="2/3" quantity="20.0" unit="ml">absolut citron</ingredient>
+      <ingredient id="ingr1" alc_type="" basic_taste="bitter" measure="6 oz" quantity="180.0" unit="ml">coffee</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="2 tblsp" quantity="28.0" unit="gr">cocoa powder</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="cream" measure="" quantity="" unit="">whipped cream</ingredient>
+      <ingredient id="ingr4" alc_type="sweet liqueur" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">chambord raspberry liqueur</ingredient>
     </ingredients>
     <preparation>
-      <step>Fill absolut into a glass</step>
-      <step>Add ingr1</step>
-      <step>Add ice and lime wedges.</step>
+      <step>Pour 6 oz</step>
+      <step>Of ingr1 in a mug or irish ingr1 cup</step>
+      <step>Add coca mix and chambord, mix well and top off with ingr3.</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
   <cocktail>
-    <name>Amaretto Stone Sour</name>
-    <category>other/unknown</category>
-    <glasstype>collins glass</glasstype>
+    <name>Swedish Coffee</name>
+    <category>coffee / tea</category>
+    <glasstype>coffee mug</glasstype>
     <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="1 part" quantity="30.0" unit="ml">orange juice</ingredient>
-      <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="1 part" quantity="30.0" unit="ml">amaretto</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="sour" measure="1 part" quantity="30.0" unit="ml">sour mix</ingredient>
+      <ingredient id="ingr1" alc_type="vodka" basic_taste="" measure="4 cl" quantity="40.0" unit="ml">aquavit</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="bitter" measure="1 cup" quantity="128.0" unit="gr">coffee</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake and serve over ice</step>
+      <step>Pour the ingr2 in an ordinary ingr2 cup</step>
+      <step>Add the ingr1</step>
+      <step>Add sugar by taste</step>
+      <step>Stir and have a nice evening (morning)</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
   <cocktail>
-    <name>Amaretto Stone Sour #3</name>
-    <category>other/unknown</category>
-    <glasstype>highball glass</glasstype>
+    <name>Talos Coffee</name>
+    <category>coffee / tea</category>
+    <glasstype>brandy snifter</glasstype>
     <ingredients>
-      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">amaretto</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="add splash" quantity="6.0" unit="ml">orange juice</ingredient>
-      <ingredient id="ingr3" alc_type="tequila" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">tequila</ingredient>
-      <ingredient id="ingr4" alc_type="" basic_taste="sour" measure="2 oz" quantity="60.0" unit="ml">sour mix</ingredient>
+      <ingredient id="ingr1" alc_type="triple sec" basic_taste="" measure="3 parts" quantity="90.0" unit="ml">grand marnier</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="bitter" measure="1 part" quantity="30.0" unit="ml">coffee</ingredient>
     </ingredients>
     <preparation>
-      <step>Shake ingr4, ingr3 and ingr1 with ice</step>
-      <step>Strain into highball glass</step>
-      <step>Add a splash of oj</step>
-      <step>Garnish with orange slice and a cherry.</step>
+      <step>Add your gm and then add your ingr2.</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
   <cocktail>
-    <name>Apple Pie with A Crust</name>
-    <category>other/unknown</category>
-    <glasstype>collins glass</glasstype>
+    <name>Tennesee Mud</name>
+    <category>coffee / tea</category>
+    <glasstype>coffee mug</glasstype>
     <ingredients>
-      <ingredient id="ingr1" alc_type="rum" basic_taste="" measure="1 part" quantity="30.0" unit="ml">malibu rum</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="spicy" measure="3 dashes" quantity="3.0" unit="ml">cinnamon</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="3 parts" quantity="90.0" unit="ml">apple juice</ingredient>
+      <ingredient id="ingr1" alc_type="whisky" basic_taste="" measure="4 oz" quantity="120.0" unit="ml">jack daniels</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="cream" measure="" quantity="" unit="">whipped cream</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="bitter" measure="8 oz" quantity="240.0" unit="ml">coffee</ingredient>
+      <ingredient id="ingr4" alc_type="sweet liqueur" basic_taste="" measure="4 oz" quantity="120.0" unit="ml">amaretto</ingredient>
     </ingredients>
     <preparation>
-      <step>Just mix the two liquids and sprinkle in the ingr2</step>
-      <step>Serve either cold or heated.</step>
+      <step>Mix ingr3, ingr1 and ingr4</step>
+      <step>Add cream on top.</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
   <cocktail>
-    <name>Bible Belt</name>
-    <category>other/unknown</category>
-    <glasstype>highball glass</glasstype>
+    <name>Zorro</name>
+    <category>coffee / tea</category>
+    <glasstype>coffee mug</glasstype>
     <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="sour" measure="2 oz" quantity="60.0" unit="ml">sour mix</ingredient>
-      <ingredient id="ingr2" alc_type="triple sec" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">triple sec</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="sour" measure="2 wedges" quantity="60.0" unit="ml">lime</ingredient>
-      <ingredient id="ingr4" alc_type="whisky" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">southern comfort</ingredient>
+      <ingredient id="ingr1" alc_type="sambuca" basic_taste="" measure="2 cl" quantity="20.0" unit="ml">sambuca</ingredient>
+      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="2 cl" quantity="20.0" unit="ml">bailey's irish cream</ingredient>
+      <ingredient id="ingr3" alc_type="sweet liqueur" basic_taste="" measure="2 cl" quantity="20.0" unit="ml">white creme de menthe</ingredient>
     </ingredients>
     <preparation>
-      <step>Mix all ingredients, and pour over ice.</step>
+      <step>Add all and pour black coffee and add whipped cream on top.</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
   <cocktail>
-    <name>Jack's Vanilla Coke</name>
-    <category>other/unknown</category>
+    <name>1-900-FUK-MEUP</name>
+    <category>shot</category>
     <glasstype>old-fashioned glass</glasstype>
     <ingredients>
-      <ingredient id="ingr1" alc_type="whisky" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">tennessee whiskey</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 tsp" quantity="4.0" unit="gr">vanilla extract</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="10-12 oz" quantity="330.0" unit="ml">coca-cola</ingredient>
+      <ingredient id="ingr1" alc_type="triple sec" basic_taste="" measure="1/4 oz" quantity="7.5" unit="ml">grand marnier</ingredient>
+      <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="1/4 oz" quantity="7.5" unit="ml">midori melon liqueur</ingredient>
+      <ingredient id="ingr3" alc_type="rum" basic_taste="" measure="1/4 oz" quantity="7.5" unit="ml">malibu rum</ingredient>
+      <ingredient id="ingr4" alc_type="sweet liqueur" basic_taste="" measure="1/4 oz" quantity="7.5" unit="ml">amaretto</ingredient>
+      <ingredient id="ingr5" alc_type="" basic_taste="sour" measure="1/2 oz" quantity="15.0" unit="ml">cranberry juice</ingredient>
+      <ingredient id="ingr6" alc_type="" basic_taste="sweet" measure="1/4 oz" quantity="7.5" unit="ml">pineapple juice</ingredient>
+      <ingredient id="ingr7" alc_type="sweet liqueur" basic_taste="" measure="1/4 oz" quantity="7.5" unit="ml">chambord raspberry liqueur</ingredient>
+      <ingredient id="ingr8" alc_type="vodka" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">absolut kurant</ingredient>
     </ingredients>
     <preparation>
-      <step>After pouring in your ingredients, and adding 3-5 ice cubes, according to taste</step>
-      <step>Stir the drink with a stirrer to get the vanilla off the bottom.</step>
+      <step>Shake ingredients in a mixing tin filled with ice cubes</step>
+      <step>Strain into a rocks glass.</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
   <cocktail>
-    <name>Orange Whip</name>
-    <category>other/unknown</category>
+    <name>24k nightmare</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="bitters" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">jägermeister</ingredient>
+      <ingredient id="ingr2" alc_type="schnapps" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">goldschlager</ingredient>
+      <ingredient id="ingr3" alc_type="rum" basic_taste="" measure="1/2 oz bacardi" quantity="15.0" unit="ml">151 proof rum</ingredient>
+      <ingredient id="ingr4" alc_type="rum" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">rumple minze</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Add over ice,shake and pour.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>252</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="whisky" basic_taste="" measure="1/2 shot" quantity="12.5" unit="ml">wild turkey</ingredient>
+      <ingredient id="ingr2" alc_type="rum" basic_taste="" measure="1/2 shot bacardi" quantity="12.5" unit="ml">151 proof rum</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Add both ingredients to shot glass, shoot, and get drunk quick</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>3 Wise Men</name>
+    <category>shot</category>
     <glasstype>collins glass</glasstype>
     <ingredients>
-      <ingredient id="ingr1" alc_type="rum" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">rum</ingredient>
-      <ingredient id="ingr2" alc_type="vodka" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">vodka</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="4 oz" quantity="120.0" unit="ml">orange juice</ingredient>
-      <ingredient id="ingr4" alc_type="" basic_taste="cream" measure="1 package" quantity="60.0" unit="ml">cream</ingredient>
+      <ingredient id="ingr1" alc_type="whisky" basic_taste="" measure="1/3 oz" quantity="10.0" unit="ml">jim beam</ingredient>
+      <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="1/3 oz" quantity="10.0" unit="ml">johnnie walker</ingredient>
+      <ingredient id="ingr3" alc_type="whisky" basic_taste="" measure="1/3 oz" quantity="10.0" unit="ml">jack daniels</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour ingredients over ice and stir.</step>
+      <step>Put them them in a glass..</step>
+      <step>And slam it to tha head.</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
   <cocktail>
-    <name>Raspberry Cooler</name>
-    <category>other/unknown</category>
+    <name>747</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="1/3 part" quantity="10.0" unit="ml">bailey's irish cream</ingredient>
+      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="1/3 part" quantity="10.0" unit="ml">kahlua</ingredient>
+      <ingredient id="ingr3" alc_type="sweet liqueur" basic_taste="" measure="1/3 part" quantity="10.0" unit="ml">frangelico</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Pour kaluha, then baileys, then ingr3 not chilled and not layered -- serve!!!</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>A Splash of Nash</name>
+    <category>shot</category>
     <glasstype>highball glass</glasstype>
     <ingredients>
-      <ingredient id="ingr1" alc_type="vodka" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">raspberry vodka</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="4 oz" quantity="120.0" unit="ml">lemon-lime soda</ingredient>
+      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="0.5 oz" quantity="15.0" unit="ml">creme de banane</ingredient>
+      <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="0.5 oz" quantity="15.0" unit="ml">midori melon liqueur</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="2 oz" quantity="60.0" unit="ml">soda water</ingredient>
+      <ingredient id="ingr4" alc_type="" basic_taste="sour" measure="2 oz" quantity="60.0" unit="ml">cranberry juice</ingredient>
     </ingredients>
     <preparation>
-      <step>Pour the ingr1 and soda into a highball glass almost filled with ice cubes</step>
-      <step>Stir well.</step>
+      <step>Drop shot glass with banana &amp; melon liquers into a 9 oz hi- ball glass containing ingr3 and ingr4</step>
+      <step>Drink in one shot.</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
   <cocktail>
-    <name>Vodka Fizz</name>
-    <category>other/unknown</category>
-    <glasstype>white wine glass</glasstype>
+    <name>ABC</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
     <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="cream" measure="2 oz" quantity="60.0" unit="ml">half-and-half</ingredient>
-      <ingredient id="ingr2" alc_type="" basic_taste="sour" measure="2 oz" quantity="60.0" unit="ml">limeade</ingredient>
-      <ingredient id="ingr3" alc_type="vodka" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">vodka</ingredient>
-      <ingredient id="ingr4" alc_type="" basic_taste="spicy" measure="" quantity="" unit="">nutmeg</ingredient>
+      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1/3" quantity="10.0" unit="ml">amaretto</ingredient>
+      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="1/3" quantity="10.0" unit="ml">bailey's irish cream</ingredient>
+      <ingredient id="ingr3" alc_type="brandy" basic_taste="" measure="1/3" quantity="10.0" unit="ml">cognac</ingredient>
     </ingredients>
     <preparation>
-      <step>Blend all ingredients, save ingr4</step>
-      <step>Pour into large white wine glass and sprinkle ingr4 on top.</step>
+      <step>Layered in a shot glass.</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>
     <evaluation>Success</evaluation>
   </cocktail>
   <cocktail>
-    <name>Whitecap Margarita</name>
-    <category>other/unknown</category>
-    <glasstype>margarita/coupette glass</glasstype>
+    <name>ACID</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
     <ingredients>
-      <ingredient id="ingr1" alc_type="" basic_taste="sour" measure="3 tblsp fresh" quantity="45.0" unit="ml">lime juice fresh</ingredient>
-      <ingredient id="ingr2" alc_type="tequila" basic_taste="" measure="2 oz" quantity="60.0" unit="ml">tequila</ingredient>
-      <ingredient id="ingr3" alc_type="" basic_taste="cream" measure="1/4 cup" quantity="32.0" unit="gr">cream of coconut</ingredient>
+      <ingredient id="ingr1" alc_type="rum" basic_taste="" measure="1 oz bacardi" quantity="30.0" unit="ml">151 proof rum</ingredient>
+      <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">wild turkey</ingredient>
     </ingredients>
     <preparation>
-      <step>Place all ingredients in a blender and blend until smooth</step>
-      <step>This makes one drink.</step>
+      <step>Poor in the 151 first followed by the 101 served with a coke or dr pepper chaser.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Absolut Sex</name>
+    <category>shot</category>
+    <glasstype>old-fashioned glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">midori melon liqueur</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 splash" quantity="6.0" unit="ml">sprite</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="sour" measure="1 oz" quantity="30.0" unit="ml">cranberry juice</ingredient>
+      <ingredient id="ingr4" alc_type="vodka" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">absolut kurant</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Shake ingr4, midori, and ingr3 in shaker with ice: strain into rocks glass: splash of seven on top.absolut sex.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>After Five</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="" quantity="" unit="">kahlua</ingredient>
+      <ingredient id="ingr2" alc_type="schnapps" basic_taste="" measure="" quantity="" unit="">peppermint schnapps</ingredient>
+      <ingredient id="ingr3" alc_type="creamy liqueur" basic_taste="" measure="" quantity="" unit="">bailey's irish cream</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Pour ingr1 into shot glass to about 1/2 full</step>
+      <step>Using a spoon(inverted), slowly pour in the ingr2 until glass is about 3/4 full</step>
+      <step>Done correctly, the schnapps will flow under the ingr1 for a clear layer</step>
+      <step>Again using a spoon, but this time right side up, slowly top off the glass with a layer of bailey's</step>
+      <step>Be careful to place the spoon right at the top of the ingr1 layer and to raise it as the glass fills up</step>
+      <step>Done correctly, this will provide a layer of bailey's floating over the ingr1</step>
+      <step>Toss it down all at once for something like a peppermint pattie, with a bang!!! note: best if all ingredients are chilled</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Apple Slammer</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="schnapps" basic_taste="" measure="1 part" quantity="30.0" unit="ml">apple schnapps</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 part" quantity="30.0" unit="ml">7-up</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Pour into a shot glass and present to consumer, they are expected to cover the top of the shotglass with thier palm, raise the glass, slam it on the bar and the swallow quickly.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Arizona Antifreeze</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="vodka" basic_taste="" measure="1/3 oz" quantity="10.0" unit="ml">vodka</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1/3 oz" quantity="10.0" unit="ml">sweet and sour</ingredient>
+      <ingredient id="ingr3" alc_type="sweet liqueur" basic_taste="" measure="1/3 oz" quantity="10.0" unit="ml">midori melon liqueur</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Pour all ingredients into shot glass and slam !!!!</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Auburn Headbanger</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="schnapps" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">goldschlager</ingredient>
+      <ingredient id="ingr2" alc_type="bitters" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">jägermeister</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Mix in spread glass over ice</step>
+      <step>Strain and pour in shot glass</step>
+      <step>Sit down before shotting</step>
+      <step>Enjoy!!</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>B-52</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="1/4" quantity="7.5" unit="ml">kahlua</ingredient>
+      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="1/3" quantity="10.0" unit="ml">bailey's irish cream</ingredient>
+      <ingredient id="ingr3" alc_type="triple sec" basic_taste="" measure="1/3" quantity="10.0" unit="ml">grand marnier</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Layer ingredients into a shot glass</step>
+      <step>Serve with a stirrer.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>B-53</name>
+    <category>shot</category>
+    <glasstype>collins glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="triple sec" basic_taste="" measure="1/3 shot" quantity="8.333333333333332" unit="ml">grand marnier</ingredient>
+      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="1/3 shot" quantity="8.333333333333332" unit="ml">kahlua</ingredient>
+      <ingredient id="ingr3" alc_type="sambuca" basic_taste="" measure="1/3 shot" quantity="8.333333333333332" unit="ml">sambuca</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Layer the ingr2, sambucca and ingr1 into a shot glas in that order</step>
+      <step>Better than b-52</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Baby Guinness</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">bailey's irish cream</ingredient>
+      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="2 1/2 oz" quantity="75.0" unit="ml">kahlua</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Pour ingr2, almost filling shot glass</step>
+      <step>Then, carefully pour baileys, using wall of shot glass</step>
+      <step>This will give the "guinness" its "head".</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Big Red</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">irish cream</ingredient>
+      <ingredient id="ingr2" alc_type="schnapps" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">goldschlager</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Pour ingredients into 1 ounce shot glass</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Bob Marley</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="schnapps" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">goldschlager</ingredient>
+      <ingredient id="ingr2" alc_type="bitters" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">jägermeister</ingredient>
+      <ingredient id="ingr3" alc_type="sweet liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">midori melon liqueur</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Layer in a 2 oz shot glass or pony glass</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Brainteaser</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="cream" measure="30 ml" quantity="30.0" unit="ml">erin cream</ingredient>
+      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="5 ml" quantity="5.0" unit="ml">advocaat</ingredient>
+      <ingredient id="ingr3" alc_type="sambuca" basic_taste="" measure="30 ml white" quantity="30.0" unit="ml">sambuca white</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Layered erin first, then sambuca and then avocart(should sit in middle of other two</step>
+      <step>To drink: use a straw to suck up avocart then shot the rest and then suck fumes up through straw.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Brave Bull Shooter</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="spicy" measure="1/2 oz" quantity="15.0" unit="ml">tabasco sauce</ingredient>
+      <ingredient id="ingr2" alc_type="tequila" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">tequila</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Pour tabasco into bottom of shot glass and fill with ingr2.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Bruce's Puce</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="" quantity="" unit="">kahlua</ingredient>
+      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="" quantity="" unit="">bailey's irish cream</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="" quantity="" unit="">grenadine</ingredient>
+    </ingredients>
+    <preparation>
+      <step>In a regular-sized shot glass, layer, with a spoon or cherry, the ingr3 , the ingr1 , then the ingr2 in equal portions</step>
+      <step>It goes down really smooth ,and you don't even need a chaser</step>
+      <step>It tastes just like chocolate milk.(really!)</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Bruised Heart</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="vodka" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">vodka</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sour" measure="1/2 oz" quantity="15.0" unit="ml">cranberry juice</ingredient>
+      <ingredient id="ingr3" alc_type="sweet liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">chambord raspberry liqueur</ingredient>
+      <ingredient id="ingr4" alc_type="schnapps" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">peachtree schnapps</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Pour all ingredients in a mixing tin over ice, stir, and strain into shot glass</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Bubble Gum</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="vodka" basic_taste="" measure="1/4" quantity="7.5" unit="ml">vodka</ingredient>
+      <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="1/4" quantity="7.5" unit="ml">banana liqueur</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1/4" quantity="7.5" unit="ml">orange juice</ingredient>
+      <ingredient id="ingr4" alc_type="schnapps" basic_taste="" measure="1/4" quantity="7.5" unit="ml">peach schnapps</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Layer in order into a shot glass.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Bumble Bee #1</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="1/3 oz" quantity="10.0" unit="ml">bailey's irish cream</ingredient>
+      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="1/3 oz" quantity="10.0" unit="ml">kahlua</ingredient>
+      <ingredient id="ingr3" alc_type="sambuca" basic_taste="" measure="1/3 oz" quantity="10.0" unit="ml">sambuca</ingredient>
+    </ingredients>
+    <preparation>
+      <step>This is a layered shot</step>
+      <step>First pour the bailey's into the shot glass</step>
+      <step>Then take an upside down spoon and touch it to the inside wall of the glass</step>
+      <step>Carefully add the ingr2</step>
+      <step>Repeat this process for the ingr3</step>
+      <step>If done properly, the alcohol will stay separated and resemble a bumble bee</step>
+      <step>Enjoy!!!</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Chocolate Milk</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="cream" measure="1/2 shot" quantity="12.5" unit="ml">milk</ingredient>
+      <ingredient id="ingr2" alc_type="sweet liqueur" basic_taste="" measure="1 dash" quantity="1.0" unit="ml">amaretto</ingredient>
+      <ingredient id="ingr3" alc_type="creamy liqueur" basic_taste="" measure="1/2 shot" quantity="12.5" unit="ml">chocolate liqueur</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Put the ingr1 in the bottom, pour the liquer on top and add the dash of ingr2</step>
+      <step>Do not mix</step>
+      <step>Slam it!</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Damned if you do</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="schnapps" basic_taste="" measure="0.25 oz" quantity="7.5" unit="ml">hot damn</ingredient>
+      <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="0.75 oz" quantity="22.5" unit="ml">whiskey</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Pour into shot glass</step>
+      <step>Put in mouth</step>
+      <step>Repeat as deemed necessary.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Dirty Nipple</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="sambuca" basic_taste="" measure="" quantity="" unit="">sambuca</ingredient>
+      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="" quantity="" unit="">kahlua</ingredient>
+      <ingredient id="ingr3" alc_type="creamy liqueur" basic_taste="" measure="" quantity="" unit="">bailey's irish cream</ingredient>
+    </ingredients>
+    <preparation>
+      <step>This is a layered shot - the bailey's must be on top</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Fahrenheit 5000</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="vodka" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">firewater</ingredient>
+      <ingredient id="ingr2" alc_type="vodka" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">absolut peppar</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="spicy" measure="1 dash" quantity="1.0" unit="ml">tabasco sauce</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Cover bottom of shot glass with ingr3 and then fill with half ingr1 and half ingr2.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Flaming Dr. Pepper</name>
+    <category>shot</category>
+    <glasstype>collins glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">amaretto</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="spicy" measure="1 oz" quantity="30.0" unit="ml">dr. pepper</ingredient>
+      <ingredient id="ingr3" alc_type="beer" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">beer</ingredient>
+      <ingredient id="ingr4" alc_type="rum" basic_taste="" measure="1 oz bacardi" quantity="30.0" unit="ml">151 proof rum</ingredient>
+      <ingredient id="ingr5" alc_type="vodka" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">vodka</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Add ingr1, bacardi, and ingr5</step>
+      <step>Mix in the dr</step>
+      <step>Pepper and ingr3</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Freddy Kruger</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="vodka" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">vodka</ingredient>
+      <ingredient id="ingr2" alc_type="bitters" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">jägermeister</ingredient>
+      <ingredient id="ingr3" alc_type="sambuca" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">sambuca</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Make it an ample size shot!!</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Jam Donut</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1/3 oz" quantity="10.0" unit="ml">chambord raspberry liqueur</ingredient>
+      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="2/3 oz" quantity="20.0" unit="ml">baileys irish cream</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1 tsp" quantity="4.0" unit="gr">sugar syrup</ingredient>
+      <ingredient id="ingr4" alc_type="" basic_taste="sweet" measure="2 pinches" quantity="0.72" unit="gr">sugar</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Coat the rim of a shot glass with ingr4 using ingr3 to stick</step>
+      <step>Add the ingr1 to the shot glass, and carefully layer the ingr2 on top</step>
+      <step>Serve.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Jello shots</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="vodka" basic_taste="" measure="2 cups" quantity="474.0" unit="ml">vodka</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="3 packages" quantity="270.0" unit="gr">jello</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="water" measure="3 cups" quantity="711.0" unit="ml">water</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Boil 3 cups of ingr3 then add ingr2</step>
+      <step>Mix ingr2 and ingr3 until ingr2 is completely disolved</step>
+      <step>Add the two cups of ingr1 and mix together</step>
+      <step>Pour mixture into plastic shot glasses and chill until firm</step>
+      <step>Then, eat away...</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Jelly Bean</name>
+    <category>shot</category>
+    <glasstype>cordial glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="brandy" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">blackberry brandy</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="spicy" measure="1 oz" quantity="30.0" unit="ml">anis</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Mix equal parts in pony glass-tastes just like a jelly bean!</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Kool First Aid</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="1/2 tsp tropical" quantity="2.5" unit="ml">kool-aid tropical</ingredient>
+      <ingredient id="ingr2" alc_type="rum" basic_taste="" measure="2 oz light" quantity="60.0" unit="ml">151 proof rum light</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Add kool aid to a double shot glass, and top with rum</step>
+      <step>Slam and shoot.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Kool-Aid Shot</name>
+    <category>shot</category>
+    <glasstype>old-fashioned glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="sour" measure="" quantity="" unit="">cranberry juice</ingredient>
+      <ingredient id="ingr2" alc_type="vodka" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">vodka</ingredient>
+      <ingredient id="ingr3" alc_type="triple sec" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">triple sec</ingredient>
+      <ingredient id="ingr4" alc_type="gin" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">sloe gin</ingredient>
+      <ingredient id="ingr5" alc_type="sweet liqueur" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">amaretto</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Pour into a large glass with ice and stir</step>
+      <step>Add a little ingr1 to taste.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Kool-Aid Slammer</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="vodka" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">vodka</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1/2 oz grape" quantity="15.0" unit="ml">kool-aid grape</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Fill half the shot glass with the kool-aid first</step>
+      <step>Then put a paper towel over the top of the glass and slowly pour in the ingr1</step>
+      <step>If you do it right, you should be able to see that the two liquids are separated, with the ingr1 on top</step>
+      <step>Now slam it! the last thing you'll taste is the kool-aid.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Lemon Shot</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="sweet" measure="bacardi" quantity="" unit="">sugar</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sour" measure="wedge" quantity="" unit="">lemon</ingredient>
+      <ingredient id="ingr3" alc_type="rum" basic_taste="" measure="" quantity="" unit="">151 proof rum</ingredient>
+      <ingredient id="ingr4" alc_type="sweet liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">galliano</ingredient>
+      <ingredient id="ingr5" alc_type="vodka" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">absolut citron</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Mix ingr4 and ingr5 in a shot glass, lay ingr2 wedge sprinkled with ingr1 over glass and pour a rum over wedge and glass</step>
+      <step>Light rum with a lighter and let burn for a second</step>
+      <step>Do shot quickly and suck on ingr2</step>
+      <step>If it is done correctly, this will taste like a shot of sweet lemonade.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Moranguito</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="absinthe" basic_taste="" measure="2/5" quantity="12.0" unit="ml">absinthe</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1/5" quantity="6.0" unit="ml">grenadine</ingredient>
+      <ingredient id="ingr3" alc_type="tequila" basic_taste="" measure="2/5" quantity="12.0" unit="ml">tequila</ingredient>
+    </ingredients>
+    <preparation>
+      <step>First you put rhe ingr1, then put ingr3, then put the granadine syrup.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Mother's Milk</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="" basic_taste="cream" measure="1 oz" quantity="30.0" unit="ml">milk</ingredient>
+      <ingredient id="ingr2" alc_type="schnapps" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">butterscotch schnapps</ingredient>
+      <ingredient id="ingr3" alc_type="schnapps" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">goldschlager</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Shake over ice, strain</step>
+      <step>Serves two.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Orange Crush</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="triple sec" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">triple sec</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="1 oz" quantity="30.0" unit="ml">orange juice</ingredient>
+      <ingredient id="ingr3" alc_type="vodka" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">vodka</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Add all ingredients to tumbler-pour as shot</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Quick F**K</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="creamy liqueur" basic_taste="" measure="1 part" quantity="30.0" unit="ml">kahlua</ingredient>
+      <ingredient id="ingr2" alc_type="creamy liqueur" basic_taste="" measure="1 part" quantity="30.0" unit="ml">bailey's irish cream</ingredient>
+      <ingredient id="ingr3" alc_type="sweet liqueur" basic_taste="" measure="1 part" quantity="30.0" unit="ml">midori melon liqueur</ingredient>
+    </ingredients>
+    <preparation>
+      <step>In a shot glass add 1/3 ingr1 first</step>
+      <step>Then 1/3 miduri, topping it off with a 1/3 ingr2</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Red Snapper</name>
+    <category>shot</category>
+    <glasstype>old-fashioned glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">amaretto</ingredient>
+      <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">crown royal</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="sour" measure="1 shot" quantity="25.0" unit="ml">cranberry juice</ingredient>
+    </ingredients>
+    <preparation>
+      <step>One shot each, shake n shoot</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Royal Bitch</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1 part" quantity="30.0" unit="ml">frangelico</ingredient>
+      <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="1 part" quantity="30.0" unit="ml">crown royal</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Into a shot glass layer the ingr2 on top of the ingr1.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Royal Flush</name>
+    <category>shot</category>
+    <glasstype>old-fashioned glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1/2 oz" quantity="15.0" unit="ml">chambord raspberry liqueur</ingredient>
+      <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="1 1/2 oz" quantity="45.0" unit="ml">crown royal</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="sour" measure="1 oz" quantity="30.0" unit="ml">cranberry juice</ingredient>
+      <ingredient id="ingr4" alc_type="schnapps" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">peach schnapps</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Pour all the ingredients into tumbler over ice</step>
+      <step>Strain into glass.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Shot-gun</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="whisky" basic_taste="" measure="1 part" quantity="30.0" unit="ml">jack daniels</ingredient>
+      <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">wild turkey</ingredient>
+      <ingredient id="ingr3" alc_type="whisky" basic_taste="" measure="1 part" quantity="30.0" unit="ml">jim beam</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Pour one part jack daneils and one part ingr3 into shot glass then float ingr2 on top.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Tequila Surprise</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="tequila" basic_taste="" measure="full glass" quantity="44.0" unit="ml">tequila</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="spicy" measure="about 8 drops" quantity="8.0" unit="ml">tabasco sauce</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Fill shot glass with ingr1</step>
+      <step>Add drops of tobasco sauce.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Texas Rattlesnake</name>
+    <category>shot</category>
+    <glasstype>highball glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1 part" quantity="30.0" unit="ml">yukon jack</ingredient>
+      <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="1 part" quantity="30.0" unit="ml">southern comfort</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1 splash" quantity="6.0" unit="ml">sweet and sour</ingredient>
+      <ingredient id="ingr4" alc_type="brandy" basic_taste="" measure="1/2 part" quantity="15.0" unit="ml">cherry brandy</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Mix all ingredients and shake well</step>
+      <step>Sweet at first, with a bite at the end...</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Turkeyball</name>
+    <category>shot</category>
+    <glasstype>shot glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="3/4 oz" quantity="22.5" unit="ml">amaretto</ingredient>
+      <ingredient id="ingr2" alc_type="whisky" basic_taste="" measure="1 oz" quantity="30.0" unit="ml">wild turkey</ingredient>
+      <ingredient id="ingr3" alc_type="" basic_taste="sweet" measure="1 splash" quantity="6.0" unit="ml">pineapple juice</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Shake with ice and strain into a shot glass.</step>
+    </preparation>
+    <utility>1.0</utility>
+    <derivation>Original</derivation>
+    <evaluation>Success</evaluation>
+  </cocktail>
+  <cocktail>
+    <name>Zipperhead</name>
+    <category>shot</category>
+    <glasstype>whiskey sour glass</glasstype>
+    <ingredients>
+      <ingredient id="ingr1" alc_type="sweet liqueur" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">chambord raspberry liqueur</ingredient>
+      <ingredient id="ingr2" alc_type="" basic_taste="sweet" measure="fill with" quantity="" unit="">soda water</ingredient>
+      <ingredient id="ingr3" alc_type="vodka" basic_taste="" measure="1 shot" quantity="25.0" unit="ml">vodka</ingredient>
+    </ingredients>
+    <preparation>
+      <step>Fill glass with rocks, add straw before putting in liquor</step>
+      <step>Then add the ingredients in order, trying to keep layered as much as possible (i.e</step>
+      <step>Chambord on bottom, then ingr3, then soda on top).</step>
     </preparation>
     <utility>1.0</utility>
     <derivation>Original</derivation>

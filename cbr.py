@@ -146,7 +146,7 @@ class CBR:
         print(self.similarity_weights)
         return self.similarity_weights
 
-    def _print_ingredients(self, cocktail):
+    def print_ingredients(self, cocktail):
         """ Print the ingredients (with measures) of the given cocktail.
 
         Args:
@@ -160,7 +160,7 @@ class CBR:
         
         return ingr_str
             
-    def _print_preparation(self, cocktail):
+    def print_preparation(self, cocktail):
         """ Print the preparation steps (with ingredient names) of the given cocktail.
 
         Args:
@@ -295,40 +295,6 @@ class CBR:
         if max(sim_list) > 0.95 and "Failure" in list_failures:
             return True
         return False
-
-    def process(self, constraints):
-        """ CBR principal flow, where the different stages of the CBR will be called
-
-        Args:
-            constraints (dict): dictionary containing a set of constraints
-
-        Returns: adapted case and new database
-
-        """
-        # RETRIEVAL PHASE
-        retrieved_case = self._retrieval(constraints)
-        
-        # ADAPTATION PHASE
-        adapted_case, n_changes = self._adaptation(constraints, retrieved_case)
-        
-        # CHECK ADAPTED SOLUTION HAS AT LEAST A CHANGE
-        if n_changes == 0:
-            return adapted_case, self.cocktails
-        
-        # CHECK ADAPTED SOLUTION IS NOT A FAILURE
-        if self._check_adapted_failure(adapted_case):
-            adapted_case.get('evaluation').text = "Failure"
-            ev_score = 0.0
-            self._learning(retrieved_case, adapted_case, ev_score)
-            return adapted_case, self.cocktails
-        
-        # EVALUATION PHASE
-        adapted_case, ev_score = self.evaluation(adapted_case)
-        
-        # LEARNING PHASE
-        self._learning(retrieved_case, adapted_case, ev_score)
-
-        return adapted_case, self.cocktails
 
     def learning(self, retrieved_case, adapted_case, ev_score):
         """ Learning phase in order to decide if the evaluated case is a success or a failure, and act consequently
@@ -539,7 +505,7 @@ class CBR:
                     for atype in constraints[key]:
                         matches = [i for i in cocktail.find("ingredients") if atype == i.attrib['alc_type']]
                         if len(matches) > 0:
-                            sim += [self.similarity_weights["exc_alc_type"]]
+                            sim += self.similarity_weights["exc_alc_type"]
                             cumulative_normalization_score += self.similarity_weights["exc_alc_type"]
                         # In case the constraint is not fulfilled we add the weight to the normalization score
                         else:
@@ -865,29 +831,23 @@ class CBR:
 
         return adapted_cocktail, n_changes
       
-    def evaluation(self, adapted_cocktail):
+    def evaluation(self, adapted_cocktail, score):
         """ Evaluate the ingredients and steps of the preparation by the user in order to determine if the
          adapted case is a success or a failure
 
         Args:
             adapted_cocktail (Element): adapted cocktail element that needs to be evaluated
+            score (float): cocktail score assigned by the expert user
 
         Returns:
             adapted_cocktail (Element): adapted cocktail with
-            score (float64): value of the score assigned by the expert user
         """
-        print("The cocktail to evaluate contains the following ingredients:")
-        self._print_ingredients(adapted_cocktail)
-        print("The preparation steps of the cocktail is the following one:")
-        self._print_preparation(adapted_cocktail)
-        print("How good was the cocktail?")
-        print("Please, introduce a score between 0 and 10 (You can use decimals)")
-        score = float(input())
+        
         if score >= self.threshold_eval:
             adapted_cocktail.find('evaluation').text = "Success"
         else:
             adapted_cocktail.find('evaluation').text = "Failure"
-        return adapted_cocktail, score
+        return adapted_cocktail
 
     def check_constraints(self, constraints):
         """ Check that constraints contain valid values.
