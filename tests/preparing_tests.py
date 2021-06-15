@@ -8,7 +8,7 @@ DATA_PATH = '../Data'
 # Create cocktails CBR
 cocktails_cbr = CBR(os.path.join(DATA_PATH, 'case_library.xml'), verbose=True)
 
-n_tests = 10
+n_tests = 1000
 
 names = [f"cocktail_{i}" for i in range(n_tests)]
 
@@ -72,5 +72,5 @@ for i in range(n_tests):
     all_tests[f"constraints_{i}"] = my_dict
 
 # Save all the tests' constraints to a json file
-with open('tests_constraints.json', 'w') as tests_file:
+with open('1000_tests_constraints.json', 'w') as tests_file:
     json.dump(all_tests, tests_file)
