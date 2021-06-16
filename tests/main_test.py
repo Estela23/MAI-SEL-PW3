@@ -14,7 +14,7 @@ DATA_PATH = os.path.join(os.path.dirname(__file__), '..', 'Data')
 #                'exc_basic_taste': ['spicy']}
 
 # Load constraints from JSON
-constraints = utils.load_constraints(os.path.join(DATA_PATH, 'my_json.json'))
+constraints = utils.load_constraints(os.path.join(DATA_PATH, 'my_constraints.json'))
 
 # Create cocktails CBR
 cocktails_cbr = CBR(os.path.join(DATA_PATH, 'case_library.xml'), verbose=True)
