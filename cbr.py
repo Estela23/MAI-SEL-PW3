@@ -404,10 +404,10 @@ class CBR:
         # Update the cases_history of the retrieved case based on the status
         # If the adapted case is a success, according to the human oracle
         if adapted_case.find('evaluation').text == "Success":
-            self.cases_history[retrieved_case.find("name").text][0] += 1 * ev_score
+            self.cases_history[retrieved_case.find("name").text][0] += 0.1 * ev_score
         # If the adapted case is a failure, according to the human oracle
         elif adapted_case.find('evaluation').text == "Failure":
-            self.cases_history[retrieved_case.find("name").text][1] += 1 * ev_score
+            self.cases_history[retrieved_case.find("name").text][1] += 0.1 * ev_score
             self.failure_parents.append(adapted_case.find("name").text)
 
         # Compute utility score for retrieved_case
