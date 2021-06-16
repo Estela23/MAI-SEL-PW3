@@ -21,12 +21,13 @@ import re
 Ingredient = namedtuple('Ingredient', ['name', 'identifier', 'alc_type', 'basic_taste', 'measure', 'quantity', 'unit'])
 
 MAX_RETRIEVE_RETRIES = 10
+DEFAULT_THRESHOLD_EVAL = 8.0
 
 class CBR:
     """ Class that implements our Case Based Reasoning algorithm.
     """
     
-    def __init__(self, cbl_filename, threshold_eval=8.0, verbose=False):
+    def __init__(self, cbl_filename, threshold_eval=DEFAULT_THRESHOLD_EVAL, verbose=False):
         """ Initialize CBR.
 
         Args:
