@@ -46,8 +46,10 @@ def interactive_menu(cbr):
         print(str(idx)+". "+cat)
     while True:
         type_drink = input().lower()
-        if type_drink == "end":
+        if type_drink == "end" or type_drink=='':
             break
+        elif not type_drink.isdigit():
+            print("Not a number, repeat selection.")
         elif int(type_drink) < 0 or int(type_drink) >= len(cbr.categories):
             print("Not valid type of drink, repeat selection.")
         else:
