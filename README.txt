@@ -32,6 +32,7 @@ Contents of the delivery folder:
     Documentation:
         - PW3_SEL-Cockatil_CBR_Report.pdf: written report
         - User_Manual: user manual for the Cocktails CBR
+        - PW3_SEL-Cockatil_CBR_Slides.pdf: presentation slides
 
 INSTRUCTIONS:
 In order to execute the CLI application follow these steps:
