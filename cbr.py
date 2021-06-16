@@ -803,7 +803,7 @@ class CBR:
                     n_changes += 1
 
                     # Informing the user about what the CBR system is doing
-                    self.verboseprint(f'[CBR] I removed {ingr.text} from the recipe to fulfil your '
+                    self.verboseprint(f'[CBR] I removed {ingr.text} from the recipe to fulfill your '
                                       f'negative constraint\n')
 
         # REMOVE alcohol types that are in the exclude alcohol types constraint
@@ -814,7 +814,7 @@ class CBR:
                     n_changes += 1
 
                     # Informing the user about what the CBR system is doing
-                    self.verboseprint(f'[CBR] I removed {ingr.text} from the recipe to fulfil your '
+                    self.verboseprint(f'[CBR] I removed {ingr.text} from the recipe to fulfill your '
                                       f'{ingr.get("alc_type")} negative constraint\n')
 
         # REMOVE basic tastes that are in the exclude basic tastes constraint
@@ -825,7 +825,7 @@ class CBR:
                     n_changes += 1
 
                     # Informing the user about what the CBR system is doing
-                    self.verboseprint(f'[CBR] I removed {ingr.text} from the recipe to fulfil your '
+                    self.verboseprint(f'[CBR] I removed {ingr.text} from the recipe to fulfill your '
                                       f'negative {ingr.get("basic_taste")} constraint\n')
 
         # Define an index for the ingredients in order to avoid repetitions in the indexes when adding new ingredients
