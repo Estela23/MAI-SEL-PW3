@@ -28,7 +28,6 @@ Contents of the delivery folder:
         - main.py: main script to run the GUI application
 
     tests: files used to automatically test the system
-         PW2_main.py
 
     Documentation:
         - SEL_PW3_Cocktails_CBR.pdf: written report
