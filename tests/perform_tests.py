@@ -27,7 +27,7 @@ def parse_arguments():
 
 
 def perform_tests(args):
-    # Convert CSV to xml to make sure that case_library.xml only contains original recipes
+    # Convert CSV to xml to make sure that case_library.xml only contains original recipes
     xml_file = os.path.join(DATA_PATH, 'case_library.xml')
     create_xml_library(args.path, xml_file)
     
@@ -52,7 +52,7 @@ def perform_tests(args):
             end_el = time.time()
             evaluated_learn_new_case_times.append(end_el - start_el)
 
-            total_times = np.array(get_new_case_times) + np.array(evaluated_learn_new_case_times)
+        total_times = np.array(get_new_case_times) + np.array(evaluated_learn_new_case_times)
 
         mean_ra_time = np.mean(np.array(get_new_case_times))
         mean_el_time = np.mean(np.array(evaluated_learn_new_case_times))
@@ -62,16 +62,19 @@ def perform_tests(args):
         print(f"The average total time for the complete CBR cycle over a new case is : {mean_total_time}")
 
         experiments = [i for i in range(len(total_times))]
-        plt.plot(experiments, total_times, color="red", label="Total time")
+        plt.plot(experiments, total_times, color="red", label="Total Time")
         plt.plot(experiments, np.array(get_new_case_times), color="green", label="Retrieval and Adaptation")
         plt.plot(experiments, np.array(evaluated_learn_new_case_times), color="blue", label="Evaluation and Learning")
-        plt.title("Times needed for each phase for 100 experiments")
+        plt.plot([0, len(total_times)], [mean_total_time, mean_total_time], "--", color="red",
+                 label="Average Total Time")
+        plt.title(f"Times needed for each phase for {len(total_times)} experiments")
         plt.xlabel("Queries performed")
         plt.ylabel("Time in seconds")
         plt.legend(loc="upper left")
+        plt.savefig(f"{len(total_times)}_results.png")
         plt.show()
 
-    with open("./results.txt", 'w') as output:
+    with open(f"./{len(total_times)}_results.txt", 'w') as output:
         print(get_new_case_times, file=output)
         print(evaluated_learn_new_case_times, file=output)
 

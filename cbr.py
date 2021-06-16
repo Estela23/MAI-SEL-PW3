@@ -405,10 +405,10 @@ class CBR:
         # Update the cases_history of the retrieved case based on the status
         # If the adapted case is a success, according to the human oracle
         if adapted_case.find('evaluation').text == "Success":
-            self.cases_history[retrieved_case.find("name").text][0] += 1 * ev_score
+            self.cases_history[retrieved_case.find("name").text][0] += 0.1 * ev_score
         # If the adapted case is a failure, according to the human oracle
         elif adapted_case.find('evaluation').text == "Failure":
-            self.cases_history[retrieved_case.find("name").text][1] += 1 * ev_score
+            self.cases_history[retrieved_case.find("name").text][1] += 0.1 * ev_score
             self.failure_parents.append(adapted_case.find("name").text)
 
         # Compute utility score for retrieved_case
@@ -439,8 +439,8 @@ class CBR:
                     et.write(self.cbl_filename, pretty_print=True, encoding="UTF-8")
                     break
 
-        # Initialize utility of adapted_case to 1.0*evaluation_score
-        adapted_case.find("utility").text = str(1.0 * ev_score)
+        # Initialize utility of adapted_case to 0.1 * evaluation_score
+        adapted_case.find("utility").text = str(0.1 * ev_score)
 
         # Add new adapted_case to case library
         self._update_case_library(adapted_case)
@@ -614,10 +614,10 @@ class CBR:
                         matches = [i for i in cocktail.find("ingredients") if atype == i.attrib['alc_type']]
                         if len(matches) > 0:
                             sim += self.similarity_weights["exc_alc_type"]
-                            cumulative_normalization_score += self.similarity_weights["exc_alc_type"]
+                            cumulative_normalization_score += self.similarity_weights["ingr_match"]
                         # In case the constraint is not fulfilled we add the weight to the normalization score
                         else:
-                            cumulative_normalization_score += self.similarity_weights["exc_alc_type"]
+                            cumulative_normalization_score += self.similarity_weights["ingr_match"]
 
                 # If one of the excluded basic_tastes is found in the cocktail, similarity is reduced
                 elif key == "exc_basic_taste":
@@ -625,10 +625,10 @@ class CBR:
                         matches = [i for i in cocktail.find("ingredients") if atype == i.attrib['basic_taste']]
                         if len(matches) > 0:
                             sim += self.similarity_weights["exc_basic_taste"]
-                            cumulative_normalization_score += self.similarity_weights["exc_basic_taste"]
+                            cumulative_normalization_score += self.similarity_weights["ingr_match"]
                         # In case the constraint is not fulfilled we add the weight to the normalization score
                         else:
-                            cumulative_normalization_score += self.similarity_weights["exc_basic_taste"]
+                            cumulative_normalization_score += self.similarity_weights["ingr_match"]
 
         # Normalize the obtained similarity
         if cumulative_normalization_score == 0:
@@ -804,7 +804,7 @@ class CBR:
                     n_changes += 1
 
                     # Informing the user about what the CBR system is doing
-                    self.verboseprint(f'[CBR] I removed {ingr.text} from the recipe to fulfil your '
+                    self.verboseprint(f'[CBR] I removed {ingr.text} from the recipe to fulfill your '
                                       f'negative constraint\n')
 
         # REMOVE alcohol types that are in the exclude alcohol types constraint
@@ -815,7 +815,7 @@ class CBR:
                     n_changes += 1
 
                     # Informing the user about what the CBR system is doing
-                    self.verboseprint(f'[CBR] I removed {ingr.text} from the recipe to fulfil your '
+                    self.verboseprint(f'[CBR] I removed {ingr.text} from the recipe to fulfill your '
                                       f'{ingr.get("alc_type")} negative constraint\n')
 
         # REMOVE basic tastes that are in the exclude basic tastes constraint
@@ -826,7 +826,7 @@ class CBR:
                     n_changes += 1
 
                     # Informing the user about what the CBR system is doing
-                    self.verboseprint(f'[CBR] I removed {ingr.text} from the recipe to fulfil your '
+                    self.verboseprint(f'[CBR] I removed {ingr.text} from the recipe to fulfill your '
                                       f'negative {ingr.get("basic_taste")} constraint\n')
 
         # Define an index for the ingredients in order to avoid repetitions in the indexes when adding new ingredients

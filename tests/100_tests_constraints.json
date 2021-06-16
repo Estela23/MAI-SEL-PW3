@@ -1,0 +1,2830 @@
+{
+ "constraints_0": {
+  "name": "cocktail_0",
+  "category": [
+   "ordinary drink",
+   "coffee / tea",
+   "milk / float / shake"
+  ],
+  "glass_type": [],
+  "alc_type": [
+   "champagne"
+  ],
+  "basic_taste": [
+   "egg",
+   "salty"
+  ],
+  "ingredients": [
+   "lemonade"
+  ],
+  "exc_ingredients": [],
+  "exc_alc_type": [],
+  "exc_basic_taste": [
+   "water",
+   "sweet"
+  ]
+ },
+ "constraints_1": {
+  "name": "cocktail_1",
+  "category": [
+   "milk / float / shake"
+  ],
+  "glass_type": [],
+  "alc_type": [
+   "cider"
+  ],
+  "basic_taste": [
+   "cream",
+   "water"
+  ],
+  "ingredients": [],
+  "exc_ingredients": [
+   "egg white",
+   "peach vodka"
+  ],
+  "exc_alc_type": [
+   "prosecco",
+   "sweet liqueur"
+  ],
+  "exc_basic_taste": [
+   "bitter",
+   "sweet",
+   "sour"
+  ]
+ },
+ "constraints_2": {
+  "name": "cocktail_2",
+  "category": [
+   "other/unknown",
+   "shot",
+   "cocktail"
+  ],
+  "glass_type": [
+   "martini glass",
+   "margarita glass",
+   "pousse cafe glass"
+  ],
+  "alc_type": [
+   "bitters",
+   "triple sec"
+  ],
+  "basic_taste": [],
+  "ingredients": [
+   "egg white",
+   "tequila"
+  ],
+  "exc_ingredients": [
+   "crown royal",
+   "maraschino liqueur"
+  ],
+  "exc_alc_type": [],
+  "exc_basic_taste": []
+ },
+ "constraints_3": {
+  "name": "cocktail_3",
+  "category": [],
+  "glass_type": [],
+  "alc_type": [
+   "beer",
+   "cider"
+  ],
+  "basic_taste": [],
+  "ingredients": [],
+  "exc_ingredients": [
+   "nutmeg",
+   "egg",
+   "coffee hot"
+  ],
+  "exc_alc_type": [
+   "wine"
+  ],
+  "exc_basic_taste": [
+   "sour",
+   "water"
+  ]
+ },
+ "constraints_4": {
+  "name": "cocktail_4",
+  "category": [
+   "other/unknown",
+   "milk / float / shake",
+   "soft drink / soda"
+  ],
+  "glass_type": [
+   "cordial glass",
+   "parfait glass"
+  ],
+  "alc_type": [
+   "bitters",
+   "cachaca",
+   "rum"
+  ],
+  "basic_taste": [
+   "bitter",
+   "egg",
+   "spicy"
+  ],
+  "ingredients": [
+   "cherry brandy"
+  ],
+  "exc_ingredients": [
+   "mint",
+   "151 proof rum",
+   "orange peel"
+  ],
+  "exc_alc_type": [
+   "cider"
+  ],
+  "exc_basic_taste": []
+ },
+ "constraints_5": {
+  "name": "cocktail_5",
+  "category": [
+   "soft drink / soda",
+   "milk / float / shake"
+  ],
+  "glass_type": [
+   "whiskey sour glass"
+  ],
+  "alc_type": [
+   "ouzo",
+   "sambuca",
+   "sweet liqueur"
+  ],
+  "basic_taste": [],
+  "ingredients": [
+   "pisang ambon",
+   "ginger ale",
+   "kahlua"
+  ],
+  "exc_ingredients": [
+   "gin"
+  ],
+  "exc_alc_type": [
+   "vodka"
+  ],
+  "exc_basic_taste": [
+   "egg",
+   "mint",
+   "bitter"
+  ]
+ },
+ "constraints_6": {
+  "name": "cocktail_6",
+  "category": [
+   "punch / party drink"
+  ],
+  "glass_type": [
+   "beer pilsner"
+  ],
+  "alc_type": [
+   "aperol",
+   "champagne"
+  ],
+  "basic_taste": [],
+  "ingredients": [
+   "carbonated water"
+  ],
+  "exc_ingredients": [],
+  "exc_alc_type": [
+   "wine",
+   "ouzo"
+  ],
+  "exc_basic_taste": [
+   "sour",
+   "cream"
+  ]
+ },
+ "constraints_7": {
+  "name": "cocktail_7",
+  "category": [
+   "milk / float / shake",
+   "soft drink / soda"
+  ],
+  "glass_type": [
+   "punch bowl",
+   "pousse cafe glass",
+   "collins glass"
+  ],
+  "alc_type": [
+   "absinthe",
+   "tequila",
+   "port"
+  ],
+  "basic_taste": [],
+  "ingredients": [],
+  "exc_ingredients": [
+   "vanilla extract"
+  ],
+  "exc_alc_type": [
+   "creamy liqueur",
+   "gin"
+  ],
+  "exc_basic_taste": [
+   "mint",
+   "spicy"
+  ]
+ },
+ "constraints_8": {
+  "name": "cocktail_8",
+  "category": [
+   "ordinary drink",
+   "coffee / tea"
+  ],
+  "glass_type": [
+   "martini glass"
+  ],
+  "alc_type": [
+   "rum",
+   "ouzo"
+  ],
+  "basic_taste": [],
+  "ingredients": [
+   "water cold"
+  ],
+  "exc_ingredients": [
+   "egg white"
+  ],
+  "exc_alc_type": [
+   "absinthe",
+   "creamy liqueur"
+  ],
+  "exc_basic_taste": [
+   "bitter",
+   "salty"
+  ]
+ },
+ "constraints_9": {
+  "name": "cocktail_9",
+  "category": [
+   "cocktail",
+   "soft drink / soda"
+  ],
+  "glass_type": [
+   "margarita glass",
+   "pint glass"
+  ],
+  "alc_type": [
+   "beer",
+   "prosecco"
+  ],
+  "basic_taste": [
+   "egg",
+   "cream"
+  ],
+  "ingredients": [
+   "orange",
+   "vodka"
+  ],
+  "exc_ingredients": [
+   "coffee hot"
+  ],
+  "exc_alc_type": [
+   "creamy liqueur",
+   "tequila"
+  ],
+  "exc_basic_taste": [
+   "spicy"
+  ]
+ },
+ "constraints_10": {
+  "name": "cocktail_10",
+  "category": [],
+  "glass_type": [
+   "pint glass",
+   "pitcher"
+  ],
+  "alc_type": [
+   "gin"
+  ],
+  "basic_taste": [
+   "sour",
+   "salty"
+  ],
+  "ingredients": [
+   "orange juice"
+  ],
+  "exc_ingredients": [
+   "midori melon liqueur",
+   "pisang ambon",
+   "cherry"
+  ],
+  "exc_alc_type": [
+   "cider",
+   "port",
+   "prosecco"
+  ],
+  "exc_basic_taste": [
+   "mint"
+  ]
+ },
+ "constraints_11": {
+  "name": "cocktail_11",
+  "category": [
+   "shot",
+   "other/unknown",
+   "beer"
+  ],
+  "glass_type": [
+   "brandy snifter"
+  ],
+  "alc_type": [],
+  "basic_taste": [
+   "bitter",
+   "sweet",
+   "cream"
+  ],
+  "ingredients": [
+   "sugar superfine",
+   "amaretto"
+  ],
+  "exc_ingredients": [],
+  "exc_alc_type": [],
+  "exc_basic_taste": [
+   "sour",
+   "egg",
+   "mint"
+  ]
+ },
+ "constraints_12": {
+  "name": "cocktail_12",
+  "category": [],
+  "glass_type": [
+   "margarita/coupette glass",
+   "highball glass"
+  ],
+  "alc_type": [
+   "bitters",
+   "ouzo"
+  ],
+  "basic_taste": [
+   "cream"
+  ],
+  "ingredients": [
+   "pisco",
+   "grand marnier"
+  ],
+  "exc_ingredients": [],
+  "exc_alc_type": [],
+  "exc_basic_taste": [
+   "bitter"
+  ]
+ },
+ "constraints_13": {
+  "name": "cocktail_13",
+  "category": [
+   "punch / party drink",
+   "cocktail"
+  ],
+  "glass_type": [],
+  "alc_type": [
+   "cachaca"
+  ],
+  "basic_taste": [
+   "salty",
+   "bitter"
+  ],
+  "ingredients": [
+   "cream"
+  ],
+  "exc_ingredients": [
+   "sugar"
+  ],
+  "exc_alc_type": [
+   "port",
+   "schnapps"
+  ],
+  "exc_basic_taste": [
+   "water",
+   "mint"
+  ]
+ },
+ "constraints_14": {
+  "name": "cocktail_14",
+  "category": [],
+  "glass_type": [
+   "cocktail glass"
+  ],
+  "alc_type": [
+   "absinthe",
+   "whisky"
+  ],
+  "basic_taste": [],
+  "ingredients": [
+   "tabasco sauce",
+   "cloves"
+  ],
+  "exc_ingredients": [
+   "dry vermouth",
+   "bitter lemon",
+   "mint"
+  ],
+  "exc_alc_type": [
+   "port",
+   "cider"
+  ],
+  "exc_basic_taste": [
+   "salty",
+   "egg"
+  ]
+ },
+ "constraints_15": {
+  "name": "cocktail_15",
+  "category": [
+   "ordinary drink",
+   "punch / party drink",
+   "soft drink / soda"
+  ],
+  "glass_type": [
+   "collins glass"
+  ],
+  "alc_type": [],
+  "basic_taste": [
+   "spicy",
+   "cream",
+   "mint"
+  ],
+  "ingredients": [
+   "rum",
+   "grapefruit juice"
+  ],
+  "exc_ingredients": [
+   "southern comfort",
+   "egg white"
+  ],
+  "exc_alc_type": [],
+  "exc_basic_taste": [
+   "bitter"
+  ]
+ },
+ "constraints_16": {
+  "name": "cocktail_16",
+  "category": [
+   "cocktail",
+   "other/unknown"
+  ],
+  "glass_type": [],
+  "alc_type": [
+   "prosecco"
+  ],
+  "basic_taste": [],
+  "ingredients": [
+   "strawberry schnapps"
+  ],
+  "exc_ingredients": [],
+  "exc_alc_type": [
+   "schnapps",
+   "gin"
+  ],
+  "exc_basic_taste": [
+   "bitter"
+  ]
+ },
+ "constraints_17": {
+  "name": "cocktail_17",
+  "category": [
+   "milk / float / shake",
+   "other/unknown"
+  ],
+  "glass_type": [
+   "cocktail glass"
+  ],
+  "alc_type": [
+   "schnapps",
+   "vermouth",
+   "pisco"
+  ],
+  "basic_taste": [
+   "salty"
+  ],
+  "ingredients": [],
+  "exc_ingredients": [
+   "frangelico",
+   "grapefruit juice",
+   "vodka"
+  ],
+  "exc_alc_type": [],
+  "exc_basic_taste": [
+   "cream"
+  ]
+ },
+ "constraints_18": {
+  "name": "cocktail_18",
+  "category": [
+   "other/unknown"
+  ],
+  "glass_type": [],
+  "alc_type": [
+   "prosecco",
+   "schnapps",
+   "triple sec"
+  ],
+  "basic_taste": [],
+  "ingredients": [
+   "blue curacao",
+   "vodka"
+  ],
+  "exc_ingredients": [],
+  "exc_alc_type": [
+   "brandy",
+   "absinthe"
+  ],
+  "exc_basic_taste": []
+ },
+ "constraints_19": {
+  "name": "cocktail_19",
+  "category": [],
+  "glass_type": [
+   "highball glass",
+   "irish coffee cup",
+   "shot glass"
+  ],
+  "alc_type": [
+   "gin",
+   "whisky",
+   "bitters"
+  ],
+  "basic_taste": [
+   "spicy",
+   "sweet",
+   "water"
+  ],
+  "ingredients": [
+   "kahlua",
+   "sugar syrup",
+   "cream"
+  ],
+  "exc_ingredients": [
+   "club soda",
+   "sloe gin",
+   "wild turkey"
+  ],
+  "exc_alc_type": [
+   "port",
+   "cachaca"
+  ],
+  "exc_basic_taste": []
+ },
+ "constraints_20": {
+  "name": "cocktail_20",
+  "category": [
+   "coffee / tea",
+   "shot",
+   "soft drink / soda"
+  ],
+  "glass_type": [
+   "coffee mug"
+  ],
+  "alc_type": [],
+  "basic_taste": [],
+  "ingredients": [
+   "tequila",
+   "frangelico"
+  ],
+  "exc_ingredients": [
+   "coffee"
+  ],
+  "exc_alc_type": [
+   "wine"
+  ],
+  "exc_basic_taste": []
+ },
+ "constraints_21": {
+  "name": "cocktail_21",
+  "category": [
+   "cocktail"
+  ],
+  "glass_type": [
+   "beer pilsner"
+  ],
+  "alc_type": [
+   "cider"
+  ],
+  "basic_taste": [
+   "sweet",
+   "sour"
+  ],
+  "ingredients": [
+   "absolut vodka",
+   "lemon"
+  ],
+  "exc_ingredients": [],
+  "exc_alc_type": [
+   "beer"
+  ],
+  "exc_basic_taste": []
+ },
+ "constraints_22": {
+  "name": "cocktail_22",
+  "category": [],
+  "glass_type": [
+   "whiskey sour glass"
+  ],
+  "alc_type": [
+   "whisky",
+   "bitters",
+   "triple sec"
+  ],
+  "basic_taste": [],
+  "ingredients": [],
+  "exc_ingredients": [
+   "salt",
+   "vodka",
+   "creme de cacao white"
+  ],
+  "exc_alc_type": [
+   "pisco"
+  ],
+  "exc_basic_taste": [
+   "mint"
+  ]
+ },
+ "constraints_23": {
+  "name": "cocktail_23",
+  "category": [
+   "punch / party drink",
+   "shot"
+  ],
+  "glass_type": [
+   "champagne flute",
+   "white wine glass"
+  ],
+  "alc_type": [
+   "absinthe"
+  ],
+  "basic_taste": [
+   "sweet",
+   "salty"
+  ],
+  "ingredients": [
+   "sweet vermouth",
+   "bailey's irish cream",
+   "bailey's irish cream"
+  ],
+  "exc_ingredients": [
+   "whipped cream",
+   "egg white",
+   "mint"
+  ],
+  "exc_alc_type": [
+   "whisky",
+   "ouzo"
+  ],
+  "exc_basic_taste": [
+   "spicy"
+  ]
+ },
+ "constraints_24": {
+  "name": "cocktail_24",
+  "category": [],
+  "glass_type": [
+   "pitcher",
+   "beer pilsner",
+   "shot glass"
+  ],
+  "alc_type": [
+   "vermouth"
+  ],
+  "basic_taste": [],
+  "ingredients": [],
+  "exc_ingredients": [
+   "baileys irish cream",
+   "nutmeg",
+   "gin"
+  ],
+  "exc_alc_type": [
+   "absinthe",
+   "ouzo"
+  ],
+  "exc_basic_taste": [
+   "mint"
+  ]
+ },
+ "constraints_25": {
+  "name": "cocktail_25",
+  "category": [
+   "beer",
+   "milk / float / shake"
+  ],
+  "glass_type": [],
+  "alc_type": [],
+  "basic_taste": [
+   "egg",
+   "salty",
+   "spicy"
+  ],
+  "ingredients": [],
+  "exc_ingredients": [
+   "sugar syrup",
+   "surge"
+  ],
+  "exc_alc_type": [
+   "tequila"
+  ],
+  "exc_basic_taste": []
+ },
+ "constraints_26": {
+  "name": "cocktail_26",
+  "category": [
+   "other/unknown"
+  ],
+  "glass_type": [
+   "pousse cafe glass",
+   "beer mug"
+  ],
+  "alc_type": [],
+  "basic_taste": [
+   "mint"
+  ],
+  "ingredients": [
+   "malibu rum"
+  ],
+  "exc_ingredients": [
+   "irish whiskey",
+   "cider hard"
+  ],
+  "exc_alc_type": [
+   "cachaca",
+   "pisco"
+  ],
+  "exc_basic_taste": [
+   "spicy"
+  ]
+ },
+ "constraints_27": {
+  "name": "cocktail_27",
+  "category": [
+   "beer",
+   "ordinary drink",
+   "cocktail"
+  ],
+  "glass_type": [],
+  "alc_type": [
+   "pisco"
+  ],
+  "basic_taste": [
+   "salty",
+   "bitter",
+   "mint"
+  ],
+  "ingredients": [
+   "white rum",
+   "lager"
+  ],
+  "exc_ingredients": [
+   "sambuca"
+  ],
+  "exc_alc_type": [
+   "beer",
+   "creamy liqueur"
+  ],
+  "exc_basic_taste": [
+   "water"
+  ]
+ },
+ "constraints_28": {
+  "name": "cocktail_28",
+  "category": [
+   "milk / float / shake",
+   "soft drink / soda"
+  ],
+  "glass_type": [
+   "beer mug",
+   "whiskey sour glass"
+  ],
+  "alc_type": [
+   "vodka"
+  ],
+  "basic_taste": [
+   "sweet",
+   "spicy",
+   "bitter"
+  ],
+  "ingredients": [],
+  "exc_ingredients": [
+   "nutmeg grated"
+  ],
+  "exc_alc_type": [],
+  "exc_basic_taste": [
+   "egg",
+   "sour"
+  ]
+ },
+ "constraints_29": {
+  "name": "cocktail_29",
+  "category": [
+   "punch / party drink"
+  ],
+  "glass_type": [],
+  "alc_type": [],
+  "basic_taste": [
+   "salty"
+  ],
+  "ingredients": [],
+  "exc_ingredients": [],
+  "exc_alc_type": [
+   "brandy"
+  ],
+  "exc_basic_taste": [
+   "bitter",
+   "water"
+  ]
+ },
+ "constraints_30": {
+  "name": "cocktail_30",
+  "category": [
+   "punch / party drink"
+  ],
+  "glass_type": [
+   "martini glass"
+  ],
+  "alc_type": [
+   "whisky",
+   "vodka",
+   "prosecco"
+  ],
+  "basic_taste": [
+   "mint"
+  ],
+  "ingredients": [
+   "frangelico"
+  ],
+  "exc_ingredients": [
+   "fruit juice",
+   "carbonated water"
+  ],
+  "exc_alc_type": [
+   "bitters"
+  ],
+  "exc_basic_taste": [
+   "egg"
+  ]
+ },
+ "constraints_31": {
+  "name": "cocktail_31",
+  "category": [
+   "ordinary drink"
+  ],
+  "glass_type": [],
+  "alc_type": [
+   "tequila",
+   "cachaca"
+  ],
+  "basic_taste": [
+   "bitter",
+   "water",
+   "sour"
+  ],
+  "ingredients": [
+   "aperol"
+  ],
+  "exc_ingredients": [],
+  "exc_alc_type": [
+   "sweet liqueur",
+   "aperol"
+  ],
+  "exc_basic_taste": []
+ },
+ "constraints_32": {
+  "name": "cocktail_32",
+  "category": [
+   "other/unknown",
+   "soft drink / soda"
+  ],
+  "glass_type": [
+   "margarita/coupette glass"
+  ],
+  "alc_type": [
+   "triple sec",
+   "rum",
+   "port"
+  ],
+  "basic_taste": [],
+  "ingredients": [
+   "kool-aid tropical"
+  ],
+  "exc_ingredients": [
+   "pisang ambon",
+   "egg"
+  ],
+  "exc_alc_type": [],
+  "exc_basic_taste": [
+   "water"
+  ]
+ },
+ "constraints_33": {
+  "name": "cocktail_33",
+  "category": [
+   "coffee / tea"
+  ],
+  "glass_type": [
+   "white wine glass"
+  ],
+  "alc_type": [],
+  "basic_taste": [
+   "sour",
+   "sweet",
+   "salty"
+  ],
+  "ingredients": [],
+  "exc_ingredients": [],
+  "exc_alc_type": [
+   "champagne",
+   "beer"
+  ],
+  "exc_basic_taste": []
+ },
+ "constraints_34": {
+  "name": "cocktail_34",
+  "category": [
+   "beer"
+  ],
+  "glass_type": [
+   "punch bowl",
+   "martini glass"
+  ],
+  "alc_type": [
+   "brandy",
+   "creamy liqueur"
+  ],
+  "basic_taste": [],
+  "ingredients": [
+   "rum",
+   "water",
+   "vanilla extract"
+  ],
+  "exc_ingredients": [],
+  "exc_alc_type": [
+   "whisky",
+   "champagne",
+   "sambuca"
+  ],
+  "exc_basic_taste": [
+   "salty",
+   "sour",
+   "bitter"
+  ]
+ },
+ "constraints_35": {
+  "name": "cocktail_35",
+  "category": [
+   "punch / party drink",
+   "ordinary drink",
+   "shot"
+  ],
+  "glass_type": [
+   "shot glass",
+   "beer glass",
+   "mason jar"
+  ],
+  "alc_type": [
+   "gin"
+  ],
+  "basic_taste": [
+   "sweet"
+  ],
+  "ingredients": [
+   "wine muscatel",
+   "mint"
+  ],
+  "exc_ingredients": [],
+  "exc_alc_type": [
+   "sweet liqueur",
+   "creamy liqueur",
+   "sambuca"
+  ],
+  "exc_basic_taste": [
+   "sour",
+   "spicy",
+   "egg"
+  ]
+ },
+ "constraints_36": {
+  "name": "cocktail_36",
+  "category": [
+   "shot"
+  ],
+  "glass_type": [
+   "pousse cafe glass",
+   "cocktail glass"
+  ],
+  "alc_type": [
+   "ouzo",
+   "vodka"
+  ],
+  "basic_taste": [
+   "sweet"
+  ],
+  "ingredients": [],
+  "exc_ingredients": [
+   "beer"
+  ],
+  "exc_alc_type": [],
+  "exc_basic_taste": [
+   "mint",
+   "sour",
+   "bitter"
+  ]
+ },
+ "constraints_37": {
+  "name": "cocktail_37",
+  "category": [
+   "coffee / tea",
+   "other/unknown",
+   "soft drink / soda"
+  ],
+  "glass_type": [
+   "margarita glass",
+   "martini glass",
+   "brandy snifter"
+  ],
+  "alc_type": [
+   "campari"
+  ],
+  "basic_taste": [
+   "cream"
+  ],
+  "ingredients": [
+   "grand marnier",
+   "carbonated water"
+  ],
+  "exc_ingredients": [
+   "lemon peel",
+   "lemon peel",
+   "cloves"
+  ],
+  "exc_alc_type": [
+   "sweet liqueur",
+   "sambuca",
+   "brandy"
+  ],
+  "exc_basic_taste": [
+   "bitter",
+   "cream"
+  ]
+ },
+ "constraints_38": {
+  "name": "cocktail_38",
+  "category": [
+   "shot"
+  ],
+  "glass_type": [
+   "pitcher",
+   "parfait glass",
+   "beer pilsner"
+  ],
+  "alc_type": [
+   "gin",
+   "triple sec",
+   "pisco"
+  ],
+  "basic_taste": [
+   "egg"
+  ],
+  "ingredients": [
+   "crown royal"
+  ],
+  "exc_ingredients": [
+   "cointreau"
+  ],
+  "exc_alc_type": [],
+  "exc_basic_taste": []
+ },
+ "constraints_39": {
+  "name": "cocktail_39",
+  "category": [],
+  "glass_type": [
+   "brandy snifter",
+   "beer glass"
+  ],
+  "alc_type": [
+   "bitters",
+   "schnapps",
+   "port"
+  ],
+  "basic_taste": [
+   "cream"
+  ],
+  "ingredients": [
+   "kahlua",
+   "egg white"
+  ],
+  "exc_ingredients": [
+   "lemon juice",
+   "scotch"
+  ],
+  "exc_alc_type": [
+   "beer"
+  ],
+  "exc_basic_taste": [
+   "egg"
+  ]
+ },
+ "constraints_40": {
+  "name": "cocktail_40",
+  "category": [
+   "soft drink / soda"
+  ],
+  "glass_type": [],
+  "alc_type": [
+   "pisco",
+   "triple sec"
+  ],
+  "basic_taste": [
+   "salty"
+  ],
+  "ingredients": [
+   "mint"
+  ],
+  "exc_ingredients": [
+   "aperol",
+   "orange bitters"
+  ],
+  "exc_alc_type": [
+   "tequila",
+   "beer"
+  ],
+  "exc_basic_taste": [
+   "mint",
+   "bitter",
+   "cream"
+  ]
+ },
+ "constraints_41": {
+  "name": "cocktail_41",
+  "category": [],
+  "glass_type": [
+   "old-fashioned glass"
+  ],
+  "alc_type": [
+   "campari"
+  ],
+  "basic_taste": [
+   "sweet",
+   "egg",
+   "salty"
+  ],
+  "ingredients": [
+   "amaretto"
+  ],
+  "exc_ingredients": [
+   "champagne",
+   "grape soda",
+   "aperol"
+  ],
+  "exc_alc_type": [
+   "cider"
+  ],
+  "exc_basic_taste": [
+   "bitter"
+  ]
+ },
+ "constraints_42": {
+  "name": "cocktail_42",
+  "category": [],
+  "glass_type": [
+   "beer glass"
+  ],
+  "alc_type": [
+   "triple sec"
+  ],
+  "basic_taste": [
+   "mint"
+  ],
+  "ingredients": [
+   "coconut milk"
+  ],
+  "exc_ingredients": [
+   "bitter lemon",
+   "bailey's irish cream",
+   "nutmeg"
+  ],
+  "exc_alc_type": [
+   "whisky"
+  ],
+  "exc_basic_taste": [
+   "bitter"
+  ]
+ },
+ "constraints_43": {
+  "name": "cocktail_43",
+  "category": [
+   "beer",
+   "coffee / tea",
+   "shot"
+  ],
+  "glass_type": [],
+  "alc_type": [],
+  "basic_taste": [],
+  "ingredients": [
+   "lemon juice"
+  ],
+  "exc_ingredients": [
+   "rum",
+   "anis",
+   "grapefruit juice"
+  ],
+  "exc_alc_type": [
+   "port",
+   "tequila"
+  ],
+  "exc_basic_taste": [
+   "egg"
+  ]
+ },
+ "constraints_44": {
+  "name": "cocktail_44",
+  "category": [
+   "shot"
+  ],
+  "glass_type": [
+   "margarita glass",
+   "parfait glass",
+   "cordial glass"
+  ],
+  "alc_type": [
+   "ouzo",
+   "wine",
+   "bitters"
+  ],
+  "basic_taste": [
+   "sweet"
+  ],
+  "ingredients": [
+   "amaretto"
+  ],
+  "exc_ingredients": [],
+  "exc_alc_type": [
+   "prosecco"
+  ],
+  "exc_basic_taste": [
+   "water",
+   "sour",
+   "spicy"
+  ]
+ },
+ "constraints_45": {
+  "name": "cocktail_45",
+  "category": [
+   "cocktail"
+  ],
+  "glass_type": [],
+  "alc_type": [
+   "pisco",
+   "cider"
+  ],
+  "basic_taste": [],
+  "ingredients": [],
+  "exc_ingredients": [],
+  "exc_alc_type": [],
+  "exc_basic_taste": []
+ },
+ "constraints_46": {
+  "name": "cocktail_46",
+  "category": [
+   "coffee / tea",
+   "soft drink / soda",
+   "shot"
+  ],
+  "glass_type": [
+   "martini glass",
+   "beer mug"
+  ],
+  "alc_type": [
+   "vermouth",
+   "pisco"
+  ],
+  "basic_taste": [
+   "salty",
+   "water",
+   "egg"
+  ],
+  "ingredients": [],
+  "exc_ingredients": [
+   "cognac",
+   "tequila"
+  ],
+  "exc_alc_type": [
+   "cider",
+   "vodka"
+  ],
+  "exc_basic_taste": [
+   "mint"
+  ]
+ },
+ "constraints_47": {
+  "name": "cocktail_47",
+  "category": [
+   "other/unknown",
+   "cocktail"
+  ],
+  "glass_type": [
+   "old-fashioned glass",
+   "copper mug",
+   "beer pilsner"
+  ],
+  "alc_type": [
+   "vermouth"
+  ],
+  "basic_taste": [
+   "egg",
+   "mint"
+  ],
+  "ingredients": [],
+  "exc_ingredients": [
+   "tequila",
+   "soda water",
+   "lillet blanc"
+  ],
+  "exc_alc_type": [
+   "sambuca",
+   "pisco",
+   "triple sec"
+  ],
+  "exc_basic_taste": [
+   "bitter"
+  ]
+ },
+ "constraints_48": {
+  "name": "cocktail_48",
+  "category": [
+   "other/unknown"
+  ],
+  "glass_type": [
+   "parfait glass",
+   "highball glass"
+  ],
+  "alc_type": [],
+  "basic_taste": [],
+  "ingredients": [],
+  "exc_ingredients": [],
+  "exc_alc_type": [
+   "wine",
+   "prosecco"
+  ],
+  "exc_basic_taste": [
+   "sour",
+   "egg"
+  ]
+ },
+ "constraints_49": {
+  "name": "cocktail_49",
+  "category": [
+   "soft drink / soda",
+   "milk / float / shake"
+  ],
+  "glass_type": [
+   "punch bowl",
+   "margarita/coupette glass",
+   "martini glass"
+  ],
+  "alc_type": [
+   "champagne",
+   "vodka"
+  ],
+  "basic_taste": [
+   "mint"
+  ],
+  "ingredients": [
+   "port",
+   "lime",
+   "bailey's irish cream"
+  ],
+  "exc_ingredients": [
+   "apricot brandy"
+  ],
+  "exc_alc_type": [],
+  "exc_basic_taste": []
+ },
+ "constraints_50": {
+  "name": "cocktail_50",
+  "category": [
+   "shot"
+  ],
+  "glass_type": [
+   "champagne flute",
+   "irish coffee cup"
+  ],
+  "alc_type": [],
+  "basic_taste": [
+   "water",
+   "egg"
+  ],
+  "ingredients": [],
+  "exc_ingredients": [
+   "lemon juice",
+   "vodka"
+  ],
+  "exc_alc_type": [],
+  "exc_basic_taste": [
+   "bitter",
+   "cream"
+  ]
+ },
+ "constraints_51": {
+  "name": "cocktail_51",
+  "category": [
+   "shot"
+  ],
+  "glass_type": [
+   "beer pilsner",
+   "copper mug"
+  ],
+  "alc_type": [
+   "whisky",
+   "pisco",
+   "cider"
+  ],
+  "basic_taste": [],
+  "ingredients": [
+   "cream",
+   "whiskey"
+  ],
+  "exc_ingredients": [
+   "johnnie walker",
+   "bitters",
+   "red wine"
+  ],
+  "exc_alc_type": [
+   "port",
+   "vodka",
+   "creamy liqueur"
+  ],
+  "exc_basic_taste": [
+   "salty",
+   "water"
+  ]
+ },
+ "constraints_52": {
+  "name": "cocktail_52",
+  "category": [
+   "milk / float / shake",
+   "punch / party drink",
+   "coffee / tea"
+  ],
+  "glass_type": [
+   "irish coffee cup",
+   "highball glass"
+  ],
+  "alc_type": [
+   "pisco",
+   "beer",
+   "whisky"
+  ],
+  "basic_taste": [],
+  "ingredients": [
+   "apple juice"
+  ],
+  "exc_ingredients": [
+   "mint",
+   "lemon juice"
+  ],
+  "exc_alc_type": [
+   "port",
+   "sweet liqueur",
+   "bitters"
+  ],
+  "exc_basic_taste": []
+ },
+ "constraints_53": {
+  "name": "cocktail_53",
+  "category": [
+   "beer"
+  ],
+  "glass_type": [],
+  "alc_type": [
+   "vermouth",
+   "creamy liqueur"
+  ],
+  "basic_taste": [
+   "salty"
+  ],
+  "ingredients": [],
+  "exc_ingredients": [
+   "brandy plain"
+  ],
+  "exc_alc_type": [],
+  "exc_basic_taste": [
+   "bitter"
+  ]
+ },
+ "constraints_54": {
+  "name": "cocktail_54",
+  "category": [
+   "milk / float / shake",
+   "punch / party drink",
+   "coffee / tea"
+  ],
+  "glass_type": [
+   "whiskey sour glass",
+   "hurricane glass"
+  ],
+  "alc_type": [
+   "port",
+   "brandy"
+  ],
+  "basic_taste": [
+   "mint",
+   "sour"
+  ],
+  "ingredients": [],
+  "exc_ingredients": [
+   "gin",
+   "lime"
+  ],
+  "exc_alc_type": [],
+  "exc_basic_taste": []
+ },
+ "constraints_55": {
+  "name": "cocktail_55",
+  "category": [
+   "ordinary drink",
+   "milk / float / shake"
+  ],
+  "glass_type": [
+   "parfait glass",
+   "cocktail glass"
+  ],
+  "alc_type": [
+   "prosecco",
+   "sweet liqueur"
+  ],
+  "basic_taste": [
+   "cream"
+  ],
+  "ingredients": [
+   "ouzo",
+   "sambuca white",
+   "bitter lemon"
+  ],
+  "exc_ingredients": [
+   "tequila"
+  ],
+  "exc_alc_type": [
+   "whisky",
+   "cachaca"
+  ],
+  "exc_basic_taste": [
+   "sour",
+   "egg"
+  ]
+ },
+ "constraints_56": {
+  "name": "cocktail_56",
+  "category": [
+   "ordinary drink",
+   "beer",
+   "other/unknown"
+  ],
+  "glass_type": [
+   "white wine glass",
+   "mason jar"
+  ],
+  "alc_type": [
+   "port",
+   "cider",
+   "cachaca"
+  ],
+  "basic_taste": [
+   "water",
+   "sour"
+  ],
+  "ingredients": [
+   "galliano",
+   "creme de banane"
+  ],
+  "exc_ingredients": [
+   "cointreau"
+  ],
+  "exc_alc_type": [
+   "rum",
+   "aperol",
+   "vodka"
+  ],
+  "exc_basic_taste": [
+   "egg"
+  ]
+ },
+ "constraints_57": {
+  "name": "cocktail_57",
+  "category": [
+   "ordinary drink",
+   "beer",
+   "cocktail"
+  ],
+  "glass_type": [
+   "coffee mug"
+  ],
+  "alc_type": [
+   "triple sec",
+   "sambuca"
+  ],
+  "basic_taste": [
+   "bitter"
+  ],
+  "ingredients": [
+   "lime",
+   "sweet vermouth"
+  ],
+  "exc_ingredients": [
+   "cherry",
+   "mint",
+   "fruit punch"
+  ],
+  "exc_alc_type": [
+   "whisky",
+   "vermouth"
+  ],
+  "exc_basic_taste": [
+   "salty"
+  ]
+ },
+ "constraints_58": {
+  "name": "cocktail_58",
+  "category": [
+   "ordinary drink",
+   "soft drink / soda",
+   "milk / float / shake"
+  ],
+  "glass_type": [
+   "collins glass",
+   "old-fashioned glass"
+  ],
+  "alc_type": [
+   "sambuca",
+   "creamy liqueur",
+   "vermouth"
+  ],
+  "basic_taste": [],
+  "ingredients": [
+   "triple sec",
+   "bailey's irish cream",
+   "vodka"
+  ],
+  "exc_ingredients": [
+   "lemon peel"
+  ],
+  "exc_alc_type": [
+   "gin",
+   "vodka"
+  ],
+  "exc_basic_taste": []
+ },
+ "constraints_59": {
+  "name": "cocktail_59",
+  "category": [],
+  "glass_type": [
+   "whiskey sour glass",
+   "margarita/coupette glass",
+   "pint glass"
+  ],
+  "alc_type": [
+   "port",
+   "sambuca",
+   "rum"
+  ],
+  "basic_taste": [
+   "bitter",
+   "sour"
+  ],
+  "ingredients": [
+   "ginger ale",
+   "dark rum",
+   "light rum"
+  ],
+  "exc_ingredients": [
+   "midori melon liqueur",
+   "allspice",
+   "lime juice"
+  ],
+  "exc_alc_type": [
+   "brandy",
+   "aperol"
+  ],
+  "exc_basic_taste": [
+   "egg"
+  ]
+ },
+ "constraints_60": {
+  "name": "cocktail_60",
+  "category": [],
+  "glass_type": [
+   "martini glass",
+   "coffee mug",
+   "beer glass"
+  ],
+  "alc_type": [
+   "sweet liqueur",
+   "brandy",
+   "vodka"
+  ],
+  "basic_taste": [
+   "spicy",
+   "mint"
+  ],
+  "ingredients": [],
+  "exc_ingredients": [],
+  "exc_alc_type": [],
+  "exc_basic_taste": []
+ },
+ "constraints_61": {
+  "name": "cocktail_61",
+  "category": [],
+  "glass_type": [
+   "pousse cafe glass"
+  ],
+  "alc_type": [],
+  "basic_taste": [
+   "egg",
+   "sour",
+   "water"
+  ],
+  "ingredients": [
+   "sherry cream",
+   "water",
+   "black sambuca"
+  ],
+  "exc_ingredients": [
+   "egg white",
+   "egg yolk"
+  ],
+  "exc_alc_type": [
+   "schnapps"
+  ],
+  "exc_basic_taste": [
+   "spicy"
+  ]
+ },
+ "constraints_62": {
+  "name": "cocktail_62",
+  "category": [
+   "soft drink / soda"
+  ],
+  "glass_type": [
+   "highball glass",
+   "parfait glass"
+  ],
+  "alc_type": [],
+  "basic_taste": [],
+  "ingredients": [
+   "campari",
+   "coffee brandy"
+  ],
+  "exc_ingredients": [
+   "milk",
+   "strawberry liqueur"
+  ],
+  "exc_alc_type": [
+   "pisco"
+  ],
+  "exc_basic_taste": []
+ },
+ "constraints_63": {
+  "name": "cocktail_63",
+  "category": [
+   "other/unknown",
+   "beer"
+  ],
+  "glass_type": [
+   "highball glass"
+  ],
+  "alc_type": [
+   "vodka",
+   "brandy"
+  ],
+  "basic_taste": [
+   "salty",
+   "water"
+  ],
+  "ingredients": [
+   "sweet and sour",
+   "maraschino liqueur",
+   "light rum"
+  ],
+  "exc_ingredients": [
+   "kummel",
+   "dark rum",
+   "heavy cream"
+  ],
+  "exc_alc_type": [
+   "ouzo",
+   "port"
+  ],
+  "exc_basic_taste": [
+   "sour"
+  ]
+ },
+ "constraints_64": {
+  "name": "cocktail_64",
+  "category": [
+   "ordinary drink"
+  ],
+  "glass_type": [
+   "white wine glass"
+  ],
+  "alc_type": [],
+  "basic_taste": [
+   "cream",
+   "water"
+  ],
+  "ingredients": [],
+  "exc_ingredients": [],
+  "exc_alc_type": [],
+  "exc_basic_taste": [
+   "egg",
+   "bitter"
+  ]
+ },
+ "constraints_65": {
+  "name": "cocktail_65",
+  "category": [],
+  "glass_type": [
+   "margarita glass",
+   "margarita/coupette glass"
+  ],
+  "alc_type": [],
+  "basic_taste": [
+   "salty",
+   "sour"
+  ],
+  "ingredients": [
+   "ouzo",
+   "7-up",
+   "amaretto"
+  ],
+  "exc_ingredients": [],
+  "exc_alc_type": [],
+  "exc_basic_taste": [
+   "sweet",
+   "bitter",
+   "mint"
+  ]
+ },
+ "constraints_66": {
+  "name": "cocktail_66",
+  "category": [],
+  "glass_type": [
+   "copper mug"
+  ],
+  "alc_type": [
+   "beer",
+   "pisco"
+  ],
+  "basic_taste": [
+   "mint",
+   "water",
+   "spicy"
+  ],
+  "ingredients": [
+   "port",
+   "absinthe",
+   "cream"
+  ],
+  "exc_ingredients": [],
+  "exc_alc_type": [],
+  "exc_basic_taste": [
+   "salty",
+   "sweet"
+  ]
+ },
+ "constraints_67": {
+  "name": "cocktail_67",
+  "category": [
+   "milk / float / shake",
+   "shot"
+  ],
+  "glass_type": [],
+  "alc_type": [
+   "whisky",
+   "wine"
+  ],
+  "basic_taste": [
+   "salty",
+   "egg"
+  ],
+  "ingredients": [
+   "sugar syrup",
+   "jim beam",
+   "coffee"
+  ],
+  "exc_ingredients": [],
+  "exc_alc_type": [
+   "absinthe",
+   "triple sec",
+   "aperol"
+  ],
+  "exc_basic_taste": []
+ },
+ "constraints_68": {
+  "name": "cocktail_68",
+  "category": [
+   "other/unknown"
+  ],
+  "glass_type": [
+   "old-fashioned glass"
+  ],
+  "alc_type": [
+   "beer",
+   "creamy liqueur",
+   "vodka"
+  ],
+  "basic_taste": [
+   "egg",
+   "sour",
+   "cream"
+  ],
+  "ingredients": [
+   "sweet vermouth",
+   "coffee hot"
+  ],
+  "exc_ingredients": [
+   "milk",
+   "water",
+   "club soda"
+  ],
+  "exc_alc_type": [
+   "brandy",
+   "ouzo"
+  ],
+  "exc_basic_taste": [
+   "egg",
+   "bitter"
+  ]
+ },
+ "constraints_69": {
+  "name": "cocktail_69",
+  "category": [],
+  "glass_type": [
+   "punch bowl",
+   "wine glass"
+  ],
+  "alc_type": [],
+  "basic_taste": [
+   "egg",
+   "mint",
+   "water"
+  ],
+  "ingredients": [
+   "aperol"
+  ],
+  "exc_ingredients": [
+   "soda water",
+   "absinthe"
+  ],
+  "exc_alc_type": [
+   "vermouth"
+  ],
+  "exc_basic_taste": [
+   "salty"
+  ]
+ },
+ "constraints_70": {
+  "name": "cocktail_70",
+  "category": [
+   "coffee / tea"
+  ],
+  "glass_type": [
+   "white wine glass",
+   "copper mug"
+  ],
+  "alc_type": [],
+  "basic_taste": [
+   "salty",
+   "sour",
+   "egg"
+  ],
+  "ingredients": [],
+  "exc_ingredients": [],
+  "exc_alc_type": [
+   "whisky"
+  ],
+  "exc_basic_taste": [
+   "water",
+   "bitter"
+  ]
+ },
+ "constraints_71": {
+  "name": "cocktail_71",
+  "category": [],
+  "glass_type": [
+   "pousse cafe glass"
+  ],
+  "alc_type": [
+   "prosecco",
+   "pisco"
+  ],
+  "basic_taste": [],
+  "ingredients": [],
+  "exc_ingredients": [
+   "campari",
+   "brandy"
+  ],
+  "exc_alc_type": [
+   "triple sec",
+   "creamy liqueur"
+  ],
+  "exc_basic_taste": [
+   "bitter"
+  ]
+ },
+ "constraints_72": {
+  "name": "cocktail_72",
+  "category": [
+   "coffee / tea",
+   "milk / float / shake",
+   "soft drink / soda"
+  ],
+  "glass_type": [
+   "collins glass",
+   "beer glass"
+  ],
+  "alc_type": [
+   "brandy"
+  ],
+  "basic_taste": [
+   "sweet",
+   "salty",
+   "mint"
+  ],
+  "ingredients": [
+   "carbonated water",
+   "sambuca",
+   "triple sec"
+  ],
+  "exc_ingredients": [
+   "red wine",
+   "light rum",
+   "sugar"
+  ],
+  "exc_alc_type": [
+   "vermouth",
+   "ouzo",
+   "schnapps"
+  ],
+  "exc_basic_taste": [
+   "mint"
+  ]
+ },
+ "constraints_73": {
+  "name": "cocktail_73",
+  "category": [],
+  "glass_type": [],
+  "alc_type": [
+   "creamy liqueur"
+  ],
+  "basic_taste": [
+   "bitter",
+   "mint",
+   "water"
+  ],
+  "ingredients": [],
+  "exc_ingredients": [
+   "sugar"
+  ],
+  "exc_alc_type": [],
+  "exc_basic_taste": []
+ },
+ "constraints_74": {
+  "name": "cocktail_74",
+  "category": [],
+  "glass_type": [],
+  "alc_type": [
+   "beer"
+  ],
+  "basic_taste": [
+   "sour"
+  ],
+  "ingredients": [
+   "creme de cacao white"
+  ],
+  "exc_ingredients": [],
+  "exc_alc_type": [
+   "vermouth",
+   "cachaca"
+  ],
+  "exc_basic_taste": [
+   "spicy",
+   "water"
+  ]
+ },
+ "constraints_75": {
+  "name": "cocktail_75",
+  "category": [
+   "milk / float / shake"
+  ],
+  "glass_type": [
+   "hurricane glass",
+   "parfait glass",
+   "coffee mug"
+  ],
+  "alc_type": [
+   "gin",
+   "vodka"
+  ],
+  "basic_taste": [],
+  "ingredients": [
+   "brandy"
+  ],
+  "exc_ingredients": [],
+  "exc_alc_type": [
+   "ouzo",
+   "beer"
+  ],
+  "exc_basic_taste": []
+ },
+ "constraints_76": {
+  "name": "cocktail_76",
+  "category": [
+   "other/unknown",
+   "coffee / tea",
+   "ordinary drink"
+  ],
+  "glass_type": [
+   "coffee mug",
+   "pousse cafe glass",
+   "cocktail glass"
+  ],
+  "alc_type": [
+   "aperol"
+  ],
+  "basic_taste": [
+   "egg",
+   "spicy"
+  ],
+  "ingredients": [],
+  "exc_ingredients": [],
+  "exc_alc_type": [
+   "prosecco",
+   "beer"
+  ],
+  "exc_basic_taste": [
+   "egg",
+   "bitter"
+  ]
+ },
+ "constraints_77": {
+  "name": "cocktail_77",
+  "category": [],
+  "glass_type": [
+   "highball glass",
+   "white wine glass",
+   "beer glass"
+  ],
+  "alc_type": [
+   "whisky"
+  ],
+  "basic_taste": [
+   "water",
+   "spicy",
+   "sour"
+  ],
+  "ingredients": [
+   "vodka",
+   "lemon",
+   "st. germain"
+  ],
+  "exc_ingredients": [
+   "light cream",
+   "red wine",
+   "amaretto"
+  ],
+  "exc_alc_type": [
+   "brandy"
+  ],
+  "exc_basic_taste": [
+   "mint"
+  ]
+ },
+ "constraints_78": {
+  "name": "cocktail_78",
+  "category": [],
+  "glass_type": [
+   "collins glass"
+  ],
+  "alc_type": [
+   "tequila",
+   "rum"
+  ],
+  "basic_taste": [
+   "egg"
+  ],
+  "ingredients": [
+   "gin"
+  ],
+  "exc_ingredients": [
+   "absolut peppar",
+   "tequila",
+   "bitters"
+  ],
+  "exc_alc_type": [],
+  "exc_basic_taste": [
+   "spicy"
+  ]
+ },
+ "constraints_79": {
+  "name": "cocktail_79",
+  "category": [
+   "punch / party drink"
+  ],
+  "glass_type": [
+   "hurricane glass"
+  ],
+  "alc_type": [
+   "cider",
+   "vodka",
+   "absinthe"
+  ],
+  "basic_taste": [
+   "bitter",
+   "cream"
+  ],
+  "ingredients": [],
+  "exc_ingredients": [
+   "orange bitters",
+   "cherry"
+  ],
+  "exc_alc_type": [
+   "ouzo"
+  ],
+  "exc_basic_taste": [
+   "mint",
+   "salty"
+  ]
+ },
+ "constraints_80": {
+  "name": "cocktail_80",
+  "category": [],
+  "glass_type": [
+   "margarita glass",
+   "pousse cafe glass"
+  ],
+  "alc_type": [
+   "bitters",
+   "champagne"
+  ],
+  "basic_taste": [
+   "sweet"
+  ],
+  "ingredients": [
+   "water",
+   "absolut vodka"
+  ],
+  "exc_ingredients": [],
+  "exc_alc_type": [],
+  "exc_basic_taste": [
+   "egg",
+   "bitter"
+  ]
+ },
+ "constraints_81": {
+  "name": "cocktail_81",
+  "category": [
+   "other/unknown",
+   "shot"
+  ],
+  "glass_type": [
+   "parfait glass"
+  ],
+  "alc_type": [
+   "campari",
+   "vodka",
+   "triple sec"
+  ],
+  "basic_taste": [
+   "cream",
+   "sweet"
+  ],
+  "ingredients": [
+   "orange juice",
+   "angostura bitters"
+  ],
+  "exc_ingredients": [
+   "light rum"
+  ],
+  "exc_alc_type": [
+   "aperol",
+   "tequila"
+  ],
+  "exc_basic_taste": [
+   "water"
+  ]
+ },
+ "constraints_82": {
+  "name": "cocktail_82",
+  "category": [
+   "cocktail",
+   "beer"
+  ],
+  "glass_type": [
+   "pitcher",
+   "brandy snifter",
+   "shot glass"
+  ],
+  "alc_type": [
+   "vodka"
+  ],
+  "basic_taste": [
+   "sour",
+   "bitter"
+  ],
+  "ingredients": [
+   "kahlua",
+   "lemon juice"
+  ],
+  "exc_ingredients": [
+   "lemon",
+   "ouzo",
+   "gin"
+  ],
+  "exc_alc_type": [
+   "sambuca",
+   "bitters"
+  ],
+  "exc_basic_taste": []
+ },
+ "constraints_83": {
+  "name": "cocktail_83",
+  "category": [
+   "cocktail"
+  ],
+  "glass_type": [
+   "champagne flute",
+   "highball glass"
+  ],
+  "alc_type": [
+   "brandy",
+   "port",
+   "tequila"
+  ],
+  "basic_taste": [
+   "mint",
+   "sweet"
+  ],
+  "ingredients": [],
+  "exc_ingredients": [
+   "coffee hazlenut",
+   "curacao"
+  ],
+  "exc_alc_type": [
+   "vodka"
+  ],
+  "exc_basic_taste": []
+ },
+ "constraints_84": {
+  "name": "cocktail_84",
+  "category": [
+   "cocktail"
+  ],
+  "glass_type": [
+   "cordial glass",
+   "parfait glass",
+   "coffee mug"
+  ],
+  "alc_type": [
+   "sambuca"
+  ],
+  "basic_taste": [
+   "cream",
+   "mint",
+   "water"
+  ],
+  "ingredients": [
+   "limeade",
+   "tequila"
+  ],
+  "exc_ingredients": [],
+  "exc_alc_type": [
+   "schnapps",
+   "gin",
+   "sweet liqueur"
+  ],
+  "exc_basic_taste": [
+   "salty",
+   "sweet"
+  ]
+ },
+ "constraints_85": {
+  "name": "cocktail_85",
+  "category": [
+   "soft drink / soda"
+  ],
+  "glass_type": [
+   "highball glass",
+   "collins glass",
+   "beer pilsner"
+  ],
+  "alc_type": [
+   "campari",
+   "gin"
+  ],
+  "basic_taste": [
+   "mint",
+   "cream",
+   "bitter"
+  ],
+  "ingredients": [
+   "egg white"
+  ],
+  "exc_ingredients": [
+   "port",
+   "rum"
+  ],
+  "exc_alc_type": [],
+  "exc_basic_taste": []
+ },
+ "constraints_86": {
+  "name": "cocktail_86",
+  "category": [],
+  "glass_type": [
+   "hurricane glass"
+  ],
+  "alc_type": [
+   "ouzo",
+   "pisco"
+  ],
+  "basic_taste": [],
+  "ingredients": [
+   "red wine"
+  ],
+  "exc_ingredients": [
+   "kool-aid tropical",
+   "nutmeg grated",
+   "peychaud bitters"
+  ],
+  "exc_alc_type": [
+   "gin"
+  ],
+  "exc_basic_taste": [
+   "mint"
+  ]
+ },
+ "constraints_87": {
+  "name": "cocktail_87",
+  "category": [
+   "soft drink / soda"
+  ],
+  "glass_type": [],
+  "alc_type": [
+   "wine",
+   "vermouth",
+   "sambuca"
+  ],
+  "basic_taste": [],
+  "ingredients": [
+   "jim beam",
+   "vodka",
+   "lime juice"
+  ],
+  "exc_ingredients": [
+   "grenadine",
+   "light cream",
+   "egg"
+  ],
+  "exc_alc_type": [],
+  "exc_basic_taste": [
+   "bitter"
+  ]
+ },
+ "constraints_88": {
+  "name": "cocktail_88",
+  "category": [
+   "punch / party drink"
+  ],
+  "glass_type": [
+   "cordial glass"
+  ],
+  "alc_type": [
+   "cachaca",
+   "schnapps",
+   "sambuca"
+  ],
+  "basic_taste": [
+   "sour"
+  ],
+  "ingredients": [
+   "triple sec"
+  ],
+  "exc_ingredients": [
+   "green ginger wine"
+  ],
+  "exc_alc_type": [],
+  "exc_basic_taste": [
+   "egg"
+  ]
+ },
+ "constraints_89": {
+  "name": "cocktail_89",
+  "category": [
+   "beer"
+  ],
+  "glass_type": [
+   "pitcher"
+  ],
+  "alc_type": [
+   "absinthe"
+  ],
+  "basic_taste": [
+   "salty"
+  ],
+  "ingredients": [
+   "coffee brandy",
+   "lime",
+   "apple brandy"
+  ],
+  "exc_ingredients": [
+   "sugar"
+  ],
+  "exc_alc_type": [
+   "triple sec"
+  ],
+  "exc_basic_taste": [
+   "sour",
+   "water"
+  ]
+ },
+ "constraints_90": {
+  "name": "cocktail_90",
+  "category": [],
+  "glass_type": [
+   "collins glass"
+  ],
+  "alc_type": [
+   "schnapps"
+  ],
+  "basic_taste": [
+   "spicy",
+   "bitter"
+  ],
+  "ingredients": [
+   "milk",
+   "prosecco"
+  ],
+  "exc_ingredients": [
+   "nutmeg",
+   "kahlua"
+  ],
+  "exc_alc_type": [
+   "vodka"
+  ],
+  "exc_basic_taste": [
+   "egg"
+  ]
+ },
+ "constraints_91": {
+  "name": "cocktail_91",
+  "category": [
+   "ordinary drink",
+   "other/unknown"
+  ],
+  "glass_type": [],
+  "alc_type": [],
+  "basic_taste": [
+   "mint"
+  ],
+  "ingredients": [
+   "creme de cassis",
+   "kahlua",
+   "root beer"
+  ],
+  "exc_ingredients": [
+   "orange juice"
+  ],
+  "exc_alc_type": [],
+  "exc_basic_taste": [
+   "spicy",
+   "water"
+  ]
+ },
+ "constraints_92": {
+  "name": "cocktail_92",
+  "category": [
+   "shot"
+  ],
+  "glass_type": [
+   "irish coffee cup",
+   "wine glass",
+   "beer pilsner"
+  ],
+  "alc_type": [],
+  "basic_taste": [],
+  "ingredients": [
+   "milk",
+   "blended whiskey",
+   "orange"
+  ],
+  "exc_ingredients": [],
+  "exc_alc_type": [
+   "pisco",
+   "whisky",
+   "sambuca"
+  ],
+  "exc_basic_taste": []
+ },
+ "constraints_93": {
+  "name": "cocktail_93",
+  "category": [
+   "soft drink / soda"
+  ],
+  "glass_type": [
+   "pitcher",
+   "whiskey sour glass",
+   "old-fashioned glass"
+  ],
+  "alc_type": [
+   "triple sec",
+   "gin",
+   "sambuca"
+  ],
+  "basic_taste": [
+   "bitter",
+   "water"
+  ],
+  "ingredients": [
+   "heavy cream"
+  ],
+  "exc_ingredients": [],
+  "exc_alc_type": [
+   "cider"
+  ],
+  "exc_basic_taste": [
+   "egg"
+  ]
+ },
+ "constraints_94": {
+  "name": "cocktail_94",
+  "category": [],
+  "glass_type": [],
+  "alc_type": [
+   "gin",
+   "absinthe",
+   "champagne"
+  ],
+  "basic_taste": [
+   "salty",
+   "sour"
+  ],
+  "ingredients": [
+   "apricot brandy",
+   "vodka"
+  ],
+  "exc_ingredients": [
+   "champagne",
+   "ginger ale"
+  ],
+  "exc_alc_type": [
+   "aperol",
+   "port"
+  ],
+  "exc_basic_taste": [
+   "egg",
+   "bitter"
+  ]
+ },
+ "constraints_95": {
+  "name": "cocktail_95",
+  "category": [],
+  "glass_type": [
+   "hurricane glass",
+   "margarita glass"
+  ],
+  "alc_type": [
+   "sweet liqueur",
+   "prosecco",
+   "schnapps"
+  ],
+  "basic_taste": [],
+  "ingredients": [
+   "salt"
+  ],
+  "exc_ingredients": [
+   "kahlua",
+   "vanilla ice-cream",
+   "club soda"
+  ],
+  "exc_alc_type": [
+   "bitters"
+  ],
+  "exc_basic_taste": [
+   "water"
+  ]
+ },
+ "constraints_96": {
+  "name": "cocktail_96",
+  "category": [
+   "ordinary drink"
+  ],
+  "glass_type": [
+   "margarita/coupette glass",
+   "whiskey sour glass"
+  ],
+  "alc_type": [
+   "pisco",
+   "vodka",
+   "tequila"
+  ],
+  "basic_taste": [],
+  "ingredients": [
+   "cranberry vodka",
+   "salt",
+   "malibu rum"
+  ],
+  "exc_ingredients": [
+   "triple sec",
+   "light rum"
+  ],
+  "exc_alc_type": [],
+  "exc_basic_taste": [
+   "water",
+   "salty",
+   "sour"
+  ]
+ },
+ "constraints_97": {
+  "name": "cocktail_97",
+  "category": [
+   "soft drink / soda"
+  ],
+  "glass_type": [],
+  "alc_type": [
+   "sambuca",
+   "rum"
+  ],
+  "basic_taste": [
+   "sour",
+   "cream"
+  ],
+  "ingredients": [
+   "bourbon",
+   "salt",
+   "sweet vermouth"
+  ],
+  "exc_ingredients": [
+   "lime juice",
+   "champagne"
+  ],
+  "exc_alc_type": [],
+  "exc_basic_taste": [
+   "egg",
+   "bitter"
+  ]
+ },
+ "constraints_98": {
+  "name": "cocktail_98",
+  "category": [
+   "coffee / tea"
+  ],
+  "glass_type": [
+   "collins glass",
+   "whiskey sour glass",
+   "brandy snifter"
+  ],
+  "alc_type": [],
+  "basic_taste": [
+   "egg",
+   "water",
+   "salty"
+  ],
+  "ingredients": [],
+  "exc_ingredients": [
+   "irish whiskey",
+   "kahlua",
+   "gin"
+  ],
+  "exc_alc_type": [
+   "cider"
+  ],
+  "exc_basic_taste": [
+   "mint",
+   "sweet",
+   "cream"
+  ]
+ },
+ "constraints_99": {
+  "name": "cocktail_99",
+  "category": [
+   "punch / party drink"
+  ],
+  "glass_type": [
+   "cocktail glass",
+   "white wine glass"
+  ],
+  "alc_type": [
+   "champagne"
+  ],
+  "basic_taste": [
+   "bitter"
+  ],
+  "ingredients": [
+   "vanilla ice-cream",
+   "egg white",
+   "goldschlager"
+  ],
+  "exc_ingredients": [],
+  "exc_alc_type": [
+   "pisco",
+   "creamy liqueur",
+   "vodka"
+  ],
+  "exc_basic_taste": []
+ }
+}
