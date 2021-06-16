@@ -36,13 +36,23 @@ def interactive_menu(cbr):
     Returns:
          dict: containing the set of constraints
     """
-    constraints = {'category': [], 'glass_type': [], 'alc_type': [], 'exc_alc_type': [],
+    constraints = {'name': [], 'category': [], 'glass_type': [], 'alc_type': [], 'exc_alc_type': [],
                    'basic_taste': [], 'exc_basic_taste': [], 'ingredients': [], 'exc_ingredients': []}
 
+    # Cocktail name
+    print("\nIntroduce the name of your new cocktail:")
+    while True:
+        name = input()
+        if name not in cbr.cocktail_names:
+            constraints['name'] = name
+            break
+        else:
+            print('Name already in use, repeate slection.')
+            
     # Categories
     print("\nWhat kinds of drink do you wish? (Introduce number of category)")
     print("Introduce End to finish category selection.")
-    for idx, cat in enumerate(cbr.categories):
+    for idx, cat in enumerate(sorted(cbr.categories)):
         print(str(idx)+". "+cat)
     while True:
         type_drink = input().lower()
@@ -58,12 +68,14 @@ def interactive_menu(cbr):
     # Glasses    
     print("\nIntroduce which glasses do you wish: (Introduce name of the glass)")
     print("Introduce End to finish glass selection.")
-    for idx, cat in enumerate(cbr.glass_types):
+    for idx, cat in enumerate(sorted(cbr.glass_types)):
         print(str(idx)+". "+cat)
     while True:
         type_glass = input().lower()
-        if type_glass == "end":
+        if type_glass == "end" or type_glass=='':
             break
+        elif not type_glass.isdigit():
+            print("Not a number, repeat selection.")
         elif int(type_glass) < 0 or int(type_glass) >= len(cbr.glass_types):
             print("Not valid type of glass, repeat selection.")
         else:
@@ -72,12 +84,14 @@ def interactive_menu(cbr):
     # Alcohol types to use
     print("\nIntroduce types of alcohol you wish to use: (Introduce the number of the alcohol type)")
     print("Introduce End to finish alcohol selection.")
-    for idx, cat in enumerate(cbr.alcohol_types):
+    for idx, cat in enumerate(sorted(cbr.alcohol_types)):
         print(str(idx)+". "+cat)
     while True:
         type_alcohol = input().lower()
-        if type_alcohol == "end":
+        if type_alcohol == "end" or type_alcohol=='':
             break
+        elif not type_alcohol.isdigit():
+            print("Not a number, repeat selection.")
         elif int(type_alcohol) < 0 or int(type_alcohol) >= len(cbr.alcohol_types):
             print("Not valid alcohol type.")
         else:
@@ -86,12 +100,14 @@ def interactive_menu(cbr):
     # Alcohol types to avoid
     print("\nIntroduce types of alcohol you wish to avoid: (Introduce the number of the alcohol type)")
     print("Introduce End to finish alcohol selection.")
-    for idx, cat in enumerate(cbr.alcohol_types):
+    for idx, cat in enumerate(sorted(cbr.alcohol_types)):
         print(str(idx)+". "+cat)
     while True:
         type_alcohol = input().lower()
-        if type_alcohol == "end":
+        if type_alcohol == "end" or type_alcohol=='':
             break
+        elif not type_alcohol.isdigit():
+            print("Not a number, repeat selection.")
         elif int(type_alcohol) < 0 or int(type_alcohol) >= len(cbr.alcohol_types):
             print("Not valid alcohol type.")
         else:
@@ -100,12 +116,14 @@ def interactive_menu(cbr):
     # Basic tastes to use        
     print("\nIntroduce tastes you wish to use: (Introduce the number of the basic taste)")
     print("Introduce End to finish taste selection.")
-    for idx, cat in enumerate(cbr.basic_tastes):
+    for idx, cat in enumerate(sorted(cbr.basic_tastes)):
         print(str(idx)+". "+cat)
     while True:
         basic_taste = input().lower()
-        if basic_taste == "end":
+        if basic_taste == "end" or basic_taste=='':
             break
+        elif not basic_taste.isdigit():
+            print("Not a number, repeat selection.")
         elif int(basic_taste) < 0 or int(basic_taste) >= len(cbr.basic_tastes):
             print("Not valid basic taste.")
         else:
@@ -114,12 +132,14 @@ def interactive_menu(cbr):
     # Basic tastes to avoid
     print("\nIntroduce tastes you wish to avoid: (Introduce the number of the basic taste)")
     print("Introduce End to finish taste selection.")
-    for idx, cat in enumerate(cbr.basic_tastes):
+    for idx, cat in enumerate(sorted(cbr.basic_tastes)):
         print(str(idx)+". "+cat)
     while True:
         basic_taste = input().lower()
-        if basic_taste == "end":
+        if basic_taste == "end" or basic_taste=='':
             break
+        elif not basic_taste.isdigit():
+            print("Not a number, repeat selection.")
         elif int(basic_taste) < 0 or int(basic_taste) >= len(cbr.basic_tastes):
             print("Not valid basic taste.")
         else:
@@ -130,7 +150,7 @@ def interactive_menu(cbr):
     print("Introduce End to finish ingredients selection.")
     while True:
         ingredients_inp = input().lower()
-        if ingredients_inp == "end":
+        if ingredients_inp == "end" or ingredients_inp=='':
             break
         elif ingredients_inp in cbr.ingredient_names:
             constraints['exc_ingredients'].append(ingredients_inp)
@@ -142,7 +162,7 @@ def interactive_menu(cbr):
     print("Introduce End to finish the exclusion of ingredients.")
     while True:
         excluded_ingredients = input().lower()
-        if excluded_ingredients == "end":
+        if excluded_ingredients == "end" or excluded_ingredients == '':
             break
         elif excluded_ingredients in cbr.ingredient_names:
             if excluded_ingredients in constraints['ingredients']:
