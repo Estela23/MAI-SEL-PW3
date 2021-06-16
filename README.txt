@@ -30,7 +30,7 @@ Contents of the delivery folder:
     tests: files used to automatically test the system
 
     Documentation:
-        - SEL_PW3_Cocktails_CBR.pdf: written report
+        - PW3_SEL-Cockatil_CBR_Report.pdf: written report
         - User_Manual: user manual for the Cocktails CBR
 
 INSTRUCTIONS:
